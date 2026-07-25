@@ -68,15 +68,14 @@ let optMaut = "", linkMaut = "";
 parkfirmen.forEach(p => {
     let fName = `knoellchen-widerspruch-${p.slug}.html`;
     let crossLinks = generateCrossLinks(parkfirmen, p, item => `knoellchen-widerspruch-${item.slug}.html`, item => item.name);
-    
-    // NEU: Infobox auslesen (oder leer lassen, falls keine existiert)
     let infoboxText = p.infobox || ""; 
 
     let content = masterTpl
         .replace(/\{\{FIRMA_NAME\}\}/g, p.name)
         .replace(/\{\{FIRMA_EMAIL\}\}/g, p.email)
         .replace(/\{\{AUFTRAGGEBER\}\}/g, "dem Supermarkt") 
-        .replace(/\{\{STADT_NAME\}\}/g, "Ihrer Stadt")      
+        .replace(/\{\{STADT_NAME\}\}/g, "Ihrer Stadt") 
+        .replace(/\{\{STADT_KUERZEL\}\}/g, "Stadt") // Generischer Fallback     
         .replace(/value="dem Supermarkt, Ihrer Stadt"/g, 'value="" placeholder="z.B. Lidl, Braunschweig"') 
         .replace(/\{\{DATEINAME\}\}/g, fName)
         .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
@@ -94,7 +93,6 @@ parkfirmen.forEach(p => {
 supermaerkte.forEach(s => {
     let fName = `parkplatz-strafe-${s.slug}.html`;
     let crossLinks = generateCrossLinks(supermaerkte, s, item => `parkplatz-strafe-${item.slug}.html`, item => `${item.name} Parkplatz`);
-
     // NEU: Infobox auslesen (oder leer lassen, falls keine existiert)
     let infoboxText = s.infobox || "";
 
@@ -106,7 +104,7 @@ supermaerkte.forEach(s => {
         .replace(/\{\{FIRMA_EMAIL\}\}/g, "") 
         .replace(/\{\{AUFTRAGGEBER\}\}/g, s.name)
         .replace(/\{\{STADT_NAME\}\}/g, "Ihrer Stadt")
-        
+        .replace(/\{\{STADT_KUERZEL\}\}/g, "Stadt") // Generischer Fallback
         .replace(/value="der Parkfirma"/g, 'value="" placeholder="Name der Parkfirma eintragen"')
         .replace(/value="\{\{FIRMA_EMAIL\}\}"/g, 'value="" placeholder="info@parkfirma.de"')
         .replace(/value=".*, Ihrer Stadt"/g, `value="${s.name}, " placeholder="${s.name}, Stadt eintragen"`)
@@ -128,6 +126,7 @@ staedte.forEach(c => {
     let fName = `private-strafzettel-${c.slug}.html`;
     let crossLinks = generateCrossLinks(staedte, c, item => `private-strafzettel-${item.slug}.html`, item => item.name);
     let stadtText = c.infobox || "";
+    let kuerzel = c.kuerzel || c.name.charAt(0).toUpperCase();
 
     let content = masterTpl
         .replace(/\{\{FIRMA_NAME\}\} Ticket erhalten\? Wehren Sie sich erfolgreich!/g, `Private Parkplatz-Abzocke in ${c.name} abwehren`)
@@ -137,7 +136,7 @@ staedte.forEach(c => {
         .replace(/\{\{FIRMA_EMAIL\}\}/g, "") 
         .replace(/\{\{AUFTRAGGEBER\}\}/g, "einem Supermarkt")
         .replace(/\{\{STADT_NAME\}\}/g, c.name)
-        
+        .replace(/\{\{STADT_KUERZEL\}\}/g, kuerzel) // Hier wird das echte Kürzel aus staedte.json eingesetzt
         .replace(/value="der Parkfirma"/g, 'value="" placeholder="Name der Parkfirma eintragen"')
         .replace(/value="\{\{FIRMA_EMAIL\}\}"/g, 'value="" placeholder="info@parkfirma.de"')
         .replace(/value="einem Supermarkt, .+"/g, `value="" placeholder="z.B. Lidl, ${c.name}"`)
