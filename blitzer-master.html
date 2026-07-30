@@ -2,36 +2,59 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Blitzer {{STADT_NAME}}: Gratis Einspruch-Vorlage | PDF</title>
-  <meta name="description" content="Anhörungsbogen oder Bußgeldbescheid wegen Blitzer in {{STADT_NAME}} erhalten? Nutzen Sie Messfehler, fehlende Eichung & Foto-Ansatz für Ihren kostenlosen PDF-Einspruch.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="Einspruch Blitzer {{STADT_NAME}}, Bußgeldbescheid anfechten, Geschwindigkeitsüberschreitung Einspruch Muster, Blitzerfoto unleserlich, Messfehler Blitzer, Musterbrief">
-  
-  <!-- SEO & Canonical (Ohne /de/ Ordner, passend zur Systemarchitektur) -->
-  <link rel="canonical" href="https://fix-my-ticket.de/{{DATEINAME}}">
-  <meta property="og:title" content="Blitzer in {{STADT_NAME}} anfechten – Kostenloser Einspruch-Generator">
-  <meta property="og:description" content="Nutzen Sie Schwachstellen wie unlesbare Fotos, abgelaufene Eichungen oder Messfehler für Ihren Einspruch. Schnell, formal korrekt & 100% kostenlos.">
-  <meta property="og:type" content="website">
+  <title>{{FALL_TITEL}} | Einspruch & PDF</title>
+<meta name="description" content="{{META_DESCRIPTION}}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="canonical" href="https://fix-my-ticket.de/{{DATEINAME}}">
+<meta property="og:title" content="{{FALL_TITEL}}">
+<meta property="og:description" content="Nutzen Sie Schwachstellen wie unlesbare Fotos, abgelaufene Eichungen oder Messfehler für Ihren Einspruch. Schnell, formal korrekt & 100% kostenlos.">
+<meta property="og:type" content="website">
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="/logo-lotse-fav.png">
   
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Einspruchs-Generator: Blitzer & Geschwindigkeitsverstöße abwehren",
-    "applicationCategory": "LegalApplication",
-    "operatingSystem": "All",
-    "description": "Kostenloses Tool zur Erstellung eines Einspruchs gegen Bußgeldbescheide wegen Geschwindigkeitsüberschreitung in {{STADT_NAME}}.",
-    "offers": {
-      "@type": "Offer",
-      "price": "0.00",
-      "priceCurrency": "EUR"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Einspruchs-Generator: {{FALL_TITEL}}",
+      "applicationCategory": "LegalApplication",
+      "operatingSystem": "All",
+      "description": "{{META_DESCRIPTION}}",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "EUR"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Lohnt sich ein Einspruch gegen einen Geschwindigkeitsblitzer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, statistisch weisen zahlreiche Bußgeldbescheide wegen technischer Messfehler, fehlender Eichung, falschen Aufstellwinkeln oder unleserlichen Fotos Angriffsflächen auf."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie lange habe ich Zeit für den Einspruch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nach Zustellung des Bußgeldbescheids haben Sie exakt 14 Tage Zeit, um form- und fristgerecht Einspruch bei der Behörde einzulegen."
+          }
+        }
+      ]
     }
-  }
-  </script>
+  ]
+}
+</script>
   
   <!-- FAQ Schema für SEO -->
   <script type="application/ld+json">
@@ -68,8 +91,8 @@
 </header>
 
 <div class="page-container">
-  <h1>Blitzer in {{STADT_NAME}}? Bußgeldbescheid formal korrekt & kostenlos anfechten!</h1>
-  
+<h1>{{H1_TITEL}}</h1>
+
   <!-- NEU: Jump Button direkt zum Generator -->
   <div style="text-align: center; margin-bottom: 25px;">
       <a href="#speedingForm" style="display: inline-block; background: #d32f2f; color: #fff; padding: 12px 24px; font-size: 1.1em; font-weight: bold; border-radius: 6px; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.3s;">
@@ -90,7 +113,11 @@
     <div class="usp-item">Formal korrekt nach OWiG & StVG</div>
   </div>
 
-  <p>Sie wurden in oder um <strong>{{STADT_NAME}}</strong> geblitzt? Ob innerorts, auf der Landstraße oder auf der Autobahn: Die absolute Masse aller Bußgeldbescheide wegen Geschwindigkeitsüberschreitungen ist fehlerhaft! Schätzungen von Sachverständigen zeigen, dass **fast 50% der Messungen technische oder formelle Mängel** aufweisen. Bevor Sie teure Bußgelder zahlen, Punkte in Flensburg kassieren oder ein Fahrverbot antreten, sollten Sie den Bescheid prüfen. Unser optimierter Generator fordert die entscheidenden Messprotokolle und Schulungsnachweise an, um das Verfahren zu Fall zu bringen.</p>
+<p>{{EINLEITUNGSTEXT}}</p>
+
+<div class="lokal-infobox">
+    {{FALL_INFOBOX}}
+</div>
 
   <div class="legal-info-box">
     <strong>Wichtiger Hinweis zum Ablauf der gesetzlichen Fristen</strong><br>
@@ -109,7 +136,7 @@
   <!-- Affiliate Box: Verkehrsrechtsschutz -->
   <div class="lesson-learned-box" style="background: #f8f9fa; border-left: 4px solid #ffb300; padding: 15px 20px; margin: 30px 0; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px; position: relative;">
     <span style="font-size: 0.7rem; color: #666; background: #eee; padding: 2px 6px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; position: absolute; top: 10px; right: 10px;">Anzeige</span>
-    <div style="font-size: 2em; line-height: 1;">⚖️</div>
+    <div style="font-size: 2em; line-height: 1;"></div>
     <div>
       <h4 style="margin: 0 0 5px 0; color: #333; font-size: 1.1em; padding-right: 60px;">Punkte oder Fahrverbot drohen?</h4>
       <p style="margin: 0 0 10px 0; font-size: 0.95em; color: #555;">
@@ -125,14 +152,14 @@
     <fieldset style="border-color: #d32f2f; background: #fff9f9;">
       <legend style="background: #d32f2f; color: #fff;">1. Daten des Schreibens & Adresse der Behörde</legend>
       <label>Zuständige Bußgeldstelle / Behörde:</label>
-      <input type="text" id="pBehoerde" value="Zentrale Bußgeldstelle {{STADT_NAME}}" required>
+      <input type="text" id="pBehoerde" placeholder="Zentrale Bußgeldstelle Musterstadt" required>
       <label>Straße und Hausnummer der Behörde (für den Briefkopf):</label>
       <input type="text" id="pBehoerdeStrasse" placeholder="z.B. Rathausplatz 1" required>
       <label>PLZ und Ort der Behörde (für den Briefkopf):</label>
-      <input type="text" id="pBehoerdePLZOrt" placeholder="z.B. 12345 {{STADT_NAME}}" required>
+      <input type="text" id="pBehoerdePLZOrt" placeholder="z.B. 12345 Musterstadt" required>
       
       <label style="margin-top:10px;">E-Mail der Behörde (falls bekannt / für E-Mail-Versand):</label>
-      <input type="email" id="pEmailBehoerde" value="" placeholder="bussgeldstelle@{{STADT_NAME_LOW}}.de">
+      <input type="email" id="pEmailBehoerde" value="" placeholder="bussgeldstelle@info.de">
       <label>Aktenzeichen (siehe Brief oben rechts):</label>
       <input type="text" id="pAktenzeichen" placeholder="z.B. BZ-987.654.321" required>
       <label>Art des erhaltenen Briefes:</label>
@@ -152,7 +179,7 @@
       <label>Ihre PLZ und Ort:</label>
       <input type="text" id="sPLZOrt" required>
       <label>Kfz-Kennzeichen des betroffenen Fahrzeugs:</label>
-      <input type="text" id="sKennzeichen" placeholder="z.B. {{STADT_KUERZEL}}-XX 123" required>
+      <input type="text" id="sKennzeichen" placeholder="z.B. B-XX 123" required>
     </fieldset>
 
     <fieldset>
@@ -204,11 +231,11 @@
 
   <!-- SEO Content Bereich -->
   <div class="seo-content" style="margin-top: 40px;">
-    <h2>Geschwindigkeitsüberschreitung in {{STADT_NAME}}: Darum scheitern so viele Bußgelder</h2>
+    <h2>Geschwindigkeitsüberschreitung: Darum scheitern so viele Bußgelder</h2>
     <p>Egal ob Sie sich <strong>innerorts</strong> in einer 30er-Zone, auf einer gut ausgebauten <strong>Landstraße</strong> oder beim Spurwechsel auf der <strong>Autobahn</strong> befunden haben: Ein Blitzer-Foto bedeutet noch lange nicht, dass Sie das Bußgeld klaglos akzeptieren müssen. Im Ordnungswidrigkeitenverfahren (OWiG) liegt die Beweislast komplett bei der Behörde. Und die Technik sowie die menschliche Bedienung weisen immense Fehlerquoten auf.</p>
 
     <h3>Der Foto-Identifikations-Ansatz („Wer ist das?“)</h3>
-    <p>In Deutschland gilt bei fließendem Verkehr ausschließlich die **Fahrerhaftung**, nicht die Halterhaftung! Das bedeutet: Die Behörde der Stadt {{STADT_NAME}} muss zweifelsfrei nachweisen, wer am Steuer saß. Wenn das Foto unscharf ist, durch die Sonnenblende, den Rückspiegel, eine Mütze oder eine dicke Sonnenbrille wesentliche Teile des Gesichts verdeckt sind, ist eine Identifikation vor Gericht oft unmöglich. Wenn Sie als Halter angeben, sich auf dem Foto nicht zu erkennen, bricht das Verfahren häufig in sich zusammen.</p>
+    <p>In Deutschland gilt bei fließendem Verkehr ausschließlich die <strong>Fahrerhaftung</strong>, nicht die Halterhaftung! Das bedeutet: Die Behörde Ihrer Stadt muss zweifelsfrei nachweisen, wer am Steuer saß. Wenn das Foto unscharf ist, durch die Sonnenblende, den Rückspiegel, eine Mütze oder eine dicke Sonnenbrille wesentliche Teile des Gesichts verdeckt sind, ist eine Identifikation vor Gericht oft unmöglich. Wenn Sie als Halter angeben, sich auf dem Foto nicht zu erkennen, bricht das Verfahren häufig in sich zusammen.</p>
 
     <h3>Fehlende oder abgelaufene Eichfristen (PTB-Richtlinien)</h3>
     <p>Jedes in Deutschland eingesetzte Messgerät (egal ob PoliScan Speed, Vitronic, TraffiStar oder klassischer Multanova-Radar) muss nach den strengen Richtlinien der Physikalisch-Technischen Bundesanstalt (PTB) **gültig geeicht** sein. Sobald die Eichfrist auch nur um einen einzigen Tag abgelaufen ist, verliert die Messung ihre standardisierte Gültigkeit. Mit unserem Musterschreiben fordern Sie die Behörde gezielt auf, den gültigen Eichschein sowie das Messprotokoll vorzulegen.</p>
@@ -223,16 +250,40 @@
     <p>Die Physikalisch-Technische Bundesanstalt schreibt zwingend einen Toleranzabzug vor, um kleinere Messungenauigkeiten auszugleichen. Bei Geschwindigkeiten **unter 100 km/h** müssen immer mindestens **3 km/h** abgezogen werden. Bei Geschwindigkeiten **über 100 km/h** (meist auf Landstraßen oder Autobahnen) beträgt der Abzug **3 %** des gemessenen Wertes. Behörden runden hierbei gelegentlich fehlerhaft zu Ungunsten des Autofahrers.</p>
   </div>
 
-  <div class="lokal-infobox">
-    {{STADT_INFOBOX}}
-</div>
+  
 
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
-    <h3>Weitere Städte & Regionen im Blitzer-Check:</h3>
+    <h3>Weitere Szenarien & Ratgeber:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
       {{BELIEBTE_LINKS}}
     </div>
   </div>
+
+  <div class="quellenbox">
+  <h3>Quellen: Blitzer &amp; Geschwindigkeitsüberschreitung</h3>
+  <ul>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/stvo_2013/__3.html" target="_blank" rel="noopener">§ 3 StVO – Geschwindigkeit</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/stvo_2013/__49.html" target="_blank" rel="noopener">§ 49 StVO – Ordnungswidrigkeiten</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/stvg/__24.html" target="_blank" rel="noopener">§ 24 StVG – Bußgeldvorschriften</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/bkatv_2013/" target="_blank" rel="noopener">Bußgeldkatalog-Verordnung (BKatV)</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/owig/" target="_blank" rel="noopener">Ordnungswidrigkeitengesetz (OWiG)</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+  </ul>
+</div>
 
 </div>
 
@@ -256,7 +307,7 @@
     <div class="lotse-card">
     <p>
         <strong>Bußgeldbescheid, Parkverstoß oder Blitzerbescheid?</strong><br>
-Fix-My-Ticket prüft in wenigen Schritten Ihren Anspruch auf Einspruch, Bußgeldminderung oder Führerscheinerhalt.<br>
+Mit Fix-My-Ticket in wenigen Schritten das passende Einspruchsschreiben für Bußgeldminderung oder Führerscheinerhalt aufsetzen.<br>
 <em>Ein Service von Fix my Ticket.</em>
     </p>
 </div>

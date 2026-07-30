@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "rotlichtverstoss-ampelblitzer-allgemein-einspruch",
+    "fall_titel": "Einspruch gegen Ampelblitzer (Rotlichtverstoß)",
+    "h1_titel": "Über Rot gefahren? Hohe Strafen beim Ampelblitzer abwehren!",
+    "meta_description": "Sie wurden vom Ampelblitzer erwischt? Verhindern Sie Punkte, Bußgeld und Fahrverbote. Nutzen Sie unseren kostenlosen Einspruch-Generator.",
+    "einleitungstext": "Ein unerwarteter roter Blitz an der Kreuzung sorgt meist für einen gehörigen Schreck. Die Strafen für einen Rotlichtverstoß sind drastisch und reichen von empfindlichen Bußgeldern über Punkte in Flensburg bis hin zum sofortigen Fahrverbot. Aber nicht jeder Ampelblitzer misst korrekt. Technische Mängel, fehlerhafte Fotos oder Besonderheiten in der Verkehrssituation bieten hervorragende Ansatzpunkte für einen erfolgreichen Einspruch.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Fehlerhafte Messungen sind keine Seltenheit</h4><p>Ob Induktionsschleifen im Boden, asynchrone Ampelschaltungen oder schlecht kalibrierte Kameras: Ein Rotlicht-Vorwurf sollte niemals ungeprüft akzeptiert werden. Oft lassen sich die Vorwürfe entkräften oder zumindest entscheidend abmildern.</p>",
+    "default_strategie": "allgemein_rotlicht"
+  },
+  {
+    "slug": "qualifizierter-rotlichtverstoss-ueber-1-sekunde-fahrverbot",
+    "fall_titel": "Qualifizierter Rotlichtverstoß (> 1 Sekunde rot)",
+    "h1_titel": "Über 1 Sekunde Rot? So umgehen Sie das Fahrverbot!",
+    "meta_description": "Die Ampel war angeblich länger als 1 Sekunde rot? 1 Monat Fahrverbot droht. Nutzen Sie Toleranzabzüge für Ihren Einspruch. Gratis PDF-Generator.",
+    "einleitungstext": "Ein qualifizierter Rotlichtverstoß liegt vor, wenn die Ampel beim Überfahren der Haltelinie bereits länger als 1 Sekunde Rot zeigte. Die Konsequenzen sind massiv: 200 € Bußgeld, 2 Punkte in Flensburg und zwingend 1 Monat Fahrverbot. Doch die Zeitmessung von Ampelblitzern beruht oft auf anfälligen Systemen oder unzureichenden Toleranzabzügen, die extrem gut angegriffen werden können.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Messgenauigkeit bei 1,0 Sekunden</h4><p>Gerade bei Grenzfällen (z. B. gemessene 1,02 oder 1,1 Sekunden Rotzeit) bestehen extrem gute Chancen, durch den Abzug notwendiger Gerätetoleranzen unter die magische 1-Sekunden-Marke zu rutschen – und das existenzbedrohende Fahrverbot so komplett abzuwenden.</p>",
+    "default_strategie": "ueber_1_sekunde"
+  },
+  {
+    "slug": "einfacher-rotlichtverstoss-unter-1-sekunde",
+    "fall_titel": "Einfacher Rotlichtverstoß (< 1 Sekunde rot)",
+    "h1_titel": "Knapp bei Rot geblitzt? Punkte & Bußgeld vermeiden!",
+    "meta_description": "Weniger als 1 Sekunde rot? Auch hier winken Punkte und hohe Bußgelder. Prüfen Sie Ampelschaltung und Blitzerfoto auf Fehler und legen Sie Widerspruch ein.",
+    "einleitungstext": "Wenn die Ampel gerade erst auf Rot umgesprungen ist (unter 1 Sekunde), spricht man von einem einfachen Rotlichtverstoß. Zwar droht hier in der Regel kein sofortiges Fahrverbot, aber 90 € Bußgeld und 1 Punkt in Flensburg sind dennoch ein Ärgernis, das Sie nicht einfach hinnehmen sollten. Oft lohnt es sich, die Beweislage genau zu hinterfragen.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Gute Chancen beim einfachen Verstoß</h4><p>Ist das Blitzerfoto unscharf, war die Gelbphase zu kurz oder die Sicht auf die Ampel durch einen Lkw verdeckt? In vielen Fällen lässt sich das Bußgeldverfahren durch einen fundierten Widerspruch komplett einstellen.</p>",
+    "default_strategie": "unter_1_sekunde"
+  },
+  {
+    "slug": "haltelinienverstoss-statt-rotlichtverstoss",
+    "fall_titel": "Haltelinienverstoß statt Rotlichtverstoß",
+    "h1_titel": "Bei Rot gebremst, aber geblitzt? Kein Fahrverbot!",
+    "meta_description": "Über die Haltelinie gerollt, aber noch vor der Kreuzung gestoppt? So wandeln Sie den teuren Rotlichtverstoß in einen harmlosen Haltelinienverstoß um.",
+    "einleitungstext": "Der Blitzer hat zweimal hell ausgelöst, obwohl Sie noch deutlich vor dem fließenden Querverkehr zum Stehen gekommen sind? Dann liegt in aller Regel kein teurer Rotlichtverstoß vor, sondern lediglich ein simpler Haltelinienverstoß (Kostenpunkt ca. 10 €). Ein echter Rotlichtverstoß erfordert zwingend das Einfahren in den gefährlichen Schutzbereich der Kreuzung.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Schutzbereich der Kreuzung entscheidet</h4><p>Wer nur etwas zu spät bremst und knapp hinter der Haltelinie hält, begeht lediglich eine geringfügige Ordnungswidrigkeit. Mit unserem Einspruch fordern Sie die Auswertung des zweiten Blitzerfotos an, das beweist, dass Sie nicht in die Kreuzung eingefahren sind.</p>",
+    "default_strategie": "haltelinie"
+  },
+  {
+    "slug": "gelbphase-zu-kurz-ampelschaltung-einspruch",
+    "fall_titel": "Gelbphase zu kurz eingestellt (StVO-Verstoß)",
+    "h1_titel": "Gelbphase zu kurz? Ampel-Messung sofort anfechten!",
+    "meta_description": "Die Gelbphase war zu kurz und Sie konnten nicht mehr rechtzeitig bremsen? Nutzen Sie Mängel der Ampelschaltung für Ihren erfolgreichen Einspruch.",
+    "einleitungstext": "Wenn eine Ampel von Grün auf Gelb springt, verbleiben dem Fahrer oft nur Sekundenbruchteile zum Reagieren und Anhalten. Die Allgemeine Verwaltungsvorschrift zur StVO schreibt daher strikte Mindestgelbzeiten vor: Bei erlaubten 50 km/h muss Gelb mindestens 3 Sekunden dauern, bei 60 km/h 4 Sekunden und bei 70 km/h 5 Sekunden. Ist die Gelbphase kürzer geschaltet, ist der Vorwurf hinfällig.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Mindestgelbzeiten zwingend vorgeschrieben</h4><p>Wurde die gesetzliche Mindestgelbzeit unterschritten, durften Sie darauf vertrauen, dass Sie die Kreuzung noch gefahrlos passieren können. Das genaue Schaltprotokoll der Anlage muss auf Einspruch hin von der Behörde offengelegt werden.</p>",
+    "default_strategie": "gelbphase"
+  },
+  {
+    "slug": "mitzieheffekt-augenblicksversagen-ampelblitzer",
+    "fall_titel": "Mitzieh-Effekt & Augenblicksversagen bei Ampeln",
+    "h1_titel": "Aus Versehen bei Rot losgefahren? Mitzieh-Effekt rettet Sie!",
+    "meta_description": "Unabsichtlich losgefahren, weil die Spur neben Ihnen Grün bekam? Der Mitzieh-Effekt (Augenblicksversagen) rettet vor dem Fahrverbot. Generator starten.",
+    "einleitungstext": "Sie standen artig an der roten Ampel und sind unwillkürlich losgefahren, weil der Pfeil für die Abbieger auf Grün sprang oder das Fahrzeug auf der Nebenspur plötzlich anrollte? Gerichte bezeichnen dieses sehr menschliche Phänomen als 'Mitzieh-Effekt' oder 'Augenblicksversagen'. Da Ihnen hierbei keine grobe Nachlässigkeit vorgeworfen werden kann, wird das Fahrverbot oft aufgehoben.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Ausnahme vom Regelfahrverbot</h4><p>Beim Mitzieh-Effekt handelt es sich um eine typische Fehlauslösung von Verhaltensroutinen. Da keine bewusste und beharrliche Pflichtverletzung vorliegt, kann das harte Fahrverbot meist gegen eine leichte Erhöhung der Geldbuße entfallen.</p>",
+    "default_strategie": "mitzieheffekt"
+  },
+  {
+    "slug": "rotlichtverstoss-wegen-rettungsgasse-blaulicht",
+    "fall_titel": "Rotlichtverstoß wegen Platzmachen für Einsatzfahrzeuge",
+    "h1_titel": "Platz gemacht für Krankenwagen und geblitzt? So wehren Sie sich!",
+    "meta_description": "Über Rot gefahren, um Platz für Krankenwagen oder Polizei zu machen? Das ist kein Rotlichtverstoß! Legen Sie direkt Widerspruch ein.",
+    "einleitungstext": "Hinter Ihnen taucht plötzlich ein Rettungswagen oder die Feuerwehr mit Blaulicht auf. Um Platz zu machen, weichen Sie vorsichtig über die rote Ampel aus und werden prompt geblitzt. Eigentlich haben Sie alles richtig gemacht, denn nach § 38 StVO muss Einsatzfahrzeugen sofort freie Bahn geschaffen werden. Trotzdem verschickt die Bußgeldstelle oft blind automatisierte Strafzettel.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Notstand rechtfertigt das Überfahren</h4><p>Das Überqueren einer Haltelinie zur Bildung einer Rettungsgasse ist durch den rechtfertigenden Notstand nach § 16 OWiG komplett gedeckt. Nennen Sie im Einspruch einfach Ort und Zeit – der Einsatz des Rettungswagens lässt sich bei der Leitstelle leicht nachweisen.</p>",
+    "default_strategie": "rettungswagen"
+  },
+  {
+    "slug": "ampelblitzer-fahrer-nicht-erkennbar",
+    "fall_titel": "Fahrer auf Ampelblitzer-Foto nicht erkennbar",
+    "h1_titel": "Gesicht auf Blitzerfoto verdeckt? Strafe ist hinfällig!",
+    "meta_description": "Sonnenblende, Maske oder unscharfes Ampel-Foto? In Deutschland gilt die Fahrerhaftung. Nutzen Sie fehlende Beweise für den perfekten Widerspruch.",
+    "einleitungstext": "Sie haben einen Bescheid wegen eines Rotlichtverstoßes erhalten, aber auf dem beigefügten Blitzerfoto ist Ihr Gesicht durch die Sonnenblende, einen Schal, eine große Brille oder den Innenspiegel verdeckt? In Deutschland gilt strikt die Fahrerhaftung – und nicht die Halterhaftung. Kann die Behörde nicht zweifelsfrei beweisen, wer gefahren ist, darf auch keine Strafe verhängt werden.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Beweislast liegt beim Amt</h4><p>Die Bußgeldstelle muss den Fahrer eindeutig identifizieren. Reicht die Qualität des Fotos dafür nicht aus, muss das Verfahren mangels Beweisen in aller Regel eingestellt werden.</p>",
+    "default_strategie": "fahrer_identifikation_rotlicht"
+  },
+  {
+    "slug": "gruener-pfeil-blechschild-nicht-gehalten",
+    "fall_titel": "Rotlichtverstoß am grünen Pfeil (Blechschild)",
+    "h1_titel": "Grüner Pfeil übersehen? Strafe oft unzulässig hoch!",
+    "meta_description": "Beim grünen Blechpfeil nicht komplett angehalten und geblitzt? Das ist kein voller Rotlichtverstoß! Wehren Sie Punkte und Fahrverbot erfolgreich ab.",
+    "einleitungstext": "Der grüne Blechpfeil an einer Ampel erlaubt das Rechtsabbiegen trotz Rotlicht. Aber Vorsicht: Es gilt die Pflicht, vorher an der Haltelinie komplett zum Stillstand zu kommen (ähnlich wie bei einem Stoppschild). Wer nur langsam darüber hinweg rollt und geblitzt wird, erhält oft fälschlicherweise einen Bescheid über einen vollen Rotlichtverstoß mit drastischen Folgen. Das ist sachlich falsch!",
+    "fall_infobox": "<h4 style='margin-top:0;'>Falsche Einstufung durch Behörden</h4><p>Das Nicht-Halten am grünen Blechpfeil (Zeichen 720) wird oft fälschlicherweise als normaler Rotlichtverstoß geahndet. Richtigerweise handelt es sich aber um einen speziellen Verstoß, der 'nur' ein Bußgeld von ca. 70 Euro und 1 Punkt nach sich zieht – aber eben kein Fahrverbot.</p>",
+    "default_strategie": "gruener_pfeil"
+  },
+  {
+    "slug": "ampel-dauerrot-defekt-geblitzt",
+    "fall_titel": "Rotlichtverstoß bei defekter Ampel",
+    "h1_titel": "Ampel kaputt und Dauerrot? Blitzer-Ticket anfechten!",
+    "meta_description": "Die Ampel sprang minutenlang nicht um? Bei Dauerrot greift eine Ausnahmeregelung. Verhindern Sie Punkte und Fahrverbot mit unserem Generator.",
+    "einleitungstext": "Sie stehen nachts oder am frühen Morgen an einer roten Ampel, aber es tut sich absolut nichts. Auch nach Minuten schaltet die Anlage nicht auf Grün um. Irgendwann fahren Sie vorsichtig los – und es blitzt hell auf. Ist die Ampel offensichtlich defekt (sog. Dauerrot), entfällt die strenge Haltepflicht. Ein automatisierter Bußgeldbescheid ist in diesem Fall ungültig.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Regelungen bei Funktionsstörungen</h4><p>Zeigt eine Ampel nach angemessener Wartezeit (Gerichte gehen meist von 3 bis 5 Minuten aus) noch immer Rot, darf man sich äußerst vorsichtig in die Kreuzung hineintasten. Es liegt in diesem Fall kein ahndbarer Rotlichtverstoß vor.</p>",
+    "default_strategie": "dauerrot"
+  },
+  {
+    "slug": "rotlichtverstoss-probezeit-a-verstoss",
+    "fall_titel": "Rotlichtverstoß in der Probezeit",
+    "h1_titel": "Rotlichtverstoß in der Probezeit? Aufbauseminar verhindern!",
+    "meta_description": "Als Fahranfänger bei Rot geblitzt? Ein Rotlichtverstoß ist ein A-Verstoß. Schützen Sie Ihren Führerschein vor der Verlängerung und Nachschulung.",
+    "einleitungstext": "Für Fahranfänger ist ein roter Blitz an der Ampel der absolute Albtraum. Jeder Rotlichtverstoß – egal ob unter oder über 1 Sekunde – wird als schwerwiegender A-Verstoß gewertet. Die Folge: Die Probezeit verlängert sich sofort um 2 Jahre und die Teilnahme an einem teuren Aufbauseminar (ASF) wird Pflicht. Hier gilt es, alle Möglichkeiten auszuschöpfen.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Verhinderung der Nachschulung</h4><p>Können Messfehler, eine verdeckte Ampel, ein unscharfes Foto oder ein mildernder Mitzieh-Effekt nachgewiesen werden, lässt sich das Verfahren oft einstellen und die fatalen Auswirkungen auf die Probezeit abwenden.</p>",
+    "default_strategie": "probezeit_rotlicht"
+  }
+]

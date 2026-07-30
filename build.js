@@ -26,13 +26,21 @@ function generateCrossLinks(allItems, currentItem, urlGenerator, nameGenerator, 
     return html;
 }
 
-// 1. Dateien einlesen
+// 1. Dateien einlesen (NEUE STRUKTUR)
 const parkfirmen = JSON.parse(fs.readFileSync(path.join(__dirname, 'parkfirmen.json'), 'utf8'));
 const supermaerkte = JSON.parse(fs.readFileSync(path.join(__dirname, 'supermaerkte.json'), 'utf8'));
-const staedte = JSON.parse(fs.readFileSync(path.join(__dirname, 'staedte.json'), 'utf8'));
 const verkehrsbetriebe = JSON.parse(fs.readFileSync(path.join(__dirname, 'verkehrsbetriebe.json'), 'utf8'));
 const laender = JSON.parse(fs.readFileSync(path.join(__dirname, 'laender.json'), 'utf8'));
 const mautbetreiber = JSON.parse(fs.readFileSync(path.join(__dirname, 'mautbetreiber.json'), 'utf8'));
+
+// Neue Szenarien-JSONs statt staedte.json
+const abschleppSzenarien = JSON.parse(fs.readFileSync(path.join(__dirname, 'abschlepp-szenarien.json'), 'utf8'));
+const abstandSzenarien = JSON.parse(fs.readFileSync(path.join(__dirname, 'abstand-szenarien.json'), 'utf8'));
+const ampelSzenarien = JSON.parse(fs.readFileSync(path.join(__dirname, 'ampel-szenarien.json'), 'utf8'));
+const blitzerSzenarien = JSON.parse(fs.readFileSync(path.join(__dirname, 'blitzer-szenarien.json'), 'utf8'));
+const handySzenarien = JSON.parse(fs.readFileSync(path.join(__dirname, 'handy-szenarien.json'), 'utf8'));
+const lkwSzenarien = JSON.parse(fs.readFileSync(path.join(__dirname, 'lkw-szenarien.json'), 'utf8'));
+const parkSzenarien = JSON.parse(fs.readFileSync(path.join(__dirname, 'park-szenarien.json'), 'utf8'));
 
 const masterTpl = loadTemplate('parkplatz-master.html');
 const ordnungsamtTpl = loadTemplate('ordnungsamt-master.html');
@@ -47,10 +55,10 @@ const abschleppTpl = loadTemplate('abschleppen-master.html');
 const mautTpl = loadTemplate('maut-master.html');
 
 
-// 2. ALLE Sammel-Variablen sauber am Anfang deklarieren (Verhindert ReferenceErrors!)
+// 2. ALLE Sammel-Variablen sauber am Anfang deklarieren
 let optFirmen = "", linkFirmen = "";
 let optSupermaerkte = "", linkSupermaerkte = "";
-let optStaedte = "", linkStaedte = "";
+// optStaedte existiert nicht mehr, wird unten bei den Hubs geleert
 let optOrdnungsamt = "", linkOrdnungsamt = "";
 let optBlitzer = "", linkBlitzer = "";
 let optAbstand = "", linkAbstand = ""; 
@@ -63,7 +71,7 @@ let optAbschleppen = "", linkAbschleppen = "";
 let optMaut = "", linkMaut = "";
 
 // =====================================================================
-// SILO 1: PARKFIRMEN (Juristische Suche)
+// SILO 1: PARKFIRMEN (Juristische Suche) - Bleibt unverändert!
 // =====================================================================
 parkfirmen.forEach(p => {
     let fName = `knoellchen-widerspruch-${p.slug}.html`;
@@ -75,11 +83,11 @@ parkfirmen.forEach(p => {
         .replace(/\{\{FIRMA_EMAIL\}\}/g, p.email)
         .replace(/\{\{AUFTRAGGEBER\}\}/g, "dem Supermarkt") 
         .replace(/\{\{STADT_NAME\}\}/g, "Ihrer Stadt") 
-        .replace(/\{\{STADT_KUERZEL\}\}/g, "Stadt") // Generischer Fallback     
+        .replace(/\{\{STADT_KUERZEL\}\}/g, "Stadt")     
         .replace(/value="dem Supermarkt, Ihrer Stadt"/g, 'value="" placeholder="z.B. Lidl, Braunschweig"') 
         .replace(/\{\{DATEINAME\}\}/g, fName)
         .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
-        .replace(/\{\{STADT_INFOBOX\}\}/g, infoboxText); // NEU: Platzhalter ersetzen
+        .replace(/\{\{STADT_INFOBOX\}\}/g, infoboxText); // Bleibt hier drin!
 
     fs.writeFileSync(path.join(outputDir, fName), content, 'utf8');
     
@@ -88,12 +96,11 @@ parkfirmen.forEach(p => {
 });
 
 // =====================================================================
-// SILO 2: SUPERMÄRKTE (Emotionale Suche)
+// SILO 2: SUPERMÄRKTE (Emotionale Suche) - Bleibt unverändert!
 // =====================================================================
 supermaerkte.forEach(s => {
     let fName = `parkplatz-strafe-${s.slug}.html`;
     let crossLinks = generateCrossLinks(supermaerkte, s, item => `parkplatz-strafe-${item.slug}.html`, item => `${item.name} Parkplatz`);
-    // NEU: Infobox auslesen (oder leer lassen, falls keine existiert)
     let infoboxText = s.infobox || "";
 
     let content = masterTpl
@@ -104,14 +111,14 @@ supermaerkte.forEach(s => {
         .replace(/\{\{FIRMA_EMAIL\}\}/g, "") 
         .replace(/\{\{AUFTRAGGEBER\}\}/g, s.name)
         .replace(/\{\{STADT_NAME\}\}/g, "Ihrer Stadt")
-        .replace(/\{\{STADT_KUERZEL\}\}/g, "Stadt") // Generischer Fallback
+        .replace(/\{\{STADT_KUERZEL\}\}/g, "Stadt") 
         .replace(/value="der Parkfirma"/g, 'value="" placeholder="Name der Parkfirma eintragen"')
         .replace(/value="\{\{FIRMA_EMAIL\}\}"/g, 'value="" placeholder="info@parkfirma.de"')
         .replace(/value=".*, Ihrer Stadt"/g, `value="${s.name}, " placeholder="${s.name}, Stadt eintragen"`)
         
         .replace(/\{\{DATEINAME\}\}/g, fName)
         .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
-        .replace(/\{\{STADT_INFOBOX\}\}/g, infoboxText); // NEU: Platzhalter ersetzen
+        .replace(/\{\{STADT_INFOBOX\}\}/g, infoboxText); // Bleibt hier drin!
 
     fs.writeFileSync(path.join(outputDir, fName), content, 'utf8');
     
@@ -119,174 +126,144 @@ supermaerkte.forEach(s => {
     linkSupermaerkte += `<a href="${fName}">${s.name} Parkplatz</a>\n`;
 });
 
-// =====================================================================
-// SILO 3: STÄDTE (Lokale Suche)
-// =====================================================================
-staedte.forEach(c => {
-    let fName = `private-strafzettel-${c.slug}.html`;
-    let crossLinks = generateCrossLinks(staedte, c, item => `private-strafzettel-${item.slug}.html`, item => item.name);
-    let stadtText = c.infobox || "";
-    let kuerzel = c.kuerzel || c.name.charAt(0).toUpperCase();
-
-    let content = masterTpl
-        .replace(/\{\{FIRMA_NAME\}\} Ticket erhalten\? Wehren Sie sich erfolgreich!/g, `Private Parkplatz-Abzocke in ${c.name} abwehren`)
-        .replace(/Widerspruch Parkknöllchen \{\{FIRMA_NAME\}\} \(\{\{STADT_NAME\}\}\)/g, `Parkplatz Strafe ${c.name}: Private Strafzettel abwehren`)
-        
-        .replace(/\{\{FIRMA_NAME\}\}/g, "der Parkfirma") 
-        .replace(/\{\{FIRMA_EMAIL\}\}/g, "") 
-        .replace(/\{\{AUFTRAGGEBER\}\}/g, "einem Supermarkt")
-        .replace(/\{\{STADT_NAME\}\}/g, c.name)
-        .replace(/\{\{STADT_KUERZEL\}\}/g, kuerzel) // Hier wird das echte Kürzel aus staedte.json eingesetzt
-        .replace(/value="der Parkfirma"/g, 'value="" placeholder="Name der Parkfirma eintragen"')
-        .replace(/value="\{\{FIRMA_EMAIL\}\}"/g, 'value="" placeholder="info@parkfirma.de"')
-        .replace(/value="einem Supermarkt, .+"/g, `value="" placeholder="z.B. Lidl, ${c.name}"`)
-        
-        .replace(/\{\{DATEINAME\}\}/g, fName)
-        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
-        .replace(/\{\{STADT_INFOBOX\}\}/g, stadtText);
-
-    fs.writeFileSync(path.join(outputDir, fName), content, 'utf8');
-    
-    optStaedte += `<option value="${fName}">${c.name}</option>\n`;
-    linkStaedte += `<a href="${fName}">Strafzettel in ${c.name}</a>\n`;
-});
+// HINWEIS: SILO 3 (Städte) WURDE KOMPLETT GELÖSCHT, da staedte.json nicht mehr existiert!
 
 // =====================================================================
-// SILO 4: ORDNUNGSAMT / STAATLICHE KNÖLLCHEN
+// SILO 4: ORDNUNGSAMT / STAATLICHE KNÖLLCHEN (NEU via park-szenarien.json)
 // =====================================================================
-staedte.forEach(c => {
-    let fName = `einspruch-ordnungsamt-${c.slug}.html`;
-    let crossLinks = generateCrossLinks(staedte, c, item => `einspruch-ordnungsamt-${item.slug}.html`, item => `Ordnungsamt ${item.name}`);
-    let kuerzel = c.kuerzel || c.name.charAt(0).toUpperCase();
-    let stadtText = c.infobox || "";
+parkSzenarien.forEach(s => {
+    let fName = `einspruch-ordnungsamt-${s.slug}.html`;
+    let crossLinks = generateCrossLinks(parkSzenarien, s, item => `einspruch-ordnungsamt-${item.slug}.html`, item => item.fall_titel);
 
     let content = ordnungsamtTpl
-        .replace(/\{\{STADT_NAME\}\}/g, c.name)
-        .replace(/\{\{STADT_NAME_LOW\}\}/g, c.slug)
-        .replace(/\{\{STADT_KUERZEL\}\}/g, kuerzel)
+        .replace(/\{\{FALL_TITEL\}\}/g, s.fall_titel || "")
+        .replace(/\{\{H1_TITEL\}\}/g, s.h1_titel || "")
+        .replace(/\{\{META_DESCRIPTION\}\}/g, s.meta_description || "")
+        .replace(/\{\{EINLEITUNGSTEXT\}\}/g, s.einleitungstext || "")
+        .replace(/\{\{FALL_INFOBOX\}\}/g, s.fall_infobox || "")
+        .replace(/\{\{DEFAULT_STRATEGIE\}\}/g, s.default_strategie || "")
         .replace(/\{\{DATEINAME\}\}/g, fName)
-        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
-        .replace(/\{\{STADT_INFOBOX\}\}/g, stadtText);
+        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks);
 
     fs.writeFileSync(path.join(outputDir, fName), content, 'utf8');
     
-    optOrdnungsamt += `<option value="${fName}">Ordnungsamt ${c.name}</option>\n`;
-    linkOrdnungsamt += `<a href="${fName}">Ordnungsamt ${c.name}</a>\n`;
+    optOrdnungsamt += `<option value="${fName}">${s.fall_titel}</option>\n`;
+    linkOrdnungsamt += `<a href="${fName}">${s.fall_titel}</a>\n`;
 });
 
 // =====================================================================
-// SILO 5: BLITZER & GESCHWINDIGKEIT
+// SILO 5: BLITZER & GESCHWINDIGKEIT (NEU via blitzer-szenarien.json)
 // =====================================================================
-staedte.forEach(c => {
-    let fName = `einspruch-blitzer-${c.slug}.html`;
-    let crossLinks = generateCrossLinks(staedte, c, item => `einspruch-blitzer-${item.slug}.html`, item => `Blitzer ${item.name}`);
-    let kuerzel = c.kuerzel || c.name.charAt(0).toUpperCase();
-    let stadtText = c.infobox || "";
+blitzerSzenarien.forEach(s => {
+    let fName = `einspruch-blitzer-${s.slug}.html`;
+    let crossLinks = generateCrossLinks(blitzerSzenarien, s, item => `einspruch-blitzer-${item.slug}.html`, item => item.fall_titel);
 
     let content = blitzerTpl
-        .replace(/\{\{STADT_NAME\}\}/g, c.name)
-        .replace(/\{\{STADT_NAME_LOW\}\}/g, c.slug)
-        .replace(/\{\{STADT_KUERZEL\}\}/g, kuerzel)
+        .replace(/\{\{FALL_TITEL\}\}/g, s.fall_titel || "")
+        .replace(/\{\{H1_TITEL\}\}/g, s.h1_titel || "")
+        .replace(/\{\{META_DESCRIPTION\}\}/g, s.meta_description || "")
+        .replace(/\{\{EINLEITUNGSTEXT\}\}/g, s.einleitungstext || "")
+        .replace(/\{\{FALL_INFOBOX\}\}/g, s.fall_infobox || "")
+        .replace(/\{\{DEFAULT_STRATEGIE\}\}/g, s.default_strategie || "")
         .replace(/\{\{DATEINAME\}\}/g, fName)
-        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
-        .replace(/\{\{STADT_INFOBOX\}\}/g, stadtText);
+        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks);
 
     fs.writeFileSync(path.join(outputDir, fName), content, 'utf8');
     
-    optBlitzer += `<option value="${fName}">Blitzer ${c.name}</option>\n`;
-    linkBlitzer += `<a href="${fName}">Blitzer ${c.name}</a>\n`;
+    optBlitzer += `<option value="${fName}">${s.fall_titel}</option>\n`;
+    linkBlitzer += `<a href="${fName}">${s.fall_titel}</a>\n`;
 });
 
 // =====================================================================
-// SILO 6: ABSTANDSVERSTÖSSE
+// SILO 6: ABSTANDSVERSTÖSSE (NEU via abstand-szenarien.json)
 // =====================================================================
-staedte.forEach(c => {
-    let fName = `einspruch-abstandsverstoss-${c.slug}.html`;
-    let crossLinks = generateCrossLinks(staedte, c, item => `einspruch-abstandsverstoss-${item.slug}.html`, item => `Abstandsmessung ${item.name}`);
-    let kuerzel = c.kuerzel || c.name.charAt(0).toUpperCase();
-    let stadtText = c.infobox || "";
+abstandSzenarien.forEach(s => {
+    let fName = `einspruch-abstandsverstoss-${s.slug}.html`;
+    let crossLinks = generateCrossLinks(abstandSzenarien, s, item => `einspruch-abstandsverstoss-${item.slug}.html`, item => item.fall_titel);
 
     let content = abstandTpl
-        .replace(/\{\{STADT_NAME\}\}/g, c.name)
-        .replace(/\{\{STADT_NAME_LOW\}\}/g, c.slug)
-        .replace(/\{\{STADT_KUERZEL\}\}/g, kuerzel)
+        .replace(/\{\{FALL_TITEL\}\}/g, s.fall_titel || "")
+        .replace(/\{\{H1_TITEL\}\}/g, s.h1_titel || "")
+        .replace(/\{\{META_DESCRIPTION\}\}/g, s.meta_description || "")
+        .replace(/\{\{EINLEITUNGSTEXT\}\}/g, s.einleitungstext || "")
+        .replace(/\{\{FALL_INFOBOX\}\}/g, s.fall_infobox || "")
+        .replace(/\{\{DEFAULT_STRATEGIE\}\}/g, s.default_strategie || "")
         .replace(/\{\{DATEINAME\}\}/g, fName)
-        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
-        .replace(/\{\{STADT_INFOBOX\}\}/g, stadtText);
+        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks);
 
     fs.writeFileSync(path.join(outputDir, fName), content, 'utf8');
     
-    optAbstand += `<option value="${fName}">Abstandsmessung ${c.name}</option>\n`;
-    linkAbstand += `<a href="${fName}">Abstandsmessung ${c.name}</a>\n`;
+    optAbstand += `<option value="${fName}">${s.fall_titel}</option>\n`;
+    linkAbstand += `<a href="${fName}">${s.fall_titel}</a>\n`;
 });
 
 // =====================================================================
-// SILO 7: ROTE AMPEL / ROTLICHTVERSTOSS
+// SILO 7: ROTE AMPEL / ROTLICHTVERSTOSS (NEU via ampel-szenarien.json)
 // =====================================================================
-staedte.forEach(c => {
-    let fName = `einspruch-rote-ampel-${c.slug}.html`;
-    let crossLinks = generateCrossLinks(staedte, c, item => `einspruch-rote-ampel-${item.slug}.html`, item => `Rote Ampel ${item.name}`);
-    let kuerzel = c.kuerzel || c.name.charAt(0).toUpperCase();
-    let stadtText = c.infobox || "";
+ampelSzenarien.forEach(s => {
+    let fName = `einspruch-rote-ampel-${s.slug}.html`;
+    let crossLinks = generateCrossLinks(ampelSzenarien, s, item => `einspruch-rote-ampel-${item.slug}.html`, item => item.fall_titel);
 
     let content = ampelTpl
-        .replace(/\{\{STADT_NAME\}\}/g, c.name)
-        .replace(/\{\{STADT_NAME_LOW\}\}/g, c.slug)
-        .replace(/\{\{STADT_KUERZEL\}\}/g, kuerzel)
+        .replace(/\{\{FALL_TITEL\}\}/g, s.fall_titel || "")
+        .replace(/\{\{H1_TITEL\}\}/g, s.h1_titel || "")
+        .replace(/\{\{META_DESCRIPTION\}\}/g, s.meta_description || "")
+        .replace(/\{\{EINLEITUNGSTEXT\}\}/g, s.einleitungstext || "")
+        .replace(/\{\{FALL_INFOBOX\}\}/g, s.fall_infobox || "")
+        .replace(/\{\{DEFAULT_STRATEGIE\}\}/g, s.default_strategie || "")
         .replace(/\{\{DATEINAME\}\}/g, fName)
-        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
-        .replace(/\{\{STADT_INFOBOX\}\}/g, stadtText);
+        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks);
 
     fs.writeFileSync(path.join(outputDir, fName), content, 'utf8');
     
-    optAmpel += `<option value="${fName}">Rote Ampel ${c.name}</option>\n`;
-    linkAmpel += `<a href="${fName}">Rote Ampel ${c.name}</a>\n`;
+    optAmpel += `<option value="${fName}">${s.fall_titel}</option>\n`;
+    linkAmpel += `<a href="${fName}">${s.fall_titel}</a>\n`;
 });
 
 // =====================================================================
-// SILO 8: LKW & BERUFSKRAFTFAHRER
+// SILO 8: LKW & BERUFSKRAFTFAHRER (NEU via lkw-szenarien.json)
 // =====================================================================
-staedte.forEach(c => {
-    let fName = `einspruch-lkw-bussgeld-${c.slug}.html`;
-    let crossLinks = generateCrossLinks(staedte, c, item => `einspruch-lkw-bussgeld-${item.slug}.html`, item => `LKW-Kontrolle ${item.name}`);
-    let kuerzel = c.kuerzel || c.name.charAt(0).toUpperCase();
-    let stadtText = c.infobox || "";
+lkwSzenarien.forEach(s => {
+    let fName = `einspruch-lkw-bussgeld-${s.slug}.html`;
+    let crossLinks = generateCrossLinks(lkwSzenarien, s, item => `einspruch-lkw-bussgeld-${item.slug}.html`, item => item.fall_titel);
 
     let content = lkwTpl
-        .replace(/\{\{STADT_NAME\}\}/g, c.name)
-        .replace(/\{\{STADT_NAME_LOW\}\}/g, c.slug)
-        .replace(/\{\{STADT_KUERZEL\}\}/g, kuerzel)
+        .replace(/\{\{FALL_TITEL\}\}/g, s.fall_titel || "")
+        .replace(/\{\{H1_TITEL\}\}/g, s.h1_titel || "")
+        .replace(/\{\{META_DESCRIPTION\}\}/g, s.meta_description || "")
+        .replace(/\{\{EINLEITUNGSTEXT\}\}/g, s.einleitungstext || "")
+        .replace(/\{\{FALL_INFOBOX\}\}/g, s.fall_infobox || "")
+        .replace(/\{\{DEFAULT_STRATEGIE\}\}/g, s.default_strategie || "")
         .replace(/\{\{DATEINAME\}\}/g, fName)
-        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
-        .replace(/\{\{STADT_INFOBOX\}\}/g, stadtText);
+        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks);
 
     fs.writeFileSync(path.join(outputDir, fName), content, 'utf8');
     
-    optLkw += `<option value="${fName}">LKW-Kontrolle ${c.name}</option>\n`;
-    linkLkw += `<a href="${fName}">LKW-Kontrolle ${c.name}</a>\n`;
+    optLkw += `<option value="${fName}">${s.fall_titel}</option>\n`;
+    linkLkw += `<a href="${fName}">${s.fall_titel}</a>\n`;
 });
 
 // =====================================================================
-// SILO 9: HANDY AM STEUER
+// SILO 9: HANDY AM STEUER (NEU via handy-szenarien.json)
 // =====================================================================
-staedte.forEach(c => {
-    let fName = `einspruch-handy-am-steuer-${c.slug}.html`;
-    let crossLinks = generateCrossLinks(staedte, c, item => `einspruch-handy-am-steuer-${item.slug}.html`, item => `Handyverstoß ${item.name}`);
-    let kuerzel = c.kuerzel || c.name.charAt(0).toUpperCase();
-    let stadtText = c.infobox || "";
+handySzenarien.forEach(s => {
+    let fName = `einspruch-handy-am-steuer-${s.slug}.html`;
+    let crossLinks = generateCrossLinks(handySzenarien, s, item => `einspruch-handy-am-steuer-${item.slug}.html`, item => item.fall_titel);
 
     let content = handyTpl
-        .replace(/\{\{STADT_NAME\}\}/g, c.name)
-        .replace(/\{\{STADT_NAME_LOW\}\}/g, c.slug)
-        .replace(/\{\{STADT_KUERZEL\}\}/g, kuerzel)
+        .replace(/\{\{FALL_TITEL\}\}/g, s.fall_titel || "")
+        .replace(/\{\{H1_TITEL\}\}/g, s.h1_titel || "")
+        .replace(/\{\{META_DESCRIPTION\}\}/g, s.meta_description || "")
+        .replace(/\{\{EINLEITUNGSTEXT\}\}/g, s.einleitungstext || "")
+        .replace(/\{\{FALL_INFOBOX\}\}/g, s.fall_infobox || "")
+        .replace(/\{\{DEFAULT_STRATEGIE\}\}/g, s.default_strategie || "")
         .replace(/\{\{DATEINAME\}\}/g, fName)
-        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
-        .replace(/\{\{STADT_INFOBOX\}\}/g, stadtText);
+        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks);
 
     fs.writeFileSync(path.join(outputDir, fName), content, 'utf8');
     
-    optHandy += `<option value="${fName}">Handy am Steuer ${c.name}</option>\n`;
-    linkHandy += `<a href="${fName}">Handy am Steuer ${c.name}</a>\n`;
+    optHandy += `<option value="${fName}">${s.fall_titel}</option>\n`;
+    linkHandy += `<a href="${fName}">${s.fall_titel}</a>\n`;
 });
 
 // =====================================================================
@@ -294,9 +271,7 @@ staedte.forEach(c => {
 // =====================================================================
 verkehrsbetriebe.forEach(v => {
     let fName = `einspruch-60-euro-${v.slug}.html`;
-    // Crosslinks nur zu anderen Verkehrsbetrieben generieren
     let crossLinks = generateCrossLinks(verkehrsbetriebe, v, item => `einspruch-60-euro-${item.slug}.html`, item => item.name);
-    
     let infoboxText = v.infobox || "";
 
     let content = ebeTpl
@@ -309,7 +284,6 @@ verkehrsbetriebe.forEach(v => {
 
     fs.writeFileSync(path.join(outputDir, fName), content, 'utf8');
     
-    // Für einen zukünftigen Hub-aufbau speichern
     optEbe += `<option value="${fName}">${v.name}</option>\n`;
     linkEbe += `<a href="${fName}">60€ Strafe ${v.name} (${v.stadt})</a>\n`;
 });
@@ -319,9 +293,7 @@ verkehrsbetriebe.forEach(v => {
 // =====================================================================
 laender.forEach(l => {
     let fName = `einspruch-ausland-${l.slug}.html`;
-    // Crosslinks zu anderen Ländern generieren
     let crossLinks = generateCrossLinks(laender, l, item => `einspruch-ausland-${item.slug}.html`, item => item.name);
-    
     let infoboxText = l.infobox || "";
 
     let content = auslandTpl
@@ -338,27 +310,26 @@ laender.forEach(l => {
 });
 
 // =====================================================================
-// SILO 12: ABSCHLEPPEN & SICHERSTELLUNG (Städte-Basis)
+// SILO 12: ABSCHLEPPEN & SICHERSTELLUNG (NEU via abschlepp-szenarien.json)
 // =====================================================================
-staedte.forEach(c => {
-    let fName = `einspruch-abschleppen-${c.slug}.html`;
-    // Crosslinks für die Städte untereinander generieren
-    let crossLinks = generateCrossLinks(staedte, c, item => `einspruch-abschleppen-${item.slug}.html`, item => `Abschleppen in ${item.name}`);
-    
-    let kuerzel = c.kuerzel || c.name.charAt(0).toUpperCase();
-    let stadtText = c.infobox || "";
+abschleppSzenarien.forEach(s => {
+    let fName = `einspruch-abschleppen-${s.slug}.html`;
+    let crossLinks = generateCrossLinks(abschleppSzenarien, s, item => `einspruch-abschleppen-${item.slug}.html`, item => item.fall_titel);
 
     let content = abschleppTpl
-        .replace(/\{\{STADT_NAME\}\}/g, c.name)
-        .replace(/\{\{STADT_KUERZEL\}\}/g, kuerzel)
+        .replace(/\{\{FALL_TITEL\}\}/g, s.fall_titel || "")
+        .replace(/\{\{H1_TITEL\}\}/g, s.h1_titel || "")
+        .replace(/\{\{META_DESCRIPTION\}\}/g, s.meta_description || "")
+        .replace(/\{\{EINLEITUNGSTEXT\}\}/g, s.einleitungstext || "")
+        .replace(/\{\{FALL_INFOBOX\}\}/g, s.fall_infobox || "")
+        .replace(/\{\{DEFAULT_STRATEGIE\}\}/g, s.default_strategie || "")
         .replace(/\{\{DATEINAME\}\}/g, fName)
-        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
-        .replace(/\{\{STADT_INFOBOX\}\}/g, stadtText);
+        .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks);
 
     fs.writeFileSync(path.join(outputDir, fName), content, 'utf8');
     
-    optAbschleppen += `<option value="${fName}">Abschlepp-Kosten in ${c.name}</option>\n`;
-    linkAbschleppen += `<a href="${fName}">Abschleppen ${c.name}</a>\n`;
+    optAbschleppen += `<option value="${fName}">${s.fall_titel}</option>\n`;
+    linkAbschleppen += `<a href="${fName}">${s.fall_titel}</a>\n`;
 });
 
 // =====================================================================
@@ -366,9 +337,7 @@ staedte.forEach(c => {
 // =====================================================================
 mautbetreiber.forEach(m => {
     let fName = `einspruch-mautstrafe-${m.slug}.html`;
-    // Crosslinks
     let crossLinks = generateCrossLinks(mautbetreiber, m, item => `einspruch-mautstrafe-${item.slug}.html`, item => item.name);
-    
     let infoboxText = m.infobox || "";
 
     let content = mautTpl
@@ -393,8 +362,8 @@ if (fs.existsSync(path.join(__dirname, 'hub-parkplatz-master.html'))) {
         .replace(/\{\{LINK_FIRMEN\}\}/g, linkFirmen)
         .replace(/\{\{OPT_SUPERMAERKTE\}\}/g, optSupermaerkte)
         .replace(/\{\{LINK_SUPERMAERKTE\}\}/g, linkSupermaerkte)
-        .replace(/\{\{OPT_STAEDTE\}\}/g, optStaedte)
-        .replace(/\{\{LINK_STAEDTE\}\}/g, linkStaedte)
+        .replace(/\{\{OPT_STAEDTE\}\}/g, "") // Leer gelassen, da Städte gelöscht wurden
+        .replace(/\{\{LINK_STAEDTE\}\}/g, "") // Leer gelassen, da Städte gelöscht wurden
         .replace(/\{\{OPT_ORDNUNGSAMT\}\}/g, optOrdnungsamt)
         .replace(/\{\{LINK_ORDNUNGSAMT\}\}/g, linkOrdnungsamt);
         

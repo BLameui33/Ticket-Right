@@ -2,12 +2,12 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Auto abgeschleppt in {{STADT_NAME}}? Kosten abwehren! | PDF</title>
-  <meta name="description" content="Auto in {{STADT_NAME}} abgeschleppt? Rechnung über 300€ erhalten? Prüfen Sie 3-Tage-Frist, Unverhältnismäßigkeit & Wucher. Kostenloser Einspruchs-Generator.">
+  <title>{{FALL_TITEL}} | PDF generieren & abwehren </title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="canonical" href="https://fix-my-ticket.de/{{DATEINAME}}">
-  <meta property="og:title" content="Abschleppkosten in {{STADT_NAME}} abwehren">
+  <meta property="og:title" content="{{FALL_TITEL}}">
   <meta property="og:description" content="Kostenloser PDF-Widerspruch gegen teure Abschleppkosten (Stadt oder private Supermarkt-Parkplätze).">
   <meta property="og:type" content="website">
   
@@ -16,20 +16,20 @@
   <link rel="icon" href="/logo-lotse-fav.png">
   
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Widerspruchs-Generator: Abschleppkosten abwehren",
-    "applicationCategory": "LegalApplication",
-    "operatingSystem": "All",
-    "description": "Kostenloses Tool zur Erstellung eines Einspruchs gegen Abschlepprechnungen und Leerfahrten in {{STADT_NAME}}.",
-    "offers": {
-      "@type": "Offer",
-      "price": "0.00",
-      "priceCurrency": "EUR"
-    }
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Widerspruchs-Generator: {{FALL_TITEL}}",
+  "applicationCategory": "LegalApplication",
+  "operatingSystem": "All",
+  "description": "{{META_DESCRIPTION}}",
+  "offers": {
+    "@type": "Offer",
+    "price": "0.00",
+    "priceCurrency": "EUR"
   }
-  </script>
+}
+</script>
 </head>
 
 <body>
@@ -40,7 +40,7 @@
 </header>
 
 <div class="page-container">
-  <h1>Auto in {{STADT_NAME}} abgeschleppt? So wehren Sie die Rechnung ab!</h1>
+  <h1>{{H1_TITEL}}</h1>
 
   <div style="text-align: center; margin: 15px 0 30px 0;">
     <a href="#abschleppForm" class="button-primary" style="display: inline-block; padding: 14px 28px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 1.1em; background: #b72d2d; color: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -61,7 +61,11 @@
     <div class="usp-item">Sofort-PDF für Behörden/Firmen</div>
   </div>
 
-  <p>Ein kurzer Einkauf, ein übersehenes Baustellen-Schild oder ein vermeintlich privater Parkplatz in <strong>{{STADT_NAME}}</strong> – und schon ist das Auto weg. Die böse Überraschung folgt bei der Abholung: Rechnungen von 250 € bis 500 € sind keine Seltenheit. Viele Autofahrer zahlen aus Schock sofort, um ihr Fahrzeug zurückzubekommen (Zahlung unter Vorbehalt). Doch egal, ob das Ordnungsamt oder ein privater Supermarkt-Betreiber den Kranwagen bestellt hat: Sehr oft ist das Abschleppen rechtswidrig oder maßlos überteuert!</p>
+<p>{{EINLEITUNGSTEXT}}</p>
+
+<div class="lokal-infobox">
+  {{FALL_INFOBOX}}
+</div>
 
   <ul style="margin-bottom: 25px; line-height: 1.6; font-size: 1.05em; background: #fdfdfd; padding: 20px 20px 20px 40px; border-radius: 8px; border: 1px solid #eaeaea;">
     <li><strong>Die 3-Tage-Frist (Baustellen / Umzug):</strong> Wenn für einen Umzug mobile Halteverbotsschilder aufgestellt werden, müssen diese laut Bundesverwaltungsgericht mindestens 3 volle Tage (72 Stunden) vorher stehen. Standen Sie vorher dort legal, dürfen Sie nicht auf eigene Kosten abgeschleppt werden!</li>
@@ -70,9 +74,9 @@
     <li><strong>Privatparkplatz-Wucher:</strong> Wurden Sie vom Supermarkt abgeschleppt und sollen 400 € zahlen? Der Bundesgerichtshof (BGH) urteilte, dass private Betreiber nur die <em>ortsüblichen Kosten</em> verlangen dürfen. Phantasie-Aufschläge sind illegal.</li>
   </ul>
 
-  <div class="lokal-infobox">
-    {{STADT_INFOBOX}}
-  </div>
+
+
+  
 
   <div class="legal-info-box">
     <strong>Wichtiger Hinweis zur Nutzung</strong><br>
@@ -86,7 +90,7 @@
   <!-- STARKES AFFILIATE BANNER -->
   <div class="lesson-learned-box" style="background: #fff3e0; border-left: 5px solid #b72d2d; padding: 20px; margin: 30px 0; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px; position: relative;">
     <span style="font-size: 0.7rem; color: #fff; background: #b72d2d; padding: 2px 8px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; position: absolute; top: 10px; right: 10px; font-weight: bold;">Anzeige</span>
-    <div style="font-size: 2.5em; line-height: 1;">🚨</div>
+    <div style="font-size: 2.5em; line-height: 1;"></div>
     <div>
       <h4 style="margin: 0 0 8px 0; color: #bf360c; font-size: 1.2em; padding-right: 70px;">Existenzrisiko: Abschlepp- & Gerichtskosten</h4>
       <p style="margin: 0 0 12px 0; font-size: 1em; color: #4e342e; line-height: 1.5;">
@@ -101,13 +105,13 @@
   <form id="abschleppForm">
     <fieldset style="border-color: #b72d2d; background: #fffdf7;">
       <legend style="background: #b72d2d; color: #333;">1. Daten der Gegenseite (Behörde / Firma)</legend>
-      <p style="font-size: 0.85em; color: #555; margin-top: 0;">Wer hat die Rechnung gestellt? (z.B. Ordnungsamt {{STADT_NAME}} oder Parkfirma)</p>
+      <p style="font-size: 0.85em; color: #555; margin-top: 0;">Wer hat die Rechnung gestellt? (z.B. Ordnungsamt oder Parkfirma)</p>
       <label>Name der Behörde / Abschleppunternehmen:</label>
       <input type="text" id="pFirma" placeholder="z. B. Ordnungsamt / Abschleppdienst Huber" required>
       <label>Straße und Hausnummer:</label>
       <input type="text" id="pFirmaStrasse" placeholder="z. B. Rathausplatz 1" required>
       <label>PLZ und Ort:</label>
-      <input type="text" id="pFirmaPLZOrt" placeholder="z.B. 12345 {{STADT_NAME}}" required>
+      <input type="text" id="pFirmaPLZOrt" placeholder="z.B. 10115 Berlin" required>
       
       <label>E-Mail-Adresse der Gegenseite:</label>
       <input type="email" id="pEmailFirma" placeholder="info@behoerde.de">
@@ -124,7 +128,7 @@
       <label>Ihre PLZ und Ort:</label>
       <input type="text" id="sPLZOrt" placeholder="z. B. 12345 Musterstadt" required>
       <label>Ihr Kfz-Kennzeichen:</label>
-      <input type="text" id="sKennzeichen" placeholder="z.B. {{STADT_KUERZEL}}-XX 123" required>
+      <input type="text" id="sKennzeichen" placeholder="z.B. B-XX 123" required>
     </fieldset>
 
     <fieldset>
@@ -132,7 +136,7 @@
       <label>Datum des Abschleppens:</label>
       <input type="date" id="pDatum" required>
       <label>Ort (Straße & Stadt):</label>
-      <input type="text" id="pOrt" value="in {{STADT_NAME}}, " placeholder="z.B. Hauptstraße 10, {{STADT_NAME}}" required>
+      <input type="text" id="pOrt" value="in , " placeholder="z.B. Hauptstraße 10, Ihre Stadt" required>
     </fieldset>
 
     <fieldset style="border-color: #b72d2d; background: #fff9f9;">
@@ -165,21 +169,21 @@
   <!-- START: SEO-ERWEITERUNG SUPERMÄRKTE & FAQS -->
 <div class="seo-extension-box" style="margin-top: 40px; border-top: 2px solid #eaeaea; padding-top: 30px;">
   
-  <h2>Abschlepp-Hotspots in {{STADT_NAME}}: Vorsicht auf Supermarkt-Parkplätzen</h2>
+  <h2>Abschlepp-Hotspots in Ihrer Stadt: Vorsicht auf Supermarkt-Parkplätzen</h2>
   <p>
-    Nicht nur das Ordnungsamt oder die Polizei lassen in <strong>{{STADT_NAME}}</strong> Fahrzeuge umsetzen. Ein Großteil aller Abschleppfälle betrifft mittlerweile private Grundstücke, insbesondere Kundenparkplätze von Discountern und Supermärkten. Wer beim Einkauf bei <strong>Aldi, Lidl, Kaufland, REWE, Edeka oder Netto</strong> die Parkscheibe vergisst oder die Höchstparkdauer überschreitet, erlebt oft eine böse Überraschung.
+    Nicht nur das Ordnungsamt oder die Polizei lassen in Ihrer Stadt Fahrzeuge umsetzen. Ein Großteil aller Abschleppfälle betrifft mittlerweile private Grundstücke, insbesondere Kundenparkplätze von Discountern und Supermärkten. Wer beim Einkauf bei <strong>Aldi, Lidl, Kaufland, REWE, Edeka oder Netto</strong> die Parkscheibe vergisst oder die Höchstparkdauer überschreitet, erlebt oft eine böse Überraschung.
   </p>
   
   <div style="background: #f5f5f5; padding: 20px; border-radius: 6px; margin: 20px 0; border-left: 4px solid #333;">
     <h4 style="margin-top: 0; color: #333;">Häufige Auslöser für private Abschlepp-Rechnungen:</h4>
     <ul style="line-height: 1.6; margin-bottom: 0;">
       <li><strong>Fehlende Parkscheibe:</strong> Private Parkraumüberwacher (wie <em>Fair Parken</em>, <em>Park & Control</em>, <em>PRM</em> oder <em>East Park</em>) kontrollieren im Auftrag der Märkte teils im Minutentakt.</li>
-      <li><strong>Einkauf beendet, Auto stehengelassen:</strong> Wer den Parkplatz nach dem Einkauf bei REWE oder Aldi in {{STADT_NAME}} als kostenlosen Dauerparkplatz nutzt, riskiert das sofortige Abschleppen.</li>
+      <li><strong>Einkauf beendet, Auto stehengelassen:</strong> Wer den Parkplatz nach dem Einkauf bei REWE oder Aldi in Ihrer Stadt als kostenlosen Dauerparkplatz nutzt, riskiert das sofortige Abschleppen.</li>
       <li><strong>Blockieren von Kunden-Ladesäulen:</strong> Das Parken auf E-Auto-Ladeplätzen ohne aktiven Ladevorgang wird immer häufiger sanktioniert.</li>
     </ul>
   </div>
 
-  <h3>Häufige Fragen (FAQ) zum Abschleppen in {{STADT_NAME}}</h3>
+  <h3>Häufige Fragen (FAQ) zum Abschleppen in Ihrer Region</h3>
   
   <div class="faq-item" style="margin-bottom: 20px;">
     <strong style="font-size: 1.1em; color: #b72d2d; display: block; margin-bottom: 5px;">
@@ -212,8 +216,8 @@
 <!-- ENDE: SEO-ERWEITERUNG -->
 
   <div class="seo-content">
-    <h2>Rechtslage in {{STADT_NAME}}: Wann ist Abschleppen erlaubt?</h2>
-    <p>Das Umsetzen oder Abschleppen eines Fahrzeugs ist ein massiver Eingriff in die Rechte des Halters. Die Behörden in <strong>{{STADT_NAME}}</strong> (Polizei oder Ordnungsamt) dürfen diesen Schritt nur als <em>letztes Mittel</em> (Ultima Ratio) anwenden, wenn die öffentliche Sicherheit und Ordnung massiv gestört ist. Im privaten Bereich (Kundenparkplätze) geht es hingegen um zivilrechtlichen Schadensersatz.</p>
+    <h2>Rechtslage: Wann ist Abschleppen erlaubt?</h2>
+    <p>Das Umsetzen oder Abschleppen eines Fahrzeugs ist ein massiver Eingriff in die Rechte des Halters. Die Behörden in <strong>Ihrer Stadt</strong> (Polizei oder Ordnungsamt) dürfen diesen Schritt nur als <em>letztes Mittel</em> (Ultima Ratio) anwenden, wenn die öffentliche Sicherheit und Ordnung massiv gestört ist. Im privaten Bereich (Kundenparkplätze) geht es hingegen um zivilrechtlichen Schadensersatz.</p>
 
     <h3>Die 72-Stunden-Frist für mobile Halteverbote</h3>
     <p>Besonders ärgerlich: Sie parken legal am Straßenrand, fahren in den Urlaub, und als Sie wiederkommen, ist das Auto weg, weil zwischenzeitlich ein Umzugsschild oder eine Baustelle eingerichtet wurde. Das Bundesverwaltungsgericht hat klar entschieden: Mobile Schilder müssen eine gewisse Vorlaufzeit haben. Die Rechtsprechung geht hier von <strong>drei vollen Tagen (72 Stunden)</strong> aus. Kann die Behörde nicht nachweisen, dass die Schilder rechtzeitig standen, müssen Sie die Abschleppkosten nicht zahlen.</p>
@@ -226,11 +230,30 @@
   </div>
 
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
-    <h3>Weitere Städte im Fokus:</h3>
+   <h3>Weitere Szenarien & Ratgeber:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
       {{BELIEBTE_LINKS}}
     </div>
   </div>
+
+  <div class="quellenbox">
+  <h3>Quellen: Auto abgeschleppt</h3>
+  <p class="hinweis">Abschleppmaßnahmen der Ordnungsbehörden richten sich meist nach Landesrecht (Polizei- und Vollstreckungsgesetze der Bundesländer); die bundesweiten Grundlagen sind:</p>
+  <ul>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/stvo_2013/__12.html" target="_blank" rel="noopener">§ 12 StVO – Halten und Parken (Grundlage des Verstoßes)</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/vwvg/BJNR001570953.html" target="_blank" rel="noopener">Verwaltungs-Vollstreckungsgesetz (VwVG) des Bundes</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/stvo_2013/__49.html" target="_blank" rel="noopener">§ 49 StVO – Ordnungswidrigkeiten</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+  </ul>
+</div>
 
 </div>
 
@@ -252,7 +275,7 @@
     <div class="lotse-card">
     <p>
         <strong>Auto abgeschleppt, Blitzer oder Parkverstoß?</strong><br>
-        Fix-My-Ticket prüft Ihren Anspruch auf Einspruch und Abwehr von Inkassoforderungen.<br>
+       Mit Fix-My-Ticket in wenigen Schritten das passende Einspruchsschreiben für Bußgeldminderung oder Führerscheinerhalt aufsetzen.<br>
         <em>Ein Service von Fix my Ticket.</em>
     </p>
     </div>

@@ -141,10 +141,10 @@
     <p style="margin-bottom: 20px; color: #666;">Wählen Sie die zuständige Region oder Bußgeldstelle aus, um den Dokumenten-Assistenten zu starten:</p>
 
     <div>
-      <label style="font-weight: bold; display: block; margin-bottom: 5px;">🚛 Zuständige Behörde auswählen:</label>
+      <label style="font-weight: bold; display: block; margin-bottom: 5px;">Passenden Fall auswählen:</label>
       <div style="display: flex; gap: 10px; flex-wrap: wrap;">
         <select id="routeLkw" style="flex: 1; min-width: 250px; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
-          <option value="">-- Stadt / Bußgeldstelle auswählen --</option>
+          <option value="">-- Szenario auswählen --</option>
           {{OPT_LKW}}
         </select>
         <button onclick="routeTo('routeLkw')" class="button-primary" style="padding: 10px 20px; background: #aa3131; color: #fff; font-weight: bold; border: none; border-radius: 4px; cursor: pointer;">Prüfung starten</button>
@@ -186,7 +186,7 @@
 
   <div class="lesson-learned-box" style="background: #f8f9fa; border-left: 4px solid #b72d2d; padding: 15px 20px; margin: 40px 0; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px; position: relative; overflow-wrap: break-word;">
     <span style="font-size: 0.7rem; color: #666; background: #eee; padding: 2px 6px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; position: absolute; top: 10px; right: 10px;">Anzeige</span>
-    <div style="font-size: 2em; line-height: 1;">🛡️</div>
+    <div style="font-size: 2em; line-height: 1;"></div>
     <div>
       <h4 style="margin: 0 0 5px 0; color: #333; font-size: 1.1em; padding-right: 60px;">Fachanwaltliche Vertretung im Transport- und Logistikrecht</h4>
       <p style="margin: 0 0 10px 0; font-size: 0.95em; color: #555;">
@@ -204,11 +204,11 @@
     
     <!-- HIER IST DER FIX FÜR DIE LINK-MASSE: Das Accordion (details/summary) -->
     <details class="seo-links">
-      <summary>🗺️ Alle Regionen & Behörden anzeigen</summary>
+      <summary>Alle Szenarien und Fälle anzeigen</summary>
       
       <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd;">
         <div style="flex: 1; min-width: 250px;">
-          <h3 style="color: #333; font-size: 1.1em;">LKW-Einsprüche nach Städten</h3>
+          <h3 style="color: #333; font-size: 1.1em;">LKW-Einsprüche - Szenarien</h3>
           <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.95em; word-break: break-all;">
             {{LINK_LKW}}
           </div>

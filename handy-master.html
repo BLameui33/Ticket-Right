@@ -2,34 +2,59 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Handy am Steuer {{STADT_NAME}}: Gratis-Einspruch (PDF)</title>
-  <meta name="description" content="Handyverstoß in {{STADT_NAME}} vorgeworfen? Nutzen Sie den Umlagerungs-Ansatz, Start-Stop-Fehler oder weitere OLG-Urteile, um das Bußgeld und Punkte kostenlos abzuwehren.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="canonical" href="https://fix-my-ticket.de/{{DATEINAME}}">
-  <meta property="og:title" content="Handy am Steuer in {{STADT_NAME}} – Kostenloser Einspruch">
-  <meta property="og:description" content="Handy oder Powerbank? So wehren Sie den Bußgeldbescheid wegen Smartphone-Nutzung am Steuer ab.">
-  <meta property="og:type" content="website">
+  <title>{{FALL_TITEL}} | Einspruch-Generator & PDF</title>
+<meta name="description" content="{{META_DESCRIPTION}}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="canonical" href="https://fix-my-ticket.de/{{DATEINAME}}">
+<meta property="og:title" content="{{FALL_TITEL}}">
+<meta property="og:description" content="Handy oder Powerbank? So wehren Sie den Bußgeldbescheid wegen Smartphone-Nutzung am Steuer ab. Schnell, formal korrekt & 100% kostenlos.">
+<meta property="og:type" content="website">
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="/logo-lotse-fav.png">
   
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Einspruchs-Generator: Handy am Steuer / Mobiltelefon-Nutzung",
-    "applicationCategory": "LegalApplication",
-    "operatingSystem": "All",
-    "description": "Kostenloses Tool zur Erstellung eines formal korrekten Einspruchs gegen Bußgeldbescheide wegen Handy am Steuer.",
-    "offers": {
-      "@type": "Offer",
-      "price": "0.00",
-      "priceCurrency": "EUR"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Einspruchs-Generator: {{FALL_TITEL}}",
+      "applicationCategory": "LegalApplication",
+      "operatingSystem": "All",
+      "description": "{{META_DESCRIPTION}}",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "EUR"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Ist es erlaubt, das Handy im Auto nur in die Hand zu nehmen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nein, das Aufnehmen ist grundsätzlich untersagt, wenn es zur Nutzung dient. Reines Umlagern ohne Blick aufs Display oder Nutzung ist laut ständiger OLG-Rechtsprechung jedoch kein Verstoß."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was gilt bei Handy am Steuer mit Start-Stop-Automatik?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wenn das Fahrzeug steht (z.B. rote Ampel) und der Motor durch die Start-Stop-Automatik vollständig ausgeschaltet ist, greift die Ausnahmeregelung nach § 23 Abs. 1a StVO."
+          }
+        }
+      ]
     }
-  }
-  </script>
+  ]
+}
+</script>
   
   <!-- FAQ Schema for SEO -->
   <script type="application/ld+json">
@@ -63,7 +88,7 @@
 </header>
 
 <div class="page-container">
-  <h1>Handy am Steuer in {{STADT_NAME}}? Bußgeldbescheid kostenlos anfechten!</h1>
+<h1>{{H1_TITEL}}</h1>
 
   <div class="back-to-hub-banner">
     <a href="blitzer-bussgeld-info.html">
@@ -78,7 +103,11 @@
     <div class="usp-item">Schutz vor Flensburger Punkten</div>
   </div>
 
-  <p>Ihnen wird von der Bußgeldstelle <strong>{{STADT_NAME}}</strong> vorgeworfen, während der Fahrt das Handy oder Smartphone vorschriftswidrig genutzt zu haben? Seit der Verschärfung des Bußgeldkatalogs kostet das mindestens **100 € und bringt 1 Punkt in Flensburg** – für Fahranfänger bedeutet das sogar ein Aufbauseminar und Probezeitverlängerung. Wurde zudem eine Gefährdung festgestellt, droht sogar ein einmonatiges Fahrverbot und 150 € Strafe. Was viele Autofahrer jedoch nicht wissen: Das bloße Halten oder Aufheben eines Handys ist laut ständiger OLG-Rechtsprechung **nicht zwingend strafbar**. Nutzen Sie unseren Generator, um Formfehler, schlechte Beweisfotos und technische Unklarheiten der Behörden kostenlos anzugreifen.</p>
+<p>{{EINLEITUNGSTEXT}}</p>
+
+ <div class="lokal-infobox">
+    {{FALL_INFOBOX}}
+</div>
 
   <!-- JUMP TO GENERATOR BUTTON -->
   <div style="text-align: center; margin: 30px 0;">
@@ -86,7 +115,7 @@
   </div>
 
   <div class="quick-facts-box" style="background: #eef5fa; border: 1px solid #b6d4fe; padding: 20px; border-radius: 8px; margin: 25px 0;">
-    <h2 style="margin-top: 0; font-size: 1.2em; color: #084298;">⚠️ Auf einen Blick: Das droht beim Handyverstoß (Stand 2026)</h2>
+    <h2 style="margin-top: 0; font-size: 1.2em; color: #084298;">Auf einen Blick: Das droht beim Handyverstoß (Stand 2026)</h2>
     <ul style="margin: 0; padding-left: 20px; line-height: 1.6; color: #333;">
       <li><strong>Der Regelfall:</strong> 100 € Bußgeld + 1 Punkt in Flensburg</li>
       <li><strong>Mit Gefährdung:</strong> 150 € Bußgeld + 2 Punkte + 1 Monat Fahrverbot</li>
@@ -112,7 +141,7 @@
 
   <div class="lesson-learned-box" style="background: #f8f9fa; border-left: 4px solid #ffb300; padding: 15px 20px; margin: 30px 0; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px; position: relative;">
     <span style="font-size: 0.7rem; color: #666; background: #eee; padding: 2px 6px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; position: absolute; top: 10px; right: 10px;">Anzeige</span>
-    <div style="font-size: 2em; line-height: 1;">📱</div>
+    <div style="font-size: 2em; line-height: 1;"></div>
     <div>
       <h4 style="margin: 0 0 5px 0; color: #333; font-size: 1.1em; padding-right: 60px;">Punkt verhindern – Rechtsschutz nutzen</h4>
       <p style="margin: 0 0 10px 0; font-size: 0.95em; color: #555;">
@@ -134,21 +163,21 @@
       <label>Straße und Hausnummer:</label>
       <input type="text" id="sStrasse" placeholder="z.B. Musterstraße 1" required>
       <label>PLZ und Ort:</label>
-      <input type="text" id="sPLZOrt" placeholder="z.B. 12345 {{STADT_NAME}}" required>
+      <input type="text" id="sPLZOrt" placeholder="z.B. 12345 Musterstadt" required>
       <label>Kfz-Kennzeichen des Fahrzeugs:</label>
-      <input type="text" id="sKennzeichen" placeholder="z.B. {{STADT_KUERZEL}}-XX 123" required>
+      <input type="text" id="sKennzeichen" placeholder="z.B. B-XX 123" required>
     </fieldset>
 
     <fieldset style="border-color: #d32f2f; background: #fff9f9;">
       <legend style="background: #d32f2f; color: #fff;">2. Daten des Schreibens & Behörde</legend>
       <label>Zuständige Bußgeldstelle / Behörde:</label>
-      <input type="text" id="pBehoerde" value="Zentrale Bußgeldstelle {{STADT_NAME}}" required>
+      <input type="text" id="pBehoerde" placeholder="Zentrale Bußgeldstelle Musterstadt" required>
       <label>Straße / Postfach der Behörde:</label>
       <input type="text" id="pBehoerdeStrasse" placeholder="z.B. Postfach 12 34 oder Musterstraße 1" required>
       <label>PLZ und Ort der Behörde:</label>
-      <input type="text" id="pBehoerdeOrt" placeholder="z.B. 12345 {{STADT_NAME}}" required>
+      <input type="text" id="pBehoerdeOrt" placeholder="z.B. 12345 Musterstadt" required>
       <label>E-Mail der Behörde (für Online-Anhörung):</label>
-      <input type="email" id="pEmailBehoerde" value="" placeholder="bussgeldstelle@{{STADT_NAME_LOW}}.de">
+      <input type="email" id="pEmailBehoerde" value="" placeholder="bussgeldstelle@info.de">
       <label>Aktenzeichen (siehe Brief oben rechts):</label>
       <input type="text" id="pAktenzeichen" placeholder="z.B. HA-123.456" required>
       <label>Art des Schreibens:</label>
@@ -194,7 +223,7 @@
   </form>
 
   <div class="seo-content">
-    <h2>Handyverstoß in {{STADT_NAME}}: Warum viele Bußgelder nach dem Bußgeldkatalog wackeln</h2>
+    <h2>Handyverstoß: Warum viele Bußgelder nach dem Bußgeldkatalog wackeln</h2>
     <p>Laut § 23 Abs. 1a StVO ist die Nutzung eines elektronischen Gerätes am Steuer untersagt, wenn das Gerät hierfür aufgenommen oder gehalten werden muss. Doch die Rechtsprechung der Oberlandesgerichte (OLG) zieht sehr genaue Grenzen, die Bußgeldstellen bei der massenhaften Abwicklung oft übersehen. Ein einziger Punkt in Flensburg kann entscheidend sein, weshalb eine Verteidigung oft lohnenswert ist.</p>
 
     <h3>Der „Umlagerungs“-Ansatz (Keine verbotene Nutzung)</h3>
@@ -204,7 +233,7 @@
     <p>Die von Filmgurten, Zeugen oder neuen Brücken-Monocams (Handy-Blitzer) angefertigten Beweisbilder sind oft pixelig und kontrastarm. Was für den Beamten am Bildschirm wie ein Smartphone aussieht, ist in der Realität oft eine Powerbank, ein schwarzes Lederportemonnaie, ein Brillenetui oder ein elektrischer Rasierer. Im Ordnungswidrigkeitenverfahren gilt der Grundsatz **„In dubio pro reo“ (Im Zweifel für den Angeklagten)**. Die Behörde muss zweifelsfrei beweisen, dass es sich um ein Telekommunikationsgerät handelte.</p>
 
     <h3>Der Start-Stop-Ansatz (Motor aus nach § 23 StVO)</h3>
-    <p>Das Handyverbot gilt ausnahmslos nur bei *laufendem Motor*. Stehen Sie in {{STADT_NAME}} an einer roten Ampel, im Stau oder vor einer geschlossenen Bahnschranke und der Motor ist **vollständig ausgeschaltet** (egal ob manuell per Schlüssel/Knopf oder automatisch durch eine moderne **Start-Stop-Automatik**), erlischt das Nutzungsverbot! In diesem Moment dürfen Sie das Smartphone legal in die Hand nehmen und bedienen. Erst beim Anspringen des Motors muss das Gerät wieder abgelegt sein.</p>
+    <p>Das Handyverbot gilt ausnahmslos nur bei *laufendem Motor*. Stehen Sie an einer roten Ampel, im Stau oder vor einer geschlossenen Bahnschranke und der Motor ist **vollständig ausgeschaltet** (egal ob manuell per Schlüssel/Knopf oder automatisch durch eine moderne **Start-Stop-Automatik**), erlischt das Nutzungsverbot! In diesem Moment dürfen Sie das Smartphone legal in die Hand nehmen und bedienen. Erst beim Anspringen des Motors muss das Gerät wieder abgelegt sein.</p>
 
     <h3>Rechtfertigender Notstand & Seitenstreifen</h3>
     <p>Wer aus einer zwingenden Notlage heraus einen Notruf (112 / 110) absetzen muss und keine andere Möglichkeit hat, handelt laut § 16 OWiG gerechtfertigt. Ebenso ist das Telefonieren erlaubt, wenn das Fahrzeug bei ausgeschaltetem Motor ordnungsgemäß abgestellt wurde – auch wenn dies auf dem Pannenstreifen oder am rechten Fahrbahnrand geschieht.</p>
@@ -225,16 +254,36 @@
     </details>
   </div>
 
-  <div class="lokal-infobox">
-    {{STADT_INFOBOX}}
-</div>
+ 
 
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
-    <h3>Weitere Städte im Handy-Bußgeld-Check:</h3>
+    <h3>Weitere Ratgeber & Szenarien zum Thema Handy-verstoß:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
       {{BELIEBTE_LINKS}}
     </div>
   </div>
+
+  <div class="quellenbox">
+  <h3>Quellen: Handy am Steuer</h3>
+  <ul>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/stvo_2013/__23.html" target="_blank" rel="noopener">§ 23 StVO – Sonstige Pflichten (Abs. 1a: elektronische Geräte)</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/stvo_2013/__49.html" target="_blank" rel="noopener">§ 49 StVO – Ordnungswidrigkeiten</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/stvg/__24.html" target="_blank" rel="noopener">§ 24 StVG – Bußgeldvorschriften</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/bkatv_2013/" target="_blank" rel="noopener">Bußgeldkatalog-Verordnung (BKatV)</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+  </ul>
+</div>
 
 </div>
 
@@ -258,7 +307,7 @@
     <div class="lotse-card">
     <p>
         <strong>Bußgeldbescheid, Parkverstoß oder Blitzerbescheid?</strong><br>
-Fix-My-Ticket prüft in wenigen Schritten Ihren Anspruch auf Einspruch, Bußgeldminderung oder Führerscheinerhalt.<br>
+Mit Fix-My-Ticket in wenigen Schritten das passende Einspruchsschreiben für Bußgeldminderung oder Führerscheinerhalt aufsetzen.<br>
 <em>Ein Service von Fix my Ticket.</em>
     </p>
 </div>

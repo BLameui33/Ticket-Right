@@ -2,35 +2,59 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>LKW-Bußgeld {{STADT_NAME}}: Gratis Einspruch (PDF)</title>
-  <meta name="description" content="LKW-Bußgeldbescheid (BALM / Ordnungsamt {{STADT_NAME}}) wegen Lenkzeiten oder Überladung erhalten? Retten Sie Ihren Job mit unseren Ansätze.">
-  <meta name="keywords" content="LKW Bußgeld {{STADT_NAME}}, Einspruch Lenkzeiten, Überladung Strafe, BALM Bescheid, mobile Waage anfechten, Verkehrsrecht, Muster Einspruch LKW">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="canonical" href="https://fix-my-ticket.de/{{DATEINAME}}">
-  <meta property="og:title" content="LKW-Strafe in {{STADT_NAME}} anfechten – Kostenloser Einspruch">
-  <meta property="og:description" content="Nutzen Sie § 12 VO (EG) 561/2006 bei Parkplatznot oder fechten Sie mobile Waagen an.">
-  <meta property="og:type" content="website">
+  <title>{{FALL_TITEL}} | Einspruch-Generator & PDF</title>
+<meta name="description" content="{{META_DESCRIPTION}}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="canonical" href="https://fix-my-ticket.de/{{DATEINAME}}">
+<meta property="og:title" content="{{FALL_TITEL}}">
+<meta property="og:description" content="Nutzen Sie § 12 VO (EG) 561/2006 bei Parkplatznot oder fechten Sie mobile Waagen an. Schnell, formal korrekt & 100% kostenlos.">
+<meta property="og:type" content="website">
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="/logo-lotse-fav.png">
   
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Einspruchs-Generator: LKW-Verstöße & Berufskraftfahrer",
-    "applicationCategory": "LegalApplication",
-    "operatingSystem": "All",
-    "description": "Kostenloses Tool zur Erstellung eines Einspruchs gegen LKW-Bußgeldbescheide (Lenkzeiten, Überladung, BAG/BALM).",
-    "offers": {
-      "@type": "Offer",
-      "price": "0.00",
-      "priceCurrency": "EUR"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Einspruchs-Generator: {{FALL_TITEL}}",
+      "applicationCategory": "LegalApplication",
+      "operatingSystem": "All",
+      "description": "{{META_DESCRIPTION}}",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "EUR"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Darf man die Lenkzeit bei Parkplatzmangel überschreiten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gemäß Art. 12 VO (EG) Nr. 561/2006 darf der Fahrer von den Lenkzeiten abweichen, um einen geeigneten Halteplatz zu erreichen. Voraussetzung ist, dass der Grund handschriftlich auf dem Tachografenausdruck vermerkt wird."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Sind mobile LKW-Radlastwaagen anfechtbar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, mobile Waagen erfordern zwingend ebenen Untergrund, exakte Aufbaubedingungen und gültige Eichscheine. Fehlende Neigungsausgleiche führen häufig zu Messfehlern bei Achslasten."
+          }
+        }
+      ]
     }
-  }
-  </script>
+  ]
+}
+</script>
 </head>
 
 <body>
@@ -41,7 +65,7 @@
 </header>
 
 <div class="page-container">
-  <h1>LKW-Strafe in {{STADT_NAME}}? Retten Sie Ihre Existenz!</h1>
+  <h1>{{H1_TITEL}}</h1>
   
   <div style="text-align: center; margin: 15px 0 30px 0;">
     <a href="#lkwForm" class="button-primary" style="display: inline-block; padding: 14px 28px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 1.1em; background: #d32f2f; color: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -56,12 +80,18 @@
     <div class="usp-item">Sicherung des Führerscheins</div>
   </div>
 
-  <p>Für Berufskraftfahrer bedeuten Bußgelder oft den direkten Angriff auf die berufliche Existenz. Die Kontrollbehörden (wie das BALM, ehemals BAG, oder die Verkehrspolizei <strong>{{STADT_NAME}}</strong>) verhängen bei Lenkzeitüberschreitungen oder Überladung drastische Strafen. Was die Behörden oft verschweigen: Es gibt rechtliche Ausnahmezustände! War absolut kein sicherer LKW-Parkplatz frei? Stand die mobile Waage der Polizei auf leicht unebenem Boden?</p>
-  
+<p>{{EINLEITUNGSTEXT}}</p>
+
+<!-- INFOBOX ANPASSUNG -->
+<div class="lokal-infobox">
+  {{FALL_INFOBOX}}
+</div>
+
+
   <ul style="margin-bottom: 25px; line-height: 1.6; font-size: 1.05em; background: #fdfdfd; padding: 20px 20px 20px 40px; border-radius: 8px; border: 1px solid #eaeaea;">
-    <li><strong>Lokale Kontroll-Hotspots in {{STADT_NAME}}:</strong> Massive Zunahme von BALM- / BAG-Kontrollen an Autobahnparkplätzen, Bundesstraßen und Mautstationen in der Region.</li>
+    <li><strong>Lokale Kontroll-Hotspots:</strong> Massive Zunahme von BALM- / BAG-Kontrollen an Autobahnparkplätzen, Bundesstraßen und Mautstationen in der Region.</li>
     <li><strong>Gefahr durch Lenk- & Ruhezeitverstöße (VO EG Nr. 561/2006):</strong> Bereits geringe Abweichungen auf dem digitalen Tachografen kosten Fahrer und Halter schnell Hunderte Euro Strafe.</li>
-    <li><strong>Fokus auf Überladung (Achslast & Gesamtgewicht):</strong> Mobile Radlastwaagen in und um {{STADT_NAME}} sind extrem fehleranfällig. Ohne korrekten Toleranzabzug und absolut ebenen Untergrund ist die Messung juristisch angreifbar.</li>
+    <li><strong>Fokus auf Überladung (Achslast & Gesamtgewicht):</strong> Mobile Radlastwaagen in und um ihrer Region sind extrem fehleranfällig. Ohne korrekten Toleranzabzug und absolut ebenen Untergrund ist die Messung juristisch angreifbar.</li>
     <li><strong>Scharfe LKW-Blitzer & Abstandsmessungen:</strong> Schwere LKW (> 3,5t / 7,5t) unterliegen strengeren Tempolimits und der 50-Meter-Abstandsregel auf Autobahnen – automatisierte Messanlagen produzieren hier häufig eklatante Fehler bei der Fahrzeugzuordnung.</li>
   </ul>
 
@@ -101,14 +131,14 @@
       <p style="font-size: 0.85em; color: #555; margin-top: 0;">Geben Sie hier die Postadresse der Behörde ein, damit sie passgenau im PDF-Briefkopf für einen Fensterumschlag erscheint.</p>
       
       <label>Name der Behörde:</label>
-      <input type="text" id="pBehoerde" value="Bußgeldstelle {{STADT_NAME}} / BALM" required>
+      <input type="text" id="pBehoerde" placeholder="Bußgeldstelle Musterstadt / BALM" required>
       <label>Straße und Hausnummer der Behörde:</label>
       <input type="text" id="pBehoerdeStrasse" placeholder="z. B. Behördenweg 1" required>
       <label>PLZ und Ort der Behörde:</label>
-      <input type="text" id="pBehoerdePLZOrt" placeholder="z. B. 12345 {{STADT_NAME}}" required>
+      <input type="text" id="pBehoerdePLZOrt" placeholder="z. B. 12345 Musterstadt" required>
       
       <label>E-Mail der Behörde (falls Sie per Mail senden möchten):</label>
-      <input type="email" id="pEmailBehoerde" value="" placeholder="bussgeldstelle@{{STADT_NAME_LOW}}.de">
+      <input type="email" id="pEmailBehoerde" value="" placeholder="bussgeldstelle@info.de">
       
       <label>Aktenzeichen (siehe Brief oben rechts):</label>
       <input type="text" id="pAktenzeichen" placeholder="z.B. LKW-987.654" required>
@@ -128,7 +158,7 @@
       <label>Ihre PLZ und Ort:</label>
       <input type="text" id="sPLZOrt" placeholder="z. B. 12345 Wohnort" required>
       <label>Kennzeichen (Zugmaschine):</label>
-      <input type="text" id="sKennzeichen" placeholder="z.B. {{STADT_KUERZEL}}-LKW 123" required>
+      <input type="text" id="sKennzeichen" placeholder="z.B. B-LKW 123" required>
     </fieldset>
 
     <fieldset>
@@ -178,8 +208,8 @@
     </fieldset>
 
     <div class="submit-area" style="display: flex; gap: 15px; flex-wrap: wrap;">
-      <button type="submit" class="button-primary" style="flex: 1;">📄 PDF-Einspruch generieren (Post)</button>
-      <button type="button" id="btnEmail" class="button-secondary" style="flex: 1; background: #333; color: white; border: none; padding: 12px; font-weight: bold; cursor: pointer; border-radius: 4px;">✉️ Text kopieren & Mail senden</button>
+      <button type="submit" class="button-primary" style="flex: 1;">PDF-Einspruch generieren (Post)</button>
+      <button type="button" id="btnEmail" class="button-secondary" style="flex: 1; background: #333; color: white; border: none; padding: 12px; font-weight: bold; cursor: pointer; border-radius: 4px;">Text kopieren & Mail senden</button>
     </div>
     <p class="submit-disclaimer" style="text-align: center; margin-top: 10px;">
         Die folgenden Einspruchsgründe sind typische Standardargumente, die Betroffene in vergleichbaren Fällen häufig verwenden. Welcher Ansatz auf Ihren Fall zutrifft, müssen Sie selbst beurteilen – wir empfehlen keinen konkreten Rechtsweg.
@@ -187,8 +217,8 @@
   </form>
 
   <div class="seo-content">
-    <h2>LKW-Bußgelder in {{STADT_NAME}}: Die Tricks der Kontrolleure</h2>
-    <p>Verkehrskontrollen bei schweren Nutzfahrzeugen (LKW ab 3,5t oder 7,5t) sind für die Behörden ein lukratives Geschäft. Oft ermitteln das Bundesamt für Logistik und Mobilität (BALM) oder die lokale Autobahnpolizei in <strong>{{STADT_NAME}}</strong> mit Methoden, die rechtlich äußerst fragwürdig sind.</p>
+    <h2>LKW-Bußgelder: Die Tricks der Kontrolleure</h2>
+    <p>Verkehrskontrollen bei schweren Nutzfahrzeugen (LKW ab 3,5t oder 7,5t) sind für die Behörden ein lukratives Geschäft. Oft ermitteln das Bundesamt für Logistik und Mobilität (BALM) oder die lokale Autobahnpolizei in ihrer Region mit Methoden, die rechtlich äußerst fragwürdig sind.</p>
 
     <h3>Der „Höhere Gewalt“-Notstand bei Lenkzeiten (§ 12 VO)</h3>
     <p>Die Lenk- und Ruhezeiten sind streng geregelt. Doch was passiert, wenn die vorgeschriebene Fahrzeit abläuft, aber alle LKW-Parkplätze restlos überfüllt sind, ein Stau durch einen Unfall die Strecke blockiert oder extremes Unwetter herrscht? <strong>Das Gesetz kennt hier Gnade!</strong> Gemäß Art. 12 der EU-Verordnung 561/2006 darf ein Fahrer von den Zeiten abweichen, um einen <em>geeigneten Halteplatz</em> zur Gewährleistung der Sicherheit von Personen und Ladung zu erreichen. <strong>Wichtig:</strong> Der Fahrer muss dies sofort auf dem Ausdruck des Kontrollgeräts handschriftlich vermerken! Wenn Sie diesen Zettel bei der Behörde einreichen, muss das Verfahren oft zwingend eingestellt werden.</p>
@@ -200,16 +230,41 @@
     <p>Beim Auslesen der digitalen Fahrerkarte und des Massenspeichers (Tachograf) kommt es häufig zu Software-Interpretationsfehlern bei der Zuordnung von "Bereitschaftszeit" (Out of Scope) und "Lenkzeit". Ein vorschnell ausgestellter Bescheid der Bußgeldstelle stützt sich oft nur auf das automatische Fehlerprotokoll, ohne die realen Umstände der Fahrt zu prüfen.</p>
   </div>
 
-  <div class="lokal-infobox">
-    {{STADT_INFOBOX}}
+ 
+
+<div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
+  <h3>Weitere LKW-Szenarien & Transportrecht-Ratgeber:</h3>
+  <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
+    {{BELIEBTE_LINKS}}
+  </div>
 </div>
 
-  <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
-    <h3>Weitere Städte & Kontroll-Hotspots:</h3>
-    <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-      {{BELIEBTE_LINKS}}
-    </div>
-  </div>
+<!-- Box 6: LKW-Strafe (Ruhezeiten, Überladung, Blitzer & Abstand) -->
+<div class="quellenbox">
+  <h3>Quellen: LKW-Strafen (Ruhezeiten, Überladung, Blitzer &amp; Abstand)</h3>
+  <ul>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/fahrpersstg/BJNR002770971.html" target="_blank" rel="noopener">Fahrpersonalgesetz (FPersG)</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/fpersv/BJNR188210005.html" target="_blank" rel="noopener">Fahrpersonalverordnung (FPersV) – Lenk- und Ruhezeiten</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/stvzo_2012/__34.html" target="_blank" rel="noopener">§ 34 StVZO – Achslast und Gesamtgewicht (Überladung)</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/bkatv_2013/" target="_blank" rel="noopener">Bußgeldkatalog-Verordnung (BKatV)</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+    <li>
+      <a href="https://www.balm.bund.de/DE/Themen/RechtsentwicklungRechtsvorschriften/Rechtsvorschriften/Fahrpersonalrecht/fahrpersonalrecht_node.html" target="_blank" rel="noopener">Bundesamt für Logistik und Mobilität (BALM) – Fahrpersonalrecht</a>
+      <span class="quelle-label">balm.bund.de</span>
+    </li>
+  </ul>
+</div>
 
 </div>
 
@@ -233,7 +288,7 @@
     <div class="lotse-card">
     <p>
         <strong>Bußgeldbescheid, Parkverstoß oder Blitzerbescheid?</strong><br>
-Fix-My-Ticket prüft in wenigen Schritten Ihren Anspruch auf Einspruch, Bußgeldminderung oder Führerscheinerhalt.<br>
+Mit Fix-My-Ticket in wenigen Schritten das passende Einspruchsschreiben für Bußgeldminderung oder Führerscheinerhalt aufsetzen.<br>
 <em>Ein Service von Fix my Ticket.</em>
     </p>
 </div>

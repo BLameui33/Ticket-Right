@@ -2545,6 +2545,81 @@ footer div a:hover {
     }
 }
 
+/* ==========================================================================
+   QUELLENBOX (im Design der Crosslink-Box)
+   ========================================================================== */
+.quellenbox {
+  background: var(--surface, #f9f9f9);
+  border: 1px solid var(--border, #e0e0e0);
+  border-radius: var(--radius-lg, 8px);
+  padding: 24px 28px;
+  margin: 40px 0;
+  position: relative;
+  overflow: hidden;
+  /* Keine max-width Beschränkung mehr, damit sie volle Breite nutzt */
+}
 
+/* Dezenter Rot-Akzent oben links */
+.quellenbox::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary, #b71c1c), transparent 70%);
+}
 
+.quellenbox h3 {
+  font-family: var(--font-display, inherit);
+  font-size: 0.95em;
+  font-weight: 700;
+  color: var(--text-muted, #666666);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 16px 0;
+}
 
+/* Flexbox-Container: ordnet die Quellen nebeneinander an */
+.quellenbox ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Jede Quelle wird als interaktive Chip/Card dargestellt */
+.quellenbox li {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 14px;
+  background: var(--box-bg, #ffffff);
+  border: 1.5px solid var(--border, #e0e0e0);
+  border-radius: 12px;
+  margin: 0;
+  transition: background 0.18s, border-color 0.18s, transform 0.12s, box-shadow 0.18s;
+}
+
+.quellenbox li:hover {
+  border-color: var(--primary, #b71c1c);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(183, 28, 28, 0.15);
+}
+
+.quellenbox a {
+  font-family: var(--font-body, inherit);
+  font-size: 0.855em;
+  font-weight: 600;
+  color: var(--primary-dark, #1a1a1a);
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.quellenbox .quelle-label {
+  display: block;
+  font-size: 0.75em;
+  color: var(--text-muted, #888888);
+  margin-top: 3px;
+}

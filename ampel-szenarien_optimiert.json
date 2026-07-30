@@ -1,0 +1,128 @@
+[
+  {
+    "slug": "rotlichtverstoss-ampelblitzer-allgemein-einspruch",
+    "fall_titel": "Ampelblitzer Rot: Einspruch Muster kostenlos | PDF",
+    "h1_titel": "Über Rot gefahren? Hohe Strafen beim Ampelblitzer abwehren!",
+    "meta_description": "Ampelblitzer-Bescheid erhalten? Jetzt kostenlos Muster erstellen und Bußgeld, Punkte oder Fahrverbot gezielt angreifen.",
+    "einleitungstext": "Der Bußgeldbescheid liegt im Briefkasten, dazu drohen Punkte, hohe Kosten oder sogar ein Fahrverbot. Gerade bei Ampelblitzern sind Messung, Foto und Ampelschaltung oft angreifbar. Wenn Sie jetzt die richtigen Angaben machen, können Sie Ihren Fall gezielt auf Fehler aufbauen und direkt ein starkes kostenloses Muster erstellen.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Diese Angriffspunkte zählen wirklich</h4><p>Bei Rotlichtfällen lohnt der Blick in die Akte fast immer: Entscheidend sind die konkrete Rotzeit, das Messverfahren, die Auswertung der Induktionsschleifen und die Fahreridentifikation. Bei standardisierten Messverfahren müssen Eichung und Bedienung lückenlos dokumentiert sein; fehlen Eichschein, Wartungsnachweise oder Schulungsbelege, ist die Messung angreifbar. Wichtig ist außerdem die Verfolgungsverjährung nach § 26 Abs. 3 StVG: Ohne wirksame Unterbrechung verjährt die Ordnungswidrigkeit regelmäßig nach 6 Monaten ab Tattag. Auch ein unscharfes Foto, verdeckte Ampelsicht oder ein fehlerhaftes zweites Beweisfoto können den Vorwurf zu Fall bringen.</p>",
+    "default_strategie": "allgemein_rotlicht"
+  },
+  {
+    "slug": "qualifizierter-rotlichtverstoss-ueber-1-sekunde-fahrverbot",
+    "fall_titel": "Über 1 Sekunde Rot: Fahrverbot abwehren | PDF",
+    "h1_titel": "Über 1 Sekunde Rot? So umgehen Sie das Fahrverbot!",
+    "meta_description": "1 Monat Fahrverbot wegen Rot über 1 Sekunde? Jetzt kostenlos Muster erstellen und Rotzeit, Toleranz und Messfehler angreifen.",
+    "einleitungstext": "Ein qualifizierter Rotlichtverstoß trifft hart: 2 Punkte, hohes Bußgeld und meist 1 Monat Fahrverbot. Gerade wenn Sie beruflich auf den Führerschein angewiesen sind, zählt jedes Detail der Messung. Schon kleine Fehler bei Rotzeit, Toleranz oder Dokumentation können den Vorwurf unter die 1-Sekunden-Grenze drücken. Starten Sie jetzt Ihr kostenloses Muster.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Die 1-Sekunden-Grenze ist oft angreifbar</h4><p>Beim qualifizierten Rotlichtverstoß entscheidet die exakte Rotzeit über das Fahrverbot. Liegt der Messwert nur knapp über 1,0 Sekunden, muss die Behörde gerätespezifische Toleranzen korrekt berücksichtigen. Besonders bei Werten wie 1,01 bis 1,10 Sekunden lohnt sich der Angriff auf Schaltprotokoll, Auswertefoto und Synchronisation zwischen Ampelanlage und Messkamera. Fehlen Nachweise zur Eichung oder zur ordnungsgemäßen Inbetriebnahme des Systems, ist das standardisierte Messverfahren erschüttert. Selbst wenn der Verstoß bleibt, kann bei besonderer Härte eine Abweichung vom Regelfahrverbot in Betracht kommen, etwa bei konkreter Existenzgefährdung durch Arbeitsplatzverlust.</p>",
+    "default_strategie": "ueber_1_sekunde"
+  },
+  {
+    "slug": "einfacher-rotlichtverstoss-unter-1-sekunde",
+    "fall_titel": "Unter 1 Sekunde Rot: 1 Punkt abwehren | PDF",
+    "h1_titel": "Knapp bei Rot geblitzt? Punkte & Bußgeld vermeiden!",
+    "meta_description": "Unter 1 Sekunde Rot geblitzt? Jetzt kostenlos Muster erstellen und 1 Punkt, Bußgeld sowie Messfehler gezielt angreifen.",
+    "einleitungstext": "Auch unter 1 Sekunde Rot ist der Ärger groß: Bußgeld, 1 Punkt und ein Eintrag in Flensburg. Viele Betroffene ärgern sich besonders, weil die Ampel gerade erst umgesprungen war. Genau hier liegen oft die besten Ansatzpunkte. Mit den richtigen Angaben erstellen Sie jetzt ein kostenloses Muster gegen Foto-, Sicht- und Messfehler.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Gerade kurze Rotzeiten bieten Chancen</h4><p>Beim einfachen Rotlichtverstoß steht meist die Frage im Raum, ob Sie die Haltelinie tatsächlich bei Rot überfahren haben und ob die Ampel überhaupt rechtzeitig erkennbar war. Relevant sind die Gelbphase nach der Verwaltungsvorschrift zur StVO, die Sicht auf das Signal und die genaue Auslösung der Induktionsschleifen. War die Gelbphase zu kurz oder die Ampel durch Lkw, Sonne oder bauliche Gegebenheiten verdeckt, fehlt es oft an einem sicheren Vorwurf. Auch das Blitzerfoto muss Fahrer und Fahrzeugbewegung klar zeigen. Bleiben Zweifel, ist eine Einstellung oder zumindest Herabstufung des Vorwurfs realistisch.</p>",
+    "default_strategie": "unter_1_sekunde"
+  },
+  {
+    "slug": "haltelinienverstoss-statt-rotlichtverstoss",
+    "fall_titel": "Nur Haltelinie überfahren: Fahrverbot stoppen | PDF",
+    "h1_titel": "Bei Rot gebremst, aber geblitzt? Kein Fahrverbot!",
+    "meta_description": "Nur über die Haltelinie gerollt? Jetzt kostenlos Muster erstellen und Rotlichtvorwurf auf einfachen Haltelinienverstoß reduzieren.",
+    "einleitungstext": "Zweimal geblitzt, obwohl Sie noch vor der Kreuzung gestoppt haben? Dann geht es oft um viel zu viel: Statt eines kleinen Haltelinienverstoßes wirft die Behörde einen echten Rotlichtverstoß vor. Das kann Punkte oder sogar ein Fahrverbot bedeuten. Sichern Sie jetzt Ihre Angaben und erstellen Sie ein kostenloses Muster zur Herabstufung.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Entscheidend ist der geschützte Kreuzungsbereich</h4><p>Ein Rotlichtverstoß setzt nicht nur das Überfahren der Haltelinie voraus, sondern regelmäßig auch das Einfahren in den durch die Ampel geschützten Bereich. Genau deshalb ist das zweite Beweisfoto so wichtig: Es muss zeigen, dass das Fahrzeug weiter in die Kreuzung eingefahren ist. Wer hinter der Haltelinie oder kurz danach noch vor dem Schutzbereich zum Stehen kommt, begeht häufig nur einen Haltelinienverstoß. Fordern Sie daher ausdrücklich beide Fotos, die Auswerteparameter und die Lage der Induktionsschleifen an. Fehlt der sichere Nachweis des Einfahrens, ist der schwere Vorwurf oft nicht haltbar.</p>",
+    "default_strategie": "haltelinie"
+  },
+  {
+    "slug": "gelbphase-zu-kurz-ampelschaltung-einspruch",
+    "fall_titel": "Gelbphase zu kurz: Einspruch Muster kostenlos | PDF",
+    "h1_titel": "Gelbphase zu kurz? Ampel-Messung sofort anfechten!",
+    "meta_description": "Gelbphase zu kurz geschaltet? Jetzt kostenlos Muster erstellen und Schaltplan, Mindestzeiten und Messung angreifen.",
+    "einleitungstext": "Wenn Gelb zu kurz war, hatten Sie oft keine echte Chance mehr, sicher anzuhalten. Trotzdem flattert der Bußgeldbescheid ins Haus. Genau das lässt sich angreifen: Denn für Ampeln gelten feste Mindestgelbzeiten. Tragen Sie Ihren Fall jetzt ein und erstellen Sie ein kostenloses Muster, um Schaltprotokoll und Ampelsteuerung offenzulegen.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Mindestgelbzeiten sind kein Kann, sondern Pflicht</h4><p>Nach der Verwaltungsvorschrift zur StVO gelten feste Richtwerte für die Gelbphase: bei 50 km/h regelmäßig 3 Sekunden, bei 60 km/h 4 Sekunden und bei 70 km/h 5 Sekunden. Wird diese Zeit unterschritten, durfte der Fahrer häufig darauf vertrauen, die Kreuzung noch gefahrlos zu räumen. Im Verfahren sind deshalb das Schaltprogramm, das Steuerungsprotokoll und die zulässige Höchstgeschwindigkeit am Standort zentral. Auch temporäre Baustellenbeschilderung oder abweichende Signalprogramme können die Bewertung kippen. Fehlt der Nachweis einer ordnungsgemäßen Gelbphase, ist der Rotlichtvorwurf oft nicht belastbar.</p>",
+    "default_strategie": "gelbphase"
+  },
+  {
+    "slug": "mitzieheffekt-augenblicksversagen-ampelblitzer",
+    "fall_titel": "Mitzieh-Effekt: Fahrverbot oft vermeidbar | PDF",
+    "h1_titel": "Aus Versehen bei Rot losgefahren? Mitzieh-Effekt rettet Sie!",
+    "meta_description": "Nebenfahrspur rollt an und Sie fahren mit? Jetzt kostenlos Muster erstellen und Mitzieh-Effekt gegen Fahrverbot nutzen.",
+    "einleitungstext": "Sie sind nicht bewusst bei Rot gefahren, sondern reflexartig mit der Nachbarspur oder einem Grünpfeil losgerollt? Genau dieser Mitzieh-Effekt kann den Unterschied machen. Statt eines harten Fahrverbots kommt oft nur eine Geldbuße in Betracht. Schildern Sie den Ablauf jetzt präzise und erstellen Sie ein kostenloses Muster für Ihren Fall.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Augenblicksversagen kann das Regelfahrverbot kippen</h4><p>Der Mitzieh-Effekt ist juristisch relevant, weil er gegen den Vorwurf grober Pflichtverletzung sprechen kann. Wer nachweisbar durch anfahrende Nachbarspuren, einen Abbiegerpfeil oder eine unübersichtliche Signalführung fehlgeleitet wurde, handelt oft nur in einem momentanen Wahrnehmungsfehler. Das ist wichtig, weil das Fahrverbot im Bußgeldkatalog zwar Regelfolge ist, aber bei atypischen Umständen entfallen kann. Entscheidend sind eine glaubhafte Schilderung, die konkrete Ampelanordnung und mögliche Zeugen. In geeigneten Fällen lässt sich das Fahrverbot gegen eine erhöhte Geldbuße abwenden, ohne den Vorwurf vollständig bestreiten zu müssen.</p>",
+    "default_strategie": "mitzieheffekt"
+  },
+  {
+    "slug": "rotlichtverstoss-wegen-rettungsgasse-blaulicht",
+    "fall_titel": "Wegen Blaulicht über Rot: Strafe abwehren | PDF",
+    "h1_titel": "Platz gemacht für Krankenwagen und geblitzt? So wehren Sie sich!",
+    "meta_description": "Wegen Rettungswagen über Rot gefahren? Jetzt kostenlos Muster erstellen und § 38 StVO sowie Notstand richtig nutzen.",
+    "einleitungstext": "Sie haben einem Rettungswagen, der Feuerwehr oder Polizei Platz gemacht und wurden dabei geblitzt? Dann ist der Bescheid oft schlicht falsch. Wer Blaulicht und Martinshorn freie Bahn verschafft, handelt nicht ordnungswidrig. Geben Sie Ort, Zeit und Ablauf jetzt an und erstellen Sie ein kostenloses Muster gegen den Rotlichtvorwurf.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Freie Bahn für Einsatzfahrzeuge ist rechtlich geschützt</h4><p>Nach § 38 StVO haben alle Verkehrsteilnehmer sofort freie Bahn zu schaffen, wenn blaues Blinklicht zusammen mit Einsatzhorn verwendet wird. Mussten Sie dafür die Haltelinie oder sogar den Kreuzungsbereich vorsichtig überfahren, kann der Vorgang durch rechtfertigenden Notstand nach § 16 OWiG gedeckt sein. Wichtig sind konkrete Angaben zu Ort, Uhrzeit, Fahrtrichtung und Art des Einsatzfahrzeugs. Die Behörde kann den Einsatz regelmäßig über Leitstelle oder Fahrtenprotokolle nachvollziehen. Wer diese Umstände früh vorträgt, hat oft sehr gute Chancen auf eine vollständige Einstellung des Verfahrens.</p>",
+    "default_strategie": "rettungswagen"
+  },
+  {
+    "slug": "ampelblitzer-fahrer-nicht-erkennbar",
+    "fall_titel": "Blitzerfoto unklar: Einspruch Muster kostenlos | PDF",
+    "h1_titel": "Gesicht auf Blitzerfoto verdeckt? Strafe ist hinfällig!",
+    "meta_description": "Fahrer auf dem Ampelblitzer-Foto nicht erkennbar? Jetzt kostenlos Muster erstellen und fehlende Fahreridentifikation nutzen.",
+    "einleitungstext": "Der Bescheid ist da, aber auf dem Foto ist kaum etwas zu erkennen? Dann fehlt der Behörde oft der wichtigste Beweis. In Deutschland haftet nicht automatisch der Halter, sondern der Fahrer. Wenn Gesicht, Merkmale oder Bildqualität nicht reichen, kann der Vorwurf scheitern. Erstellen Sie jetzt ein kostenloses Muster gegen die Fahreridentifikation.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Ohne sichere Fahreridentifikation wird es eng für die Behörde</h4><p>Im Ordnungswidrigkeitenrecht muss die Bußgeldstelle den tatsächlichen Fahrer nachweisen. Ein unscharfes, verdecktes oder überbelichtetes Foto reicht dafür oft nicht aus. Problematisch sind etwa Sonnenblenden, Spiegelungen, Masken, starke Schatten oder seitliche Aufnahmen ohne klare Gesichtsmerkmale. Dann genügt auch die bloße Haltereigenschaft nicht für eine Verurteilung. Wichtig ist zudem, ob die Behörde weitere Ermittlungen vorgenommen hat, etwa einen Anhörungsbogen, einen Abgleich mit Ausweisfotos oder einen Hausbesuch. Bleibt die Identifizierung lückenhaft, ist eine Einstellung des Verfahrens häufig die Folge.</p>",
+    "default_strategie": "fahrer_identifikation_rotlicht"
+  },
+  {
+    "slug": "gruener-pfeil-blechschild-nicht-gehalten",
+    "fall_titel": "Grüner Pfeil: 1 Punkt statt Fahrverbot | PDF",
+    "h1_titel": "Grüner Pfeil übersehen? Strafe oft unzulässig hoch!",
+    "meta_description": "Am grünen Blechpfeil nicht ganz angehalten? Jetzt kostenlos Muster erstellen und falsche Einstufung als Rotlichtverstoß angreifen.",
+    "einleitungstext": "Sie sind am grünen Blechpfeil nur langsam gerollt statt komplett anzuhalten und sollen nun wie bei einem vollen Rotlichtverstoß bestraft werden? Das ist oft überzogen. Häufig geht es rechtlich nur um einen speziellen Verstoß ohne Fahrverbot. Tragen Sie Ihren Fall jetzt ein und erstellen Sie ein kostenloses Muster.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Zeichen 720 wird oft falsch bewertet</h4><p>Beim grünen Blechpfeil nach Zeichen 720 darf trotz Rot rechts abgebogen werden, aber nur nach vollständigem Halt an der Haltelinie und unter Beachtung des Querverkehrs. Wer nicht komplett anhält, begeht deshalb nicht automatisch einen klassischen Rotlichtverstoß mit Regelfahrverbot. In der Praxis stufen Behörden solche Fälle dennoch häufig zu streng ein. Genau hier setzt der Angriff an: Maßgeblich sind die konkrete Beschilderung, die Position der Haltelinie und die Frage, ob überhaupt ein typischer Rotlichtverstoß vorliegt. Eine korrekte rechtliche Einordnung kann Punkte und vor allem ein Fahrverbot verhindern.</p>",
+    "default_strategie": "gruener_pfeil"
+  },
+  {
+    "slug": "ampel-dauerrot-defekt-geblitzt",
+    "fall_titel": "Ampel defekt bei Dauerrot: Bescheid kippen | PDF",
+    "h1_titel": "Ampel kaputt und Dauerrot? Blitzer-Ticket anfechten!",
+    "meta_description": "Ampel blieb minutenlang rot? Jetzt kostenlos Muster erstellen und Dauerrot, Defekt und Wartezeit rechtlich nutzen.",
+    "einleitungstext": "Mitten in der Nacht bleibt die Ampel einfach rot, Minute um Minute. Irgendwann fahren Sie vorsichtig an und werden geblitzt. Genau solche Dauerrot-Fälle sind rechtlich besonders. Wenn die Anlage erkennbar defekt war, muss der Bescheid nicht halten. Schildern Sie Wartezeit und Situation jetzt und erstellen Sie ein kostenloses Muster.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Bei offensichtlichem Dauerrot gelten Ausnahmen</h4><p>Zeigt eine Lichtzeichenanlage über längere Zeit ohne erkennbaren Grund dauerhaft Rot, kann eine Funktionsstörung vorliegen. In solchen Fällen nehmen Gerichte je nach Situation nach angemessener Wartezeit häufig 3 bis 5 Minuten an, dass der Fahrer sich vorsichtig vortasten darf. Entscheidend sind Uhrzeit, Verkehrsaufkommen, Sichtverhältnisse und ob andere Fahrzeuge ebenfalls betroffen waren. Für den Einspruch sind daher genaue Angaben zur Wartezeit, mögliche Zeugen und gegebenenfalls Dashcam- oder Standortdaten wertvoll. Kann die Behörde die ordnungsgemäße Funktion der Anlage nicht belegen, ist der Rotlichtvorwurf oft nicht durchsetzbar.</p>",
+    "default_strategie": "dauerrot"
+  },
+  {
+    "slug": "rotlichtverstoss-probezeit-a-verstoss",
+    "fall_titel": "Probezeit Rotlicht: A-Verstoß abwehren | PDF",
+    "h1_titel": "Rotlichtverstoß in der Probezeit? Aufbauseminar verhindern!",
+    "meta_description": "Rotlicht in der Probezeit? Jetzt kostenlos Muster erstellen und A-Verstoß, ASF und Probezeitverlängerung gezielt abwehren.",
+    "einleitungstext": "Für Fahranfänger ist ein Rotlichtbescheid besonders gefährlich: Neben Bußgeld und Punkten drohen Probezeitverlängerung und ein teures ASF-Aufbauseminar. Schon ein einziger A-Verstoß kann den Führerschein massiv belasten. Umso wichtiger ist es, Messung und Sachverhalt sofort anzugreifen. Erstellen Sie jetzt ein kostenloses Muster gegen den Vorwurf.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Ein Rotlichtverstoß löst in der Probezeit mehr aus als nur Bußgeld</h4><p>Für Fahranfänger wird ein Rotlichtverstoß regelmäßig als schwerwiegender A-Verstoß gewertet. Die Folge sind meist die Verlängerung der Probezeit um 2 Jahre und die Anordnung eines Aufbauseminars für Fahranfänger (ASF). Deshalb lohnt sich hier jeder Angriff auf Messung, Foto, Ampelsicht und rechtliche Einordnung. Wird etwa statt eines echten Rotlichtverstoßes nur ein Haltelinienverstoß nachgewiesen, können die probezeitrechtlichen Folgen entfallen. Auch Mitzieh-Effekt, verdeckte Signale oder Fehler bei der Fahreridentifikation sind in Probezeitfällen besonders wertvoll, weil sie nicht nur Geld, sondern auch die Nachschulung verhindern können.</p>",
+    "default_strategie": "probezeit_rotlicht"
+  },
+  {
+    "slug": "rotlichtverstoss-ueber-1-sekunde-mit-toleranz",
+    "fall_titel": "Rot über 1 Sekunde: Fahrverbot mit Toleranz | PDF",
+    "h1_titel": "Über 1 Sekunde Rot? Toleranzabzüge nutzen!",
+    "meta_description": "Knapp über 1 Sekunde Rot? Jetzt kostenlos Muster erstellen und mit Toleranzabzug das Fahrverbot gezielt angreifen.",
+    "einleitungstext": "Wenn die Behörde knapp mehr als 1 Sekunde Rot behauptet, steht oft das Fahrverbot im Raum. Genau an dieser Grenze entscheiden Zehntelsekunden über Ihren Führerschein. Toleranzabzüge, Schaltfehler und unklare Auswertung können den Fall kippen. Geben Sie Ihre Daten jetzt ein und erstellen Sie ein kostenloses Muster mit Fokus auf die 1-Sekunden-Grenze.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Knapp über 1,0 Sekunden ist der klassische Grenzfall</h4><p>Bei Messwerten nur wenig oberhalb von 1 Sekunde muss die Behörde die gerätespezifischen Toleranzen sauber berücksichtigen. Schon geringe Abweichungen bei der Synchronisation von Ampelsteuerung, Induktionsschleifen und Kameraauslösung können dazu führen, dass rechtlich nur ein einfacher Rotlichtverstoß verbleibt. Verlangen Sie deshalb Schaltprotokoll, Messdaten, Eichnachweis und die Dokumentation der Inbetriebnahme. Gerade bei standardisierten Messverfahren ist die Akte oft der Schlüssel. Fällt der Wert nach Toleranzabzug unter 1,0 Sekunden, entfällt regelmäßig das Regelfahrverbot, auch wenn Bußgeld und Punkte bestehen bleiben können.</p>",
+    "default_strategie": "toleranz_abzug"
+  },
+  {
+    "slug": "rotlichtverstoss-bei-berufskraftfahrern",
+    "fall_titel": "Rotlicht Berufskraftfahrer: Fahrverbot abwehren | PDF",
+    "h1_titel": "Berufskraftfahrer geblitzt? So schützen Sie Ihren Job!",
+    "meta_description": "Als Berufskraftfahrer bei Rot geblitzt? Jetzt kostenlos Muster erstellen und Fahrverbot wegen Existenzgefahr angreifen.",
+    "einleitungstext": "Für Berufskraftfahrer kann ein Rotlichtverstoß weit mehr als nur ein Bußgeld bedeuten: Schon ein Monat Fahrverbot gefährdet Touren, Einkommen und oft den Arbeitsplatz. Genau deshalb muss jeder Messfehler und jede Härte sauber vorgetragen werden. Schildern Sie Ihre berufliche Lage jetzt und erstellen Sie ein kostenloses Muster zum Schutz Ihres Führerscheins.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Bei drohendem Jobverlust kommt es auf den richtigen Vortrag an</h4><p>Berufskraftfahrer können sich nicht allein auf allgemeine Unannehmlichkeiten berufen. Für ein Absehen vom Regelfahrverbot braucht es konkrete Tatsachen: etwa eine nachvollziehbare Existenzgefährdung, fehlende Einsatzmöglichkeiten im Betrieb, drohende Kündigung oder den Verlust selbstständiger Aufträge. Parallel sollten immer auch klassische Angriffe auf Messung, Rotzeit, Foto und Ampelschaltung geführt werden. Denn je schwächer der Vorwurf, desto eher kommt eine Umwandlung des Fahrverbots in eine erhöhte Geldbuße in Betracht. Wichtig sind Arbeitgeberbescheinigung, Tourenpläne und Nachweise, dass Urlaub oder Fahrerersatz den Ausfall nicht auffangen können.</p>",
+    "default_strategie": "berufskraftfahrer"
+  },
+  {
+    "slug": "rotlichtverstoss-bei-ueberholvorgang",
+    "fall_titel": "Beim Überholen über Rot: Einspruch Muster | PDF",
+    "h1_titel": "Überholt und geblitzt? So argumentieren Sie richtig!",
+    "meta_description": "Beim Überholvorgang über Rot geblitzt? Jetzt kostenlos Muster erstellen und Verkehrslage, Sicht und Ampelphase angreifen.",
+    "einleitungstext": "Ein Überholvorgang kurz vor der Ampel endet schnell im Bußgeldbescheid. Oft ist die Situation aber komplexer, als es der Vorwurf vermuten lässt: Sicht auf die Ampel, Spurwechsel, Gelbphase und Verkehrslage spielen eine große Rolle. Schildern Sie den Ablauf jetzt genau und erstellen Sie ein kostenloses Muster für Ihren Einspruch.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Beim Überholen ist die konkrete Verkehrslage entscheidend</h4><p>Wer während eines Überholvorgangs geblitzt wird, sollte besonders genau auf Sichtbeziehungen und Signalwahrnehmung achten. Wurde die Ampel durch das überholte Fahrzeug verdeckt, erfolgte der Spurwechsel erst spät oder war die Gelbphase zu kurz, kann der Vorwurf deutlich schwächer sein als im Standardfall. Relevant sind außerdem die Position der Haltelinie, die Fahrstreifenführung und ob das Messfoto den tatsächlichen Ablauf überhaupt sauber abbildet. Gerade bei dynamischen Verkehrssituationen ist die pauschale Annahme eines eindeutigen Rotlichtverstoßes oft angreifbar. Eine präzise Rekonstruktion des Fahrmanövers kann hier den Unterschied machen.</p>",
+    "default_strategie": "ueberholvorgang"
+  }
+]

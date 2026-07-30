@@ -1,0 +1,218 @@
+[
+  {
+    "slug": "blitzer-geschwindigkeitsueberschreitung-allgemein",
+    "fall_titel": "Geblitzt? Fahrverbot & Punkte abwehren | PDF",
+    "h1_titel": "Geblitzt worden? Strafen & Fahrverbot erfolgreich abwehren!",
+    "meta_description": "Geblitzt? Bußgeld, Punkte oder Fahrverbot abwehren. Jetzt kostenlos den Einspruch-Generator nutzen und Schreiben erstellen.",
+    "einleitungstext": "Der Anhörungsbogen liegt im Briefkasten und Sie fürchten Punkte, hohe Kosten oder sogar ein Fahrverbot? Viele Bußgeldbescheide sind angreifbar: wegen Messfehlern, unklarer Beschilderung oder Formfehlern in der Akte. Füllen Sie jetzt den Generator aus und sichern Sie sich eine starke Vorlage, bevor Fristen verstreichen.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Diese Fehler kippen viele Blitzerfälle</h4><p>Im Bußgeldverfahren zählt nicht nur das Foto. Entscheidend sind auch Eichschein, Messprotokoll, Schulungsnachweis des Messbeamten und die Einhaltung der PTB-Vorgaben für das konkrete Gerät. Bei Geschwindigkeiten über 100 km/h muss regelmäßig ein Toleranzabzug von 3 % erfolgen, darunter meist 3 km/h. Zusätzlich gilt für die Verfolgung nach § 26 Abs. 3 StVG grundsätzlich eine 3-Monats-Frist bis zur ersten wirksamen Maßnahme gegen den Fahrer. Fehlen in der Akte Beschilderungsplan, Rohmessdaten oder ein plausibler Geräteaufbau, kann der gesamte Vorwurf wackeln. Gerade an Schwellen zu 1 Punkt oder Fahrverbot lohnt sich jeder Blick in die Unterlagen.</p>",
+    "default_strategie": "allgemein_blitzer"
+  },
+  {
+    "slug": "innerorts-21-kmh-ueberschreitung-einspruch",
+    "fall_titel": "21 km/h innerorts: 1 Punkt abwenden | PDF",
+    "h1_titel": "Innerorts 21 km/h zu schnell? Punkt in Flensburg abwenden!",
+    "meta_description": "21 km/h innerorts zu schnell? Ab hier droht 1 Punkt. Jetzt kostenlos den Einspruch-Generator nutzen und Bescheid angreifen.",
+    "einleitungstext": "Ab 21 km/h zu viel innerorts wird es ernst: 1 Punkt, spürbares Bußgeld und bei Fahranfängern sogar Probezeit-Folgen. Gerade innerorts passieren Messfehler oft direkt hinter Ortsschildern oder in schlecht beschilderten Baustellen. Nutzen Sie jetzt den Generator und gehen Sie gezielt gegen den Bescheid vor.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Ortsschild-Abstand kann den Punkt retten</h4><p>Viele Länder-Richtlinien verlangen zwischen Ortseingangsschild und Messstelle einen Mindestabstand von meist 100 bis 150 Metern. Wird praktisch direkt hinter dem Schild gemessen, ist die Messung zwar nicht automatisch unwirksam, aber sehr gut angreifbar, weil dem Fahrer kaum Reaktionszeit bleibt. Zusätzlich muss geprüft werden, ob das Schild frei sichtbar war oder durch Bäume, Lkw oder Baustelleneinrichtungen verdeckt wurde. Schon ein kleiner Fehler ist hier wertvoll: Fällt der vorwerfbare Wert durch Toleranzabzug oder Messzweifel unter 21 km/h, entfällt der 1 Punkt. Genau an dieser Schwelle lohnt sich ein Angriff auf Beschilderung, Messaufbau und Protokoll besonders.</p>",
+    "default_strategie": "abstand_ortsschild"
+  },
+  {
+    "slug": "innerorts-31-kmh-fahrverbot-einspruch",
+    "fall_titel": "31 km/h innerorts: Fahrverbot stoppen | PDF",
+    "h1_titel": "Innerorts über 30 km/h zu schnell? Fahrverbot umgehen!",
+    "meta_description": "31 km/h innerorts zu schnell? 1 Monat Fahrverbot droht. Jetzt kostenlos Einspruch-Muster erstellen und Führerschein retten.",
+    "einleitungstext": "Mit 31 km/h zu viel innerorts steht schnell der Führerschein auf dem Spiel. Neben 2 Punkten und hohem Bußgeld droht ein Monat Fahrverbot – oft mit Folgen für Job und Alltag. Schon wenige km/h weniger können alles ändern. Füllen Sie jetzt den Generator aus und greifen Sie Messung und Rechtsfolgen gezielt an.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Unter 31 km/h oder Härtefall: zwei starke Wege</h4><p>Bei innerorts 31 km/h zu viel entscheidet oft ein Detail. Wird die Messung durch Toleranzabzug, Bedienfehler oder fehlerhafte Zuordnung auf 30 km/h oder weniger gedrückt, entfällt das Regelfahrverbot. Besonders relevant sind 3 km/h Toleranz unter 100 km/h bzw. 3 % darüber sowie Fehler bei Messwinkel, Gerätestandort und Eichung. Selbst wenn der Vorwurf hält, kann bei Ersttätern unter engen Voraussetzungen vom Fahrverbot abgesehen werden, wenn eine außergewöhnliche Härte glaubhaft ist, etwa konkreter Arbeitsplatzverlust oder fehlende zumutbare Ausweichmöglichkeiten. Dann kommt statt Fahrverbot eine erhöhte Geldbuße in Betracht. Entscheidend sind Nachweise des Arbeitgebers und eine saubere Begründung.</p>",
+    "default_strategie": "fahrverbot_umwandeln"
+  },
+  {
+    "slug": "ausserorts-26-kmh-fahrverbot-wiederholungstaeter",
+    "fall_titel": "26 km/h außerorts: Fahrverbot abwehren | PDF",
+    "h1_titel": "Außerorts 26 km/h zu schnell? Fahrverbot für Wiederholungstäter!",
+    "meta_description": "26 km/h außerorts zu schnell? Die 2x26-Regel kann Fahrverbot auslösen. Jetzt kostenlos Einspruch-Muster erstellen.",
+    "einleitungstext": "26 km/h zu viel außerorts wirken harmloser als sie sind. Wer innerhalb von 12 Monaten zweimal mit mindestens 26 km/h auffällt, riskiert wegen der 2x26-Regel ein zusätzliches Fahrverbot. Genau hier zählt Timing. Nutzen Sie jetzt den Generator, um Fristen taktisch auszuschöpfen und den Bescheid anzugreifen.",
+    "fall_infobox": "<h4 style='margin-top:0;'>2x26-Regel: Rechtskraft taktisch verschieben</h4><p>Das Zusatzfahrverbot für Wiederholungstäter greift, wenn innerhalb eines Jahres seit Rechtskraft der ersten Entscheidung erneut ein Verstoß von mindestens 26 km/h begangen wird. Genau deshalb ist nicht nur die Tatzeit, sondern vor allem der Zeitpunkt der Rechtskraft entscheidend. Ein fristgerechter Einspruch kann das Verfahren offenhalten und die Rechtskraft des neuen Bescheids nach hinten verschieben. Parallel lohnt der Blick auf Toleranzabzug, Messprotokoll und Beschilderung: Schon wenn der vorwerfbare Wert auf 25 km/h sinkt, fällt die 2x26-Falle komplett weg. Besonders bei Autobahnmessungen sind 3 % Toleranz ab 100 km/h, fehlerhafte Zuordnung bei mehreren Fahrzeugen und unklare Tempowechsel klassische Angriffspunkte.</p>",
+    "default_strategie": "zeitgewinn"
+  },
+  {
+    "slug": "ausserorts-41-kmh-fahrverbot-einspruch",
+    "fall_titel": "41 km/h außerorts: Fahrverbot kippen | PDF",
+    "h1_titel": "Außerorts über 40 km/h zu schnell? Führerschein retten!",
+    "meta_description": "41 km/h außerorts zu schnell? Fahrverbot und 2 Punkte drohen. Jetzt kostenlos Einspruch-Generator nutzen und Bescheid angreifen.",
+    "einleitungstext": "41 km/h zu viel außerorts bedeuten schnell 2 Punkte, hohes Bußgeld und ein Fahrverbot. Für Pendler und Außendienstler kann das existenziell werden. Gerade bei hohen Geschwindigkeiten entscheiden Toleranzabzug, Messwinkel und Gerätefehler über den Ausgang. Starten Sie jetzt den Generator und setzen Sie genau dort an.",
+    "fall_infobox": "<h4 style='margin-top:0;'>3 % Toleranz können das Fahrverbot sprengen</h4><p>Bei Messungen über 100 km/h ist regelmäßig ein Toleranzabzug von 3 % vorzunehmen. Genau dieser Abzug entscheidet oft darüber, ob aus 41 km/h nur noch 40 km/h werden und das Regelfahrverbot entfällt. Zusätzlich sind Rundungsfehler, falsche Geräteeinstellungen und Messwinkelabweichungen bei Radar- oder Lasermessungen häufig. Bei Nachfahrmessungen müssen Abstand, gleichbleibende Geschwindigkeit und die Länge der Messstrecke sauber dokumentiert sein. Fehlt es daran, ist die Messung angreifbar. Auch der Eichschein des Geräts und die Schulung des Bedienpersonals gehören in die Akte. An der 41-km/h-Schwelle lohnt sich jeder technische Einwand, weil schon 1 km/h den Unterschied beim Fahrverbot macht.</p>",
+    "default_strategie": "toleranzabzug"
+  },
+  {
+    "slug": "blitzer-baustelle-autobahn-einspruch",
+    "fall_titel": "Baustellen-Blitzer: Schilderchaos nutzen | PDF",
+    "h1_titel": "In der Baustelle geblitzt? Schilderchaos rettet vor Strafen!",
+    "meta_description": "In der Autobahn-Baustelle geblitzt? Fehlerhafte Beschilderung kann den Bescheid kippen. Jetzt kostenlos Einspruch erstellen.",
+    "einleitungstext": "Baustellen auf der Autobahn sind berüchtigt: wechselnde Limits, verdeckte Schilder und widersprüchliche Aufhebungen. Wer dort geblitzt wird, weiß oft selbst nicht mehr, welches Tempo galt. Genau das ist Ihre Chance. Nutzen Sie jetzt den Generator und greifen Sie die Beschilderung gezielt an.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Beschilderungsplan und Aufhebungszeichen sind Gold wert</h4><p>In Baustellen muss die Behörde nachweisen, dass das konkrete Tempolimit am Tattag lückenlos, sichtbar und rechtlich wirksam angeordnet war. Dafür braucht es regelmäßig einen Beschilderungsplan sowie nachvollziehbare Angaben zur tatsächlichen Aufstellung. Häufig fehlen Aufhebungszeichen, Schilder stehen zu dicht hintereinander oder sind durch Lkw, Baken oder Baumaschinen verdeckt. Auch gelbe Baustellenmarkierungen und provisorische Verkehrsführung müssen eindeutig sein. Weicht die Realität vom Plan ab, wird der Vorwurf schnell unsicher. Besonders stark ist der Einwand, wenn mehrere Tempowechsel kurz vor der Messstelle lagen oder unklar bleibt, welches Schild zuletzt galt. Ohne saubere Dokumentation der Beschilderung hat die Behörde ein echtes Beweisproblem.</p>",
+    "default_strategie": "beschilderung_baustelle"
+  },
+  {
+    "slug": "geblitzt-probezeit-a-verstoss-aufbauseminar",
+    "fall_titel": "Probezeit: 21 km/h & ASF vermeiden | PDF",
+    "h1_titel": "In der Probezeit geblitzt? Aufbauseminar verhindern!",
+    "meta_description": "In der Probezeit ab 21 km/h zu schnell? ASF und Verlängerung drohen. Jetzt kostenlos Einspruch-Muster erstellen.",
+    "einleitungstext": "In der Probezeit kann schon ein einziger Blitzer teuer und langwierig werden. Ab 21 km/h zu viel drohen A-Verstoß, Probezeitverlängerung auf 4 Jahre und ein teures ASF-Aufbauseminar. Wenn Sie Führerschein und Zukunft schützen wollen, sollten Sie jetzt handeln. Nutzen Sie den Generator für Ihren gezielten Einspruch.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Unter 21 km/h drücken: das rettet die Probezeit</h4><p>Für Fahranfänger ist die Schwelle von 21 km/h entscheidend: Ab dort liegt regelmäßig ein A-Verstoß vor, der die Probezeit verlängert und ein Aufbauseminar (ASF) auslöst. Deshalb ist jeder technische Einwand wertvoll, der den vorwerfbaren Wert auf 20 km/h oder weniger senkt. Relevant sind Toleranzabzug, fehlerhafte Beschilderung, Messstellen direkt hinter dem Ortsschild und Mängel bei Eichung oder Bedienung. Auch zeitlich begrenzte Tempolimits vor Schulen oder Kitas werden oft falsch angewandt. Selbst wenn der Verstoß nicht komplett fällt, kann ein Einspruch die Rechtskraft verzögern und wichtige Termine absichern. In Probezeitfällen ist die Verteidigung besonders effektiv, weil schon 1 km/h über Ihre nächsten Jahre als Fahrer entscheidet.</p>",
+    "default_strategie": "probezeit_blitzer"
+  },
+  {
+    "slug": "blitzer-verjaehrung-6-monate-einspruch",
+    "fall_titel": "Blitzer verjährt? 6 Monate nutzen | PDF",
+    "h1_titel": "Blitzer-Bescheid zu spät? Verjährung nach 6 Monaten nutzen!",
+    "meta_description": "Erster Brief erst nach über 6 Monaten? Verjährung nach § 26 Abs. 3 StVG nutzen. Jetzt kostenlos Einspruch erstellen.",
+    "einleitungstext": "Kam der erste Brief der Behörde erst Monate nach dem Blitzerfoto, könnte der Vorwurf bereits verjährt sein. Dann müssen Sie weder Bußgeld noch Punkte akzeptieren. Entscheidend ist die Fristberechnung im Detail. Nutzen Sie jetzt den Generator und machen Sie die Verjährung sauber geltend.",
+    "fall_infobox": "<h4 style='margin-top:0;'>§ 26 Abs. 3 StVG: auf die erste wirksame Maßnahme kommt es an</h4><p>Bei Verkehrsordnungswidrigkeiten beträgt die Verfolgungsverjährung grundsätzlich 6 Monate ab Tattag, solange noch kein Bußgeldbescheid ergangen ist (§ 26 Abs. 3 StVG). Die Frist wird aber nur durch bestimmte Handlungen unterbrochen, etwa die Anordnung oder Versendung eines Anhörungsbogens gegen den richtigen Fahrer. Ein bloßer interner Bearbeitungsschritt reicht nicht immer. Wichtig ist daher: Wann wurde die erste Maßnahme angeordnet, gegen wen richtete sie sich und ist das in der Akte dokumentiert? Geht der erste wirksame Brief erst nach Ablauf der 6 Monate an Sie als Fahrer, stehen die Chancen auf Einstellung oft sehr gut. Auch fehlerhafte Halterermittlungen können die Behörde hier Zeit kosten.</p>",
+    "default_strategie": "verjaehrung"
+  },
+  {
+    "slug": "zeugenfragebogen-blitzer-fahrer-nicht-angeben",
+    "fall_titel": "Zeugenfragebogen: Fahrer nicht nennen | PDF",
+    "h1_titel": "Zeugenfragebogen erhalten? So vermeiden Sie Strafen geschickt!",
+    "meta_description": "Zeugenfragebogen nach Blitzer? Nutzen Sie Ihr Zeugnisverweigerungsrecht und erstellen Sie jetzt kostenlos Ihr Schreiben.",
+    "einleitungstext": "Sie haben Post von der Bußgeldstelle, waren aber gar nicht selbst am Steuer? Beim Zeugenfragebogen machen viele Halter unnötige Fehler und belasten Angehörige. Dabei gibt es klare Rechte und taktische Möglichkeiten. Nutzen Sie jetzt den Generator und reagieren Sie rechtssicher auf die Anfrage.",
+    "fall_infobox": "<h4 style='margin-top:0;'>§ 52 StPO kann Familienangehörige schützen</h4><p>Wer als Halter einen Zeugenfragebogen erhält, muss nicht automatisch den Fahrer benennen. Gegenüber nahen Angehörigen wie Ehepartnern, Verlobten, Eltern oder Kindern besteht regelmäßig ein Zeugnisverweigerungsrecht nach § 52 StPO. Das bedeutet: Sie dürfen schweigen, ohne sich selbst ordnungswidrig zu verhalten. Wichtig ist aber, keine falschen Angaben zu machen. Parallel läuft die Verfolgungsverjährung gegen den tatsächlichen Fahrer weiter; nach § 26 Abs. 3 StVG sind es grundsätzlich 6 Monate bis zur ersten wirksamen Maßnahme gegen ihn. Findet die Behörde den Fahrer nicht rechtzeitig, kann die Sache erledigt sein. Taktisch entscheidend ist daher eine knappe, rechtlich saubere Reaktion ohne unnötige Zusatzinformationen.</p>",
+    "default_strategie": "zeugenfragebogen"
+  },
+  {
+    "slug": "blitzerfoto-unleserlich-fahrer-nicht-erkennbar",
+    "fall_titel": "Unscharfes Blitzerfoto: Strafe abwehren | PDF",
+    "h1_titel": "Blitzerfoto unscharf oder verdeckt? Keine Strafe ohne Beweis!",
+    "meta_description": "Fahrer auf dem Blitzerfoto nicht erkennbar? Jetzt kostenlos Einspruch erstellen und die Fahrerhaftung gezielt nutzen.",
+    "einleitungstext": "Wenn das Blitzerfoto unscharf, überbelichtet oder verdeckt ist, fehlt der Behörde oft der wichtigste Beweis. In Deutschland haftet im fließenden Verkehr nicht der Halter, sondern der Fahrer. Genau deshalb kann ein schlechtes Foto den ganzen Bescheid kippen. Nutzen Sie jetzt den Generator für Ihre Verteidigung.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Ohne sichere Fahreridentifizierung wird es eng für die Behörde</h4><p>Im deutschen Bußgeldrecht gilt bei Geschwindigkeitsverstößen grundsätzlich Fahrerhaftung. Die Behörde muss also nachweisen, wer das Fahrzeug tatsächlich geführt hat. Ist das Foto unscharf, überbelichtet, durch Spiegelungen gestört oder verdecken Sonnenblende, Schal oder Rückspiegel wesentliche Gesichtszüge, reicht das oft nicht aus. Auch Profilaufnahmen oder Nachtbilder sind problematisch. Ein anthropologisches Gutachten hilft nur, wenn genügend individuelle Merkmale erkennbar sind. Fehlen diese, bleibt der Vorwurf häufig nicht beweisbar. Wichtig: Machen Sie keine vorschnellen Angaben zur Fahrereigenschaft. Wer die Identifizierung bestreitet und auf die schlechte Bildqualität verweist, zwingt die Behörde in ihre Beweispflicht.</p>",
+    "default_strategie": "foto_unscharf"
+  },
+  {
+    "slug": "blitzer-messfehler-eichung-anfechten",
+    "fall_titel": "Messfehler & Eichung: Blitzer angreifen | PDF",
+    "h1_titel": "Messfehler beim Blitzer? So fechten Sie die Eichung an!",
+    "meta_description": "Messfehler oder abgelaufene Eichung beim Blitzer? Jetzt kostenlos Einspruch-Muster erstellen und Aktenfehler nutzen.",
+    "einleitungstext": "Sie zweifeln an der Messung? Das ist oft berechtigt. Abgelaufene Eichungen, lückenhafte Protokolle oder Bedienfehler machen viele Blitzerbescheide angreifbar. Gerade wenn Punkte oder Fahrverbot drohen, lohnt sich der Blick in die Akte. Nutzen Sie jetzt den Generator und setzen Sie genau dort an.",
+    "fall_infobox": "<h4 style='margin-top:0;'>PTB-Vorgaben, Eichschein und Protokoll müssen zusammenpassen</h4><p>Ein standardisiertes Messverfahren schützt die Behörde nur, wenn das Gerät gültig geeicht war, nach PTB-Zulassung betrieben wurde und das Messpersonal geschult ist. Fehlt der Eichschein, ist die Eichfrist abgelaufen oder weicht der Aufbau von der Bedienungsanleitung ab, wird die Messung angreifbar. Typische Fehler sind falscher Messwinkel, unzulässiger Standort, fehlender Funktionstest vor Einsatzbeginn oder ein lückenhaftes Messprotokoll. Auch die Zuordnung des gemessenen Fahrzeugs muss eindeutig sein. Bei Lasermessung, Radar oder PoliScan können schon kleine Dokumentationsmängel genügen, um Zweifel an der Verlässlichkeit zu begründen. Wer Akteneinsicht nutzt, findet hier oft die stärksten technischen Hebel gegen Bußgeld, 1 Punkt oder Fahrverbot.</p>",
+    "default_strategie": "eichung_blitzer"
+  },
+  {
+    "slug": "laser-blitzer-polizei-messfehler",
+    "fall_titel": "Laserpistole: Messfehler der Polizei | PDF",
+    "h1_titel": "Von der Polizei gelasert? Messfehler bei der Laserpistole nutzen!",
+    "meta_description": "Mit Laserpistole gemessen? Bedienfehler, Zuordnungsprobleme und fehlende Tests können den Bescheid kippen. Jetzt kostenlos starten.",
+    "einleitungstext": "Sie wurden direkt von der Polizei gelasert und angehalten? Gerade bei Handlasern ohne Foto oder Video hängt viel von der sauberen Bedienung ab. Schon kleine Fehler bei Zielerfassung oder Zuordnung können die Messung entwerten. Nutzen Sie jetzt den Generator und greifen Sie den Vorwurf gezielt an.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Funktionstest, Zielerfassung und Zuordnung sind die Schwachstellen</h4><p>Bei Handlasermessungen muss die Polizei vor und nach dem Einsatz dokumentierte Funktionstests durchführen. Fehlen diese Nachweise, ist die Verlässlichkeit der Messung angreifbar. Hinzu kommt das Zuordnungsproblem: Ohne Foto oder Video muss klar sein, welches Fahrzeug genau anvisiert wurde. Befanden sich mehrere Fahrzeuge nebeneinander oder hintereinander, entstehen schnell Zweifel. Auch Verwacklungen, falsches Anvisieren reflektierender Flächen oder ein Zielwechsel während der Messung können das Ergebnis verfälschen. Gerade Geräte wie Riegl oder TruSpeed verlangen eine saubere Bedienung nach Anleitung. Wenn Protokoll, Schulungsnachweis oder Anhaltesituation Lücken zeigen, ist der Vorwurf oft deutlich schwächer als die Behörde behauptet.</p>",
+    "default_strategie": "laser_pistole"
+  },
+  {
+    "slug": "tempo-30-zone-geblitzt-uhrzeit-feiertag",
+    "fall_titel": "30er-Zone: Uhrzeitfehler ausnutzen | PDF",
+    "h1_titel": "In 30er-Zone geblitzt? Uhrzeiten & Gültigkeit genau prüfen!",
+    "meta_description": "Vor Schule oder Kita geblitzt, aber außerhalb der Zeiten? Jetzt kostenlos Einspruch erstellen und Zusatzschild angreifen.",
+    "einleitungstext": "Vor Schule, Kita oder Heim geblitzt – aber nachts, am Wochenende oder an Feiertagen? Dann galt das Tempo-30-Limit womöglich gar nicht. Viele Bescheide scheitern an falsch angewendeten Zusatzzeichen. Nutzen Sie jetzt den Generator und wehren Sie sich mit dem richtigen Einwand.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Zusatzzeichen gelten nur in ihrem exakten Rahmen</h4><p>Steht unter dem Tempo-30-Schild ein Zusatzzeichen wie „Mo–Fr 7–17 h“, ist die Begrenzung nur in diesem Zeitraum wirksam. Außerhalb dieser Zeiten gilt regelmäßig wieder die allgemeine Höchstgeschwindigkeit, sofern kein anderes Schild etwas anderes anordnet. Dasselbe gilt an gesetzlichen Feiertagen oder in Schulferien, wenn das Zusatzzeichen entsprechend auszulegen ist. Die Behörde muss daher genau darlegen, welches Schild am Tatort stand und zu welcher Uhrzeit gemessen wurde. Fehler passieren häufig bei stationären Anlagen, die am Wochenende oder nachts weiterlaufen. Wer den Bescheid mit Blick auf Uhrzeit, Wochentag, Feiertag und konkrete Beschilderung angreift, hat in solchen Fällen oft sehr gute Karten.</p>",
+    "default_strategie": "uhrzeit_schild"
+  },
+  {
+    "slug": "geblitzt-im-ausland-vollstreckung",
+    "fall_titel": "EU-Blitzer: Vollstreckung abwehren | PDF",
+    "h1_titel": "Im Urlaub geblitzt? So reagieren Sie bei Post aus dem Ausland!",
+    "meta_description": "Blitzer aus Italien, Frankreich oder Österreich? Jetzt kostenlos Muster erstellen und Vollstreckung in Deutschland einschätzen.",
+    "einleitungstext": "Post aus dem Ausland nach dem Urlaub sorgt oft für Unsicherheit: Muss ich zahlen, drohen Punkte, wird in Deutschland vollstreckt? Die Antwort hängt vom Land, Betrag und Verfahren ab. Bevor Sie vorschnell reagieren, nutzen Sie jetzt den Generator für eine gezielte Einordnung Ihres Falls.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Ab 80 Euro wird es in Deutschland oft ernst</h4><p>Bußgelder aus EU-Staaten können in Deutschland grundsätzlich vollstreckt werden, wenn sie die Bagatellgrenze von 70 Euro zuzüglich Verfahrenskosten überschreiten; praktisch wird oft von rund 80 Euro gesprochen. Zuständig ist dann regelmäßig das Bundesamt für Justiz. Punkte in Flensburg oder deutsche Fahrverbote entstehen dadurch aber nicht automatisch. Wichtig ist außerdem der Unterschied zwischen Halterhaftung und Fahrerhaftung: Viele Länder knüpfen an den Halter an, während in Deutschland im fließenden Verkehr grundsätzlich der Fahrer verantwortlich ist. Je nach Herkunftsstaat, Zustellung und Identifizierung des Fahrers können sich Verteidigungsansätze ergeben. Gerade bei Sprachmängeln, unklarer Fahrerzuordnung oder formalen Zustellungsfehlern lohnt eine genaue Prüfung.</p>",
+    "default_strategie": "ausland_blitzer"
+  },
+  {
+    "slug": "geblitzt-mit-10-kmh-zu-schnell",
+    "fall_titel": "10 km/h zu schnell: Bußgeld abwehren | PDF",
+    "h1_titel": "Mit 10 km/h zu schnell geblitzt? Ärgernis sofort abwehren!",
+    "meta_description": "Nur 10 km/h zu schnell geblitzt? Jetzt kostenlos Einspruch-Muster erstellen und Verwarngeld nicht vorschnell zahlen.",
+    "einleitungstext": "Auch 10 km/h zu viel können ärgerliche Post und unnötige Kosten auslösen. Viele zahlen sofort, obwohl gerade kleine Verstöße oft auf schwacher Dokumentation beruhen. Wenn Sie das Verwarngeld nicht kampflos hinnehmen wollen, nutzen Sie jetzt den Generator und greifen Sie den Vorwurf gezielt an.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Gerade kleine Verstöße sind oft schlampig dokumentiert</h4><p>Bei Bagatellverstößen wird in der Praxis nicht selten weniger sorgfältig gearbeitet. Trotzdem gelten dieselben Anforderungen an Messung, Beschilderung und Fahrerzuordnung wie bei schweren Fällen. Wichtig sind der korrekte Toleranzabzug von meist 3 km/h unter 100 km/h, ein gültiger Eichschein und ein vollständiges Messprotokoll. Besonders häufig angreifbar sind Messstellen direkt hinter dem Ortsschild oder in unklar beschilderten Bereichen. Auch ein unscharfes Foto kann reichen, wenn die Fahrereigenschaft nicht sicher feststeht. Zwar droht bei 10 km/h zu viel kein 1 Punkt, aber niemand muss ein Verwarngeld zahlen, wenn die Behörde ihre Hausaufgaben nicht gemacht hat.</p>",
+    "default_strategie": "kmh_10"
+  },
+  {
+    "slug": "geblitzt-mit-15-kmh-zu-schnell",
+    "fall_titel": "15 km/h zu schnell: Muster kostenlos | PDF",
+    "h1_titel": "15 km/h zu schnell geblitzt? Bußgeld erfolgreich anfechten!",
+    "meta_description": "15 km/h zu schnell geblitzt? Jetzt kostenlos Muster für Ihren Einspruch erstellen und Bußgeld gezielt angreifen.",
+    "einleitungstext": "15 km/h zu viel tun zwar nicht in Flensburg weh, aber oft im Geldbeutel. Gerade deshalb ärgert ein fehlerhafter Bescheid doppelt. Ob Messwinkel, Beschilderung oder Fotoqualität: Auch hier gibt es wirksame Angriffe. Starten Sie jetzt den Generator und erstellen Sie Ihr passendes Schreiben.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Auch bei 15 km/h gelten strenge Messregeln</h4><p>Die Behörde darf kleinere Verstöße nicht lockerer behandeln. Auch bei 15 km/h zu viel müssen Gerät, Eichung, Messaufbau und Bedienung vollständig den Vorgaben entsprechen. Unter 100 km/h ist regelmäßig ein Toleranzabzug von 3 km/h vorzunehmen; fehlt er oder wurde falsch gerechnet, ist der Bescheid fehlerhaft. Hinzu kommen klassische Einwände wie verdeckte Schilder, Messstellen kurz hinter dem Ortsschild oder lückenhafte Einsatzprotokolle. Bei Laser- und Radarmessungen spielen zudem Messwinkel und eindeutige Fahrzeugzuordnung eine große Rolle. Wer nicht vorschnell zahlt, kann selbst bei kleineren Beträgen gute Chancen haben, weil die Akte oft mehr Schwächen zeigt als erwartet.</p>",
+    "default_strategie": "kmh_15"
+  },
+  {
+    "slug": "geblitzt-mit-20-kmh-zu-schnell",
+    "fall_titel": "20 km/h zu schnell: Punkt noch vermeiden | PDF",
+    "h1_titel": "Exakt 20 km/h zu schnell? Haarscharf am Punkt vorbei!",
+    "meta_description": "Exakt 20 km/h zu schnell? Noch kein 1 Punkt. Jetzt kostenlos Einspruch erstellen und Bußgeld gezielt abwehren.",
+    "einleitungstext": "Genau 20 km/h zu viel sind die letzte Schwelle vor dem 1 Punkt. Umso wichtiger ist ein genauer Blick auf den Bescheid: Schon kleine Rechen- oder Messfehler können das Ergebnis weiter senken. Wenn Sie das Bußgeld nicht einfach akzeptieren wollen, nutzen Sie jetzt den Generator für Ihren Einspruch.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Die 20-km/h-Grenze lebt vom richtigen Toleranzabzug</h4><p>Wer mit exakt 20 km/h zu viel im Bescheid steht, profitiert oft bereits vom Toleranzabzug. Unter 100 km/h sind regelmäßig 3 km/h abzuziehen, darüber 3 %. Genau deshalb lohnt ein Blick auf den ursprünglichen Messwert, die Rundung und die Berechnung im Bescheid. Wurde etwa mit 73 km/h bei erlaubten 50 km/h gemessen, führt der Abzug typischerweise auf 20 km/h. Schon ein weiterer Zweifel an Messwinkel, Beschilderung oder Geräteaufbau kann den Wert noch weiter drücken. Das ist zwar nicht mehr für 1 Punkt entscheidend, aber sehr wohl für die Höhe des Bußgelds und die Frage, ob der Vorwurf überhaupt belastbar dokumentiert ist.</p>",
+    "default_strategie": "kmh_20"
+  },
+  {
+    "slug": "geblitzt-mit-25-kmh-zu-schnell",
+    "fall_titel": "25 km/h zu schnell: 1 Punkt verhindern | PDF",
+    "h1_titel": "Mit 25 km/h zu schnell? Punkt in Flensburg verhindern!",
+    "meta_description": "25 km/h zu schnell geblitzt? 1 Punkt droht. Jetzt kostenlos Einspruch-Muster erstellen und Bescheid angreifen.",
+    "einleitungstext": "Mit 25 km/h zu viel steht plötzlich 1 Punkt im Raum – und für Vielfahrer wird das schnell gefährlich. Dazu kommt ein spürbares Bußgeld und bei weiteren Verstößen die Nähe zur 2x26-Regel. Bevor Sie zahlen, nutzen Sie jetzt den Generator und setzen Sie auf technische und formale Einwände.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Ein km/h weniger kann den 1 Punkt kosten</h4><p>Bei 25 km/h zu viel ist die Verteidigung besonders dankbar, weil schon kleine Zweifel die Rechtsfolge verändern können. Zwar bleibt der 1 Punkt ab 21 km/h bestehen, aber jeder Fehler bei Toleranzabzug, Messwinkel, Zuordnung oder Beschilderung schwächt den gesamten Vorwurf. Besonders wichtig ist die Abgrenzung zur 2x26-Regel: Wird der Wert auf 25 km/h oder weniger gedrückt, kann ein späteres Wiederholungstäter-Fahrverbot nicht auf diesen Fall gestützt werden. Prüfen Sie deshalb Messprotokoll, Eichschein, Schulungsnachweis und die Sichtbarkeit der Schilder. Gerade bei Laser- oder Radarmessungen reichen kleine Dokumentationsmängel oft aus, um die Behörde in Erklärungsnot zu bringen.</p>",
+    "default_strategie": "kmh_25"
+  },
+  {
+    "slug": "geblitzt-mit-50-kmh-zu-schnell",
+    "fall_titel": "50 km/h zu schnell: Fahrverbot stoppen | PDF",
+    "h1_titel": "50 km/h zu schnell geblitzt? Retten Sie Ihren Führerschein!",
+    "meta_description": "50 km/h zu schnell? Fahrverbot, 2 Punkte und hohes Bußgeld drohen. Jetzt kostenlos Einspruch erstellen und Führerschein retten.",
+    "einleitungstext": "50 km/h zu viel sind kein kleiner Ausrutscher mehr: Fahrverbot, 2 Punkte und hohe Kosten stehen schnell im Raum. Wenn Sie beruflich auf den Führerschein angewiesen sind, zählt jetzt jeder Fehler im Verfahren. Nutzen Sie den Generator und greifen Sie Messung, Toleranz und Rechtsfolgen sofort an.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Bei hohen Werten entscheiden Toleranz und Härtefall</h4><p>Ab einer Überschreitung von 50 km/h drohen regelmäßig drastische Sanktionen. Gerade deshalb muss die Messung technisch sauber sein. Über 100 km/h ist ein Toleranzabzug von 3 % vorzunehmen; schon Rundungsfehler oder ein falscher Ausgangswert können die Sanktion spürbar verändern. Hinzu kommen klassische Einwände wie abgelaufene Eichung, fehlerhafte Bedienung, unklarer Messwinkel oder mangelhafte Beschilderung, etwa in Baustellen. Selbst wenn die Messung hält, kann in Ausnahmefällen vom Regelfahrverbot abgesehen werden, wenn eine außergewöhnliche Härte nachweisbar ist, etwa konkreter Arbeitsplatzverlust. Dafür braucht es belastbare Unterlagen des Arbeitgebers und eine präzise Darstellung, warum öffentliche Verkehrsmittel oder Vertretungslösungen nicht zumutbar sind.</p>",
+    "default_strategie": "kmh_50"
+  },
+  {
+    "slug": "blitzer-geschwindigkeitsueberschreitung-sonderfall",
+    "fall_titel": "Sonderfall Blitzer: Strafe abwehren | PDF",
+    "h1_titel": "Sonderfall: Geschwindigkeitsüberschreitung im Überholverbot?",
+    "meta_description": "Besonderer Blitzer-Sonderfall? Jetzt kostenlos Einspruch-Muster erstellen und Beschilderung oder Messung gezielt angreifen.",
+    "einleitungstext": "Ihr Fall passt in kein Standardschema und genau das kann ein Vorteil sein. Bei ungewöhnlicher Beschilderung, Überholverboten oder besonderen Verkehrslagen passieren Behörden besonders oft Fehler. Bevor Sie den Bescheid akzeptieren, nutzen Sie jetzt den Generator und schildern Sie den Sonderfall präzise.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Bei Sonderfällen zählt die genaue Verkehrsregel vor Ort</h4><p>In atypischen Blitzerfällen muss zuerst sauber geklärt werden, welche Anordnung überhaupt galt: allgemeines Tempolimit, streckenbezogene Begrenzung, Überholverbot mit Zusatzzeichen oder eine nur für bestimmte Fahrzeugarten geltende Regel. Gerade bei kombinierten Schildern passieren Auslegungsfehler. Die Behörde muss die konkrete Beschilderung, ihren Standort und ihre Sichtbarkeit nachweisen; in der Akte helfen Fotos und Beschilderungsplan. Kommt es zusätzlich auf Fahrstreifen, Fahrzeugklasse oder zeitliche Einschränkungen an, wird der Vorwurf schnell komplex. Auch hier gelten natürlich Toleranzabzug, Eichschein und PTB-konforme Messung. Je spezieller die Verkehrssituation, desto eher lohnt sich ein Angriff auf die rechtliche Einordnung des gesamten Vorwurfs.</p>",
+    "default_strategie": "sonderfall_ueberholverbot"
+  },
+  {
+    "slug": "blitzer-fahrverbot-auf-bewaehrung",
+    "fall_titel": "Fahrverbot stoppen: Härtefall nutzen | PDF",
+    "h1_titel": "Fahrverbot auf Bewährung? So handeln Sie richtig!",
+    "meta_description": "Fahrverbot droht? Jetzt kostenlos Einspruch-Muster erstellen und Chancen auf Absehen gegen höhere Geldbuße nutzen.",
+    "einleitungstext": "Ein drohendes Fahrverbot kann den Arbeitsweg, den Job oder die gesamte Familie treffen. Viele Betroffene glauben, daran sei nichts mehr zu ändern. Das stimmt nicht. Unter engen Voraussetzungen lässt sich das Fahrverbot angreifen oder durch eine höhere Geldbuße ersetzen. Nutzen Sie jetzt den Generator für Ihre Begründung.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Kein echtes „Fahrverbot auf Bewährung“, aber Absehen ist möglich</h4><p>Juristisch gibt es kein Fahrverbot „auf Bewährung“. Gemeint ist meist, dass das Gericht ausnahmsweise vom Regelfahrverbot absieht und stattdessen die Geldbuße erhöht. Das kommt vor allem bei Ersttätern in Betracht, wenn eine außergewöhnliche Härte nachweisbar ist, etwa konkreter Arbeitsplatzverlust, Gefährdung der selbstständigen Existenz oder fehlende zumutbare Ersatzmöglichkeiten. Bloße Unbequemlichkeit reicht nicht. Wichtig sind Bescheinigungen des Arbeitgebers, Angaben zu Arbeitszeiten, ÖPNV-Verbindungen und Vertretungsoptionen. Parallel sollte immer auch die Messung selbst angegriffen werden: Fällt der Vorwurf unter die Fahrverbotsgrenze, erledigt sich die Härtefall-Diskussion oft vollständig.</p>",
+    "default_strategie": "fahrverbot_bewaehrung"
+  },
+  {
+    "slug": "blitzer-punkte-wegen-wiederholung",
+    "fall_titel": "26 km/h wiederholt: Fahrverbot vermeiden | PDF",
+    "h1_titel": "Wiederholungstäter? So vermeiden Sie zusätzliche Punkte!",
+    "meta_description": "Wiederholt geblitzt mit 26 km/h? Jetzt kostenlos Muster für Einspruch nutzen und 2x26-Regel gezielt angreifen.",
+    "einleitungstext": "Mehrere Blitzer in kurzer Zeit können plötzlich aus einem normalen Bescheid ein Fahrverbotsproblem machen. Besonders gefährlich ist die 2x26-Regel bei wiederholten Tempoverstößen. Jetzt kommt es auf Fristen, Rechtskraft und jeden einzelnen km/h an. Nutzen Sie den Generator und verteidigen Sie sich strategisch.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Nicht mehr Punkte, sondern oft das Zusatzfahrverbot ist das Problem</h4><p>Bei wiederholten Geschwindigkeitsverstößen drohen nicht automatisch „zusätzliche Punkte“, sondern vor allem die Folgen der 2x26-Regel: Wer innerhalb eines Jahres seit Rechtskraft einer Entscheidung erneut mit mindestens 26 km/h zu schnell auffällt, riskiert ein einmonatiges Fahrverbot. Deshalb müssen beide Bescheide genau geprüft werden. Schon wenn einer der beiden Fälle auf 25 km/h oder weniger sinkt, entfällt die Wiederholungstäter-Folge. Wichtig sind Toleranzabzug, Messfehler, Beschilderung und der exakte Zeitpunkt der Rechtskraft. Ein fristgerechter Einspruch kann zudem taktisch Zeit gewinnen. Gerade bei mehreren offenen Verfahren ist die Reihenfolge der Rechtskraft oft der entscheidende Hebel, um das Fahrverbot noch zu verhindern.</p>",
+    "default_strategie": "wiederholungspunkte"
+  },
+  {
+    "slug": "blitzer-auf-probezeit",
+    "fall_titel": "Probezeit geblitzt: ASF verhindern | PDF",
+    "h1_titel": "In der Probezeit geblitzt? So handeln Sie richtig!",
+    "meta_description": "In der Probezeit geblitzt? Jetzt kostenlos Einspruch erstellen und ASF, 1 Punkt oder Verlängerung gezielt abwehren.",
+    "einleitungstext": "Wer in der Probezeit geblitzt wird, hat oft mehr zu verlieren als nur Geld. Ab bestimmten Schwellen drohen ASF, längere Probezeit und Punkte. Gerade junge Fahrer sollten keinen Fehler bei der Reaktion machen. Nutzen Sie jetzt den Generator und wehren Sie die Folgen gezielt ab.",
+    "fall_infobox": "<h4 style='margin-top:0;'>In der Probezeit ist die 21-km/h-Schwelle entscheidend</h4><p>Für Fahranfänger wird eine Geschwindigkeitsüberschreitung ab 21 km/h regelmäßig zum A-Verstoß. Die Folge: Probezeitverlängerung auf 4 Jahre und Anordnung eines Aufbauseminars (ASF). Deshalb ist die Verteidigung hier besonders effektiv, wenn sich der vorwerfbare Wert auf 20 km/h oder weniger senken lässt. Maßgeblich sind Toleranzabzug, Messfehler, unklare Beschilderung und zeitlich begrenzte Tempolimits, etwa vor Schulen oder Kitas. Auch ein Messstandort direkt hinter dem Ortsschild kann relevant sein. Wichtig ist zudem die Frist von zwei Wochen nach Zustellung des Bußgeldbescheids für den Einspruch. In Probezeitfällen kann schon ein einziges km/h über Ihre nächsten Jahre als Fahrer entscheiden.</p>",
+    "default_strategie": "probezeit_blitzer"
+  },
+  {
+    "slug": "blitzer-geschwindigkeitsueberschreitung-ausnahme",
+    "fall_titel": "Ausnahmefall Tempoverstoß: Strafe kippen | PDF",
+    "h1_titel": "Ausnahmefälle bei Geschwindigkeitsüberschreitungen?",
+    "meta_description": "Besondere Umstände beim Tempoverstoß? Jetzt kostenlos Einspruch-Muster erstellen und Ausnahmefall rechtlich sauber vortragen.",
+    "einleitungstext": "Nicht jeder Tempoverstoß ist ein Standardfall. Medizinische Notlagen, unklare Verkehrslagen oder atypische Beschilderung können die Bewertung verändern. Solche Ausnahmen müssen aber sauber begründet werden. Nutzen Sie jetzt den Generator und tragen Sie Ihren Sonderfall strukturiert und überzeugend vor.",
+    "fall_infobox": "<h4 style='margin-top:0;'>Rechtfertigender Notstand ist selten, aber nicht ausgeschlossen</h4><p>Besondere Umstände können einen Tempoverstoß ausnahmsweise rechtfertigen oder zumindest die Sanktion mildern. In Betracht kommt etwa ein rechtfertigender Notstand nach § 16 OWiG, wenn eine akute Gefahr für Leib oder Leben bestand und die Geschwindigkeitsüberschreitung das mildeste Mittel war. Die Hürden sind hoch: Reine Eile, Termindruck oder allgemeiner Stress genügen nie. Erforderlich sind konkrete Tatsachen, etwa eine medizinische Notsituation, und möglichst Belege wie Arztberichte oder Zeugenaussagen. Unabhängig davon sollte immer auch die Messung selbst angegriffen werden. Denn oft ist nicht der Ausnahmegrund, sondern ein technischer oder formaler Fehler der sicherere Weg, um Bußgeld, 1 Punkt oder Fahrverbot abzuwehren.</p>",
+    "default_strategie": "ausnahme_blitzer"
+  }
+]

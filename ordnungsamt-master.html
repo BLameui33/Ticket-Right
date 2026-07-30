@@ -2,35 +2,59 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Strafzettel {{STADT_NAME}} (Ordnungsamt): Gratis-PDF</title>
-  <meta name="description" content="Strafzettel oder Bußgeldbescheid vom Ordnungsamt {{STADT_NAME}} erhalten? Nutzen Sie behördliche Fehler (Verjährung, Zahlendreher, defekter Automat) für Ihren kostenlosen Einspruch.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO & Canonical (Ohne /de/ Ordner, passend zur neuen Struktur) -->
-  <link rel="canonical" href="https://fix-my-ticket.de/{{DATEINAME}}">
-  <meta property="og:title" content="Strafzettel von Ordnungsamt {{STADT_NAME}} anfechten">
-  <meta property="og:description" content="Generieren Sie kostenlos einen formal korrekten Einspruch gegen behördliche Bußgelder nach StVO & OWiG.">
-  <meta property="og:type" content="website">
+ <title>{{FALL_TITEL}} | Einspruch-Generator & PDF</title>
+<meta name="description" content="{{META_DESCRIPTION}}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="canonical" href="https://fix-my-ticket.de/{{DATEINAME}}">
+<meta property="og:title" content="{{FALL_TITEL}}">
+<meta property="og:description" content="Generieren Sie kostenlos einen formal korrekten Einspruch gegen behördliche Strafzettel & Bußgelder nach StVO & OWiG.">
+<meta property="og:type" content="website">
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="/logo-lotse-fav.png">
   
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Einspruchs-Generator: Staatliche Knöllchen & Bußgelder abwehren",
-    "applicationCategory": "LegalApplication",
-    "operatingSystem": "All",
-    "description": "Kostenloses Tool zur Erstellung eines Einspruchs gegen das Ordnungsamt / Bußgeldstellen.",
-    "offers": {
-      "@type": "Offer",
-      "price": "0.00",
-      "priceCurrency": "EUR"
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Einspruchs-Generator: {{FALL_TITEL}}",
+      "applicationCategory": "LegalApplication",
+      "operatingSystem": "All",
+      "description": "{{META_DESCRIPTION}}",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "EUR"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Darf man bei einem defekten Parkautomaten mit Parkscheibe parken?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, gemäß § 13 Abs. 1 StVO darf bei einem außer Betrieb befindlichen Parkscheinautomaten eine mechanische Parkscheibe gut sichtbar ausgelegt werden. Es gilt die angegebene Höchstparkdauer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wann verjährt ein Strafzettel oder Knöllchen vom Ordnungsamt?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Verkehrsordnungswidrigkeiten im ruhenden Verkehr verjähren nach § 26 Abs. 3 StVG grundsätzlich nach 3 Monaten (bzw. 6 Monaten nach Erlass des ersten Bußgeldbescheids), sofern keine unterbrechenden Handlungen vorliegen."
+          }
+        }
+      ]
     }
-  }
-  </script>
+  ]
+}
+</script>
 </head>
 
 <body>
@@ -41,7 +65,7 @@
 </header>
 
 <div class="page-container">
-  <h1>Ordnungsamt {{STADT_NAME}}: Knöllchen fehlerhaft? Jetzt Einspruch einlegen!</h1>
+ <h1>{{H1_TITEL}}</h1>
 
   <div style="text-align: center; margin: 15px 0 30px 0;">
     <a href="#govtParkForm" class="button-primary" style="display: inline-block; padding: 14px 28px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 1.1em; background: #972028; color: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -62,10 +86,16 @@
     <div class="usp-item">Sofort-PDF & Textkopie</div>
   </div>
 
-  <p>Ein Strafzettel wegen Falschparkens oder Halteverbots vom Ordnungsamt <strong>{{STADT_NAME}}</strong> ist ärgerlich. Doch im Gegensatz zu privaten Parkplätzen gilt hier das **Öffentliche Recht (OWiG / StVO)**. Das bedeutet für Sie: Die Behörden müssen absolut fehlerfrei arbeiten! Da die Daten meist händisch unter Zeitdruck eingetippt werden, sind laut Statistiken fast **jeder dritte Bußgeldbescheid und jedes Knöllchen formell fehlerhaft**.</p>
-  
+<p>{{EINLEITUNGSTEXT}}</p>
+
+ <!-- INFOBOX ANPASSUNG -->
+<div class="lokal-infobox">
+  {{FALL_INFOBOX}}
+</div>
+
+
   <ul style="margin-bottom: 25px; line-height: 1.6; font-size: 1.05em; background: #fdfdfd; padding: 20px 20px 20px 40px; border-radius: 8px; border: 1px solid #eaeaea;">
-    <li><strong>Lokale Behörden-Fehler in {{STADT_NAME}}:</strong> Ob falsch abgetipptes Kennzeichen oder falsche Automarke – ein formeller "Zahlendreher" macht den gesamten Bescheid rechtlich angreifbar (Verstoß gegen das Bestimmtheitsgebot).</li>
+    <li><strong>Lokale Behörden-Fehler:</strong> Ob falsch abgetipptes Kennzeichen oder falsche Automarke – ein formeller "Zahlendreher" macht den gesamten Bescheid rechtlich angreifbar (Verstoß gegen das Bestimmtheitsgebot).</li>
     <li><strong>Die strikte 6-Monats-Verjährung (§ 26 StVG):</strong> Bei Verkehrsordnungswidrigkeiten tickt die Uhr. Erhalten Sie den Brief aus {{STADT_NAME}} auch nur einen Tag nach Ablauf von 6 Monaten, liegt ein absolutes Verfahrenshindernis vor.</li>
     <li><strong>Defekte Parkautomaten (§ 13 StVO):</strong> Nimmt der Automat kein Geld oder ist das Display schwarz, gilt eine rechtmäßige Ersatzvornahme. Mit ausgelegter Parkscheibe parken Sie dort völlig legal – Ordnungsämter ignorieren diesen Fakt jedoch häufig.</li>
     <li><strong>Unwirksame Beschilderung:</strong> Ein Halteverbot muss nach dem strengen Sichtbarkeitsprinzip sofort und ohne Suchen erkennbar sein. Zugewachsene oder verdeckte Schilder machen das Knöllchen schlichtweg nichtig.</li>
@@ -108,14 +138,14 @@
       <p style="font-size: 0.85em; color: #555; margin-top: 0;">Füllen Sie diese Felder aus, damit die Anschrift passgenau im Sichtfenster Ihres Briefumschlags erscheint.</p>
       
       <label>Name der Behörde / Dienststelle:</label>
-      <input type="text" id="pBehoerde" value="Stadt {{STADT_NAME}} - Ordnungsamt / Bußgeldstelle" required>
+      <input type="text" id="pBehoerde" placeholder="z. B. Bußgeldstelle / Ordnungsamt Musterstadt" required>
       <label>Straße und Hausnummer der Behörde:</label>
       <input type="text" id="pBehoerdeStrasse" placeholder="z. B. Rathausplatz 1" required>
       <label>PLZ und Ort der Behörde:</label>
-      <input type="text" id="pBehoerdePLZOrt" placeholder="z. B. 12345 {{STADT_NAME}}" required>
+      <input type="text" id="pBehoerdePLZOrt" placeholder="z. B. 12345 Musterstadt" required>
       
       <label>E-Mail-Adresse der Behörde (falls Sie per Mail senden):</label>
-      <input type="email" id="pEmailBehoerde" value="" placeholder="bussgeldstelle@{{STADT_NAME_LOW}}.de">
+      <input type="email" id="pEmailBehoerde" value="" placeholder="bussgeldstelle@info.de">
       
       <label>Aktenzeichen / Tagebuchnummer (WICHTIG!):</label>
       <input type="text" id="pAktenzeichen" placeholder="z.B. 41.12.345678.9" required>
@@ -136,7 +166,7 @@
       <label>Ihre PLZ und Ort:</label>
       <input type="text" id="sPLZOrt" placeholder="z. B. 12345 Musterstadt" required>
       <label>Ihr Kfz-Kennzeichen:</label>
-      <input type="text" id="sKennzeichen" placeholder="z.B. {{STADT_KUERZEL}}-XX 123" required>
+      <input type="text" id="sKennzeichen" placeholder="z.B. B-XX 123" required>
       <label>Automarke (laut Papieren):</label>
       <input type="text" id="sMarke" placeholder="z.B. VW Golf, BMW 3er" required>
     </fieldset>
@@ -177,8 +207,8 @@
     </fieldset>
 
     <div class="submit-area" style="display: flex; gap: 15px; flex-wrap: wrap;">
-      <button type="submit" class="button-primary" style="flex: 1;">📄 PDF-Einspruch generieren (Post)</button>
-      <button type="button" id="btnEmail" class="button-secondary" style="flex: 1; background: #333; color: white; border: none; padding: 12px; font-weight: bold; cursor: pointer; border-radius: 4px;">✉️ Text für Online-Portal kopieren</button>
+      <button type="submit" class="button-primary" style="flex: 1;">PDF-Einspruch generieren (Post)</button>
+      <button type="button" id="btnEmail" class="button-secondary" style="flex: 1; background: #333; color: white; border: none; padding: 12px; font-weight: bold; cursor: pointer; border-radius: 4px;">Text für Online-Portal kopieren</button>
     </div>
     <p class="submit-disclaimer" style="text-align: center; margin-top: 10px;">
         Die folgenden Einspruchsgründe sind typische Standardargumente, die Betroffene in vergleichbaren Fällen häufig verwenden. Welcher Ansatz auf Ihren Fall zutrifft, müssen Sie selbst beurteilen – wir empfehlen keinen konkreten Rechtsweg.
@@ -187,7 +217,7 @@
 
   <!-- SEO Content Bereich -->
   <div class="seo-content">
-    <h2>Strafzettel vom Ordnungsamt {{STADT_NAME}} anfechten: Die Rechtslage</h2>
+    <h2>Strafzettel vom Ordnungsamt anfechten: Die Rechtslage</h2>
     <p>Im Gegensatz zur Abzocke auf privaten Parkplätzen bewegen wir sich bei staatlichen Knöllchen im **Ordnungswidrigkeitenrecht (OWiG)**. Das bedeutet zwar, dass am Ende bei ausbleibendem Fahrer der Halter die Verfahrenskosten tragen muss (Halterhaftung nach § 25a StVG im ruhenden Verkehr), aber: **Bevor** es dazu kommt, muss die Behörde den Verstoß absolut fehlerfrei nachweisen. Jede Ungenauigkeit im Bußgeldbescheid bietet Angriffsfläche.</p>
 
     <h3>1. Der „Zahlendreher“-Fehler der Behörden</h3>
@@ -203,16 +233,40 @@
     <p>Verkehrszeichen sind Verwaltungsakte in Form von Allgemeinverfügungen. Damit sie wirksam werden, gilt das verkehrsrechtliche **Sichtbarkeitsprinzip**. Ein Schild muss so aufgestellt sein, dass ein rascher, beiläufiger Blick eines Autofahrers ausreicht, um es zu erkennen. Ist das Halteverbotsschild komplett durch dichte Hecken zugewachsen, durch einen Lkw dauerhaft verdeckt oder im Winter völlig eingeschneit, entfaltet es keine Rechtswirkung.</p>
   </div>
 
-  <div class="lokal-infobox">
-    {{STADT_INFOBOX}}
+ 
+
+<div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
+  <h3>Weitere Ratgeber & Szenarien zu Parkverstößen:</h3>
+  <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
+    {{BELIEBTE_LINKS}}
+  </div>
 </div>
 
-  <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
-    <h3>Weitere Städte-Bußgeldstellen im Fokus:</h3>
-    <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-      {{BELIEBTE_LINKS}}
-    </div>
-  </div>
+<div class="quellenbox">
+  <h3>Quellen: Parkticket vom Ordnungsamt (öffentlicher Parkraum)</h3>
+  <ul>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/stvo_2013/__12.html" target="_blank" rel="noopener">§ 12 StVO – Halten und Parken</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/stvo_2013/__49.html" target="_blank" rel="noopener">§ 49 StVO – Ordnungswidrigkeiten</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/bkatv_2013/" target="_blank" rel="noopener">Bußgeldkatalog-Verordnung (BKatV)</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/owig_1968/__67.html" target="_blank" rel="noopener">§ 67 OWiG – Einspruch gegen den Bußgeldbescheid</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+    <li>
+      <a href="https://www.gesetze-im-internet.de/stvg/__24.html" target="_blank" rel="noopener">§ 24 StVG – Bußgeldvorschriften</a>
+      <span class="quelle-label">gesetze-im-internet.de</span>
+    </li>
+  </ul>
+</div>
 
 </div>
 
@@ -236,7 +290,7 @@
     <div class="lotse-card">
     <p>
         <strong>Bußgeldbescheid, Parkverstoß oder Blitzerbescheid?</strong><br>
-Fix-My-Ticket prüft in wenigen Schritten Ihren Anspruch auf Einspruch, Bußgeldminderung oder Führerscheinerhalt.<br>
+Mit Fix-My-Ticket in wenigen Schritten das passende Einspruchsschreiben für Bußgeldminderung oder Führerscheinerhalt aufsetzen.<br>
 <em>Ein Service von Fix my Ticket.</em>
     </p>
 </div>
