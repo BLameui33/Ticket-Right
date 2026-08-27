@@ -263,37 +263,116 @@ header.site-header > span {
 /* --------------------------------------------------------------------------
    7. INFO-BOXEN
    -------------------------------------------------------------------------- */
-.info-box {
-  padding: 16px 20px;
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
-  margin: 20px 0;
+
+
+
+/* 1. Universelle Basis */
+.info-box, 
+.lokal-infobox,
+.legal-info-box {
+  position: relative;
+  overflow: hidden; 
+  border-radius: var(--radius-md); 
+  padding: 18px 24px;
+  margin: 24px 0;
   font-size: 0.96em;
+  line-height: 1.6;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04); 
+  
+  /* Fallback Basis-Design */
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  color: #495057;
 }
 
-.info-box--primary,
-.info-box.blue,
-.info-box.red {
-  background: var(--primary-tint);
-  border-left: 4px solid var(--primary);
-  color: var(--primary-dark);
+.info-box p:last-child, 
+.lokal-infobox p:last-child,
+.legal-info-box p:last-child { 
+  margin-bottom: 0; 
 }
+
+.info-box::before, 
+.lokal-infobox::before,
+.legal-info-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;  
+  height: 100%;
+}
+
+.info-box::after, 
+.lokal-infobox::after,
+.legal-info-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px; 
+  width: 100%; 
+}
+
+
+
+.info-box::before, .legal-info-box::before {
+  background: linear-gradient(180deg, #6c757d 0%, transparent 80%);
+}
+.info-box::after, .legal-info-box::after {
+  background: linear-gradient(90deg, #6c757d 0%, transparent 60px); 
+}
+.legal-info-box { background-color: #ffffff; } 
+
 
 .info-box--warning,
 .info-box.warning {
-  background: #fffbf0;
-  border-left: 4px solid #c9a84c;
-  color: #7a5a00;
+  background: #fffbf0; 
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  color: #6b4f00;
+}
+.info-box--warning::before, .info-box.warning::before {
+  background: linear-gradient(180deg, #c9a84c 0%, transparent 80%);
+}
+.info-box--warning::after, .info-box.warning::after {
+  background: linear-gradient(90deg, #c9a84c 0%, transparent 60px);
 }
 
-.info-box--danger,
+
+/* PRIMARY / INFO (Dein Dunkelrot) */
+.info-box--primary,
+.info-box.blue,
+.info-box.red,
 .info-box.danger {
-  background: #fcebeb;
-  border-left: 4px solid var(--danger);
-  color: #7f0000;
+  background: #fdf5f5; 
+  border: 1px solid rgba(178, 34, 34, 0.1);
+  color: #5a0000;
+}
+.info-box--primary::before, .info-box.blue::before, .info-box.red::before, .info-box.danger::before {
+  background: linear-gradient(180deg, var(--primary) 0%, transparent 80%);
+}
+.info-box--primary::after, .info-box.blue::after, .info-box.red::after, .info-box.danger::after {
+  background: linear-gradient(90deg, var(--primary) 0%, transparent 60px);
 }
 
-.info-box p:last-child { margin-bottom: 0; }
+.info-box--lokal,
+.info-box.lokal,
+.lokal-infobox {
+  background: #f4f5f7; 
+  border: 1px solid #e2e8f0; 
+  color: #2d3748; 
+}
 
+.info-box--lokal::before, 
+.info-box.lokal::before,
+.lokal-infobox::before {
+  background: linear-gradient(180deg, #8b0000 0%, transparent 80%);
+}
+
+.info-box--lokal::after, 
+.info-box.lokal::after,
+.lokal-infobox::after {
+  background: linear-gradient(90deg, #8b0000 0%, transparent 60px);
+}
 
 /* --------------------------------------------------------------------------
    8. FIELDSET & LEGEND
@@ -2099,16 +2178,33 @@ footer p {
 
 /* Prüfdatum-Variante */
 .pruefdatum-box {
-  margin-top: 15px;
+  display: inline-flex; 
+  align-items: center;
+  
+  padding: 6px 16px;
+  margin-top: 10px;
   margin-bottom: 30px;
-  border-left: 3px solid var(--primary);
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  
+  border-radius: 50px; 
+  
   background: var(--primary-pale);
+  
+  border: 1px solid rgba(178, 34, 34, 0.1); 
+  
+  font-size: 0.85em; 
+  color: #495057; 
+}
+
+.pruefdatum-box p {
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 #pruefdatum {
   color: var(--primary-dark);
   font-weight: 600;
+  margin-left: 4px; 
 }
 
 
@@ -2403,19 +2499,6 @@ footer div a:hover {
 }
 
 
-.legal-info-box {
-    background-color: #f8f9fa;
-    border-left: 4px solid #6c757d;
-    padding: 15px 20px;
-    margin-bottom: 25px;
-    border-radius: 4px;
-    font-size: 0.9em;
-    color: #495057;
-    line-height: 1.5;
-}
-.legal-info-box strong {
-    color: #343a40;
-}
 
 .submit-disclaimer {
     font-size: 0.8em;
@@ -2427,27 +2510,6 @@ footer div a:hover {
 .submit-area {
     margin-top: 30px;
     text-align: center;
-}
-
-
-
-/* Styling für die individuelle SEO-Infobox */
-.lokal-infobox {
-    margin: 30px 0;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-left: 4px solid #972828; /* Schicker blauer Akzent-Strich */
-    border-radius: 4px;
-    font-size: 0.95em;
-    line-height: 1.6;
-    color: #333;
-}
-/* Verhindert leere Ränder/Abstände, falls kein Text eingetragen ist */
-.lokal-infobox:empty {
-    display: none;
-}
-.lokal-infobox strong {
-    color: #972828;
 }
 
 
@@ -2622,4 +2684,71 @@ footer div a:hover {
   font-size: 0.75em;
   color: var(--text-muted, #888888);
   margin-top: 3px;
+}
+
+/* ==========================================================================
+   QUELLENBOX (im Design der Crosslink-Box)
+   ========================================================================== */
+
+.lesson-learned-box {
+  background-color: #f8f9fa !important; 
+  border: 1px solid #e9ecef !important; 
+  border-radius: var(--radius-lg) !important; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04) !important; 
+  
+  display: flex !important;
+  flex-direction: column !important; 
+  align-items: center !important;    
+  text-align: center !important; 
+  
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.lesson-learned-box::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 3px !important;
+ background: var(--primary) !important; 
+  
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 50%, transparent 100%) !important;
+  mask-image: linear-gradient(90deg, transparent 0%, black 50%, transparent 100%) !important;
+}
+
+
+.lesson-learned-box h2 {
+  color: #212529 !important; 
+}
+
+.lesson-learned-box > span {
+  background-color: #f1f3f5 !important; 
+  color: #adb5bd !important; 
+  border-radius: 50px !important; 
+  font-size: 0.65rem !important;
+  font-weight: 600 !important;
+  border: 1px solid #e9ecef !important;
+}
+
+.lesson-learned-box .lesseon-learned-price {
+  color: var(--primary) !important; 
+}
+
+.lesson-learned-box a.button-primary {
+  background-color: var(--primary) !important; 
+  color: #ffffff !important; 
+  border-radius: var(--radius-md) !important; 
+  font-weight: 600 !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(178, 34, 34, 0.25) !important; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease !important;
+}
+
+.lesson-learned-box a.button-primary:hover {
+  background-color: var(--primary-dark) !important; 
+  transform: translateY(-2px) !important; 
+  box-shadow: 0 6px 16px rgba(178, 34, 34, 0.35) !important; 
+  text-decoration: none !important;
 }

@@ -68,7 +68,7 @@
   <h1>LKW-Bußgeldbescheid? Strafen erfolgreich abwehren</h1>
   
   <div style="text-align: center; margin: 15px 0 30px 0;">
-    <a href="#lkwForm" class="button-primary" style="display: inline-block; padding: 14px 28px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 1.1em; background: #d32f2f; color: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <a href="#lkwForm" class="button-primary" style="display: inline-block; padding: 14px 28px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 1.1em; background: #8B0000; color: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
       Direkt zum kostenlosen Einspruchs-Generator
     </a>
   </div>
@@ -97,7 +97,7 @@
 
   <p>Nutzen Sie jetzt unseren Generator, um das behördliche Verfahren mit den richtigen Hebeln zu bekämpfen.</p>
 
-  <div class="legal-info-box" style="border-left-color: #000; background: #f5f5f5;">
+  <div class="legal-info-box">
     <strong>Wichtiger Hinweis zu Beweismitteln</strong><br>
     Wenn Sie sich bei Lenkzeiten auf den "Notstand" (§ 12 VO) berufen, müssen Sie dem Einspruch zwingend den <strong>Tachografen-Ausdruck mit Ihrem handschriftlichen Vermerk</strong> vom Tattag beifügen (als Kopie per Post oder Foto per Mail).
   </div>
@@ -111,7 +111,7 @@
     <p><strong>Redaktionell geprüft am:</strong> <span id="pruefdatum">30.07.2026</span></p>
   </div>
 
-  <div class="lesson-learned-box" style="background: #f8f9fa; border-left: 4px solid #ffb300; padding: 15px 20px; margin: 30px 0; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px; position: relative;">
+  <div class="lesson-learned-box" style="background: #f8f9fa; padding: 15px 20px; margin: 30px 0; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px; position: relative;">
     <span style="font-size: 0.7rem; color: #666; background: #eee; padding: 2px 6px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; position: absolute; top: 10px; right: 10px;">Anzeige</span>
     <div style="font-size: 2em; line-height: 1;"></div>
     <div>
@@ -126,8 +126,8 @@
   </div>
 
   <form id="lkwForm">
-    <fieldset style="border-color: #d32f2f; background: #fff9f9;">
-      <legend style="background: #d32f2f; color: #fff;">1. Daten der Behörde & Bescheid (Empfänger)</legend>
+    <fieldset>
+      <legend>1. Daten der Behörde & Bescheid (Empfänger)</legend>
       <p style="font-size: 0.85em; color: #555; margin-top: 0;">Geben Sie hier die Postadresse der Behörde ein, damit sie passgenau im PDF-Briefkopf für einen Fensterumschlag erscheint.</p>
       
       <label>Name der Behörde:</label>
@@ -149,8 +149,8 @@
       </select>
     </fieldset>
 
-    <fieldset style="border-color: #c44a4a; background: #f0f8ff;">
-      <legend style="background: #c44a4a; color: #fff;">2. Ihre Fahrer- & Adressdaten (Absender)</legend>
+    <fieldset>
+      <legend>2. Ihre Fahrer- & Adressdaten (Absender)</legend>
       <label>Ihr Vor- und Nachname (Fahrer/Halter):</label>
       <input type="text" id="sName" placeholder="z. B. Max Mustermann" required>
       <label>Ihre Straße und Hausnummer:</label>
@@ -176,14 +176,14 @@
       </select>
 
       <!-- NEU: Freitextfeld für "Sonstiges" -->
-<div id="boxSonstigerVerstoss" style="display:none; margin-top:10px; padding: 10px; background: #f3f3f3; border-left: 3px solid #888;">
+<div id="boxSonstigerVerstoss" style="display:none; margin-top:10px; padding: 10px;">
   <label style="font-weight:bold; font-size: 0.9em;">Bitte beschreiben Sie den Verstoß:</label>
   <textarea id="pSonstigerVerstoss" rows="3" style="width:100%; border:1px solid #ccc; border-radius:4px; padding:8px; font-family: inherit;" placeholder="z. B. Verstoß gegen Ladungssicherungsvorschriften gemäß § 22 StVO ..."></textarea>
 </div>
     </fieldset>
 
-    <fieldset style="border-color: #ff9800; background: #fffdf7;">
-      <legend style="background: #ff9800; color: #333;">4. Verteidigungs-Ansätze (Ihre Taktik)</legend>
+    <fieldset>
+      <legend>4. Verteidigungs-Ansätze (Ihre Taktik)</legend>
       <p style="font-size: 0.85em; color: #555; margin-top: 0;">Wählen Sie Ihren rettenden Anker. Das System formuliert den Einwand anspruchsvoll.</p>
       <select id="pStrategie" required style="font-weight: bold;">
         <option value="notstand">Ansatz 1: Parkplatznot / Höhere Gewalt (§ 12 VO) – Lenkzeit war unumgänglich</option>
@@ -193,7 +193,7 @@
         <option value="allgemein">Ansatz 5: Allgemeiner Einspruch & Anforderung der Rohmessdaten</option>
       </select>
       
-      <div id="boxNotstand" style="display:block; margin-top:15px; padding: 10px; background: #ffebee; border-left: 3px solid #f44336;">
+      <div id="boxNotstand" style="display:block; margin-top:15px; padding: 10px;">
         <label style="color:#c62828; font-weight:bold; font-size: 0.9em;">Haben Sie den Grund der Weiterfahrt handschriftlich auf dem Tagesausdruck dokumentiert?</label>
         <select id="pTachoDoku">
           <option value="ja">Ja, der handschriftliche Vermerk liegt als Kopie bei.</option>
@@ -201,8 +201,8 @@
         </select>
       </div>
 
-      <div id="boxFreitext" style="display:none; margin-top:15px; padding: 10px; background: #e3f2fd; border-left: 3px solid #2196f3;">
-        <label style="color:#0d47a1; font-weight:bold; font-size: 0.9em;">Ihre eigene Begründung:</label>
+      <div id="boxFreitext" style="display:none; margin-top:15px; padding: 10px;">
+        <label style="color:#373636; font-weight:bold; font-size: 0.9em;">Ihre eigene Begründung:</label>
         <textarea id="pFreitextInhalt" rows="5" style="width:100%; border:1px solid #ccc; border-radius:4px; padding:8px; font-family: inherit;" placeholder="Bitte schildern Sie hier detailliert Ihren Sachverhalt..."></textarea>
       </div>
     </fieldset>
@@ -235,12 +235,12 @@
 <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
   <h3>Weitere LKW-Szenarien & Transportrecht-Ratgeber:</h3>
   <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-    <a href="einspruch-lkw-bussgeld-lkw-ueberladung-mobile-waage-messfehler-anfechten.html">LKW überladen? Messfehler kostenlos nutzen</a>
+    <a href="einspruch-lkw-bussgeld-lkw-abstandsmessung-50-meter-regel-autobahn-einspruch.html">50 Meter Abstand LKW? 1 Punkt abwehren</a>
+<a href="einspruch-lkw-bussgeld-lkw-ladungssicherung-mangelhaft-einspruch.html">Ladungssicherung LKW? 1 Punkt abwehren</a>
+<a href="einspruch-lkw-bussgeld-lkw-geschwindigkeitsueberschreitung-blitzer.html">LKW-Blitzer 26 km/h Fahrverbot stoppen</a>
+<a href="einspruch-lkw-bussgeld-digitaler-tachograf-lenkzeit-auslesefehler-balm.html">Tachograf-Fehler? BALM-Bußgeld anfechten</a>
 <a href="einspruch-lkw-bussgeld-mautverstoss-toll-collect-balm-einspruch.html">LKW-Mautverstoß? OBU-Fehler anfechten</a>
-<a href="einspruch-lkw-bussgeld-elefantenrennen-lkw-ueberholen-autobahn.html">Elefantenrennen? 1 Punkt Einspruch Muster</a>
-<a href="einspruch-lkw-bussgeld-lkw-abstandsmessung-50-meter-regel-autobahn-einspruch.html">50 Meter Abstand LKW? 1 Punkt abwehren</a>
-<a href="einspruch-lkw-bussgeld-lkw-ueberladung-anhaenger-anfechten.html">Überladung Anhänger LKW? kostenlos anfechten</a>
-<a href="einspruch-lkw-bussgeld-lkw-fahrverbot-probezeit-anfechten.html">Probezeit Fahrverbot? kostenlos Muster</a>
+<a href="einspruch-lkw-bussgeld-lenkzeit-ueberschreitung-parkplatznot-par-12-vo-einspruch.html">Lenkzeit überschritten? Einspruch Muster</a>
 
   </div>
 </div>

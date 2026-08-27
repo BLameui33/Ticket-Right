@@ -68,7 +68,7 @@
  <h1>Gegen die Fahrtrichtung geparkt? Knöllchen anfechten!</h1>
 
   <div style="text-align: center; margin: 15px 0 30px 0;">
-    <a href="#govtParkForm" class="button-primary" style="display: inline-block; padding: 14px 28px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 1.1em; background: #972028; color: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <a href="#govtParkForm" class="button-primary" style="display: inline-block; padding: 14px 28px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 1.1em; background: #8B0000; color: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
       Direkt zum kostenlosen Einspruchs-Generator
     </a>
   </div>
@@ -118,7 +118,7 @@
   </div>
 
   <!-- Affiliate Box: Verkehrsrechtsschutz -->
-  <div class="lesson-learned-box" style="background: #f8f9fa; border-left: 4px solid #ffb300; padding: 15px 20px; margin: 30px 0; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px; position: relative;">
+  <div class="lesson-learned-box" style="background: #f8f9fa; padding: 15px 20px; margin: 30px 0; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px; position: relative;">
     <span style="font-size: 0.7rem; color: #666; background: #eee; padding: 2px 6px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; position: absolute; top: 10px; right: 10px;">Anzeige</span>
     <div style="font-size: 2em; line-height: 1;">🛡️</div>
     <div>
@@ -133,8 +133,8 @@
   </div>
 
   <form id="govtParkForm">
-    <fieldset style="border-color: #d32f2f; background: #f5f5f5;">
-      <legend style="background: #d32f2f; color: #fff;">1. Daten der Behörde & Bescheid (Empfänger)</legend>
+    <fieldset>
+      <legend>1. Daten der Behörde & Bescheid (Empfänger)</legend>
       <p style="font-size: 0.85em; color: #555; margin-top: 0;">Füllen Sie diese Felder aus, damit die Anschrift passgenau im Sichtfenster Ihres Briefumschlags erscheint.</p>
       
       <label>Name der Behörde / Dienststelle:</label>
@@ -157,8 +157,8 @@
       </select>
     </fieldset>
 
-    <fieldset style="border-color: #d32f2f; background: #f0f8ff;">
-      <legend style="background: #d32f2f; color: #fff;">2. Ihre Daten (Betroffener / Halter / Absender)</legend>
+    <fieldset>
+      <legend>2. Ihre Daten (Betroffener / Halter / Absender)</legend>
       <label>Ihr Vor- und Nachname:</label>
       <input type="text" id="sName" placeholder="z. B. Max Mustermann" required>
       <label>Ihre Straße und Hausnummer:</label>
@@ -181,8 +181,8 @@
       <input type="text" id="pTatort" placeholder="z.B. Hauptstraße gegenüber Nr. 12" required>
     </fieldset>
 
-    <fieldset style="border-color: #d32f2f; background: #fff9f9;">
-      <legend style="background: #d32f2f; color: #fff;">4. Behörden-Fehler wählen (Ihre Verteidigung)</legend>
+    <fieldset>
+      <legend>4. Behörden-Fehler wählen (Ihre Verteidigung)</legend>
       <p style="font-size: 0.85em; color: #555; margin-top: 0;">Wählen Sie den zutreffenden Kniff aus. Unser System formuliert den Einwand!</p>
       <select id="pStrategie" required style="font-weight: bold;">
         <option value="zahlendreher">Ansatz 1: Formeller Fehler / Zahlendreher (Falsches Kennzeichen, Marke oder falscher Ort im Brief)</option>
@@ -194,14 +194,14 @@
       </select>
       
       <!-- Dynamisches Zusatzfeld für Zahlendreher -->
-      <div id="boxZahlendreher" style="display:none; margin-top:15px; padding: 10px; background: #ffebee; border-left: 3px solid #f44336;">
-        <label style="color:#c62828; font-weight:bold;">Was genau hat das Ordnungsamt falsch aufgeschrieben?</label>
+      <div id="boxZahlendreher" style="display:none; margin-top:15px; padding: 10px;">
+        <label>Was genau hat das Ordnungsamt falsch aufgeschrieben?</label>
         <input type="text" id="pZahlendreherDetail" style="width: 100%; box-sizing: border-box;" placeholder="z.B. Auf dem Ticket steht fälschlicherweise Marke 'Audi' statt 'VW' / Kennzeichen 'O' statt '0'">
       </div>
 
       <!-- Dynamisches Zusatzfeld für Freitext -->
-      <div id="boxFreitext" style="display:none; margin-top:15px; padding: 10px; background: #e3f2fd; border-left: 3px solid #2196f3;">
-        <label style="color:#0d47a1; font-weight:bold; font-size: 0.9em;">Ihre eigene sachliche Begründung:</label>
+      <div id="boxFreitext" style="display:none; margin-top:15px; padding: 10px;">
+        <label>Ihre eigene sachliche Begründung:</label>
         <textarea id="pFreitextInhalt" rows="5" style="width:100%; box-sizing: border-box; border:1px solid #ccc; border-radius:4px; padding:8px; font-family: inherit;" placeholder="Bitte schildern Sie hier detailliert Ihren Sachverhalt..."></textarea>
       </div>
     </fieldset>
@@ -238,12 +238,12 @@
 <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
   <h3>Weitere Ratgeber & Szenarien zu Parkverstößen:</h3>
   <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-    <a href="einspruch-ordnungsamt-parken-im-bereich-einer-feuerwehrzufahrt-einspruch.html">Feuerwehrzufahrt: Knöllchen abwehren</a>
-<a href="einspruch-ordnungsamt-parkverbot-auf-privatgrund-einspruch.html">Privatgrund: Parkverbot anfechten</a>
-<a href="einspruch-ordnungsamt-knollchen-strafzettel-allgemein-einspruch.html">Knöllchen am Auto: kostenlos Einspruch</a>
-<a href="einspruch-ordnungsamt-25-euro-strafzettel-innenstadt-parken.html">25-Euro-Knöllchen Innenstadt anfechten</a>
+    <a href="einspruch-ordnungsamt-25-euro-strafzettel-innenstadt-parken.html">25-Euro-Knöllchen Innenstadt anfechten</a>
+<a href="einspruch-ordnungsamt-parken-einmuendung-kreuzung-einspruch.html">Einmündung: Knöllchen kostenlos abwehren</a>
+<a href="einspruch-ordnungsamt-strafzettel-zahlendreher-formfehler-kennzeichen-einspruch.html">Falsches Kennzeichen: Knöllchen stoppen</a>
+<a href="einspruch-ordnungsamt-parkscheibe-vergessen-strafzettel-einspruch.html">Parkscheibe vergessen: Einspruch Muster</a>
+<a href="einspruch-ordnungsamt-15-euro-strafzettel-parken-einspruch.html">15-Euro-Knöllchen: kostenlos Einspruch</a>
 <a href="einspruch-ordnungsamt-halteverbotsschild-verdeckt-zugewachsen-einspruch-ordnungsamt.html">Verdecktes Halteverbot: Einspruch lohnt</a>
-<a href="einspruch-ordnungsamt-parken-von-in-der-naehe-schulbushaltestellen-einspruch.html">Schulbushaltestelle: Knöllchen anfechten</a>
 
   </div>
 </div>

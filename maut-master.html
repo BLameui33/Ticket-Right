@@ -43,7 +43,7 @@
   <h1>LKW Maut-Bescheid von {{BETREIBER_NAME}}? Wehren Sie sich erfolgreich!</h1>
 
   <div style="text-align: center; margin: 15px 0 30px 0;">
-    <a href="#mautForm" class="button-primary" style="display: inline-block; padding: 14px 28px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 1.1em; background: #b72d2d; color: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <a href="#mautForm" class="button-primary" style="display: inline-block; padding: 14px 28px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 1.1em; background: #8B0000; color: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
       Direkt zum Einspruchs-Generator
     </a>
   </div>
@@ -84,23 +84,23 @@
   </div>
 
   <!-- B2B AFFILIATE BANNER -->
-  <div class="lesson-learned-box" style="background: #e8f5e9; border-left: 5px solid #a22d36; padding: 20px; margin: 30px 0; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px; position: relative;">
+  <div class="lesson-learned-box" style="background: #f8f9fa;  padding: 20px; margin: 30px 0; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px; position: relative;">
     <span style="font-size: 0.7rem; color: #fff; background: #a22d36; padding: 2px 8px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; position: absolute; top: 10px; right: 10px; font-weight: bold;">Anzeige</span>
-    <div style="font-size: 2.5em; line-height: 1;">🚛</div>
+    <div style="font-size: 2.5em; line-height: 1;"></div>
     <div>
       <h4 style="margin: 0 0 8px 0; color: #a22d36; font-size: 1.2em; padding-right: 70px;">Unverzichtbar: Firmen-Verkehrsrechtsschutz</h4>
       <p style="margin: 0 0 12px 0; font-size: 1em; color: #333; line-height: 1.5;">
         Bei mehrfachen Maut-Verstößen oder massiven Lenkzeitüberschreitungen prüft das BALM die <em>"gewerberechtliche Zuverlässigkeit"</em>. Im schlimmsten Fall droht der Entzug der Güterkraftverkehrserlaubnis! Ein Gewerbe-Verkehrsrechtsschutz übernimmt die hohen Anwaltskosten bei Auseinandersetzungen mit dem BALM.
       </p>
-      <a href="https://www.tarifcheck.com/if4WNkC" target="_blank" rel="noopener nofollow" style="color: #fff; background: #2e7d32; padding: 10px 15px; border-radius: 4px; font-weight: bold; text-decoration: none; display: inline-block;">
+      <a href="https://www.tarifcheck.com/if4WNkC" target="_blank" rel="noopener nofollow" style="color: #fff; background: #8B0000; padding: 10px 15px; border-radius: 4px; font-weight: bold; text-decoration: none; display: inline-block;">
         Jetzt Gewerbe-Rechtsschutz vergleichen
       </a>
     </div>
   </div>
 
   <form id="mautForm">
-    <fieldset style="border-color: #da0d0d; background: #fffdf7;">
-      <legend style="background: #da0d0d; color: #333;">1. Daten des Betreibers / der Behörde</legend>
+    <fieldset>
+      <legend>1. Daten des Betreibers / der Behörde</legend>
       <p style="font-size: 0.85em; color: #555; margin-top: 0;">Wer hat Ihnen den Bescheid geschickt?</p>
       <label>Name der Behörde / des Mautbetreibers:</label>
       <input type="text" id="pFirma" value="{{BETREIBER_NAME}}" required>
@@ -115,8 +115,8 @@
       <input type="text" id="pAktenzeichen" placeholder="z.B. AZ: BALM-12345" required>
     </fieldset>
 
-    <fieldset style="border-color: #c44a4a; background: #f0f8ff;">
-      <legend style="background: #c44a4a; color: #fff;">2. Daten des Unternehmens / Fahrzeughalters</legend>
+    <fieldset>
+      <legend>2. Daten des Unternehmens / Fahrzeughalters</legend>
       <label>Firmenname (Spedition) / Ihr Name:</label>
       <input type="text" id="sName" placeholder="z. B. Spedition Mustermann GmbH" required>
       <label>Straße und Hausnummer:</label>
@@ -137,8 +137,8 @@
       <input type="text" id="pOrt" placeholder="z.B. A3 bei Frankfurt, Fahrtrichtung Nord" required>
     </fieldset>
 
-    <fieldset style="border-color: #d32f2f; background: #fff9f9;">
-      <legend style="background: #d32f2f; color: #fff;">4. Verteidigungsstrategie</legend>
+    <fieldset>
+      <legend>4. Verteidigungsstrategie</legend>
       <p style="font-size: 0.85em; color: #555; margin-top: 0;">Welcher Umstand trifft auf diese Fahrt zu?</p>
       <select id="pStrategie" required style="font-weight: bold;">
         <option value="obu">Hack 1: OBU-Defekt (Gerät leuchtete grün, System hat fälschlich nicht gebucht)</option>
@@ -149,8 +149,8 @@
         <option value="freitext">Hack 6: Individuelle Begründung (Freitext eingeben)</option>
       </select>
 
-      <div id="boxFreitext" style="display:none; margin-top:15px; padding: 10px; background: #e3f2fd; border-left: 3px solid #2196f3;">
-        <label style="color:#0d47a1; font-weight:bold; font-size: 0.9em;">Ihre eigene Begründung:</label>
+      <div id="boxFreitext" style="display:none; margin-top:15px; padding: 10px;">
+        <label style="color:#474748; font-weight:bold; font-size: 0.9em;">Ihre eigene Begründung:</label>
         <textarea id="pFreitextInhalt" rows="5" style="width:100%; box-sizing: border-box; border:1px solid #ccc; border-radius:4px; padding:8px; font-family: inherit;" placeholder="Schildern Sie hier, warum die Forderung sachlich falsch ist..."></textarea>
       </div>
     </fieldset>

@@ -43,7 +43,7 @@
   <h1>Knöllchen auf dem Decathlon-Parkplatz? So wehren Sie sich!</h1>
 
   <div style="text-align: center; margin: 15px 0 30px 0;">
-    <a href="#parkForm" class="button-primary" style="display: inline-block; padding: 14px 28px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 1.1em; background: #d32f2f; color: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <a href="#parkForm" class="button-primary" style="display: inline-block; padding: 14px 28px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 1.1em; background: #8B0000; color: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
       Direkt zum kostenlosen Widerspruchs-Generator
     </a>
   </div>
@@ -86,7 +86,7 @@
 
 
 
-  <div class="lesson-learned-box" style="background: #f8f9fa; border-left: 4px solid #ffb300; padding: 15px 20px; margin: 30px 0; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px; position: relative;">
+  <div class="lesson-learned-box" style="background: #f8f9fa; padding: 15px 20px; margin: 30px 0; border-radius: 4px; display: flex; align-items: flex-start; gap: 15px; position: relative;">
     <span style="font-size: 0.7rem; color: #666; background: #eee; padding: 2px 6px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.05em; position: absolute; top: 10px; right: 10px;">Anzeige</span>
     <div style="font-size: 2em; line-height: 1;">🛡️</div>
     <div>
@@ -102,8 +102,8 @@
   </div>
 
   <form id="parkForm">
-    <fieldset style="border-color: #ff9800; background: #fffdf7;">
-      <legend style="background: #ff9800; color: #333;">1. Daten der Parkfirma (Empfänger)</legend>
+    <fieldset>
+      <legend>1. Daten der Parkfirma (Empfänger)</legend>
       <p style="font-size: 0.85em; color: #555; margin-top: 0;">Füllen Sie diese Felder aus, damit die Anschrift passgenau im Sichtfenster Ihres Briefumschlags erscheint.</p>
       <label>Name der Parkfirma:</label>
       <input type="text" id="pFirma" value="" placeholder="Name der Parkfirma eintragen" required>
@@ -118,8 +118,8 @@
       <input type="text" id="pAktenzeichen" placeholder="z.B. AZ-123456" required>
     </fieldset>
 
-    <fieldset style="border-color: #d32f2f; background: #f0f8ff;">
-      <legend style="background: #d32f2f; color: #fff;">2. Ihre Daten (Absender / Halter)</legend>
+    <fieldset>
+      <legend>2. Ihre Daten (Absender / Halter)</legend>
       <label>Ihr Vor- und Nachname (Fahrzeughalter):</label>
       <input type="text" id="sName" placeholder="z. B. Max Mustermann" required>
       <label>Ihre Straße und Hausnummer:</label>
@@ -138,8 +138,8 @@
       <input type="text" id="pOrt" placeholder="Decathlon, Musterstadt" required>
     </fieldset>
 
-    <fieldset style="border-color: #d32f2f; background: #fff9f9;">
-      <legend style="background: #d32f2f; color: #fff;">4. Ihre Verteidigungsstrategie (Ansatz wählen)</legend>
+    <fieldset>
+      <legend>4. Ihre Verteidigungsstrategie (Ansatz wählen)</legend>
       <p style="font-size: 0.85em; color: #555; margin-top: 0;">Wählen Sie den Hebel, der auf Ihre Situation zutrifft. Wir formulieren den Brief.</p>
       <select id="pStrategie" required style="font-weight: bold;">
         <option value="halter">Ansatz 1: Ich bin nur der Halter, nicht der Fahrer (Keine Halterhaftung im Zivilrecht)</option>
@@ -152,16 +152,16 @@
       </select>
 
       <!-- Dynamisches Zusatzfeld für Freitext -->
-      <div id="boxFreitext" style="display:none; margin-top:15px; padding: 10px; background: #e3f2fd; border-left: 3px solid #2196f3;">
-        <label style="color:#0d47a1; font-weight:bold; font-size: 0.9em;">Ihre eigene sachliche Begründung:</label>
+      <div id="boxFreitext" style="display:none; margin-top:15px; padding: 10px;">
+        <label style="color:#494a4a; font-weight:bold; font-size: 0.9em;">Ihre eigene sachliche Begründung:</label>
         <textarea id="pFreitextInhalt" rows="5" style="width:100%; box-sizing: border-box; border:1px solid #ccc; border-radius:4px; padding:8px; font-family: inherit;" placeholder="Bitte schildern Sie hier detailliert, warum die Forderung unberechtigt ist..."></textarea>
       </div>
     </fieldset>
 
-    <div style="background: #e8f5e9; border: 1px solid #c8e6c9; padding: 15px; border-radius: 6px; margin: 20px 0; display: flex; gap: 15px; align-items: center;">
+    <div style="background: #f8f9fa; border: 1px solid #f8f9fa; padding: 15px; border-radius: 6px; margin: 20px 0; display: flex; gap: 15px; align-items: center;">
     <div style="font-size: 2em;">💡</div>
     <div>
-        <strong style="color: #2e7d32; display: block; margin-bottom: 5px;">Tipp: Probieren Sie verschiedene Ansätze aus!</strong>
+        <strong style="color: #404141; display: block; margin-bottom: 5px;">Tipp: Probieren Sie verschiedene Ansätze aus!</strong>
         <p style="margin: 0; font-size: 0.9em; color: #333;">Sie sind sich unsicher, welcher Hebel in Ihrer Situation am besten greift? Kein Problem! Nutzen Sie das Tool und generieren Sie einfach kostenlos mehrere PDFs mit unterschiedlichen Ansätzen (z. B. DSGVO und Technik-Fehler). Lesen Sie sich die fertigen Anschreiben in Ruhe durch und entscheiden Sie erst danach, welcher Text Ihren Fall am treffendsten widerspiegelt.</p>
     </div>
 </div>
@@ -175,7 +175,7 @@
     </p>
   </form>
 
-  <div class="legal-info-box" style="border-left: 4px solid #d32f2f; margin-top: 25px;">
+  <div class="legal-info-box" style="margin-top: 25px;">
     <h4 style="margin-top: 0; color: #d32f2f;">Gut zu wissen: Ruhe bewahren bei Mahnungen</h4>
     <p style="margin-bottom: 0;"><strong>Verbraucherzentralen weisen häufig darauf hin</strong>, dass private Parkraumbewirtschafter stark auf automatisierte Mahnprozesse setzen. Es ist nicht ungewöhnlich, dass auf einen Widerspruch zunächst standardisierte Ablehnungen oder Schreiben von Inkassobüros folgen. Wichtig hierbei: Sobald Sie einer Forderung begründet widersprochen haben, darf diese laut Gesetz nicht an Auskunfteien (wie die Schufa) gemeldet werden. Ob ein Betreiber bei einer strittigen Beweislage tatsächlich das wirtschaftliche Risiko eines Gerichtsverfahrens eingeht, muss im Einzelfall bewertet werden – in der Praxis scheuen viele Anbieter diesen Schritt jedoch, wenn sie erkennen, dass Sie Ihre Rechte kennen.</p>
 </div>
@@ -198,12 +198,12 @@
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
     <h3>Weitere Parkfirmen:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <a href="parkplatz-strafe-futterhaus.html">Das Futterhaus Parkplatz</a>
-<a href="parkplatz-strafe-hagebau.html">Hagebaumarkt Parkplatz</a>
-<a href="parkplatz-strafe-roller.html">Roller Parkplatz</a>
-<a href="parkplatz-strafe-fitx.html">FitX Parkplatz</a>
-<a href="parkplatz-strafe-fitness-first.html">Fitness First Parkplatz</a>
-<a href="parkplatz-strafe-kaufland.html">Kaufland Parkplatz</a>
+      <a href="parkplatz-strafe-fitx.html">FitX Parkplatz</a>
+<a href="parkplatz-strafe-hit.html">Hit Parkplatz</a>
+<a href="parkplatz-strafe-globus.html">Globus Parkplatz</a>
+<a href="parkplatz-strafe-mediamarkt.html">MediaMarkt Parkplatz</a>
+<a href="parkplatz-strafe-rewe.html">REWE Parkplatz</a>
+<a href="parkplatz-strafe-netto.html">Netto Parkplatz</a>
 
     </div>
   </div>
