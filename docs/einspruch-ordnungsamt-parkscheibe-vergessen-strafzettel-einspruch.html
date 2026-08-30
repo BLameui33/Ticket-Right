@@ -61,7 +61,7 @@
 
 <header class="site-header">
   <a href="index.html" class="site-logo">Fix-My-Ticket</a>
-  <span style="font-size: 0.9em; color: #666;">Vorlagen gegen Abzocke</span>
+  <span style="font-size: 0.9em; color: #fcf8f8;">Vorlagen gegen Abzocke</span>
 </header>
 
 <div class="page-container">
@@ -185,13 +185,20 @@
       <legend>4. Behörden-Fehler wählen (Ihre Verteidigung)</legend>
       <p style="font-size: 0.85em; color: #555; margin-top: 0;">Wählen Sie den zutreffenden Kniff aus. Unser System formuliert den Einwand!</p>
       <select id="pStrategie" required style="font-weight: bold;">
-        <option value="zahlendreher">Ansatz 1: Formeller Fehler / Zahlendreher (Falsches Kennzeichen, Marke oder falscher Ort im Brief)</option>
-        <option value="parkautomat">Ansatz 2: Defekter Parkautomat (§ 13 StVO) (Parkscheibe lag stattdessen gut sichtbar aus)</option>
-        <option value="verjaehrung">Ansatz 3: Die 6-Monats-Verjährung (§ 26 StVG) (Brief kam erst nach über 6 Monaten an)</option>
-        <option value="beschilderung">Ansatz 4: Unklare / Verdeckte Beschilderung (Schild war zugewachsen oder eingeschneit)</option>
-        <option value="freitext">Ansatz 5: Individuelle Begründung (Freitext eingeben)</option>
-        <option value="allgemein">Allgemeiner Einspruch (Vorwurf wird bestritten)</option>
-      </select>
+  <option value="zahlendreher">Ansatz 1: Formeller Fehler / Zahlendreher (Falsches Kennzeichen, Marke oder falscher Ort im Brief)</option>
+  <option value="parkautomat">Ansatz 2: Defekter Parkautomat (§ 13 StVO) (Parkscheibe lag stattdessen gut sichtbar aus)</option>
+  <option value="verjaehrung">Ansatz 3: Die Verfolgungsverjährung (§ 26 StVG) (Brief kam auffällig spät)</option>
+  <option value="beschilderung">Ansatz 4: Unklare / Verdeckte Beschilderung (Schild war zugewachsen, verdeckt oder widersprüchlich)</option>
+  <option value="haltenparken">Ansatz 5: Kein "Parken", sondern nur kurzes Halten (§ 12 Abs. 2 StVO, max. 3 Minuten)</option>
+  <option value="parkscheibe">Ansatz 6: Parkscheibe vergessen, Parkdauer aber nachweislich eingehalten</option>
+  <option value="anwohnerparken">Ansatz 7: Gültiger Bewohnerparkausweis vorhanden / Zone unklar beschildert</option>
+  <option value="fahrtrichtung">Ansatz 8: Parken entgegen der Fahrtrichtung – Ausnahme Einbahnstraße/Schienen (§ 12 Abs. 4 StVO)</option>
+  <option value="feuerwehrzufahrt">Ansatz 9: Feuerwehrzufahrt nicht eindeutig gekennzeichnet</option>
+  <option value="schulbushaltestelle">Ansatz 10: Haltestellenbereich unklar beschildert</option>
+  <option value="einmuendung">Ansatz 11: Abstand zur Einmündung nicht nachweisbar (§ 12 Abs. 3 Nr. 3 StVO)</option>
+  <option value="freitext">Ansatz 12: Individuelle Begründung (Freitext eingeben)</option>
+  <option value="allgemein">Allgemeiner Einspruch (Vorwurf wird bestritten)</option>
+</select>
       
       <!-- Dynamisches Zusatzfeld für Zahlendreher -->
       <div id="boxZahlendreher" style="display:none; margin-top:15px; padding: 10px;">
@@ -204,7 +211,29 @@
         <label>Ihre eigene sachliche Begründung:</label>
         <textarea id="pFreitextInhalt" rows="5" style="width:100%; box-sizing: border-box; border:1px solid #ccc; border-radius:4px; padding:8px; font-family: inherit;" placeholder="Bitte schildern Sie hier detailliert Ihren Sachverhalt..."></textarea>
       </div>
+
+      <div id="boxZusatzInfo" style="display:none; margin-top:15px; padding: 10px;">
+  <label id="lblZusatzInfo">Zusätzliche Angabe:</label>
+  <input type="text" id="pZusatzInfoDetail" style="width: 100%; box-sizing: border-box;" placeholder="Optional, stärkt aber die Argumentation">
+</div>
     </fieldset>
+
+    <div class="helper-links">
+    <span>
+      <strong>Weitere Hilfen:</strong> 
+      <a href="https://servicesuche.bund.de/#/de/" target="_blank" rel="noopener">Zuständiges Ordnungsamt vor Ort finden</a>
+    </span>
+    <span>
+      <a href="https://www.kba.de/DE/Themen/ZentraleRegister/FAER/BT_KAT_OWI/btkat_node.html" target="_blank" rel="noopener">Tatbestandskatalog für Parkverstöße (KBA)</a>
+    </span>
+    <span>
+      <a href="halterhaftung-parken.html">Ratgeber: Halterhaftung</a>
+    </span>
+  </div>
+  <div class="helper-note">
+    <strong>Tipp: Probieren Sie verschiedene Ansätze aus!</strong> Sie sind sich unsicher, welcher Hebel in Ihrer Situation am besten greift? Kein Problem! Nutzen Sie das Tool und generieren Sie einfach kostenlos mehrere PDFs mit unterschiedlichen Ansätzen (z. B. DSGVO und Technik-Fehler). Lesen Sie sich die fertigen Anschreiben in Ruhe durch und entscheiden Sie erst danach, welcher Text Ihren Fall am treffendsten widerspiegelt.
+  </div>
+</div>
 
     <div class="submit-area" style="display: flex; gap: 15px; flex-wrap: wrap;">
       <button type="submit" class="button-primary" style="flex: 1;">PDF-Einspruch generieren (Post)</button>
@@ -238,11 +267,11 @@
 <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
   <h3>Weitere Ratgeber & Szenarien zu Parkverstößen:</h3>
   <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-    <a href="einspruch-ordnungsamt-knollchen-strafzettel-allgemein-einspruch.html">Knöllchen am Auto: kostenlos Einspruch</a>
-<a href="einspruch-ordnungsamt-parken-im-bereich-einer-feuerwehrzufahrt-einspruch.html">Feuerwehrzufahrt: Knöllchen abwehren</a>
-<a href="einspruch-ordnungsamt-parkverbot-auf-privatgrund-einspruch.html">Privatgrund: Parkverbot anfechten</a>
-<a href="einspruch-ordnungsamt-halteverbotsschild-verdeckt-zugewachsen-einspruch-ordnungsamt.html">Verdecktes Halteverbot: Einspruch lohnt</a>
-<a href="einspruch-ordnungsamt-55-euro-strafzettel-falschparken-einspruch.html">55-Euro-Knöllchen: Einspruch kostenlos</a>
+    <a href="einspruch-ordnungsamt-anwohnerparken-ohne-ausweis-strafzettel.html">Anwohnerparken: Knöllchen anfechten</a>
+<a href="einspruch-ordnungsamt-parken-einmuendung-kreuzung-einspruch.html">Einmündung: Knöllchen kostenlos abwehren</a>
+<a href="einspruch-ordnungsamt-strafzettel-zahlendreher-formfehler-kennzeichen-einspruch.html">Falsches Kennzeichen: Knöllchen stoppen</a>
+<a href="einspruch-ordnungsamt-strafzettel-verjaehrung-6-monate-einspruch-ordnungsamt.html">Knöllchen verjährt: 6 Monate nutzen</a>
+<a href="einspruch-ordnungsamt-knollchen-strafzettel-allgemein-einspruch.html">Knöllchen am Auto: kostenlos Einspruch</a>
 <a href="einspruch-ordnungsamt-entgegen-fahrtrichtung-parken-strafzettel.html">Gegen Fahrtrichtung geparkt anfechten</a>
 
   </div>
@@ -362,31 +391,58 @@ Mit Fix-My-Ticket in wenigen Schritten das passende Einspruchsschreiben für Bu�
 </footer>
 
 <script>
+/* ── Vorauswahl des Ansatzes aus der JSON (default_strategie) ── */
+const DEFAULT_STRATEGIE = "parkscheibe"; // wird beim Build aus der JSON befüllt
+
 /* ── UI-Logik für Zusatzfelder ── */
+const zusatzLabels = {
+  haltenparken: "Tatsächliche Standzeit bzw. Nachweis der Be-/Entladetätigkeit (falls bekannt):",
+  parkscheibe: "Nachweis der eingehaltenen Parkzeit (z. B. Uhrzeit auf Kassenbon, Zeugen):",
+  anwohnerparken: "Nummer und Gültigkeitszeitraum Ihres Bewohnerparkausweises:",
+  fahrtrichtung: "War die Straße als Einbahnstraße beschildert oder lagen rechts Schienen? Kurz beschreiben:",
+  feuerwehrzufahrt: "Wie war die Zufahrt konkret gekennzeichnet (Schild/Bodenmarkierung) und wie breit war die Restzufahrt?",
+  schulbushaltestelle: "Beschreiben Sie die Beschilderung der Haltestelle (Position, Zusatzzeichen, Sichtbarkeit):",
+  einmuendung: "Geschätzter tatsächlicher Abstand zur Einmündung und Grund für Zweifel an der Messung:"
+};
+
 document.getElementById('pStrategie').addEventListener('change', function() {
   const boxZahl = document.getElementById('boxZahlendreher');
   const boxFrei = document.getElementById('boxFreitext');
-  
+  const boxZusatz = document.getElementById('boxZusatzInfo');
+
+  boxZahl.style.display = 'none';
+  boxFrei.style.display = 'none';
+  boxZusatz.style.display = 'none';
+  document.getElementById('pZahlendreherDetail').required = false;
+
   if (this.value === 'zahlendreher') {
     boxZahl.style.display = 'block';
-    boxFrei.style.display = 'none';
     document.getElementById('pZahlendreherDetail').required = true;
   } else if (this.value === 'freitext') {
-    boxZahl.style.display = 'none';
     boxFrei.style.display = 'block';
-    document.getElementById('pZahlendreherDetail').required = false;
-  } else {
-    boxZahl.style.display = 'none';
-    boxFrei.style.display = 'none';
-    document.getElementById('pZahlendreherDetail').required = false;
+  } else if (zusatzLabels[this.value]) {
+    boxZusatz.style.display = 'block';
+    document.getElementById('lblZusatzInfo').textContent = zusatzLabels[this.value];
   }
 });
 
 document.getElementById('pStrategie').dispatchEvent(new Event('change'));
 
+// Vorauswahl anwenden, falls die Seite einen gültigen default_strategie-Wert mitbringt
+window.addEventListener('DOMContentLoaded', () => {
+  const validValues = ["zahlendreher","parkautomat","verjaehrung","beschilderung","haltenparken",
+    "parkscheibe","anwohnerparken","fahrtrichtung","feuerwehrzufahrt","schulbushaltestelle",
+    "einmuendung","freitext","allgemein"];
+  if (validValues.includes(DEFAULT_STRATEGIE)) {
+    const sel = document.getElementById('pStrategie');
+    sel.value = DEFAULT_STRATEGIE;
+    sel.dispatchEvent(new Event('change'));
+  }
+});
+
 
 /* ──  Textbausteine generieren (Knackig & Anspruchsvoll) ── */
-function getEinspruchText(strategie, schreibenTyp, az, kennzeichen, marke, ort, datumTat, datumBrief, detail, freitext) {
+function getEinspruchText(strategie, schreibenTyp, az, kennzeichen, marke, ort, datumTat, datumBrief, detail, freitext, zusatzDetail) {
   let headerText = `FORM- UND FRISTGERECHTER EINSPRUCH\n`;
   headerText += `gegen: ${schreibenTyp} mit dem Aktenzeichen / Vorgangsnummer: ${az}\n`;
   headerText += `Fahrzeug: ${marke}, amtliches Kennzeichen: ${kennzeichen}\n\n`;
@@ -395,36 +451,76 @@ function getEinspruchText(strategie, schreibenTyp, az, kennzeichen, marke, ort, 
   headerText += `>>> EINSPRUCH <<<\n\n`;
   headerText += `ein. Ich weise den gegen mich erhobenen Vorwurf mit Nachdruck zurück und begründe dies wie folgt:\n\n`;
 
-  // NEU: Eindeutige Rüge-Überschrift generieren, damit das Ordnungsamt den Grund sofort sieht
+  // Eindeutige Rüge-Überschrift generieren, damit das Ordnungsamt den Grund sofort sieht
   let ruegeTitel = "Allgemeine Begründung";
   if (strategie === "zahlendreher") ruegeTitel = "Formeller Mangel / Fehlerhafte Erfassung (Zahlendreher)";
   else if (strategie === "parkautomat") ruegeTitel = "Defekter Parkscheinautomat gem. § 13 Abs. 1 StVO";
-  else if (strategie === "verjaehrung") ruegeTitel = "Eintritt der Verfolgungsverjährung gem. § 26 StVG";
+  else if (strategie === "verjaehrung") ruegeTitel = "Möglicher Eintritt der Verfolgungsverjährung gem. § 26 StVG";
   else if (strategie === "beschilderung") ruegeTitel = "Fehlende Sichtbarkeit / Erkennbarkeit der Beschilderung";
+  else if (strategie === "haltenparken") ruegeTitel = "Kein 'Parken', sondern zulässiges Halten (§ 12 Abs. 2 StVO)";
+  else if (strategie === "parkscheibe") ruegeTitel = "Nichtnachweis einer Überschreitung der Höchstparkdauer (§ 13 StVO)";
+  else if (strategie === "anwohnerparken") ruegeTitel = "Gültiger Bewohnerparkausweis / unklare Zonenbeschilderung";
+  else if (strategie === "fahrtrichtung") ruegeTitel = "Zulässige Ausnahme beim Parken entgegen der Fahrtrichtung (§ 12 Abs. 4 StVO)";
+  else if (strategie === "feuerwehrzufahrt") ruegeTitel = "Fehlende eindeutige Kennzeichnung der Feuerwehrzufahrt";
+  else if (strategie === "schulbushaltestelle") ruegeTitel = "Unklare Kennzeichnung des Haltestellenbereichs";
+  else if (strategie === "einmuendung") ruegeTitel = "Nicht nachgewiesene Abstandsunterschreitung zur Einmündung (§ 12 Abs. 3 Nr. 3 StVO)";
   else if (strategie === "freitext") ruegeTitel = "Individuelle Sachverhaltsschilderung";
 
   // Die Überschrift optisch hervorgehoben in den Text einfügen
   headerText += `- RÜGE / BEGRÜNDUNG: ${ruegeTitel.toUpperCase()} -\n\n`;
 
   let begrueendung = "";
+
   if (strategie === "zahlendreher") {
-    // Falls das Feld leer gelassen wurde, einen Platzhalter einfügen
     const detailText = detail ? detail : "[Bitte genauen Fehler eintragen, z.B. falsches Kennzeichen]";
     begrueendung = `Der erlassene Bescheid leidet an einem eklatanten formellen Mangel, da essenzielle Tatbestandsmerkmale von Ihren Mitarbeitern fehlerhaft erfasst wurden. Konkret rüge ich folgenden Fehler:\n\n${detailText}\n\nDurch diese fehlerhafte Erfassung des Fahrzeugs oder des Tatorts verstößt der Bescheid gegen das zwingende rechtsstaatliche Bestimmtheitsgebot. Eine zweifelsfreie und rechtssichere Zuordnung der Tat ist somit objektiv unmöglich. Ich fordere die unverzügliche Einstellung des Verfahrens gem. § 46 OWiG i.V.m. § 170 Abs. 2 StPO.`;
+
   } else if (strategie === "parkautomat") {
     begrueendung = `Der am Tatort zuständige Parkscheinautomat war zum vorgeworfenen Tatzeitpunkt nachweislich defekt und außer Betrieb (z.B. Display schwarz / Münzeinwurf blockiert). Gemäß § 13 Abs. 1 StVO entfällt in einem solchen Fall der objektiven Unmöglichkeit die Pflicht zum Lösen eines Parkscheins, es greift das Recht zur Ersatzvornahme. Eine zugelassene mechanische Parkscheibe war vorschriftsmäßig und unübersehbar auf dem Armaturenbrett meines Fahrzeugs ausgelegt. Die zulässige Höchstparkdauer wurde strikt eingehalten. Eine Ahndung ist rechtswidrig, weshalb ich die sofortige Einstellung des Verfahrens beantrage. Ein Beweisfoto des Defekts kann nachgereicht werden.`;
+
   } else if (strategie === "verjaehrung") {
-    begrueendung = `Ich berufe mich hiermit ausdrücklich auf den Eintritt der absoluten Verfolgungsverjährung. Zwischen dem von Ihnen behaupteten Tattag (${datumTat}) und dem Datum des Post-Eingangs bzw. der Ausstellung Ihres Schreibens (${datumBrief}) sind objektiv mehr als sechs Monate vergangen. Nach der zwingenden Vorschrift des § 26 Abs. 3 StVG beträgt die Verjährungsfrist bei Verkehrsordnungswidrigkeiten exakt sechs Monate. Da keine rechtzeitigen, verjährungsunterbrechenden Maßnahmen ersichtlich sind, liegt ein dauerhaftes und unbehebbares Verfahrenshindernis vor. Ich bestehe auf der sofortigen Aufhebung des Bescheids.`;
+    begrueendung = `Ich berufe mich auf den möglichen Eintritt der Verfolgungsverjährung gem. § 26 Abs. 3 StVG. Die Verjährung von Verkehrsordnungswidrigkeiten beträgt danach grundsätzlich drei Monate ab Beendigung der Handlung; erst durch eine wirksame Unterbrechungshandlung (z. B. ordnungsgemäßer Erlass und Zugang eines Anhörungsbogens oder Bußgeldbescheids) beginnt eine neue Frist von sodann sechs Monaten zu laufen. Zwischen dem von Ihnen behaupteten Tattag (${datumTat}) und dem Zugang Ihres Schreibens am ${datumBrief} liegt ein Zeitraum, der Zweifel an der rechtzeitigen und wirksamen Unterbrechung der Verjährung begründet. Ich fordere Sie auf, den genauen Zeitpunkt und die Form der ersten fristwahrenden Unterbrechungshandlung konkret darzulegen und zu belegen. Kann dieser Nachweis nicht erbracht werden, ist von einem endgültigen Verfahrenshindernis auszugehen und das Verfahren einzustellen.`;
+
   } else if (strategie === "beschilderung") {
     begrueendung = `Der Bescheid stützt sich auf eine Beschilderung (Verkehrszeichen), die zum Tatzeitpunkt für mich als Verkehrsteilnehmer schlichtweg nicht erkennbar war. Gemäß der ständigen Rechtsprechung unterliegen Verkehrszeichen als Allgemeinverfügungen dem strengen verkehrsrechtlichen Sichtbarkeitsprinzip. Ein Schild muss mit einem beiläufigen Blick zweifelsfrei erfasst werden können. Das hier maßgebliche Schild war jedoch (durch massiven Bewuchs verdeckt / eingeschneit / durch Fahrzeuge zugeparkt) und entfaltete somit keine Rechtswirkung. Ein Beweisverwertungsverbot steht im Raum. Ich rege die Einstellung an.`;
+
+  } else if (strategie === "haltenparken") {
+    const zd = zusatzDetail ? zusatzDetail : "[Bitte Standzeit oder Be-/Entladenachweis ergänzen]";
+    begrueendung = `Der Vorwurf unterstellt fälschlich ein "Parken" im Sinne des § 12 Abs. 2 StVO. Nach der gesetzlichen Definition liegt Parken erst vor, wenn das Fahrzeug länger als drei Minuten steht oder der Fahrer es verlassen hat; andernfalls handelt es sich um bloßes, grundsätzlich zulässiges Halten. Hierzu: ${zd}. Die Behörde trägt die Beweislast dafür, dass tatsächlich ein "Parken" und kein bloßes Halten vorlag. Eine punktuelle Kontrollaufnahme allein belegt keine über drei Minuten hinausgehende Standzeit. Ich fordere die Vorlage sämtlicher Beweisfotos mit Zeitstempeln und beantrage andernfalls die Einstellung des Verfahrens.`;
+
+  } else if (strategie === "parkscheibe") {
+    const zd = zusatzDetail ? zusatzDetail : "[Bitte Nachweis der eingehaltenen Parkzeit ergänzen, z. B. Kassenbon]";
+    begrueendung = `Der Vorwurf einer Überschreitung der zulässigen Höchstparkdauer trifft nicht zu bzw. ist nicht belegt. Die Pflicht zum Auslegen einer Parkscheibe dient ausschließlich der Kontrolle der tatsächlichen Standzeit; sie ist kein Selbstzweck. Zum Nachweis der tatsächlichen, innerhalb der zulässigen Höchstparkdauer liegenden Standzeit verweise ich auf Folgendes: ${zd}. Da eine materielle Überschreitung der Höchstparkdauer nicht nachgewiesen ist, fehlt es an der objektiven Tatbestandsvoraussetzung. Ich beantrage, das Verfahren gem. § 47 Abs. 1 OWiG einzustellen.`;
+
+  } else if (strategie === "anwohnerparken") {
+    const zd = zusatzDetail ? zusatzDetail : "[Bitte Ausweisnummer und Gültigkeitszeitraum ergänzen]";
+    begrueendung = `Zum Tatzeitpunkt verfügte ich über einen gültigen Bewohnerparkausweis für den betreffenden Bereich. Ausweisdaten: ${zd}. Sollte der Ausweis zum Kontrollzeitpunkt nicht oder nicht ausreichend sichtbar ausgelegen haben, handelt es sich allenfalls um einen unbeachtlichen Formmangel, da die materielle Berechtigung zum Parken tatsächlich bestand. Eine Kopie des Ausweises reiche ich als Nachweis nach. Hilfsweise rüge ich, dass Beginn, Ende und räumlicher Geltungsbereich der Bewohnerparkzone am Tatort nicht mit der erforderlichen Bestimmtheit beschildert waren. Ich beantrage die Einstellung des Verfahrens.`;
+
+  } else if (strategie === "fahrtrichtung") {
+    const zd = zusatzDetail ? zusatzDetail : "[Bitte angeben: Einbahnstraße und/oder Schienenlage rechts]";
+    begrueendung = `Der Vorwurf des Parkens entgegen der Fahrtrichtung berücksichtigt nicht die gesetzliche Ausnahme des § 12 Abs. 4 Satz 2 StVO. Danach ist das Parken am linken Fahrbahnrand ausdrücklich zulässig, wenn es sich um eine Einbahnstraße handelt oder rechts Schienen einer Straßenbahn verlaufen. Im vorliegenden Fall gilt: ${zd}. Da einer dieser gesetzlichen Ausnahmetatbestände hier einschlägig ist, war das Parken zulässig. Ich fordere die Überprüfung der örtlichen Verkehrsführung und die Einstellung des Verfahrens.`;
+
+  } else if (strategie === "feuerwehrzufahrt") {
+    const zd = zusatzDetail ? zusatzDetail : "[Bitte Kennzeichnung/Restbreite der Zufahrt ergänzen]";
+    begrueendung = `Der Vorwurf setzt voraus, dass es sich am Tatort um eine eindeutig als solche gekennzeichnete und tatsächlich durch mein Fahrzeug beeinträchtigte Feuerwehrzufahrt handelte. Beides wird bestritten. Konkret gilt: ${zd}. Ohne eindeutige Beschilderung bzw. Bodenmarkierung und ohne Nachweis einer tatsächlichen, relevanten Verengung der Zufahrt fehlt es an einer tragfähigen Tatsachengrundlage für den Vorwurf. Ich fordere die Vorlage der Beweisfotos mit erkennbarer Zufahrtsbreite und beantrage andernfalls die Einstellung des Verfahrens.`;
+
+  } else if (strategie === "schulbushaltestelle") {
+    const zd = zusatzDetail ? zusatzDetail : "[Bitte Beschilderung/Sichtbarkeit beschreiben]";
+    begrueendung = `Der Vorwurf setzt eine eindeutige, im Rahmen eines beiläufigen Blicks erkennbare Kennzeichnung des Haltestellenbereichs voraus. Hierzu: ${zd}. Insbesondere die räumliche Ausdehnung des Haltestellenbereichs sowie etwaige zeitliche Beschränkungen müssen unmissverständlich erkennbar sein. War dies nicht der Fall, entfaltet die Regelung mir gegenüber keine Rechtswirkung. Ich bitte um Vorlage der Beweisfotos, aus denen sich die exakte Position meines Fahrzeugs zum Haltestellenbereich ergibt, und beantrage die Einstellung des Verfahrens.`;
+
+  } else if (strategie === "einmuendung") {
+    const zd = zusatzDetail ? zusatzDetail : "[Bitte geschätzten tatsächlichen Abstand ergänzen]";
+    begrueendung = `Der Vorwurf des Parkens im unzulässigen Abstand zu einer Einmündung setzt voraus, dass der nach § 12 Abs. 3 Nr. 3 StVO vorgeschriebene Mindestabstand tatsächlich unterschritten wurde. Dies wird bestritten. Hierzu: ${zd}. Die Behörde trägt die Beweislast für die genaue Position des Fahrzeugs im Verhältnis zum Einmündungsbereich; bloße Schätzungen ohne nachvollziehbare Messgrundlage oder aussagekräftige Übersichtsfotos genügen hierfür nicht. Ich fordere die Vorlage einer nachvollziehbaren Abstandsdokumentation und beantrage andernfalls die Einstellung des Verfahrens.`;
+
   } else if (strategie === "freitext") {
     begrueendung = freitext ? freitext : "[Ihre individuelle Begründung fehlt. Bitte ergänzen.]";
+
   } else {
     begrueendung = `Den erhobenen Vorwurf weise ich in Gänze zurück. Die Beweisführung der Behörde ist offenkundig lückenhaft und materiell-rechtlich angreifbar. Ein schuldhaftes Verhalten meinerseits liegt nicht vor. Zur Wahrung meiner Rechte beantrage ich hilfsweise die vollumfängliche Einsicht in die Ermittlungsakte und fordere Sie auf, das Verfahren mangels hinreichendem Tatverdacht unverzüglich einzustellen.`;
   }
 
   let footerText = `\n\nIch fordere Sie auf, den Bescheid aufzuheben und mir die Einstellung des Verfahrens formgerecht und schriftlich zu bestätigen.`;
-  
+
   return headerText + begrueendung + footerText;
 }
 
@@ -437,28 +533,29 @@ document.getElementById('btnEmail').addEventListener('click', function() {
   const sMarke = document.getElementById('sMarke').value;
   const pOrt = document.getElementById('pTatort').value;
   const pEmail = document.getElementById('pEmailBehoerde').value;
-  
+
   const dTatRaw = document.getElementById('pDatumTat').value;
   const dTat = dTatRaw ? dTatRaw.split('-').reverse().join('.') : '[Datum]';
   const dBriefRaw = document.getElementById('pDatumBrief').value;
   const dBrief = dBriefRaw ? dBriefRaw.split('-').reverse().join('.') : '[Datum]';
-  
+
   const strategie = document.getElementById('pStrategie').value;
   const detail = document.getElementById('pZahlendreherDetail') ? document.getElementById('pZahlendreherDetail').value : '';
   const freitext = document.getElementById('pFreitextInhalt') ? document.getElementById('pFreitextInhalt').value : '';
+  const zusatzDetail = document.getElementById('pZusatzInfoDetail') ? document.getElementById('pZusatzInfoDetail').value : '';
 
   if (!az || !sName || !sKennzeichen) {
     alert("Bitte füllen Sie mindestens Aktenzeichen, Namen und Kennzeichen aus.");
     return;
   }
 
-  const fullText = getEinspruchText(strategie, schreiben, az, sKennzeichen, sMarke, pOrt, dTat, dBrief, detail, freitext) + `\n\nMit freundlichen Grüßen\n\n${sName}`;
-  
-  
+  const fullText = getEinspruchText(strategie, schreiben, az, sKennzeichen, sMarke, pOrt, dTat, dBrief, detail, freitext, zusatzDetail) + `\n\nMit freundlichen Grüßen\n\n${sName}`;
+
+
   // In die Zwischenablage kopieren für Online-Portale
   navigator.clipboard.writeText(fullText).then(() => {
     alert("Kopiert! Der starke Einspruchstext ist in Ihrer Zwischenablage. Sie können ihn nun direkt in das Online-Anhörungsportal der Behörde einfügen.\n\nFalls Sie per E-Mail senden möchten, öffnet sich nun Ihr Mail-Programm.");
-    
+
     const subject = encodeURIComponent(`Einspruch ${schreiben} - Az: ${az} - Kennzeichen: ${sKennzeichen}`);
     const mailBody = encodeURIComponent(fullText);
     window.location.href = `mailto:${pEmail}?subject=${subject}&body=${mailBody}`;
@@ -473,14 +570,14 @@ document.getElementById('btnEmail').addEventListener('click', function() {
 /* ── PDF Generierung ── */
 document.getElementById('govtParkForm').addEventListener('submit', function(e) {
   e.preventDefault();
-  
+
   const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
 
   const behoerde         = document.getElementById('pBehoerde').value;
   const behoerdeStrasse  = document.getElementById('pBehoerdeStrasse').value;
   const behoerdePLZOrt   = document.getElementById('pBehoerdePLZOrt').value;
-  
+
   const schreiben = document.getElementById('pSchreibenTyp').value;
   const az        = document.getElementById('pAktenzeichen').value;
   const sName     = document.getElementById('sName').value;
@@ -492,7 +589,8 @@ document.getElementById('govtParkForm').addEventListener('submit', function(e) {
   const strategie = document.getElementById('pStrategie').value;
   const detail    = document.getElementById('pZahlendreherDetail') ? document.getElementById('pZahlendreherDetail').value : '';
   const freitext  = document.getElementById('pFreitextInhalt') ? document.getElementById('pFreitextInhalt').value : '';
-  
+  const zusatzDetail = document.getElementById('pZusatzInfoDetail') ? document.getElementById('pZusatzInfoDetail').value : '';
+
   const dTatRaw   = document.getElementById('pDatumTat').value;
   const dTat      = dTatRaw.split('-').reverse().join('.');
   const dBriefRaw = document.getElementById('pDatumBrief').value;
@@ -513,18 +611,16 @@ document.getElementById('govtParkForm').addEventListener('submit', function(e) {
   doc.setFontSize(11);
   doc.setTextColor(0, 0, 0);
 
-  // BEHEBUNG: Zeilenumbruch für lange Behördennamen (max. 90mm Breite), damit sie nicht in den Absender ragen
-  const maxBehoerdeWidth = 90; 
+  // Zeilenumbruch für lange Behördennamen (max. 90mm Breite), damit sie nicht in den Absender ragen
+  const maxBehoerdeWidth = 90;
   const behoerdeLines = doc.splitTextToSize(behoerde, maxBehoerdeWidth);
   let empfangerY = 53;
 
-  // Iteriere durch die umgebrochenen Zeilen des Behördennamens
   for(let i = 0; i < behoerdeLines.length; i++) {
     doc.text(behoerdeLines[i], 25, empfangerY);
-    empfangerY += 5; // Y-Achse um 5mm pro Zeile nach unten verschieben
+    empfangerY += 5;
   }
 
-  // Straße und Ort dynamisch unter dem Behördennamen platzieren
   doc.text(behoerdeStrasse, 25, empfangerY);
   doc.text(behoerdePLZOrt, 25, empfangerY + 5);
 
@@ -543,39 +639,35 @@ document.getElementById('govtParkForm').addEventListener('submit', function(e) {
   doc.setFont("helvetica", "bold");
   doc.text(`EINSPRUCH gegen ${schreiben.toUpperCase()}`, 25, 95);
   doc.text(`Aktenzeichen / Vorgangsnummer: ${az}`, 25, 102);
-  
+
   doc.setFontSize(11);
   doc.setFont("helvetica", "normal");
 
   // Hauptinhalt
-  let mainContent = getEinspruchText(strategie, schreiben, az, sKennzeichen, sMarke, pOrt, dTat, dBrief, detail, freitext);
+  let mainContent = getEinspruchText(strategie, schreiben, az, sKennzeichen, sMarke, pOrt, dTat, dBrief, detail, freitext, zusatzDetail);
   const paraLines = doc.splitTextToSize(mainContent, 160);
-  // --- START: Automatischer Seitenumbruch ---
-  let yPos = 115;         // Start-Höhe für den Text (115 mm von oben)
-  const pageHeight = 280; // Ab dieser Höhe (in mm) wird eine neue Seite erstellt
-  const lineHeight = 6;   // Abstand zwischen den Zeilen
 
-  // 1. Text Zeile für Zeile durchgehen und drucken
+  // --- Automatischer Seitenumbruch ---
+  let yPos = 115;
+  const pageHeight = 280;
+  const lineHeight = 6;
+
   for (let i = 0; i < paraLines.length; i++) {
     if (yPos > pageHeight) {
-      doc.addPage(); // Neues weißes Blatt hinzufügen
-      yPos = 25;     // Auf dem neuen Blatt wieder oben anfangen (25mm Rand)
+      doc.addPage();
+      yPos = 25;
     }
     doc.text(paraLines[i], 25, yPos);
-    yPos += lineHeight; // Einen Schritt nach unten gehen für die nächste Zeile
+    yPos += lineHeight;
   }
-  // --- ENDE: Automatischer Seitenumbruch ---
 
-  // 2. Platz für Unterschrift prüfen
-  yPos += 10; // Etwas optischen Abstand nach dem letzten Text-Absatz lassen
-  
-  // Wenn unten nicht mehr genug Platz für die Unterschrift ist (braucht ca. 30mm)...
-  if (yPos + 30 > pageHeight) { 
-    doc.addPage(); // ...machen wir die Unterschrift auf eine neue Seite
+  yPos += 10;
+
+  if (yPos + 30 > pageHeight) {
+    doc.addPage();
     yPos = 25;
   }
 
-  // 3. Unterschrift drucken
   doc.text("Mit freundlichen Grüßen,", 25, yPos);
   yPos += 20;
 
@@ -597,24 +689,21 @@ let currentDonateAmount = 5;
 
 function selectPreset(amount, buttonElement) {
   currentDonateAmount = amount;
-  document.getElementById('customAmount').value = ''; // Freitextfeld leeren
-  
-  // Aktiv-Klasse bei den Buttons umschalten
+  document.getElementById('customAmount').value = '';
+
   const buttons = document.querySelectorAll('.donate-amounts button');
   buttons.forEach(btn => btn.classList.remove('selected'));
   buttonElement.classList.add('selected');
-  
-  // Button-Text anpassen
+
   document.getElementById('btnDonate').innerText = `Jetzt ${amount} € spenden`;
 }
 
 function handleCustomInput(inputElement) {
   const val = parseFloat(inputElement.value);
-  
-  // Alle Preset-Buttons optisch abwählen
+
   const buttons = document.querySelectorAll('.donate-amounts button');
   buttons.forEach(btn => btn.classList.remove('selected'));
-  
+
   if (!isNaN(val) && val > 0) {
     currentDonateAmount = val;
     document.getElementById('btnDonate').innerText = `Jetzt ${val} € spenden`;
@@ -629,7 +718,6 @@ function openPayPal() {
     alert("Bitte wählen oder geben Sie einen gültigen Spendenbetrag ein.");
     return;
   }
-  // Erzeugt einen offiziellen PayPal-Spendenlink mit deinem Betrag und deiner E-Mail
   const url = `https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=${encodeURIComponent(PAYPAL_EMAIL)}&currency_code=EUR&amount=${currentDonateAmount}`;
   window.open(url, '_blank');
 }

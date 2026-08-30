@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Abschleppkosten-Rechner & Gebühren-Check</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/logo-lotse-fav.png">
+</head>
+
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="site-logo">Fix-My-Ticket</a>
+  <span style="font-size: 0.9em; color: #666;">Abschleppkosten-Check</span>
+</header>
+
+<div class="page-container">
+  <h1>Abschleppkosten: Übersicht & Rechner</h1>
+  <p style="font-size: 1.1em; color: #444; margin-bottom: 25px;">
+    Prüfen Sie mit dem Rechner, ob Ihre Rechnung im rechtlich zulässigen Rahmen liegt oder ob eine Überhöhung (gemäß BGH-Rechtsprechung) vorliegt.
+  </p>
+
+  <div class="legal-info-box">
+    <strong>Wichtiger Hinweis zur Nutzung</strong><br>
+    Dieses Tool ist ein <strong>automatisierter Rechner</strong> (Hilfe zur Selbsthilfe).Alle Werte auf dieser Seite sind Durschnittswerte. Es findet <strong>keine individuelle Prüfung</strong> Ihres Falls statt. Dieser kostenlose Service ersetzt keine anwaltliche Rechtsberatung. Die Nutzung erfolgt auf eigene Verantwortung. Bei Unsicherheiten wenden Sie sich bitte an einen Fachanwalt.
+</div>
+
+  <div style="background: #ffffff; border: 2px solid #8B0000; border-radius: 8px; padding: 25px; margin-bottom: 35px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
+    <h2 style="margin-top: 0; color: #8B0000; font-size: 1.4em;">Interaktiver Abschleppkosten-Check</h2>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: 20px;">
+      
+      <div>
+        <label style="display: block; font-weight: bold; margin-bottom: 5px;">Auftraggeber:</label>
+        <select id="calcArt" style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ccc;">
+          <option value="oeffentlich">Polizei / Ordnungsamt (Öffentlich)</option>
+          <option value="privat">Privatgelände (Supermarkt, Anwohner)</option>
+        </select>
+      </div>
+
+      <div>
+        <label style="display: block; font-weight: bold; margin-bottom: 5px;">Region / Ort:</label>
+        <select id="calcRegion" style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ccc;">
+          <option value="grossstadt">Großstadt (z.B. Berlin, Hamburg, München)</option>
+          <option value="mittelstadt">Mittel- / Kleinstadt</option>
+        </select>
+      </div>
+
+      <div>
+        <label style="display: block; font-weight: bold; margin-bottom: 5px;">Einsatzzeit:</label>
+        <select id="calcZeit" style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ccc;">
+          <option value="tag">Werktags (08:00 - 18:00 Uhr)</option>
+          <option value="nacht">Nacht / Wochenende / Feiertag</option>
+        </select>
+      </div>
+
+      <div>
+        <label style="display: block; font-weight: bold; margin-bottom: 5px;">Standzeit auf Verwahrstelle:</label>
+        <select id="calcTage" style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ccc;">
+          <option value="0">Keine (Direkte Umsetzung)</option>
+          <option value="1">1 Tag</option>
+          <option value="2">2 Tage</option>
+          <option value="3">3 Tage oder mehr</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div style="margin-top: 20px;">
+      <label style="display: block; font-weight: bold; margin-bottom: 5px;">Geforderter Rechnungsbetrag (€):</label>
+      <input type="number" id="calcBetrag" placeholder="z. B. 350" style="width: 100%; max-width: 300px; padding: 10px; border-radius: 4px; border: 1px solid #ccc; font-size: 1em;">
+    </div>
+
+    <button onclick="berechneKosten()" class="button-primary" style="margin-top: 20px; width: 100%; background: #8B0000; border: none; padding: 12px; font-weight: bold; color: #fff; border-radius: 4px; cursor: pointer; font-size: 1.05em;">
+      Betrag jetzt prüfen
+    </button>
+
+    <div id="calcErgebnis" style="display: none; margin-top: 25px; padding: 15px; border-radius: 6px; background: #f8f9fa; border-left: 5px solid #ccc;">
+      </div>
+  </div>
+
+  <h2>Wie setzen sich die Kosten zusammen?</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin: 20px 0 35px 0;">
+    
+    <div style="background: #f8f9fa; padding: 15px; border-radius: 6px; border: 1px solid #e9ecef;">
+      <strong style="color: #8B0000; font-size: 1.1em;">1. Reines Abschleppen</strong>
+      <p style="font-size: 0.9em; color: #555; margin-top: 5px;">
+        Anfahrt, Aufladen, Transport. Üblicher Orientierungswert: <strong>150 € – 250 €</strong> (Tagstarif).
+      </p>
+    </div>
+
+    <div style="background: #f8f9fa; padding: 15px; border-radius: 6px; border: 1px solid #e9ecef;">
+      <strong style="color: #8B0000; font-size: 1.1em;">2. Verwaltungsgebühr</strong>
+      <p style="font-size: 0.9em; color: #555; margin-top: 5px;">
+        Fällt nur bei behördlichen Maßnahmen (Polizei/Ordnungsamt) an. Üblicherweise <strong>50 € – 120 €</strong>.
+      </p>
+    </div>
+
+    <div style="background: #f8f9fa; padding: 15px; border-radius: 6px; border: 1px solid #e9ecef;">
+      <strong style="color: #8B0000; font-size: 1.1em;">3. Standgebühren</strong>
+      <p style="font-size: 0.9em; color: #555; margin-top: 5px;">
+        Pro Kalendertag auf der Verwahrstelle. Angemessen laut Gerichten: <strong>10 € – 25 € / Tag</strong>.
+      </p>
+    </div>
+
+    <div style="background: #f8f9fa; padding: 15px; border-radius: 6px; border: 1px solid #e9ecef;">
+      <strong style="color: #8B0000; font-size: 1.1em;">4. Zuschläge</strong>
+      <p style="font-size: 0.9em; color: #555; margin-top: 5px;">
+        Nacht-, Sonn- und Feiertagszuschläge liegen meist bei <strong>15 % – 30 %</strong> der Grundgebühr.
+      </p>
+    </div>
+
+  </div>
+
+  <h2>Preisspannen & Beurteilung (Richtwerte)</h2>
+  <div style="overflow-x: auto; margin-bottom: 40px;">
+    <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95em;">
+      <thead>
+        <tr style="background: #333; color: #fff;">
+          <th style="padding: 12px;">Fallkonstellation</th>
+          <th style="padding: 12px;">Im grünen Bereich (OK)</th>
+          <th style="padding: 12px;">Erhöht / Prüfenswert</th>
+          <th style="padding: 12px;">Wucher / Anfechtbar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid #ddd; background: #fff;">
+          <td style="padding: 12px; font-weight: bold;">Umsetzung Großstadt (Tag)</td>
+          <td style="padding: 12px; color: green; font-weight: bold;">180 € – 280 €</td>
+          <td style="padding: 12px; color: orange; font-weight: bold;">281 € – 380 €</td>
+          <td style="padding: 12px; color: red; font-weight: bold;">> 380 €</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd; background: #f9f9f9;">
+          <td style="padding: 12px; font-weight: bold;">Verwahrstelle inkl. 1 Tag (Nacht/WE)</td>
+          <td style="padding: 12px; color: green; font-weight: bold;">250 € – 350 €</td>
+          <td style="padding: 12px; color: orange; font-weight: bold;">351 € – 450 €</td>
+          <td style="padding: 12px; color: red; font-weight: bold;">> 450 €</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd; background: #fff;">
+          <td style="padding: 12px; font-weight: bold;">Privatparkplatz (Supermarkt)</td>
+          <td style="padding: 12px; color: green; font-weight: bold;">175 € – 250 €</td>
+          <td style="padding: 12px; color: orange; font-weight: bold;">251 € – 350 €</td>
+          <td style="padding: 12px; color: red; font-weight: bold;">> 350 € (BGH-Deckung)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #ddd; background: #f9f9f9;">
+          <td style="padding: 12px; font-weight: bold;">Mittelstadt / Ländlicher Raum</td>
+          <td style="padding: 12px; color: green; font-weight: bold;">130 € – 220 €</td>
+          <td style="padding: 12px; color: orange; font-weight: bold;">221 € – 300 €</td>
+          <td style="padding: 12px; color: red; font-weight: bold;">> 300 €</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div style="background: #fff0f0; border-left: 4px solid #a22d36; padding: 20px; border-radius: 4px; margin-bottom: 40px;">
+    <h3 style="margin-top: 0; color: #a22d36;">Was darf von Privaten NICHT berechnet werden?</h3>
+    <p style="margin-bottom: 10px;">Der Bundesgerichtshof (BGH) schränkt die Abrechnung bei Privat-Abschleppungen stark ein. Folgende Posten sind in der Regel <strong>unzulässig</strong>:</p>
+    <ul style="margin: 0; padding-left: 20px; line-height: 1.6;">
+      <li><strong>Reine Halterermittlungsgebühren</strong> über 15 € – 20 €</li>
+      <li><strong>Mondpreise für Inkasso- / Bearbeitungskosten</strong> (z. B. 100 € "Pauschalgebühr")</li>
+      <li><strong>Pauschale Zuschläge ohne Nachweis</strong> (z. B. "Sicherheitsaufschlag")</li>
+      <li><strong>Überhöhte Standgebühren</strong> (alles über 30 € / Tag auf unbewachten Plätzen)</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 fix-my-ticket.de</p>
+    <nav>
+        <a href="ueber-uns.html">Über uns</a> | 
+        <a href="index.html">Startseite</a> | 
+        <a href="impressum.html">Impressum</a> | 
+        <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+</footer>
+
+<script>
+function berechneKosten() {
+  const art = document.getElementById('calcArt').value;
+  const region = document.getElementById('calcRegion').value;
+  const zeit = document.getElementById('calcZeit').value;
+  const tage = parseInt(document.getElementById('calcTage').value);
+  const betrag = parseFloat(document.getElementById('calcBetrag').value);
+
+  const ergebnisBox = document.getElementById('calcErgebnis');
+
+  if (isNaN(betrag) || betrag <= 0) {
+    alert("Bitte geben Sie einen gültigen Rechnungsbetrag ein.");
+    return;
+  }
+
+  // Richtwert-Berechnung
+  let basisMin = 150;
+  let basisMax = 230;
+
+  if (region === 'grossstadt') {
+    basisMin += 40;
+    basisMax += 60;
+  }
+
+  if (zeit === 'nacht') {
+    basisMin += 40;
+    basisMax += 70;
+  }
+
+  if (art === 'oeffentlich') {
+    // Verwaltungsgebühren behördlich
+    basisMin += 60;
+    basisMax += 100;
+  }
+
+  // Standgebühren hinzufügen
+  basisMin += tage * 15;
+  basisMax += tage * 25;
+
+  ergebnisBox.style.display = 'block';
+
+  let statusText = '';
+  let color = '';
+  let border = '';
+
+  if (betrag <= basisMax) {
+    color = '#155724';
+    border = '#28a745';
+    statusText = `<strong>Der Betrag liegt im üblichen Bereich.</strong><br>
+                  Der geschätzte Normbereich für Ihre Konfiguration liegt bei <strong>${basisMin} € bis ${basisMax} €</strong>. Ihre Rechnung von <strong>${betrag} €</strong> ist rechtlich plausibel.`;
+  } else if (betrag <= basisMax * 1.3) {
+    color = '#856404';
+    border = '#ffc107';
+    statusText = `<strong>Der Betrag ist erhöht.</strong><br>
+                  Der geschätzte Normbereich liegt bei <strong>${basisMin} € bis ${basisMax} €</strong>. Ihre Rechnung von <strong>${betrag} €</strong> liegt an der Obergrenze. Prüfen Sie die Einzelpositionen auf der Quittung genau.`;
+  } else {
+    color = '#721c24';
+    border = '#dc3545';
+    statusText = `<strong>Der Betrag ist deutlich überhöht / verdächtig!</strong><br>
+                  Der geschätzte Normbereich liegt bei ca. <strong>${basisMin} € bis ${basisMax} €</strong>. Bei <strong>${betrag} €</strong> besteht der begründete Verdacht auf Unverhältnismäßigkeit oder unzulässige Gebührenpositionen. Ein Einspruch bzw. die Prüfung unter Vorbehalt wird empfohlen.`;
+  }
+
+  ergebnisBox.style.color = color;
+  ergebnisBox.style.borderLeftColor = border;
+  ergebnisBox.innerHTML = statusText;
+}
+</script>
+
+</body>
+</html>

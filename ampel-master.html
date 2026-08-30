@@ -14,6 +14,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="/logo-lotse-fav.png">
+
+
   
   <script type="application/ld+json">
 {
@@ -171,21 +173,49 @@
       <legend>4. Verteidigungs-Ansätze (Ihre Taktik)</legend>
       <p style="font-size: 0.85em; color: #555; margin-top: 0;">Wählen Sie den zutreffenden Hebel. Wir fügen die korrekte Begründung in das Anschreiben ein.</p>
       <select id="pStrategie" required style="font-weight: bold; margin-bottom: 15px;" onchange="toggleFreitext()">
-        <option value="haltelinie">Ansatz 1: Nur Haltelinienverstoß! (Ich habe gebremst und bin nicht in die Kreuzung eingefahren)</option>
-        <option value="gelbphase">Ansatz 2: Gelbphase war zu kurz! (Keine Chance rechtzeitig zu bremsen)</option>
-        <option value="mitzieheffekt">Ansatz 3: "Mitzieh-Effekt" / Augenblicksversagen (Orientierung an Abbieger-Spur)</option>
-        <option value="foto">Ansatz 4: Foto unleserlich / Sonnenblende (Identifikation des Fahrers unmöglich)</option>
-        <option value="notstand">Ansatz 5: Blaulicht / Notstand (Ich musste für ein Einsatzfahrzeug Platz machen)</option>
-        <option value="spurwechsel">Ansatz 6: Spurwechsel / Versehen (Falsche Spur, aber nicht geradeaus rübergefahren)</option>
-        <option value="allgemein">Allgemeiner Einspruch & Anforderung des Messprotokolls</option>
-        <option value="freitext">Eigener Grund (Freitext eingeben)</option>
-      </select>
+  <option value="allgemein_rotlicht">Allgemeiner Einspruch &amp; Anforderung des Messprotokolls</option>
+  <option value="ueber_1_sekunde">Über 1 Sekunde Rot: Standardisiertes Messverfahren angreifen (Fahrverbot droht!)</option>
+  <option value="unter_1_sekunde">Unter 1 Sekunde Rot: Erkennbarkeit &amp; Messung angreifen</option>
+  <option value="haltelinie">Ansatz: Nur Haltelinienverstoß! (Ich habe gebremst und bin nicht in die Kreuzung eingefahren)</option>
+  <option value="gelbphase">Ansatz: Gelbphase war zu kurz! (Keine Chance rechtzeitig zu bremsen)</option>
+  <option value="mitzieheffekt">Ansatz: "Mitzieh-Effekt" / Augenblicksversagen (Orientierung an Abbieger-Spur)</option>
+  <option value="fahrer_identifikation_rotlicht">Ansatz: Foto unleserlich / Fahrer nicht erkennbar</option>
+  <option value="rettungswagen">Ansatz: Blaulicht / Notstand (Platz gemacht für Einsatzfahrzeug)</option>
+  <option value="gruener_pfeil">Ansatz: Grüner Pfeil (Zeichen 720) – nicht vollständig angehalten</option>
+  <option value="dauerrot">Ansatz: Ampel defekt / minutenlanges Dauerrot</option>
+  <option value="probezeit_rotlicht">Fahranfänger/Probezeit: A-Verstoß &amp; Aufbauseminar (ASF) abwehren</option>
+  <option value="toleranz_abzug">Knapp über 1 Sekunde: Toleranzabzug gezielt nutzen</option>
+  <option value="berufskraftfahrer">Berufskraftfahrer: Existenzgefährdung durch Fahrverbot</option>
+  <option value="ueberholvorgang">Verstoß im Rahmen eines Überholvorgangs</option>
+  <option value="spurwechsel">Ansatz: Spurwechsel / Versehen (falsche Spur, aber nicht geradeaus rübergefahren)</option>
+  <option value="freitext">Eigener Grund (Freitext eingeben)</option>
+</select>
       
       <div id="freitextContainer" style="display: none; margin-top: 10px;">
         <label style="color: #333;">Ihr eigener Text für den Einspruch:</label>
         <textarea id="pFreitextEingabe" rows="5" placeholder="Beschreiben Sie hier mit eigenen Worten, warum der Vorwurf nicht zutrifft..." style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
       </div>
     </fieldset>
+
+    <div class="helper-links">
+    <span>
+      <strong>Weitere Hilfen:</strong> 
+      <a href="blitzer-anhoerung.html" target="_blank" rel="noopener" class="portal-link">Tipps zur Online-Anhörung</a>
+    </span>
+    <span>
+      <a href="https://www.kba-online.de/registerauskunft/app/#/faer" target="_blank" rel="noopener">Punktestand online abfragen</a>
+    </span>
+    <span>
+      <a href="https://www.adac.de/verkehr/recht/bussgeld-punkte/bussgeldrechner/" target="_blank" rel="noopener">ADAC Bußgeldrechner</a>
+    </span>
+    <span>
+      <a href="https://www.bmv.de/SharedDocs/DE/Artikel/StV/Strassenverkehr/update-stvo-novelle.html" target="_blank" rel="noopener">Offizieller Bußgeldkatalog (BMDV)</a>
+    </span>
+  </div>
+  <div class="helper-note">
+    <strong>Tipp: Probieren Sie verschiedene Ansätze aus!</strong>Nutzen Sie das Tool und generieren Sie einfach kostenlos mehrere PDFs mit unterschiedlichen Ansätzen. Lesen Sie sich die fertigen Anschreiben in Ruhe durch und entscheiden Sie erst danach, welcher Text Ihren Fall am treffendsten widerspiegelt.
+  </div>
+</div>
 
     <div class="submit-area" style="display: flex; gap: 15px; flex-wrap: wrap;">
       <button type="submit" class="button-primary" style="flex: 1;">📄 PDF-Einspruch generieren</button>
@@ -353,25 +383,62 @@ function getAmpelText(strategie, schreibenTyp, az, kennzeichen, ort, datumTat, d
   text += `>>> EINSPRUCH <<<\n\n`;
   text += `ein. Gleichzeitig beantrage ich die vollumfängliche Akteneinsicht nach § 49 OWiG. Zur Wahrung meiner Verteidigungsrechte fordere ich die Beiziehung und unaufgeforderte Übersendung der vollständigen Messfotos (beide Auslösungen), des Messprotokolls, der Lebensakte der Anlage sowie des amtlich gültigen Schaltplans der Lichtzeichenanlage (Phasenprotokoll).\n\n`;
   text += `Zur rechtskräftigen Begründung führe ich Folgendes an:\n\n`;
-
+ 
   if (strategie === "haltelinie") {
     text += `Der Vorwurf eines vollendeten Rotlichtverstoßes ist unzutreffend und wird hiermit vollumfänglich zurückgewiesen. Zwar wurde die Haltelinie bei beginnendem Rotlicht passiert (Auslösen der ersten Induktionsschleife), das Fahrzeug jedoch noch deutlich vor dem maßgeblichen Schutzbereich der Kreuzung zum vollständigen Stillstand gebracht. Eine abstrakte oder gar konkrete Gefährdung des Querverkehrs war objektiv ausgeschlossen. Das zweite Beweisfoto wird zweifelsfrei belegen, dass kein Einfahren in den Gefahrenbereich stattgefunden hat. Demnach liegt rechtlich ausschließlich ein einfacher Haltelinienverstoß vor. Ich fordere die entsprechende Umwidmung des Vorwurfs sowie die sofortige Einstellung des Verfahrens bezüglich des unverhältnismäßigen Fahrverbots.`;
+ 
   } else if (strategie === "gelbphase") {
-    text += `Es bestehen erhebliche und substantiierte Zweifel an der rechtskonformen Schaltung der betroffenen Lichtzeichenanlage. Nach den zwingenden Richtlinien der VwV-StVO muss die Gelbphase bei einer zulässigen Höchstgeschwindigkeit von 50 km/h zwingend mindestens 3 Sekunden (bei 60 km/h mind. 4 Sekunden) betragen. Es war mir bei Annäherung an die Kreuzung physikalisch nicht möglich, das Fahrzeug durch eine normale Betriebsbremsung gefahrlos vor der Haltelinie zum Stehen zu bringen, da die Gelbphase objektiv zu kurz geschaltet war (Unzumutbarkeit der Bremsung). Ich bestreite die Vorwerfbarkeit des Verstoßes. Die Beweislast für eine normgerechte Ampelschaltung liegt vollumfänglich bei der Behörde.`;
+    text += `Es bestehen erhebliche und substantiierte Zweifel an der rechtskonformen Schaltung der betroffenen Lichtzeichenanlage. Nach den zwingenden Richtlinien der VwV-StVO bzw. den technischen Vorgaben der RiLSA muss die Gelbphase bei einer zulässigen Höchstgeschwindigkeit von 50 km/h zwingend mindestens 3 Sekunden (bei 60 km/h mind. 4 Sekunden) betragen. Es war mir bei Annäherung an die Kreuzung physikalisch nicht möglich, das Fahrzeug durch eine normale Betriebsbremsung gefahrlos vor der Haltelinie zum Stehen zu bringen, da die Gelbphase objektiv zu kurz geschaltet war (Unzumutbarkeit der Bremsung). Ich bestreite die Vorwerfbarkeit des Verstoßes. Die Beweislast für eine normgerechte Ampelschaltung liegt vollumfänglich bei der Behörde.`;
+ 
   } else if (strategie === "mitzieheffekt") {
     text += `Bei dem mir vorgeworfenen Sachverhalt handelt es sich um ein klassisches, juristisch anerkanntes Augenblicksversagen (sog. Mitzieh-Effekt). Ich befand mich im Stillstand an der roten Lichtzeichenanlage und wurde durch das plötzliche Losfahren der Fahrzeugkolonne auf der benachbarten Fahrspur (welche einen Grünpfeil bzw. eine eigene Grünphase erhielt) irritiert. Dies verleitete mich reflexartig zum Anfahren. Ein vorsätzlicher oder grob pflichtwidriger Rotlichtverstoß liegt somit evident nicht vor. Angesichts dieses Augenblicksversagens und mangelnder Beharrlichkeit rege ich nachdrücklich an, von einem etwaigen Fahrverbot nach § 4 Abs. 4 BKatV unter angemessener Erhöhung der Geldbuße abzusehen.`;
-  } else if (strategie === "foto") {
+ 
+  } else if (strategie === "fahrer_identifikation_rotlicht") {
+    // (vormals "foto" – Text unverändert)
     text += `Die mir bislang vorliegenden Beweisfotos (Fahrerbild) sind zur zweifelsfreien Identifikation völlig ungeeignet. Wesentliche Gesichtspartien sind derart verdeckt (bspw. durch Innenspiegel, Sonnenblende oder Schattenwurf) bzw. durch Spiegelungen der Windschutzscheibe unkenntlich gemacht, dass selbst ein anthropologisches Sachverständigengutachten keinen sicheren Nachweis der Fahrereigenschaft erbringen könnte. Da im deutschen OWiG-Recht im fließenden Verkehr die strikte Fahrerhaftung gilt und ich mich auf dem Lichtbild nicht erkennen kann, fordere ich, das Verfahren mangels Täteridentifikation gemäß § 47 OWiG unverzüglich einzustellen.`;
-  } else if (strategie === "notstand") {
+ 
+  } else if (strategie === "rettungswagen") {
+    // (vormals "notstand" – Text unverändert)
     text += `Das Überfahren der Haltelinie war nach § 16 OWiG (Rechtfertigender Notstand) gerechtfertigt. Ich musste einem sich nähernden Einsatzfahrzeug (Polizei/Feuerwehr/Rettungsdienst) mit eingeschaltetem Blaulicht und Einsatzhorn, welches Sonderrechte nach § 38 StVO in Anspruch nahm, unverzüglich Platz machen. Um freie Bahn zu schaffen, war ein vorsichtiges Einfahren in den Kreuzungsbereich zwingend erforderlich. Ein ahndungswürdiger Verstoß liegt dementsprechend nicht vor.`;
+ 
   } else if (strategie === "spurwechsel") {
     text += `Der vorgeworfene Verstoß stellt keinen klassischen Rotlichtverstoß dar. Ich hatte mich auf der falschen Fahrspur eingeordnet (welche Rotlicht zeigte) und habe diese Spur lediglich verlassen, um auf die parallel verlaufende Fahrspur mit Grünlicht zu wechseln. Der Schutzbereich der Kreuzung der rotzeigenden Spur wurde folglich nicht durchfahren. Gemäß ständiger Rechtsprechung ist in einem solchen Fall der Vorwurf eines qualifizierten Rotlichtverstoßes hinfällig.`;
+ 
+  } else if (strategie === "allgemein_rotlicht") {
+    // (vormals "allgemein" – erweitert um Verjährungshinweis)
+    text += `Der Vorwurf wird vollumfänglich und dem Grunde nach bestritten. Insbesondere bestreite ich die ordnungsgemäße Eichung und Ausrichtung der im Boden verlegten Induktionsschleifen sowie die zweifelsfreie Zuordnung der Beweisfotos zu meinem Fahrzeug. Ferner weise ich vorsorglich darauf hin, dass die Verfolgungsverjährung für Ordnungswidrigkeiten im Straßenverkehr nach § 26 Abs. 3 StVG grundsätzlich 6 Monate ab Tattag beträgt; ich bitte um Mitteilung, welche konkreten verjährungsunterbrechenden Maßnahmen bislang ergriffen wurden. Die Abgabe einer weiteren, vertiefenden Stellungnahme bleibt ausdrücklich dem Abschluss der vollständigen Akteneinsicht vorbehalten.`;
+ 
+  } else if (strategie === "ueber_1_sekunde") {
+    text += `Der Vorwurf eines qualifizierten Rotlichtverstoßes (Rotzeit über 1 Sekunde) wird bestritten. Bei einem sogenannten standardisierten Messverfahren ist die Behörde auf konkrete Einwände hin verpflichtet, die Zuverlässigkeit der Messung im Einzelfall zu belegen. Ich beantrage daher die Übersendung des vollständigen Messprotokolls, des gültigen Eichscheins des eingesetzten Geräts, der Bedienungsanleitung sowie sämtlicher Rohmessdaten beider Auslösefotos, um die exakte Rotzeit und die geräteseitig zu berücksichtigende Toleranz nachvollziehen zu können. Erst nach vollständiger Akteneinsicht ist eine Überprüfung möglich, ob die vorgeworfene Rotzeit den für ein Fahrverbot maßgeblichen Schwellenwert von 1,0 Sekunden tatsächlich sicher überschreitet. Hilfsweise weise ich schon jetzt darauf hin, dass bei Vorliegen einer besonderen Härte (z. B. drohender Arbeitsplatzverlust) ein Absehen vom Regelfahrverbot gemäß § 4 Abs. 4 BKatV gegen Erhöhung der Geldbuße in Betracht zu ziehen ist.`;
+ 
+  } else if (strategie === "unter_1_sekunde") {
+    text += `Der Vorwurf des einfachen Rotlichtverstoßes wird bestritten. Ich beantrage die vollständige Akteneinsicht, insbesondere in das Messprotokoll, den Eichschein sowie die Rohdaten der Induktionsschleifenauslösung. Zu klären ist insbesondere, ob die Ampel im Zeitpunkt des Überfahrens der Haltelinie überhaupt rechtzeitig als Rotlicht erkennbar war oder ob die vorgeschriebene Gelbphase zu kurz geschaltet war. Auch die Bildqualität des Beweisfotos ist zu überprüfen, da eine zweifelsfreie Fahrzeug- und Fahrerzuordnung Voraussetzung für den Vorwurf ist. Bis zur vollständigen Aufklärung dieser Punkte wird der Vorwurf dem Grunde nach bestritten.`;
+ 
+  } else if (strategie === "gruener_pfeil") {
+    text += `Der angefochtene Bescheid stuft den Sachverhalt zu Unrecht als klassischen Rotlichtverstoß mit Regelfahrverbot ein. Tatsächlich handelt es sich um einen Sachverhalt im Zusammenhang mit dem grünen Pfeilschild (Zeichen 720 zu § 37 StVO): Ich bin nach Anhalten an der Haltelinie langsam nach rechts weitergerollt, ohne vollständig zum Stillstand zu kommen bzw. den Querverkehr in jeder Hinsicht zu beachten. Dies stellt keinen Rotlichtverstoß im eigentlichen Sinne dar, sondern einen eigenständigen Verstoß gegen die Sorgfaltspflichten des Zeichens 720, für den der Bußgeldkatalog kein Regelfahrverbot vorsieht. Ich beantrage die Übersendung der Beweisfotos, der Beschilderungsdokumentation sowie der genauen Position der Haltelinie, um die zutreffende rechtliche Einordnung zu überprüfen, und widerspreche der Gleichsetzung mit einem vollständigen Rotlichtverstoß.`;
+ 
+  } else if (strategie === "dauerrot") {
+    text += `Der Vorwurf wird bestritten, da die Lichtzeichenanlage am Tatort zum fraglichen Zeitpunkt erkennbar gestört war. Die Ampel zeigte nach meiner Wahrnehmung über einen ungewöhnlich langen Zeitraum von mehreren Minuten durchgehend Rot, ohne dass ein Wechsel erfolgte, was auf eine technische Fehlfunktion hindeutet. Erst nach angemessener Wartezeit und sorgfältiger Prüfung des Querverkehrs bin ich vorsichtig weitergefahren. Ich beantrage die Übersendung der Störungs- und Wartungsprotokolle der zuständigen Straßenverkehrsbehörde bzw. des Anlagenbetreibers für den Tatzeitraum sowie Auskunft darüber, ob weitere Verkehrsteilnehmer zur gleichen Zeit betroffen waren. Kann die ordnungsgemäße Funktion der Anlage zum Tatzeitpunkt nicht lückenlos nachgewiesen werden, ist der Vorwurf eines vorsätzlichen oder fahrlässigen Rotlichtverstoßes nicht haltbar.`;
+ 
+  } else if (strategie === "probezeit_rotlicht") {
+    text += `Der Vorwurf wird dem Grunde nach bestritten; ich beantrage die vollständige Akteneinsicht in Messprotokoll, Eichschein und Beweisfotos. Besonders hinzuweisen ist auf die probezeitrechtliche Tragweite dieses Verfahrens: Ein bestätigter Rotlichtverstoß würde als A-Verstoß gewertet, was eine Verlängerung der Probezeit um zwei Jahre sowie die Anordnung eines Aufbauseminars für Fahranfänger (ASF) zur Folge hätte. Angesichts dieser einschneidenden Nebenfolgen ist eine besonders sorgfältige Prüfung von Messung, Ampelschaltung und Fahreridentifikation geboten. Ich bitte ausdrücklich darum, von einer Mitteilung an die Fahrerlaubnisbehörde abzusehen, bis der Sachverhalt im Rahmen dieses Einspruchsverfahrens abschließend geklärt ist.`;
+ 
+  } else if (strategie === "toleranz_abzug") {
+    text += `Sollte die vorgeworfene Rotzeit tatsächlich nur knapp oberhalb der für ein Fahrverbot maßgeblichen 1,0-Sekunden-Grenze liegen, wird die korrekte Berücksichtigung der gerätespezifischen Toleranzwerte ausdrücklich bestritten. Ich beantrage die Übersendung der vollständigen Messdaten, des Eichscheins, der Dokumentation zur Synchronisation von Ampelsteuerung und Kameraauslösung sowie des Nachweises der ordnungsgemäßen Inbetriebnahme des Systems. Erst nach Abzug der gerätetypischen Toleranz lässt sich verlässlich beurteilen, ob die Rotzeit tatsächlich über 1,0 Sekunden liegt. Verbleiben nach Toleranzabzug Zweifel oder ergibt sich ein Wert unterhalb der Schwelle, ist lediglich von einem einfachen Rotlichtverstoß ohne Regelfahrverbot auszugehen.`;
+ 
+  } else if (strategie === "berufskraftfahrer") {
+    text += `Der Vorwurf wird bereits dem Grunde nach bestritten; ich beantrage die vollständige Akteneinsicht in Messprotokoll, Eichschein und Beweisfotos. Ergänzend weise ich darauf hin, dass mich ein etwaiges Fahrverbot als Berufskraftfahrer in meiner wirtschaftlichen Existenz unmittelbar bedrohen würde, da ich beruflich zwingend auf die Fahrerlaubnis angewiesen bin und ein innerbetrieblicher Ausgleich, etwa durch Urlaub oder Vertretung, nicht möglich ist. Entsprechende Nachweise (Arbeitgeberbescheinigung, Tourenplanung) reiche ich auf Anforderung gerne nach. Für den Fall, dass der Vorwurf nach vollständiger Aktenlage bestehen bleiben sollte, beantrage ich hilfsweise, gemäß § 4 Abs. 4 BKatV von dem Regelfahrverbot gegen eine angemessene Erhöhung der Geldbuße abzusehen, da mich die Verhängung des Fahrverbots in unverhältnismäßiger Weise in meiner beruflichen Existenz träfe.`;
+ 
+  } else if (strategie === "ueberholvorgang") {
+    text += `Der Vorwurf wird bestritten. Der Vorfall ereignete sich im Rahmen eines Überholvorgangs; zum Zeitpunkt des Überfahrens der Haltelinie war meine Sicht auf die Lichtzeichenanlage durch das überholte Fahrzeug jedenfalls zeitweise eingeschränkt bzw. der erforderliche Fahrstreifenwechsel ließ sich erst kurz vor der Kreuzung sicher abschließen. Ich beantrage die Übersendung beider Beweisfotos, der genauen Fahrstreifenführung am Tatort sowie der Schaltzeiten der Ampelanlage, um zu überprüfen, ob die Signalwahrnehmung im konkreten Verkehrsgeschehen tatsächlich möglich und der Vorwurf eines vorsätzlichen Rotlichtverstoßes haltbar war. Die pauschale Bewertung als eindeutiger Rotlichtverstoß wird angesichts der dynamischen Verkehrssituation ausdrücklich bestritten.`;
+ 
   } else if (strategie === "freitext") {
     text += freitextStr;
+ 
   } else {
     text += `Der Vorwurf wird vollumfänglich und dem Grunde nach bestritten. Insbesondere bestreite ich die ordnungsgemäße Eichung und Ausrichtung der im Boden verlegten Induktionsschleifen sowie die zweifelsfreie Zuordnung der Beweisfotos zu meinem Fahrzeug. Die Abgabe einer weiteren, vertiefenden Stellungnahme bleibt ausdrücklich dem Abschluss der vollständigen Akteneinsicht vorbehalten.`;
   }
-
+ 
   text += `\n\nIch bitte um eine schriftliche Bestätigung über den fristgerechten Eingang dieses Einspruchs sowie um Übersendung der angeforderten Unterlagen.`;
   return text;
 }
@@ -559,6 +626,19 @@ function openPayPal() {
 }
 
 function closeOverlay() { document.getElementById('donateOverlay').classList.remove('active'); }
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var vorgabe = "{{DEFAULT_STRATEGIE}}"; 
+  var select = document.getElementById('pStrategie');
+  if (select && vorgabe && vorgabe.indexOf('{{') === -1) {
+    var exists = Array.from(select.options).some(o => o.value === vorgabe);
+    if (exists) {
+      select.value = vorgabe;
+      if (typeof toggleFreitext === 'function') toggleFreitext();
+    }
+  }
+});
 </script>
 
 <div class="overlay" id="donateOverlay">

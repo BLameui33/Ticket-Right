@@ -57,7 +57,7 @@
   <div class="usp-bar">
     <div class="usp-item">0 € Kosten (Keine Anwaltsgebühren)</div>
     <div class="usp-item">B2B Fokus (Speditionen)</div>
-    <div class="usp-item">OBU-Defekt & Liftachsen-Hacks</div>
+    <div class="usp-item">OBU-Defekt & Liftachsen-Ansatz</div>
     <div class="usp-item">Sofort-PDF für Behörden</div>
   </div>
 
@@ -66,7 +66,7 @@
   <ul style="margin-bottom: 25px; line-height: 1.6; font-size: 1.05em; background: #fdfdfd; padding: 20px 20px 20px 40px; border-radius: 8px; border: 1px solid #eaeaea;">
     <li><strong>Der OBU-Systemfehler:</strong> Die Mautbox zeigte einen grünen Haken, aber die Erfassungsbrücke hat wegen eines Systemfehlers nicht ausgelöst? Wenn die OBU nachweislich regelmäßig gewartet wurde, liegt das technische Risiko oft beim Betreiber, nicht bei der Spedition.</li>
     <li><strong>Die Liftachsen-Falle:</strong> Wurde bei einer Leerfahrt die Liftachse angehoben, verringert sich die mautpflichtige Achsenzahl. Oft deklarieren Kontrollbrücken das Fahrzeug dennoch fälschlicherweise zu hoch. Ein Einspruch mit Lieferschein und Achs-Protokoll bringt das Bußgeld zu Fall.</li>
-    <li><strong>Die neue Handwerkerausnahme:</strong> Fahren Sie einen LKW (bis 7,5t), um eigenes Werkzeug oder Material zur Baustelle zu transportieren? Seit der Gesetzesänderung sind handwerkliche Betriebe unter bestimmten Voraussetzungen mautbefreit.</li>
+    <li><strong>Die neue Handwerkerausnahme:</strong> Fahren Sie einen LKW zwischen 3,5 und 7,5 Tonnen, um eigenes Werkzeug oder Material zur Baustelle zu transportieren? Für diesen Gewichtsbereich sind Handwerksbetriebe unter bestimmten Voraussetzungen mautbefreit – Fahrzeuge ab 7,5 Tonnen sind davon ausdrücklich nicht erfasst.</li>
     <li><strong>Werkstattfahrten & Bagatellen:</strong> Bei Überführungsfahrten zur Werkstatt greifen oft Ausnahmeregelungen im Bundesfernstraßenmautgesetz (BFStrMG). Zudem wird bei Erstverstößen ein Bußgeld oft auf ein bloßes Verwarngeld reduziert, wenn technisches Versagen vorlag.</li>
   </ul>
 
@@ -110,7 +110,7 @@
       <input type="text" id="pFirmaPLZOrt" placeholder="z.B. 50676 Köln" required>
       
       <label>E-Mail-Adresse (falls bekannt):</label>
-      <input type="email" id="pEmailFirma" value="info@nivi.it" placeholder="info@behoerde.de">
+      <input type="email" id="pEmailFirma" value="info@nivisecure.eu" placeholder="info@behoerde.de">
       <label>Aktenzeichen / Rechnungsnummer (WICHTIG):</label>
       <input type="text" id="pAktenzeichen" placeholder="z.B. AZ: BALM-12345" required>
     </fieldset>
@@ -141,12 +141,14 @@
       <legend>4. Verteidigungsstrategie</legend>
       <p style="font-size: 0.85em; color: #555; margin-top: 0;">Welcher Umstand trifft auf diese Fahrt zu?</p>
       <select id="pStrategie" required style="font-weight: bold;">
-        <option value="obu">Hack 1: OBU-Defekt (Gerät leuchtete grün, System hat fälschlich nicht gebucht)</option>
-        <option value="liftachse">Hack 2: Falsche Achsklasse / Liftachse (Anhänger war entladen, Achse angehoben)</option>
-        <option value="handwerker">Hack 3: Handwerkerausnahme (Fahrzeug transportierte Material für Handwerksbetrieb)</option>
-        <option value="werkstatt">Hack 4: Werkstattfahrt (Fahrzeug war gem. BFStrMG von der Maut befreit)</option>
-        <option value="verjaehrung">Hack 5: Verjährung der Forderung</option>
-        <option value="freitext">Hack 6: Individuelle Begründung (Freitext eingeben)</option>
+        <option value="obu">Ansatz 1: OBU-Defekt (Gerät leuchtete grün, System hat fälschlich nicht gebucht)</option>
+        <option value="liftachse">Ansatz 2: Falsche Achsklasse / Liftachse (Anhänger war entladen, Achse angehoben)</option>
+        <option value="handwerker">Ansatz 3: Handwerkerausnahme (Fahrzeug transportierte Material für Handwerksbetrieb)</option>
+        <option value="werkstatt">Ansatz 4: Werkstattfahrt (Fahrzeug war gem. BFStrMG von der Maut befreit)</option>
+        <option value="verjaehrung">Ansatz 5: Verjährung der Forderung</option>
+        <option value="freitext">Ansatz 6: Individuelle Begründung (Freitext eingeben)</option>
+        <option value="nichtmautpflichtig">Ansatz 7: Fahrzeug grundsätzlich nicht mautpflichtig (Gewicht/Emissionsklasse)</option>
+        <option value="zustellung">Ansatz 8: Formfehler im Bescheid (Zustellung/Rechtsbehelfsbelehrung/Bestimmtheit)</option>
       </select>
 
       <div id="boxFreitext" style="display:none; margin-top:15px; padding: 10px;">
@@ -154,6 +156,23 @@
         <textarea id="pFreitextInhalt" rows="5" style="width:100%; box-sizing: border-box; border:1px solid #ccc; border-radius:4px; padding:8px; font-family: inherit;" placeholder="Schildern Sie hier, warum die Forderung sachlich falsch ist..."></textarea>
       </div>
     </fieldset>
+
+    <div class="helper-links">
+    <span>
+      <strong>Weitere Hilfen:</strong> 
+      <a href="https://www.autostrade.it/en/contatti/scrivici" target="_blank" rel="noopener" class="portal-link">Kontakt zur Stelle</a>
+    </span>
+    <span>
+<a href="https://www.toll-collect.de/de/toll_collect/rund_um_die_maut/mautbefreiung/mautbefreiung.html" target="_blank" rel="noopener">Toll Collect: Mautbefreiung online beantragen</a>    </span>
+    <span>
+      <a href="https://www.balm.bund.de/DE/Themen/Lkw-Maut/lkw-maut.html" target="_blank" rel="noopener">BALM: Offizielle Regelungen</a>
+    </span>
+    <span><a href="https://www.balm.bund.de/DE/Themen/Lkw-Maut/Mauttabelle/mauttabelle_node.html" target="_blank" rel="noopener">BALM: Mauttabelle</a></span>
+  </div>
+  <div class="helper-note">
+    <strong>Tipp: Probieren Sie verschiedene Ansätze aus!</strong> Sie sind sich unsicher, welcher Hebel in Ihrer Situation am besten greift? Kein Problem! Nutzen Sie das Tool und generieren Sie einfach kostenlos mehrere PDFs mit unterschiedlichen Ansätzen (z. B. DSGVO und Technik-Fehler). Lesen Sie sich die fertigen Anschreiben in Ruhe durch und entscheiden Sie erst danach, welcher Text Ihren Fall am treffendsten widerspiegelt.
+  </div>
+</div>
 
     <div class="submit-area" style="display: flex; gap: 15px; flex-wrap: wrap;">
       <button type="submit" class="button-primary" style="flex: 1; background: #a22d36;">📄 PDF generieren (Post)</button>
@@ -171,19 +190,19 @@
     <h3>Falsche Achsdeklaration bei Liftachsen</h3>
     <p>Die Höhe der Maut richtet sich nach den Schadstoffklassen und vor allem nach der <strong>Achszahl</strong>. Fährt ein LKW eine leere Tour, wird oft die Liftachse am Auflieger angehoben. Das Fahrzeug hat in diesem Moment physisch weniger Achsen auf der Straße und fällt in eine günstigere Mautkategorie. Mautbrücken erfassen dies oft fehlerhaft optisch. Ein Widerspruch mit Beifügung des Leer-Lieferscheins klärt den Vorfall meist sofort.</p>
 
-    <h3>Die Handwerkerausnahme (§ 1 Abs. 2 BFStrMG)</h3>
-    <p>Seit der Mauterweiterung für LKW ab 3,5 Tonnen werden auch viele Handwerksbetriebe unfreiwillig zur Kasse gebeten. Dabei gilt die gesetzliche <em>Handwerkerausnahme</em>: Wer Materialien, Maschinen oder Ausrüstungen für die Ausübung des eigenen Gewerbes transportiert, ist mautbefreit. Wird man dennoch geblitzt, hilft ein formeller Einspruch mit Nachweis des Gewerkes und des konkreten Transportgutes.</p>
+    <h3>Die Handwerkerausnahme (§ 1 Abs. 2 Satz 1 Nr. 10 BFStrMG)</h3>
+<p>Seit der Mauterweiterung sind Lkw mit einer technisch zulässigen Gesamtmasse von mehr als 3,5 bis unter 7,5 Tonnen mautpflichtig – für genau dieses Gewichtsfenster gilt die gesetzliche <em>Handwerkerausnahme</em>. Ab 7,5 Tonnen greift sie nicht mehr. Das Bundesamt für Logistik und Mobilität (BALM) führt eine Liste von rund 163 handwerklichen und handwerksähnlichen Tätigkeiten, die als abschließend behandelt wird; nur Betriebe aus dieser Liste können die Ausnahme in Anspruch nehmen. Handwerksbetriebe können ihre Fahrzeuge zudem vorab über das Online-Meldeportal von Toll Collect registrieren – eine solche Voranmeldung ist zwar keine Pflicht, stärkt im Bußgeldverfahren aber die eigene Beweislage erheblich.</p>
   </div>
 
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
     <h3>Weitere Mautbetreiber & Behörden:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <a href="einspruch-mautstrafe-bazg-schweiz.html">BAZG / LSVA Maut (Schweiz)</a>
+      <a href="einspruch-mautstrafe-toll-collect.html">Toll Collect GmbH (Deutschland)</a>
+<a href="einspruch-mautstrafe-bazg-schweiz.html">BAZG / LSVA Maut (Schweiz)</a>
+<a href="einspruch-mautstrafe-balm-deutschland.html">BALM (Bundesamt für Logistik und Mobilität)</a>
 <a href="einspruch-mautstrafe-asfinag-oesterreich.html">ASFINAG (Österreich)</a>
-<a href="einspruch-mautstrafe-antai-frankreich.html">ANTAI / Free-Flow Maut (Frankreich)</a>
 <a href="einspruch-mautstrafe-viapass-belgien.html">Viapass / Satellic (Belgien)</a>
-<a href="einspruch-mautstrafe-toll-collect.html">Toll Collect GmbH (Deutschland)</a>
-<a href="einspruch-mautstrafe-etoll-polen.html">KAS / e-TOLL (Polen)</a>
+<a href="einspruch-mautstrafe-antai-frankreich.html">ANTAI / Free-Flow Maut (Frankreich)</a>
 
     </div>
   </div>
@@ -237,9 +256,14 @@
      Welche Fristen gelten für den Einspruch beim BALM?
     </strong>
     <p style="margin-top: 0; line-height: 1.5;">
-      Gegen einen Bußgeldbescheid des BALM (ehemals BAG) muss der Einspruch innerhalb von <strong>zwei Wochen</strong> nach der Zustellung schriftlich bei der Behörde eingehen. Wenn Sie zunächst einen „Anhörungsbogen“ erhalten, gibt Ihnen die Behörde meist eine Frist von einer Woche zur Äußerung. Nutzen Sie unseren Generator, um diese Fristen zu wahren und eine detaillierte Begründung einzureichen, um das Verfahren einzustellen, bevor ein teurer Bußgeldbescheid erlassen wird.
-    </p>
+<p>Gegen einen Bußgeldbescheid des BALM muss der Einspruch innerhalb von <strong>zwei Wochen</strong> nach Zustellung schriftlich bei der Behörde eingehen (§ 67 OWiG). Erhalten Sie zunächst nur einen Anhörungsbogen, ist die dort genannte Frist (meist ein bis zwei Wochen) keine gesetzliche, sondern eine von der Behörde im Einzelfall gesetzte Frist – eine kurze, sachliche Stellungnahme lohnt sich trotzdem, um das Verfahren möglichst früh zu beenden.</p>    </p>
   </div>
+
+  <div class="faq-item" style="margin-bottom: 20px;">
+  <strong style="font-size: 1.1em; color: #a22d36; display: block; margin-bottom: 5px;">
+    Wie lange kann das BALM einen Maut-Verstoß noch verfolgen?</strong>
+  <p style="margin-top: 0; line-height: 1.5;">Anders als bei gewöhnlichen Verkehrsordnungswidrigkeiten (aktuell 6 Monate) beträgt die Verfolgungsverjährung bei Verstößen gegen das Bundesfernstraßenmautgesetz nach Angaben des BALM <strong>drei Jahre</strong> ab dem Tattag (§ 31 Abs. 2 Nr. 1 OWiG). Die zugehörige zivilrechtliche Mautnachforderung selbst verjährt sogar erst nach vier Jahren. Eine Verjährungseinrede ist bei Maut-Bescheiden also nur in den seltenen Fällen aussichtsreich, in denen der Vorfall wirklich mehrere Jahre zurückliegt.</p>
+</div>
 
 </div>
 <!-- ENDE: ZUSÄTZLICHE B2B SEO-BOX MAUT & FUHRPARK -->
@@ -358,19 +382,30 @@ function getWiderspruchText(strategie, kennzeichen, obu, datum, ort, freitext) {
   let text = `FORM- UND FRISTGERECHTER WIDERSPRUCH GEGEN DEN BESCHEID / DIE NACHFORDERUNG\n\n`;
   text += `Hiermit legen wir form- und fristgerecht Widerspruch gegen Ihren Bescheid bezüglich des mautpflichtigen Kraftfahrzeugs mit dem amtlichen Kennzeichen ${kennzeichen} ${obu ? '(OBU-ID: ' + obu + ')' : ''} vom ${datum} (Erfassungsort: ${ort}) ein. Wir weisen den Vorwurf der vorsätzlichen oder fahrlässigen Nichtentrichtung der Maut vollumfänglich zurück.\n\n`;
 
-  if (strategie === "obu") {
-    text += `Begründung:\nZum Zeitpunkt der fraglichen Fahrt war das Fahrzeug mit einem ordnungsgemäß installierten und regelmäßig gewarteten Fahrzeuggerät (On-Board Unit) ausgestattet. Das Gerät signalisierte dem Fahrer während der gesamten Fahrt Betriebsbereitschaft (grüne LED-Anzeige). Dass die Mauterhebungsbrücke bzw. Ihr Kontrollsystem die Durchfahrt nicht oder fehlerhaft erfasst hat, ist auf einen technischen Systemfehler Ihrer Infrastruktur zurückzuführen. Eine Überwälzung dieses technischen Risikos in Form eines Bußgeldes auf das Transportunternehmen ist rechtswidrig.`;
-  } else if (strategie === "liftachse") {
-    text += `Begründung:\nDie von Ihnen im Bescheid zugrunde gelegte Achszahl bzw. Mautklasse ist unzutreffend. Das Fahrzeug absolvierte am fraglichen Datum eine Leerfahrt, bei der die Liftachse ordnungsgemäß angehoben war. Folglich befanden sich weniger Achsen im physischen Kontakt mit der Fahrbahn, was zu einer niedrigeren Mautkategorie führt. Ihr automatisches optisches Kontrollsystem hat die Achsen fehlerhaft deklariert. Einen entsprechenden Nachweis (Lieferschein/Fahrtenbuch) können wir bei Bedarf erbringen.`;
-  } else if (strategie === "handwerker") {
-    text += `Begründung:\nDas genannte Fahrzeug (unter 7,5 t zGM) unterliegt zum Tatzeitpunkt der gesetzlichen Handwerkerausnahme gemäß § 1 Abs. 2 Satz 1 Nr. 10 BFStrMG. Das Fahrzeug wurde eingesetzt, um Material, Ausrüstung oder Maschinen zu transportieren, die zur Ausübung unseres eigenen handwerklichen Betriebs notwendig sind. Ein mautpflichtiger gewerblicher Güterkraftverkehr im Sinne des Gesetzes lag ausdrücklich nicht vor.`;
-  } else if (strategie === "werkstatt") {
-    text += `Begründung:\nBei der gegenständlichen Fahrt handelte es sich um eine reine Werkstatt- bzw. Probe- oder Überführungsfahrt, welche nicht der Beförderung von Gütern diente. Das Fahrzeug war somit nicht im gewerblichen Güterkraftverkehr eingesetzt. Gemäß den Ausnahmebestimmungen des Bundesfernstraßenmautgesetzes (BFStrMG) ist diese Fahrt nicht mautpflichtig.`;
-  } else if (strategie === "verjaehrung") {
-    text += `Begründung:\nWir berufen uns hiermit auf die Einrede der Verjährung. Zwischen dem vermeintlichen Vorfall und der Bekanntgabe des Bescheids ist die gesetzliche Festsetzungs- bzw. Verfolgungsverjährung abgelaufen.`;
-  } else if (strategie === "freitext") {
+ if (strategie === "obu") {
+    text += `Begründung:\nZum Zeitpunkt der fraglichen Fahrt war das Fahrzeug mit einem ordnungsgemäß installierten und nachweislich regelmäßig gewarteten Fahrzeuggerät (On-Board Unit) ausgestattet. Das Gerät signalisierte dem Fahrer während der gesamten Fahrt uneingeschränkte Betriebsbereitschaft. Sofern die Erfassungsbrücke bzw. das Kontrollsystem des Betreibers die Durchfahrt dennoch nicht oder fehlerhaft registriert hat, liegt die Ursache im technischen Verantwortungsbereich der Infrastruktur des Betreibers. Ein Verschulden des Fahrzeughalters im Sinne des § 10 BFStrMG scheidet damit aus. Wartungsnachweise und ggf. Auslesedaten des Geräts fügen wir auf Anforderung bei.`;
+
+} else if (strategie === "liftachse") {
+    text += `Begründung:\nDie im Bescheid zugrunde gelegte Achszahl bzw. Mautklasse ist nach unserer Kenntnis unzutreffend. Das Fahrzeug befand sich am fraglichen Datum auf einer Leerfahrt, bei der die Liftachse ordnungsgemäß angehoben war, wodurch sich die für die Mautberechnung maßgebliche Achszahl reduziert (vgl. Anlage 1 zu § 3 Abs. 3 BFStrMG). Automatisierte optische Erfassungssysteme klassifizieren angehobene Achsen erfahrungsgemäß nicht immer zuverlässig. Zum Nachweis fügen wir Lieferschein bzw. Fahrtenbuchauszug für den betreffenden Tag bei.`;
+
+} else if (strategie === "handwerker") {
+    text += `Begründung:\nDas genannte Fahrzeug (technisch zulässige Gesamtmasse über 3,5 t und unter 7,5 t) fällt für die fragliche Fahrt unter die Handwerkerausnahme gemäß § 1 Abs. 2 Satz 1 Nr. 10 BFStrMG. Unser Betrieb ist in der vom Bundesamt für Logistik und Mobilität (BALM) veröffentlichten Liste der handwerklichen Tätigkeiten geführt${sHandwerkGemeldet ? ' und für die Handwerkerausnahme bereits über das Meldeportal von Toll Collect registriert' : ''}. Die Fahrt diente ausschließlich dem Transport von Material, Ausrüstung bzw. Maschinen, die zur Ausübung des eigenen Gewerks benötigt wurden; ein mautpflichtiger gewerblicher Güterkraftverkehr im Sinne des Gesetzes lag nicht vor. Gewerbenachweis und Auftragsbeleg für die Fahrt fügen wir bei.`;
+
+} else if (strategie === "werkstatt") {
+    text += `Begründung:\nBei der gegenständlichen Fahrt handelte es sich um eine reine Werkstatt-, Überführungs- oder Prüfungsfahrt ohne Güterbeförderung. Das Fahrzeug wurde damit nicht im gewerblichen Güterkraftverkehr im Sinne des § 1 Abs. 1 BFStrMG eingesetzt und unterlag für diese konkrete Fahrt keiner Mautpflicht. Einen Werkstattauftrag bzw. entsprechenden Nachweis legen wir auf Anforderung vor.`;
+
+} else if (strategie === "verjaehrung") {
+    text += `Begründung:\nWir berufen uns auf die Einrede der Verjährung. Zwischen dem im Bescheid genannten Tattag und der Bekanntgabe des Bescheids liegen mehr als drei Jahre, sodass die Verfolgungsverjährung nach § 10 BFStrMG i. V. m. § 31 Abs. 2 Nr. 1 OWiG eingetreten ist. Wir bitten um Prüfung und Einstellung des Verfahrens.`;
+
+} else if (strategie === "nichtmautpflichtig") {
+    text += `Begründung:\nDas betroffene Fahrzeug fällt nach § 1 Abs. 1 BFStrMG nicht in den mautpflichtigen Anwendungsbereich. Die technisch zulässige Gesamtmasse (Feld F.1 der Zulassungsbescheinigung) liegt unter der maßgeblichen Grenze bzw. es handelt sich um ein nach dem Gesetz von der Maut befreites bzw. reduziert mautpflichtiges emissionsfreies Fahrzeug. Wir bitten um Abgleich mit den Fahrzeugpapieren, die wir beifügen.`;
+
+} else if (strategie === "zustellung") {
+    text += `Begründung:\nWir rügen zudem formelle Mängel des Bescheids. Insbesondere ist zu prüfen, ob eine ordnungsgemäße Rechtsbehelfsbelehrung beigefügt war, ob die Zustellung wirksam erfolgt ist und ob der zugrunde liegende Tatvorwurf sowie das angegebene Aktenzeichen hinreichend bestimmt und nachvollziehbar bezeichnet sind. Sollte einer dieser formellen Punkte nicht erfüllt sein, ist der Bescheid bereits aus diesem Grund aufzuheben. Wir bitten um Übersendung der vollständigen Verfahrensakte zur Prüfung dieser Punkte.`;
+
+} else if (strategie === "freitext") {
     text += `Begründung:\n${freitext}`;
-  }
+}
 
   text += `\n\nWir fordern Sie auf, den Bescheid aufzuheben und das Verfahren kostenfrei einzustellen. Vorsorglich beantragen wir Akteneinsicht in die Mess- und Erfassungsprotokolle der entsprechenden Mautstation für den besagten Zeitraum.`;
   

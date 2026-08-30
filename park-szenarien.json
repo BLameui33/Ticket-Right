@@ -6,7 +6,7 @@
     "meta_description": "Knöllchen am Auto? Nutzen Sie jetzt den kostenlosen Generator und erstellen Sie in Minuten Ihren Einspruch gegen den Strafzettel.",
     "einleitungstext": "Ein Strafzettel am Scheibenwischer ist schnell bezahlt – und oft unnötig. Falsche Tatorte, verdeckte Schilder oder lückenhafte Fotos kommen häufiger vor, als viele denken. Bevor Sie Geld verschenken oder später ein Bußgeldbescheid folgt, sichern Sie Ihre Chancen. Füllen Sie jetzt den Generator aus und erstellen Sie Ihren passenden Einspruch in wenigen Minuten.",
     "fall_infobox": "<h4 style='margin-top:0;'>Diese Fehler kippen viele Knöllchen</h4><p>Bei Parkverstößen muss der Vorwurf konkret und nachvollziehbar sein: richtiger Tatort, korrektes Kennzeichen, eindeutige Beschilderung und belastbare Beweisfotos. Fehlt es daran, greift das Bestimmtheitsgebot des Verwaltungsrechts. Wichtig ist außerdem die Verfolgungsverjährung nach § 26 Abs. 3 StVG: Ohne wirksame Unterbrechung darf die Behörde die Tat regelmäßig nur innerhalb von 6 Monaten verfolgen. Auch verdeckte oder missverständlich aufgestellte Verkehrszeichen sind angreifbar, weil nach dem Sichtbarkeitsgrundsatz nur klar erkennbare Schilder verbindlich sind. Wer früh reagiert, kann genau diese Punkte gezielt im Einspruch nutzen.</p>",
-    "default_strategie": "allgemein_parken"
+    "default_strategie": "allgemein"
   },
   {
     "slug": "15-euro-strafzettel-parken-einspruch",
@@ -15,7 +15,7 @@
     "meta_description": "15-Euro-Knöllchen erhalten? Erstellen Sie jetzt mit dem kostenlosen Generator Ihren Einspruch gegen das Verwarnungsgeld.",
     "einleitungstext": "Wegen ein paar Minuten Parkzeitüberschreitung sollen Sie 15 Euro zahlen? Gerade bei solchen Massenfällen passieren dem Ordnungsamt erstaunlich oft Fehler bei Kennzeichen, Uhrzeit oder Beschilderung. Zahlen Sie nicht reflexartig. Mit dem Generator formulieren Sie schnell einen gezielten Einspruch und nutzen typische Schwachstellen des Vorwurfs zu Ihrem Vorteil.",
     "fall_infobox": "<h4 style='margin-top:0;'>Auch 15 Euro sind oft angreifbar</h4><p>Bei niedrigen Verwarnungsgeldern arbeiten Behörden häufig mit standardisierten Erfassungen – genau dort entstehen Fehler. Typisch sind Zahlendreher im Kennzeichen, ungenaue Tatzeit, fehlende Fotos oder unklare Parkscheinregelungen. Rechtlich relevant ist zudem § 26 Abs. 3 StVG: Wird die Verfolgung nicht rechtzeitig eingeleitet, kann schon nach 6 Monaten Verjährung eintreten. Bei Parkscheiben- oder Parkscheinverstößen lohnt sich außerdem der Blick auf die konkrete Beschilderung nach § 13 StVO. Ist die Höchstparkdauer oder Gebührenpflicht nicht eindeutig erkennbar, fehlt es oft an einer tragfähigen Grundlage für das Verwarnungsgeld.</p>",
-    "default_strategie": "knoellchen_15"
+    "default_strategie": "allgemein"
   },
   {
     "slug": "25-euro-strafzettel-innenstadt-parken",
@@ -24,7 +24,7 @@
     "meta_description": "25-Euro-Knöllchen in der Innenstadt? Nutzen Sie den Generator und erstellen Sie sofort Ihren Einspruch gegen unklare Parkzonen.",
     "einleitungstext": "Ein kurzer City-Besuch, dann hängt schon ein 25-Euro-Knöllchen am Auto. Besonders in Innenstädten sind Parkzonen, Zusatzschilder und Zeitfenster oft verwirrend oder widersprüchlich. Genau das kann Ihre Chance sein. Lassen Sie die Forderung nicht einfach stehen und erstellen Sie jetzt Ihren Einspruch mit unserem Generator.",
     "fall_infobox": "<h4 style='margin-top:0;'>Schilderwald ist kein Freibrief für die Behörde</h4><p>Innenstadt-Parkzonen sind nur wirksam, wenn Beginn, Ende, Zusatzzeichen und zeitliche Einschränkungen für einen durchschnittlichen Fahrer klar erfassbar sind. Widersprüchliche Angaben wie „werktags“, „mit Parkschein“, „Anwohner frei“ oder schlecht zugeordnete Zusatzschilder machen den Vorwurf angreifbar. Maßgeblich ist der Sichtbarkeits- und Bestimmtheitsgrundsatz: Der Fahrer muss ohne Rätselraten erkennen können, was gilt. Auch falsch dokumentierte Standorte oder fehlende Beschilderungspläne können helfen. Kommt der Anhörungsbogen oder Bescheid erst spät, sollten Sie zusätzlich die 3-Monats-Frist aus § 26 Abs. 3 StVG im Blick behalten.</p>",
-    "default_strategie": "knoellchen_25"
+    "default_strategie": "beschilderung"
   },
   {
     "slug": "55-euro-strafzettel-falschparken-einspruch",
@@ -33,7 +33,7 @@
     "meta_description": "55-Euro-Knöllchen wegen Gehweg, Radweg oder Ladeplatz? Jetzt kostenlosen Generator nutzen und Einspruch erstellen.",
     "einleitungstext": "55 Euro für einen Parkverstoß tun weh – erst recht, wenn Sie nur kurz gehalten oder be- und entladen haben. Gerade bei Gehweg-, Radweg- oder Ladeplatz-Fällen wird Parken oft vorschnell unterstellt. Bevor Sie zahlen, sollten Sie den Vorwurf sauber angreifen. Starten Sie jetzt den Generator und sichern Sie Ihre Einwände.",
     "fall_infobox": "<h4 style='margin-top:0;'>Entscheidend ist oft die 3-Minuten-Grenze</h4><p>Rechtlich ist zwischen Halten und Parken strikt zu unterscheiden: Wer nicht länger als 3 Minuten steht oder ständig mit dem Fahrzeug befasst ist, parkt im Sinne des § 12 StVO regelmäßig nicht. Genau das ist bei 55-Euro-Vorwürfen oft der Hebel. Die Behörde muss nachvollziehbar darlegen, dass tatsächlich ein Parkvorgang vorlag. Fehlen belastbare Fotos, eine dokumentierte Standzeit oder Hinweise darauf, dass Sie das Fahrzeug verlassen haben, wird der Vorwurf dünn. Bei E-Lade- oder Carsharing-Plätzen kommt zusätzlich hinzu, dass die Beschilderung samt Zusatzzeichen eindeutig und am konkreten Stellplatz wirksam angebracht sein muss.</p>",
-    "default_strategie": "knoellchen_55"
+    "default_strategie": "haltenparken"
   },
   {
     "slug": "defekter-parkautomat-parkscheibe-einspruch-ordnungsamt",
@@ -69,7 +69,7 @@
     "meta_description": "Knöllchen erst spät erhalten? Nutzen Sie den Generator und berufen Sie sich auf die 6-Monats-Frist nach § 26 Abs. 3 StVG.",
     "einleitungstext": "Der Brief vom Ordnungsamt kam 6 Monate nach dem angeblichen Parkverstoß? Dann könnte die Forderung bereits verjährt sein. Genau diese Frist wird von Betroffenen oft übersehen – und von Behörden nicht immer sauber eingehalten. Bevor Sie zahlen, sollten Sie die Daten sichern. Erstellen Sie jetzt Ihren Einspruch mit Verweis auf die Verjährung.",
     "fall_infobox": "<h4 style='margin-top:0;'>§ 26 Abs. 3 StVG: Oft nur 6 Monate Zeit</h4><p>Bei Verkehrsordnungswidrigkeiten gilt grundsätzlich die Verfolgungsverjährung von 6 Monaten nach § 26 Abs. 3 StVG, solange noch kein Bußgeldbescheid ergangen ist. Entscheidend ist aber, ob die Frist wirksam unterbrochen wurde – etwa durch eine ordnungsgemäße Anhörung des Betroffenen. Nicht jedes interne Behördenhandeln reicht dafür aus. Prüfen Sie daher exakt das Tatdatum, das Datum der ersten Anhörung und den Zugang späterer Schreiben. Ist die Frist abgelaufen, darf die Tat nicht mehr verfolgt werden. Gerade bei Parkverstößen ist das ein scharfes Verteidigungsmittel, das in der Praxis erstaunlich oft übersehen wird.</p>",
-    "default_strategie": "verjaehrung_parken"
+    "default_strategie": "verjaehrung"
   },
   {
     "slug": "halteverbotsschild-verdeckt-zugewachsen-einspruch-ordnungsamt",
@@ -78,7 +78,7 @@
     "meta_description": "Halteverbotsschild verdeckt oder zugewachsen? Jetzt Generator nutzen und Einspruch wegen fehlender Sichtbarkeit erstellen.",
     "einleitungstext": "Sie sollen im Halteverbot gestanden haben, konnten das Schild aber praktisch nicht sehen? Dann ist der Vorwurf oft angreifbar. Verdeckt durch Äste, Lkw oder Schnee gilt ein Verkehrszeichen nicht automatisch wirksam. Sichern Sie jetzt Fotos und erstellen Sie mit dem Generator Ihren Einspruch wegen fehlender Sichtbarkeit.",
     "fall_infobox": "<h4 style='margin-top:0;'>Sichtbarkeitsgrundsatz schlägt versteckte Schilder</h4><p>Verkehrszeichen binden nur, wenn sie mit einem raschen und beiläufigen Blick erkennbar sind. Genau das verlangen Rechtsprechung und Sichtbarkeitsgrundsatz. Ist ein Halteverbotsschild zugewachsen, verdreht, eingeschneit oder durch größere Fahrzeuge verdeckt, muss der Fahrer nicht aktiv danach suchen. Eine Nachforschungspflicht besteht grundsätzlich nicht. Wichtig sind zeitnahe Beweisfotos aus Fahrerperspektive, idealerweise mit Abstand zum Fahrzeug und Blickrichtung bei der Anfahrt. Auch der Beginn und das Ende der Verbotsstrecke müssen nachvollziehbar sein. Fehlt diese klare Erkennbarkeit, ist das Knöllchen häufig erfolgreich angreifbar.</p>",
-    "default_strategie": "beschilderung_parken"
+    "default_strategie": "beschilderung"
   },
   {
     "slug": "anwohnerparken-ohne-ausweis-strafzettel",
@@ -98,15 +98,7 @@
     "fall_infobox": "<h4 style='margin-top:0;'>§ 12 Abs. 4 StVO kennt klare Ausnahmen</h4><p>Grundsätzlich ist zum Parken der rechte Seitenstreifen oder Fahrbahnrand zu benutzen. § 12 Abs. 4 StVO erlaubt das Parken am linken Fahrbahnrand jedoch ausdrücklich in Einbahnstraßen sowie dort, wo rechts Schienen liegen. Genau diese Ausnahmen werden in der Praxis oft übersehen. Prüfen Sie daher zuerst, ob die Straße als Einbahnstraße beschildert war oder ob rechts Straßenbahnschienen verlaufen. Auch der genaue Tatort ist wichtig: Schon ein falscher Straßenabschnitt kann den Vorwurf kippen. Mit Fotos der Beschilderung und des Straßenverlaufs lässt sich das Verwarnungsgeld häufig schnell aus der Welt schaffen.</p>",
     "default_strategie": "fahrtrichtung"
   },
-  {
-    "slug": "parkverbot-auf-privatgrund-einspruch",
-    "fall_titel": "Privatgrund: Parkverbot anfechten",
-    "h1_titel": "Parkverbot auf Privatgrund? Einspruch einlegen!",
-    "meta_description": "Knöllchen auf Privatgrundstück? Nutzen Sie den Generator und wehren Sie unklare Schilder oder überzogene Forderungen ab.",
-    "einleitungstext": "Ein Zettel oder eine Zahlungsforderung auf privatem Parkplatz wirkt oft offiziell – ist aber rechtlich nicht automatisch wirksam. Gerade bei Supermärkten, Wohnanlagen oder Kundenparkplätzen sind Schilder, Vertragsstrafen und Fristen häufig angreifbar. Zahlen Sie nicht vorschnell. Nutzen Sie jetzt den Generator und setzen Sie sich gezielt gegen die Forderung zur Wehr.",
-    "fall_infobox": "<h4 style='margin-top:0;'>Auf Privatgrund zählt vor allem das Vertragsrecht</h4><p>Auf Privatparkplätzen geht es meist nicht um ein behördliches Knöllchen, sondern um eine behauptete Vertragsstrafe. Dafür müssen die Nutzungsbedingungen bei Einfahrt klar, lesbar und eindeutig einbezogen worden sein. Kleine, versteckte oder widersprüchliche Schilder reichen oft nicht. Auch die Höhe der Forderung kann angreifbar sein, wenn sie unangemessen wirkt. Bei Abschleppfällen kommt es zusätzlich auf die Ortsüblichkeit der Kosten an. Wichtig: Der Betreiber muss den Verstoß und die Beschilderung im Streitfall belegen können. Fotos von Einfahrt, Schildgröße, Beleuchtung und Stellplatz sind deshalb oft der entscheidende Hebel.</p>",
-    "default_strategie": "privatparkplatz"
-  },
+  
   {
     "slug": "parken-im-bereich-einer-feuerwehrzufahrt-einspruch",
     "fall_titel": "Feuerwehrzufahrt: Knöllchen abwehren",

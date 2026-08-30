@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online-Anhörung bei Blitzer &amp; Bußgeld – Portale, Anleitung &amp; Tipps</title>
+<link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/logo-lotse-fav.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --red:#7E1425;
+    --red-deep:#57101C;
+    --red-soft:#FBF1F2;
+    --red-line:#EFD8DC;
+    --ink:#221417;
+    --mut:#7A6A6E;
+    --paper:#FFFFFF;
+    --paper2:#FAF6F4;
+    --line:#EAE2DF;
+    --disp:'Archivo',sans-serif;
+    --body:'IBM Plex Sans',sans-serif;
+    --mono:'IBM Plex Mono',monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:70px;overflow-x:clip}
+  body{
+    font-family:var(--body);
+    color:var(--ink);
+    background:#fff;
+    line-height:1.65;
+    font-size:16.5px;
+    -webkit-tap-highlight-color:transparent;
+    background-image:radial-gradient(rgba(34,20,23,.028) 1px, transparent 1px);
+    background-size:26px 26px;
+  }
+  ::selection{background:var(--red);color:#fff}
+  a{color:var(--red);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;transition:color .2s,text-decoration-thickness .2s}
+  a:hover{color:var(--red-deep);text-decoration-thickness:2px}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  .mono{font-family:var(--mono)}
+  .muted{color:var(--mut)}
+
+  
+
+  /* ---------- Sprungnavigation ---------- */
+  .jumpnav{
+    position:sticky;top:0;z-index:50;
+    background:#fff;
+    border-bottom:1px solid var(--line);
+  }
+  .jumpnav .wrap{
+    display:flex;align-items:center;gap:6px;
+    overflow-x:auto;-webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+    padding-top:0;padding-bottom:0;
+  }
+  .jumpnav .wrap::-webkit-scrollbar{display:none}
+  .jumpnav a{
+    flex:0 0 auto;white-space:nowrap;
+    font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--mut);
+    text-decoration:none;
+    padding:15px 12px;
+    border-bottom:2px solid transparent;
+    transition:color .2s,border-color .2s;
+  }
+  .jumpnav a:hover{color:var(--red)}
+  .jumpnav a.active{color:var(--red);border-bottom-color:var(--red)}
+
+  
+
+  /* ---------- Sektionen allgemein ---------- */
+  .sec{padding:88px 0 0}
+  .sec-head{display:flex;gap:26px;align-items:flex-start;margin-bottom:40px;max-width:840px}
+  .sec-num{
+    font-family:var(--disp);font-weight:900;font-size:clamp(2.6rem,7vw,4.6rem);line-height:.9;
+    color:transparent;-webkit-text-stroke:1.5px var(--red);
+    flex:0 0 auto;user-select:none;
+  }
+  .sec-head .kicker{margin-bottom:8px}
+  h2{font-family:var(--disp);font-weight:800;font-size:clamp(1.55rem,3vw,2.15rem);letter-spacing:-.015em;line-height:1.15;margin-bottom:10px}
+  .sec-head p.lead{margin:0;font-size:1rem}
+  h3{font-family:var(--disp);font-weight:700;font-size:1.12rem;margin-bottom:10px}
+  .fineprint{font-size:.8rem;color:var(--mut);margin-top:14px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:8px}
+
+  /* ---------- Portal-Finder ---------- */
+  .finder{padding:34px}
+  .finder label{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut);margin-bottom:10px}
+  .finder-row{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+  select{
+    appearance:none;-webkit-appearance:none;
+    font-family:var(--body);font-size:16px;font-weight:500;color:var(--ink);
+    background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9'%3E%3Cpath d='M1 1l6 6 6-6' stroke='%237E1425' stroke-width='2' fill='none'/%3E%3C/svg%3E") no-repeat right 16px center;
+    border:1.5px solid var(--red);border-radius:4px;
+    padding:13px 46px 13px 16px;min-width:300px;max-width:100%;cursor:pointer;
+    transition:box-shadow .2s,border-color .2s;
+  }
+  select:hover,select:focus{outline:none;border-color:var(--red-deep);box-shadow:0 0 0 3px var(--red-line)}
+  .finder-note{font-size:.92rem;color:#4A3B3F;max-width:30em}
+  .finder-note strong{color:var(--red)}
+  .finder-result{margin-top:26px}
+  .result-card{
+    border:1px solid var(--line);border-left:4px solid var(--red);
+    border-radius:6px;background:var(--red-soft);
+    padding:26px 28px;
+    animation:slidein .4s ease both;
+  }
+  @keyframes slidein{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+  .result-head{display:flex;align-items:center;gap:16px;margin-bottom:14px}
+  .sign-mini{
+    width:52px;height:52px;border-radius:50%;background:#fff;border:5px solid var(--red);
+    display:grid;place-items:center;font-family:var(--disp);font-weight:900;font-size:.95rem;flex:0 0 auto;
+  }
+  .result-head h3{margin:0}
+  .portal-list{list-style:none;margin:14px 0}
+  .portal-list li{padding:8px 0;border-bottom:1px dashed var(--red-line)}
+  .portal-list li:last-child{border-bottom:none}
+  .portal-list a{font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+  .portal-list a::after{content:"↗";font-size:.85em;transition:transform .2s}
+  .portal-list a:hover::after{transform:translate(3px,-3px)}
+  .badge{
+    font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+    background:var(--red);color:#fff;padding:2px 8px;border-radius:3px;margin-left:10px;vertical-align:middle;
+  }
+  .result-hint{font-size:.92rem;color:#4A3B3F}
+  .empty-result{color:var(--mut);font-size:.98rem;padding:8px 2px}
+
+  .cities{margin-top:34px}
+  .cities h3{font-size:1rem}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+  .chip{
+    font-size:.85rem;font-weight:500;text-decoration:none;
+    border:1px solid var(--red-line);background:#fff;color:var(--ink);
+    padding:7px 14px;border-radius:99px;
+    transition:all .2s;
+  }
+  .chip:hover{background:var(--red);border-color:var(--red);color:#fff;transform:translateY(-2px)}
+
+  .dach{
+    margin-top:34px;background:var(--paper2);border:1px solid var(--line);border-radius:8px;
+    padding:22px 26px;font-size:.95rem;
+  }
+  .dach strong{color:var(--red)}
+
+  .sec-sub{margin-top:56px}
+  .states-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+  .state-row{
+    display:flex;align-items:center;gap:16px;
+    background:#fff;border:1px solid var(--line);border-radius:6px;
+    padding:14px 18px;text-decoration:none;color:var(--ink);
+    transition:border-color .2s,transform .2s,box-shadow .2s;
+  }
+  .state-row:hover{border-color:var(--red);transform:translateY(-2px);box-shadow:0 10px 24px -16px rgba(126,20,37,.5);color:var(--ink)}
+  .state-sign{
+    width:40px;height:40px;border-radius:50%;flex:0 0 auto;
+    background:#fff;border:4px solid var(--red);
+    display:grid;place-items:center;font-family:var(--disp);font-weight:800;font-size:.68rem;color:var(--ink);
+  }
+  .state-row div{flex:1;min-width:0}
+  .state-row strong{display:block;font-size:.95rem}
+  .state-row span{font-size:.8rem;color:var(--mut)}
+  .state-row .go{color:var(--red);font-weight:700}
+
+  /* ---------- Anleitung ---------- */
+  .steps{list-style:none;counter-reset:step;max-width:820px;margin-top:8px}
+  .steps li{
+    counter-increment:step;position:relative;
+    padding:0 0 38px 78px;border-left:2px solid var(--red-line);
+    margin-left:26px;
+  }
+  .steps li:last-child{padding-bottom:6px;border-left-color:transparent}
+  .steps li::before{
+    content:counter(step,decimal-leading-zero);
+    position:absolute;left:-27px;top:-4px;
+    width:52px;height:52px;border-radius:50%;
+    background:var(--red);color:#fff;
+    font-family:var(--disp);font-weight:800;font-size:1.05rem;
+    display:grid;place-items:center;
+    box-shadow:0 0 0 6px #fff,0 0 0 7px var(--red-line);
+    transition:transform .25s;
+  }
+  .steps li:hover::before{transform:scale(1.08)}
+  .steps h3{margin-bottom:6px}
+  .steps p{color:#4A3B3F;font-size:.98rem;max-width:38em}
+  .steps .key{font-family:var(--mono);font-size:.85em;background:var(--red-soft);border:1px solid var(--red-line);border-radius:3px;padding:1px 6px;color:var(--red-deep);white-space:nowrap}
+  .protip{
+    max-width:820px;margin:26px 0 0 0;
+    background:var(--red);color:#fff;border-radius:8px;
+    padding:26px 30px;position:relative;overflow:hidden;
+  }
+  .protip::before{
+    content:"";position:absolute;right:-40px;top:-40px;width:180px;height:180px;
+    border-radius:50%;border:22px solid rgba(255,255,255,.08);
+  }
+  .protip .tag{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.85;display:block;margin-bottom:8px}
+  .protip p{font-size:1rem;max-width:42em}
+  .protip a{color:#fff}
+
+  /* ---------- Checkliste ---------- */
+  .checkliste{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+  .cl-items{display:grid;gap:12px}
+  .cl-item{
+    display:flex;gap:16px;align-items:flex-start;
+    background:#fff;border:1px solid var(--line);border-radius:6px;
+    padding:16px 18px;cursor:pointer;
+    transition:border-color .2s,transform .2s;
+  }
+  .cl-item:hover{border-color:var(--red);transform:translateX(4px)}
+  .cl-item input{position:absolute;opacity:0;pointer-events:none}
+  .cl-box{
+    width:24px;height:24px;flex:0 0 auto;margin-top:2px;
+    border:2px solid var(--red);border-radius:4px;
+    display:grid;place-items:center;color:#fff;font-size:14px;font-weight:700;
+    transition:background .2s;
+  }
+  .cl-item input:checked ~ .cl-box{background:var(--red)}
+  .cl-item input:checked ~ .cl-box::before{content:"✓"}
+  .cl-item input:checked ~ .cl-text{color:var(--mut);text-decoration:line-through}
+  .cl-text{font-size:.98rem;font-weight:500;transition:color .2s}
+  .cl-text small{display:block;font-weight:400;color:var(--mut);text-decoration:none!important}
+  .cl-status{
+    position:sticky;top:80px;
+    background:var(--paper2);border:1px solid var(--line);border-radius:8px;
+    padding:28px;
+  }
+  .cl-status h3{margin-bottom:16px}
+  .cl-bar{height:8px;background:var(--red-line);border-radius:99px;overflow:hidden;margin-bottom:14px}
+  .cl-fill{height:100%;width:0;background:var(--red);border-radius:99px;transition:width .5s cubic-bezier(.2,.8,.3,1)}
+  .cl-msg{font-size:.95rem;min-height:3em}
+  .cl-msg.done{color:var(--red);font-weight:600}
+  .cl-reset{margin-top:14px;background:none;border:none;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);cursor:pointer;padding:6px 0;transition:color .2s}
+  .cl-reset:hover{color:var(--red)}
+
+  /* ---------- Tipps ---------- */
+  .tips{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .tip{
+    background:#fff;border:1px solid var(--line);border-radius:8px;padding:28px;
+    transition:transform .25s,box-shadow .25s,border-color .25s;
+  }
+  .tip:hover{transform:translateY(-4px);box-shadow:0 18px 36px -24px rgba(126,20,37,.45);border-color:var(--red-line)}
+  .tip.wide{grid-column:1 / -1}
+  .tip .tag{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:10px}
+  .tip h3{font-size:1.15rem}
+  .tip p{color:#4A3B3F;font-size:.96rem}
+  .tip.callout{
+    background:var(--red);border-color:var(--red);color:#fff;
+    display:flex;gap:28px;align-items:center;flex-wrap:wrap;
+  }
+  .tip.callout .tag{color:rgba(255,255,255,.75)}
+  .tip.callout h3{font-size:clamp(1.4rem,2.6vw,1.9rem);color:#fff;margin-bottom:6px}
+  .tip.callout p{color:rgba(255,255,255,.9)}
+  .tip.callout .bigq{
+    font-family:var(--disp);font-weight:900;font-size:5rem;line-height:1;
+    color:rgba(255,255,255,.18);flex:0 0 auto;user-select:none;
+  }
+  .tip ul{list-style:none;margin-top:6px}
+  .tip ul li{padding:7px 0 7px 26px;position:relative;font-size:.95rem;color:#4A3B3F}
+  .tip ul.do li::before{content:"✓";position:absolute;left:0;color:var(--red);font-weight:700}
+  .tip ul.dont li::before{content:"✕";position:absolute;left:0;color:var(--red);font-weight:700}
+
+  .fristen{margin-top:20px;overflow-x:auto}
+  table{width:100%;border-collapse:collapse;background:#fff;font-size:.94rem}
+  th{
+    text-align:left;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--mut);border-bottom:2px solid var(--red);padding:12px 16px;
+  }
+  td{padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+  tr{transition:background .2s}
+  tbody tr:hover{background:var(--red-soft)}
+  td:first-child{font-weight:600;white-space:nowrap}
+  td:nth-child(2){font-family:var(--mono);font-size:.85rem;color:var(--red-deep);white-space:nowrap}
+
+  /* ---------- Glossar & FAQ ---------- */
+  .acc{border-top:1px solid var(--line)}
+  .acc-item{border-bottom:1px solid var(--line)}
+  .acc-toggle{
+    width:100%;background:none;border:none;cursor:pointer;text-align:left;
+    display:flex;justify-content:space-between;align-items:center;gap:20px;
+    padding:20px 6px;font-family:var(--disp);font-weight:700;font-size:1.05rem;color:var(--ink);
+    transition:color .2s,padding-left .2s;
+  }
+  .acc-toggle:hover{color:var(--red);padding-left:12px}
+  .acc-toggle .plus{flex:0 0 auto;width:26px;height:26px;position:relative;transition:transform .3s}
+  .acc-toggle .plus::before,.acc-toggle .plus::after{content:"";position:absolute;background:var(--red)}
+  .acc-toggle .plus::before{width:16px;height:2px;top:12px;left:5px}
+  .acc-toggle .plus::after{width:2px;height:16px;top:5px;left:12px;transition:transform .3s}
+  .acc-item.open .acc-toggle .plus{transform:rotate(180deg)}
+  .acc-item.open .acc-toggle .plus::after{transform:scaleY(0)}
+  .acc-item.open .acc-toggle{color:var(--red)}
+  .acc-panel{max-height:0;overflow:hidden;transition:max-height .35s ease}
+  .acc-panel p{padding:0 6px 22px;color:#4A3B3F;max-width:46em;font-size:.97rem}
+
+  /* ---------- Sicherheit ---------- */
+  .warn{
+    background:var(--red-deep);color:#fff;border-radius:8px;
+    padding:26px 30px;margin-bottom:26px;
+    display:flex;gap:20px;align-items:flex-start;
+  }
+  .warn .icon{font-size:1.6rem;line-height:1}
+  .warn strong{display:block;font-family:var(--disp);font-size:1.1rem;margin-bottom:6px}
+  .warn p{font-size:.95rem;color:rgba(255,255,255,.88)}
+  .secgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .sec-item{
+    background:#fff;border:1px solid var(--line);border-radius:6px;padding:22px;
+    border-top:3px solid var(--red);
+    transition:transform .25s,box-shadow .25s;
+  }
+  .sec-item:hover{transform:translateY(-3px);box-shadow:0 14px 30px -20px rgba(126,20,37,.5)}
+  .sec-item h3{font-size:1rem}
+  .sec-item p{font-size:.9rem;color:var(--mut)}
+
+  /* ---------- Abschluss ---------- */
+  .disclaimer{
+    margin:90px 0 40px;padding-top:24px;border-top:1px solid var(--line);
+    font-size:.82rem;color:var(--mut);max-width:64em;
+  }
+
+  /* ---------- Reveal ---------- */
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- Responsive: Tablet ---------- */
+  @media (max-width:900px){
+    .checkliste{grid-template-columns:1fr}
+    .cl-status{position:static}
+    .states-grid{grid-template-columns:1fr}
+    .secgrid{grid-template-columns:1fr 1fr}
+    .tips{grid-template-columns:1fr}
+    .sec-head{flex-direction:column;gap:8px}
+    .sec{padding-top:72px}
+  }
+
+  /* ---------- Responsive: Smartphone ---------- */
+  @media (max-width:640px){
+    body{font-size:16px}
+    .wrap{padding:0 18px}
+    .placeholder{margin:12px}
+    .hero{padding-top:52px}
+    .lead{font-size:1rem}
+    .hero-actions{flex-direction:column;align-items:stretch}
+    .btn{text-align:center;padding:15px 20px}
+    .road{margin-top:48px}
+    .sec{padding-top:64px}
+    .sec-head{margin-bottom:28px}
+    .finder{padding:22px 18px}
+    .finder-row{gap:16px}
+    select{min-width:0;width:100%}
+    .finder-note{max-width:100%}
+    .result-card{padding:22px 20px}
+    .dach{padding:20px}
+    .steps li{margin-left:20px;padding:0 0 32px 54px}
+    .steps li::before{width:40px;height:40px;left:-21px;font-size:.85rem;box-shadow:0 0 0 5px #fff,0 0 0 6px var(--red-line)}
+    .protip{padding:24px 22px}
+    .tip{padding:22px 20px}
+    .tip.callout{gap:16px}
+    .tip.callout .bigq{font-size:3rem}
+    .fristen td:first-child,.fristen td:nth-child(2){white-space:normal}
+    th,td{padding:12px 10px}
+    .secgrid{grid-template-columns:1fr}
+    .warn{padding:22px 20px;gap:12px}
+    .acc-toggle{font-size:1rem;padding-right:0}
+    .disclaimer{margin:64px 0 28px}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+    html{scroll-behavior:auto}
+    .reveal{opacity:1;transform:none}
+  }
+  
+.placeholder{
+  margin:18px 24px;
+  padding:20px 16px;
+  text-align:center;
+  font-family:var(--mono);
+  font-size:13px;
+  letter-spacing:.26em;
+  text-transform:uppercase;
+  color:#fff;
+  background:
+    repeating-linear-gradient(135deg, rgba(255,255,255,.04) 0 10px, transparent 10px 20px),
+    linear-gradient(180deg, #8A1A2C 0%, #57101C 100%);
+  border:1px solid var(--red-deep);
+  border-radius:6px;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.15),
+    0 8px 20px -12px rgba(87,16,28,.7);
+  text-shadow:0 1px 2px rgba(0,0,0,.25);
+}
+
+@media (max-width:640px){
+  .placeholder{
+    margin:12px;
+    padding:16px 12px;
+    font-size:12px;
+    letter-spacing:.18em;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="placeholder" id="header-slot">Fix my Ticket</div>
+
+<nav class="jumpnav" aria-label="Seitennavigation">
+  <div class="wrap">
+    <a href="#portale">Portale</a>
+    <a href="#anleitung">Anleitung</a>
+    <a href="#checkliste">Checkliste</a>
+    <a href="#tipps">Tipps &amp; Fristen</a>
+    <a href="#glossar">Begriffe</a>
+    <a href="#sicherheit">Sicherheit</a>
+    <a href="#faq">FAQ</a>
+  </div>
+</nav>
+
+
+</header>
+
+
+
+
+      
+
+<main class="wrap">
+
+  <!-- ============ 01 PORTAL-FINDER ============ -->
+  <section class="sec" id="portale">
+    <div class="sec-head reveal">
+      <span class="sec-num">01</span>
+      <div>
+        <p class="kicker"><span class="pulse"></span>Portal-Finder</p>
+        <h2>Welches Anhörungsportal ist für dich zuständig?</h2>
+        <p class="lead">Wichtig: Zuständig ist fast immer die Behörde am <strong>Tatort</strong> des Verstoßes – nicht dein Wohnort. Der Absender auf deinem Schreiben ist der entscheidende Hinweis.</p>
+      </div>
+    </div>
+
+    <div class="finder card reveal">
+      <label for="landSelect">Schritt 1 · Bundesland des Verstoßes wählen</label>
+      <div class="finder-row">
+        <select id="landSelect">
+          <option value="">– Bitte Bundesland wählen –</option>
+        </select>
+        <p class="finder-note">Im Portal heißt die Funktion je nach Land etwas anders („Anhörung Online“, „Online-Anhörung Bußgeld“ …). Der <strong>Suchbegriff „Anhörung“</strong> führt dich dort immer ans Ziel – oder du nutzt direkt den Link aus deinem Schreiben.</p>
+      </div>
+      <div class="finder-result" id="finderResult">
+        <p class="empty-result">→ Wähle oben ein Bundesland, um die passenden offiziellen Portale anzuzeigen.</p>
+      </div>
+    </div>
+
+    <div class="cities reveal">
+      <h3>Direkt zur Stadt-Verwaltung (Großstädte)</h3>
+      <p class="muted" style="font-size:.92rem">Viele Städte betreiben die Anhörung selst. Dort auf der Website nach „Anhörung“ oder „Verwarnung“ suchen:</p>
+      <div class="chips" id="cityChips"></div>
+    </div>
+
+    <div class="dach reveal">
+      <strong>Österreich &amp; Schweiz:</strong> Ein vergleichbares flächendeckendes Online-Anhörungssystem wie in Deutschland gibt es dort nicht.
+      Stellungnahmen laufen in der Regel schriftlich über die im Bescheid genannte Stelle – die dort genannten Fristen gelten trotzdem strikt.
+    </div>
+
+    <div class="sec-sub reveal">
+      <h3>Alle 16 Bundesländer im Überblick</h3>
+      <p class="muted" style="font-size:.95rem">Die Links führen zu den offiziellen Landes- bzw. Serviceportalen. Ergänzend: der bundeseinheitliche <a href="https://www.behoerdenwegweiser.bund.de" target="_blank" rel="noopener">Behördenfinder&nbsp;Bund&nbsp;↗</a> und – speziell für viele bayerische Gemeinden – das <a href="https://www.buergerserviceportal.de" target="_blank" rel="noopener">Bürgerservice-Portal&nbsp;↗</a>.</p>
+      <div class="states-grid" id="allStates"></div>
+      <p class="fineprint">Hinweis: Verfügbarkeit und Bezeichnung der Online-Anhörung können sich ändern. Maßgeblich ist immer der Hinweis im eigenen Schreiben. Alle Angaben ohne Gewähr.</p>
+    </div>
+  </section>
+
+  <!-- ============ 02 ANLEITUNG ============ -->
+  <section class="sec" id="anleitung">
+    <div class="sec-head reveal">
+      <span class="sec-num">02</span>
+      <div>
+        <p class="kicker"><span class="pulse"></span>Schritt für Schritt</p>
+        <h2>So orientierst du dich auf der Anhörungsseite</h2>
+        <p class="lead">Die Portale unterscheiden sich im Design, aber der Ablauf ist fast überall gleich. Wer diese sechs Stationen kennt, klickt sich souverän durch.</p>
+      </div>
+    </div>
+
+    <ol class="steps">
+      <li class="reveal">
+        <h3>Schreiben lesen &amp; Daten bereitlegen</h3>
+        <p>Bevor du das Portal öffnest: <span class="key">Aktenzeichen</span>, <span class="key">Zugangscode</span> und die Frist aus dem Anhörungsschreiben heraussuchen. Manche Schreiben enthalten zusätzlich einen QR-Code, der direkt zum richtigen Portal führt – der sicherste Weg überhaupt.</p>
+      </li>
+      <li class="reveal">
+        <h3>Das richtige Portal öffnen</h3>
+        <p>Über den Portal-Finder oben, den Link im Schreiben oder die Website der Behörde vom Briefkopf. Kurz die Adresse prüfen: offizielle Portale laufen über <span class="key">https://</span> und enden in der Regel auf <span class="key">.de</span> (z.&nbsp;B. Landesdomains).</p>
+      </li>
+      <li class="reveal">
+        <h3>Zugang wählen</h3>
+        <p>Meist genügen Aktenzeichen + Zugangscode aus dem Brief. Einige Länder bieten zusätzlich den Login über die <a href="https://id.bund.de" target="_blank" rel="noopener">BundID</a> an. Ein Konto anzulegen ist für die reine Anhörung normalerweise nicht nötig.</p>
+      </li>
+      <li class="reveal">
+        <h3>Vorwurf in Ruhe prüfen</h3>
+        <p>Das Portal zeigt dir Tatzeit, Tatort und vorgeworfene Geschwindigkeit. Gleiche das mit deiner Erinnerung ab. Wichtig: Das Messfoto oder die Messdaten siehst du im Portal meist <strong>nicht</strong> – das ist normal und kein schlechtes Zeichen.</p>
+      </li>
+      <li class="reveal">
+        <h3>Antwort auswählen</h3>
+        <p>Typische Optionen im Formular: <em>Angaben zur Person</em> (sinnvoll ausfüllen), <em>Verwarnung annehmen &amp; zahlen</em>, <em>Angaben zur Sache</em> (freiwillig!) oder <em>keine Äußerung</em>. Du musst dich zum Vorwurf nicht äußern – das steht dir als Betroffenem frei.</p>
+      </li>
+      <li class="reveal">
+        <h3>Absenden &amp; Beleg sichern</h3>
+        <p>Vor dem Absenden die Zusammenfassung kontrollieren (besonders das Aktenzeichen). Danach die <span class="key">Eingangsbestätigung</span> als Screenshot oder PDF speichern – das ist dein Nachweis, dass die Antwort fristgerecht angekommen ist.</p>
+      </li>
+    </ol>
+
+    <aside class="protip reveal">
+      <span class="tag">Pro-Tipp · Akteneinsicht</span>
+      <p>Du musst weder im Portal noch sonst wo „blind“ entscheiden: Einsicht in Messfoto, Messdaten und Eichunterlagen ist der übliche Weg, einen Vorwurf zu prüfen – in der Regel über einen Anwalt für Verkehrsrecht, der Akteneinsicht beantragt. Erst danach entscheiden, ob sich eine Aussage oder ein Einspruch lohnt.</p>
+    </aside>
+  </section>
+
+  <!-- ============ 03 CHECKLISTE ============ -->
+  <section class="sec" id="checkliste">
+    <div class="sec-head reveal">
+      <span class="sec-num">03</span>
+      <div>
+        <p class="kicker"><span class="pulse"></span>Bevor es losgeht</p>
+        <h2>Die 6-Punkte-Checkliste</h2>
+        <p class="lead">Alles abgehakt? Dann kannst du die Online-Anhörung entspannt erledigen.</p>
+      </div>
+    </div>
+
+    <div class="checkliste">
+      <div class="cl-items reveal" id="clItems">
+        <label class="cl-item"><input type="checkbox"><span class="cl-box"></span><span class="cl-text">Anhörungsschreiben liegt bereit<small>Aktenzeichen, Zugangscode &amp; Frist griffbereit</small></span></label>
+        <label class="cl-item"><input type="checkbox"><span class="cl-box"></span><span class="cl-text">Zuständige Behörde erkannt<small>Briefkopf / Absender geprüft – danach richtet sich das Portal</small></span></label>
+        <label class="cl-item"><input type="checkbox"><span class="cl-box"></span><span class="cl-text">Passendes Portal geöffnet<small>Adresse kontrolliert: https &amp; offizielle Domain</small></span></label>
+        <label class="cl-item"><input type="checkbox"><span class="cl-box"></span><span class="cl-text">Frist im Kalender notiert<small>Lieber 1–2 Tage Puffer einplanen</small></span></label>
+        <label class="cl-item"><input type="checkbox"><span class="cl-box"></span><span class="cl-text">Ruhe &amp; stabile Verbindung<small>Formular am Stück ausfüllen, nicht nebenbei</small></span></label>
+        <label class="cl-item"><input type="checkbox"><span class="cl-box"></span><span class="cl-text">Plan für den Beleg<small>Nach dem Absenden: Eingangsbestätigung speichern</small></span></label>
+      </div>
+      <div class="cl-status reveal">
+        <h3>Dein Fortschritt</h3>
+        <div class="cl-bar"><div class="cl-fill" id="clFill"></div></div>
+        <p class="cl-msg" id="clMsg">Noch nichts abgehakt – fang oben an.</p>
+        <button class="cl-reset" id="clReset" type="button">Zurücksetzen</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 TIPPS & FRISTEN ============ -->
+  <section class="sec" id="tipps">
+    <div class="sec-head reveal">
+      <span class="sec-num">04</span>
+      <div>
+        <p class="kicker"><span class="pulse"></span>Mehrwert statt Stress</p>
+        <h2>Tipps, Tricks &amp; Fristen</h2>
+        <p class="lead">Die Links sind schnell gefunden – die eigentlichen Fehler passieren beim Ausfüllen. Hier die wichtigsten Regeln.</p>
+      </div>
+    </div>
+
+    <div class="tips">
+      <div class="tip callout wide reveal">
+        <span class="bigq">§</span>
+        <div>
+          <span class="tag">Die wichtigste Regel zuerst</span>
+          <h3>Schweigen ist erlaubt.</h3>
+          <p>Zum Vorwurf selbst musst du dich nicht äußern – weder im Portal noch sonst irgendwo. Aus bloßem Schweigen darf dir kein Geständnis gemacht werden. Sinnvoll ist es dagegen, die Angaben zur Person korrekt auszufüllen, damit dich das Verfahren sauber erreichen kann.</p>
+        </div>
+      </div>
+
+      <div class="tip reveal">
+        <span class="tag">Unbedingt machen</span>
+        <h3>Die Do-Liste</h3>
+        <ul class="do">
+          <li>Das komplette Schreiben lesen: Vorwurf, Ort, Zeit, Frist, Absender.</li>
+          <li>Aktenzeichen &amp; Zugangscode exakt übertragen (Zahlendreher sind Fehlerquelle Nr. 1).</li>
+          <li>Frühzeitig absenden – nicht am letzten Tag der Frist.</li>
+          <li>Eingangsbestätigung speichern (Screenshot oder PDF).</li>
+          <li>Bei Unsicherheit <em>vor</em> der Antwort informieren (z.&nbsp;B. Fachanwalt für Verkehrsrecht, Rechtsschutzversicherung prüfen).</li>
+        </ul>
+      </div>
+
+      <div class="tip reveal">
+        <span class="tag">Lieber lassen</span>
+        <h3>Die Don't-Liste</h3>
+        <ul class="dont">
+          <li>Spontane Rechtfertigungen tippen („Ich hatte es eilig …“).</li>
+          <li>Links aus SMS oder merkwürdigen Mails öffnen („Ihre Blitzer-Strafe …“).</li>
+          <li>Fristen kommentarlos verstreichen lassen.</li>
+          <li>Unüberlegt Angaben zu anderen Personen als Fahrer machen.</li>
+          <li>Anhörung mit Bußgeldbescheid verwechseln – der Einspruch hat eine eigene, strenge Frist.</li>
+        </ul>
+      </div>
+
+      <div class="tip reveal">
+        <span class="tag">Geld &amp; Entscheidungen</span>
+        <h3>Zahlen oder prüfen lassen?</h3>
+        <p>Das angebotene Verwarnungsgeld anzunehmen und zu bezahlen beendet das Verfahren schnell und unkompliziert. Wer aber Messung, Foto oder Beschilderung anzweifelt, sollte vorher klären lassen, was in der Akte steht – nach dem Bezahlen ist der Fall abgeschlossen.</p>
+      </div>
+
+      <div class="tip reveal">
+        <span class="tag">Frist verpasst?</span>
+        <h3>Ruhe bewahren, sofort melden</h3>
+        <p>Bei Anhörung und Verwarnung: zügig bei der Bußgeldstelle melden und die Lage klären. Beim <strong>Bußgeldbescheid</strong> wird es ernst – die Einspruchsfrist beträgt zwei Wochen ab Zustellung; hier frühzeitig professionelle Hilfe holen.</p>
+      </div>
+
+      <div class="tip wide reveal">
+        <span class="tag">Fristen im Überblick</span>
+        <h3>Wann tickt welche Uhr?</h3>
+        <div class="fristen">
+          <table>
+            <thead>
+              <tr><th>Dokument</th><th>Übliche Frist</th><th>Was gilt</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Verwarnung mit Angebot</td><td>ca. 1 Woche</td><td>Bezahlen = Verfahren erledigt. Ohne Zahlung folgt das Bußgeldverfahren.</td></tr>
+              <tr><td>Anhörungsbogen</td><td>meist 1–2 Wochen</td><td>Äußerung freiwillig (Schweigerecht); Angaben zur Person sinnvoll.</td></tr>
+              <tr><td>Zeugenfragebogen</td><td>meist 1–2 Wochen</td><td>Kommt, wenn der Fahrer unklar ist. Angaben zur Person, zum Vorwurf nur eingeschränkt.</td></tr>
+              <tr><td>Bußgeldbescheid</td><td>2 Wochen (Einspruch)</td><td>Einspruch schriftlich oder elektronisch – Frist entscheidet. Danach wird der Bescheid bestandskräftig.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="fineprint">Richtwerte – maßgeblich ist immer die Angabe in deinem konkreten Schreiben.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 05 GLOSSAR ============ -->
+  <section class="sec" id="glossar">
+    <div class="sec-head reveal">
+      <span class="sec-num">05</span>
+      <div>
+        <p class="kicker"><span class="pulse"></span>Begriffe verstehen</p>
+        <h2>Kleines Bußgeld-Lexikon</h2>
+        <p class="lead">Sechs Begriffe, die dir im Portal und in der Post ständig begegnen.</p>
+      </div>
+    </div>
+
+    <div class="acc reveal" id="glossarAcc">
+      <div class="acc-item">
+        <button class="acc-toggle" aria-expanded="false">Anhörungsbogen<span class="plus"></span></button>
+        <div class="acc-panel"><p>Das Schreiben, mit dem dir die Behörde den Vorwurf mitteilt und dir Gelegenheit zur Stellungnahme gibt. Er ist der Startpunkt des Verfahrens – und der Moment, in dem du (freiwillig) antworten kannst.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-toggle" aria-expanded="false">Verwarnungsgeld<span class="plus"></span></button>
+        <div class="acc-panel"><p>Vereinfachter Abschluss bei kleineren Verstößen (in der Regel bis 55 €). Angebot annehmen und zahlen = Sache erledigt. Kein Punkt, kein Verfahren – aber auch keine nachträgliche Überprüfung mehr.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-toggle" aria-expanded="false">Bußgeldbescheid<span class="plus"></span></button>
+        <div class="acc-panel"><p>Der förmliche „Beschluss“ der Behörde mit Bußgeld, ggf. Punkten und Fahrverbot. Dagegen ist innerhalb von zwei Wochen nach Zustellung Einspruch möglich. Mit ihm beginnt der ernste Teil des Verfahrens.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-toggle" aria-expanded="false">Zeugenfragebogen<span class="plus"></span></button>
+        <div class="acc-panel"><p>Geht an den Halter, wenn der Fahrer nicht eindeutig feststeht. Als Zeuge gelten andere Regeln als als Betroffener – bei Unsicherheit kurz beraten lassen, bevor man Namen Dritter nennt.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-toggle" aria-expanded="false">Akteneinsicht<span class="plus"></span></button>
+        <div class="acc-panel"><p>Einsicht in Messfoto, Messprotokoll, Eichschein und Lebensakte des Geräts. Der reguläre Weg, die Messung fachlich prüfen zu lassen – üblicherweise über einen Anwalt. Steht dir als Betroffenem grundsätzlich zu.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-toggle" aria-expanded="false">Punkte &amp; Fahrverbot<span class="plus"></span></button>
+        <div class="acc-panel"><p>Punkte landen im Fahreignungsregister in Flensburg; ab bestimmten Schwellen drohen Maßnahmen bis zur MPU. Ein Fahrverbot (meist 1–3 Monate) kommt bei gravierenden oder wiederholten Verstößen dazu.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 06 SICHERHEIT ============ -->
+  <section class="sec" id="sicherheit">
+    <div class="sec-head reveal">
+      <span class="sec-num">06</span>
+      <div>
+        <p class="kicker"><span class="pulse"></span>Phishing &amp; Fake-Portale</p>
+        <h2>Echtes Portal erkennen</h2>
+        <p class="lead">Rund um „Blitzer-Post“ kursieren viele Betrugsmaschen. Mit diesen Prüfungen bleibst du auf der sicheren Seite.</p>
+      </div>
+    </div>
+
+    <div class="warn reveal">
+      <span class="icon" aria-hidden="true">⚠</span>
+      <div>
+        
+        <p>Nachrichten wie „Ihre Blitzer-Strafe wurde nicht beglichen – hier bezahlen“ samt Link sind Betrug. Behörden verschicken keine Zahlungslinks per SMS und fordern niemals Zahlungen über ungewöhnliche Methoden.</p>
+      </div>
+    </div>
+
+    <div class="secgrid">
+      <div class="sec-item reveal"><h3>Adresse prüfen</h3><p>Offizielle Portale laufen über https:// und enden auf .de – häufig die Landesdomain oder eine bekannte städtische Domain. Im Zweifel die Adresse selbst eintippen statt einen Link anzuklicken.</p></div>
+      <div class="sec-item reveal"><h3>Nur Zugangscode, nie Passwort</h3><p>Ein Anhörungsportal braucht Aktenzeichen und den Zugangscode aus deinem Brief – niemals dein E-Mail-Passwort oder Zugangsdaten zu anderen Diensten.</p></div>
+      <div class="sec-item reveal"><h3>Zahlung nur klassisch</h3><p>Verwarn- und Bußgelder werden per Überweisung mit Zahlungsdaten beglichen. Alles, was nach Krypto, Gutscheinkarte oder Sofort-Link-Zahlung klingt: Betrug.</p></div>
+      <div class="sec-item reveal"><h3>Impressum &amp; Datenschutz</h3><p>Behördliche Angebote haben ein vollständiges Impressum mit Dienststellenangabe. Fehlt das oder wirkt es zusammengewürfelt: Seite schließen.</p></div>
+      <div class="sec-item reveal"><h3>Im Zweifel nachfragen</h3><p>Ruf bei der Behörde an – aber nutze die Nummer aus deinem Schreiben oder von der offiziellen Website, nicht aus der verdächtigen Nachricht.</p></div>
+      <div class="sec-item reveal"><h3>Beleg aufbewahren</h3><p>Eingangsbestätigung speichern und bis zum Abschluss des Vorgangs behalten. So kannst du den fristgerechten Eingang jederzeit nachweisen.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ 07 FAQ ============ -->
+  <section class="sec" id="faq">
+    <div class="sec-head reveal">
+      <span class="sec-num">07</span>
+      <div>
+        <p class="kicker"><span class="pulse"></span>Häufige Fragen</p>
+        <h2>FAQ zur Online-Anhörung</h2>
+      </div>
+    </div>
+
+    <div class="acc reveal" id="faqAcc">
+      <div class="acc-item">
+        <button class="acc-toggle" aria-expanded="false">Muss ich auf die Anhörung überhaupt antworten?<span class="plus"></span></button>
+        <div class="acc-panel"><p>Nein. Die Äußerung zur Sache ist freiwillig, dir steht ein Schweigerecht zu. Sinnvoll ist es aber, die Angaben zur Person zu prüfen bzw. zu vervollständigen, damit das Verfahren sauber läuft.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-toggle" aria-expanded="false">Ich wohne in Bundesland A, geblitzt wurde in B – welches Portal?<span class="plus"></span></button>
+        <div class="acc-panel"><p>Zuständig ist die Bußgeldstelle am Ort des Verstoßes (Stadt, Landkreis oder zentrale Bußgeldstelle des Landes) – also das Portal aus Bundesland B. Der Absender im Brief zeigt dir die richtige Behörde.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-toggle" aria-expanded="false">Wo finde ich meinen Zugangscode?<span class="plus"></span></button>
+        <div class="acc-panel"><p>Im Anhörungsschreiben, meist im oberen Bereich beim Aktenzeichen – oft zusammen mit einem QR-Code, der direkt ins richtige Portal führt.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-toggle" aria-expanded="false">Gilt meine Online-Antwort fristwahrend?<span class="plus"></span></button>
+        <div class="acc-panel"><p>In der Regel ja, wenn sie innerhalb der Frist bei der Behörde eingeht. Speichere deshalb die Eingangsbestätigung – sie ist dein Nachweis.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-toggle" aria-expanded="false">Kann ich im Portal das Messfoto sehen?<span class="plus"></span></button>
+        <div class="acc-panel"><p>Meistens nein. Die Portale zeigen die Vorwurfsdaten, aber selten die Beweisunterlagen. Foto, Messdaten und Eichschein bekommst du über Akteneinsicht – üblicherweise über einen Anwalt.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-toggle" aria-expanded="false">Kostet die Online-Anhörung etwas?<span class="plus"></span></button>
+        <div class="acc-panel"><p>Nein, die Nutzung des Portals und die Anhörung selbst sind kostenlos. Kosten entstehen nur für das Verwarn- bzw. Bußgeld selbst – und ggf. für Beratung, wenn du sie in Anspruch nimmst.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-toggle" aria-expanded="false">Portal oder Papierbrief – was ist besser?<span class="plus"></span></button>
+        <div class="acc-panel"><p>Beide Wege sind zulässig. Das Portal ist schneller, liefert sofort eine Eingangsbestätigung und du kannst rund um die Uhr antworten. Der Brief bleibt aber eine völlig gleichwertige Option.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <p class="disclaimer">
+    <strong>Hinweis:</strong> Diese Seite ist ein privates Informationsangebot und ersetzt keine Rechtsberatung. Alle Angaben erfolgen ohne Gewähr; Fristen und Portalstrukturen können sich ändern – maßgeblich ist immer dein konkretes Schreiben. Die verlinkten Portale sind offizielle Angebote der jeweiligen Länder, Städte und Gemeinden. <span class="mono">©&nbsp;<span id="year"></span></span>
+  </p>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 fix-my-ticket.de</p>
+    <nav>
+        <a href="ueber-uns.html">Über uns</a> | 
+        <a href="index.html">Startseite</a> | 
+        <a href="impressum.html">Impressum</a> | 
+        <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+</footer>
+
+<script>
+/* ---------- Daten: Bundesländer & Städte ---------- */
+const LAENDER = [
+  {id:"BW", name:"Baden-Württemberg", portals:[["Landesportal service-bw.de","https://www.service-bw.de/zufi/leistungen/6007543"]], hint:"Im Portal nach „Anhörung Bußgeldverfahren“ suchen; viele Stadt- und Landkreise bieten zusätzlich eigene Online-Dienste an."},
+  {id:"BY", name:"Bayern", portals:[["BayernPortal","https://www.bayernportal.de/dokumente/onlineservice/84552747605"],["Bürgerservice-Portal (viele Gemeinden)","https://www.buergerserviceportal.de"]], hint:"Je nach Gemeinde läuft die Anhörung über das BayernPortal oder das Bürgerservice-Portal deiner Stadt bzw. Gemeinde."},
+  {id:"BE", name:"Berlin", portals:[["service.berlin.de","https://fms.verwalt-berlin.de/boa/"]], hint:"Über das Berliner Serviceportal, Suchbegriff: „Anhörung Ordnungswidrigkeit“."},
+  {id:"BB", name:"Brandenburg", portals:[["Serviceportal Brandenburg","https://polizei.brandenburg.de/liste/zentrale-bussgeldstelle-und-ordnungswidr/62432"]], hint:"Suche im Portal: „Anhörung Bußgeldverfahren“."},
+  {id:"HB", name:"Bremen", portals:[["Stadt Bremen","https://www.service.bremen.de/dienstleistungen/bussgeldbescheid-verkehrsordnungswidrigkeiten-126981"]], hint:"Über das Stadtportal nach „Anhörung Ordnungswidrigkeiten“ suchen."},
+  {id:"HH", name:"Hamburg", portals:[["Behördenfinder Hamburg","https://oa.hamburg.de/"]], hint:"Über den Behördenfinder zur zuständigen Dienststelle; Anhörung nach Vorgabe der angeschriebenen Stelle."},
+  {id:"HE", name:"Hessen", portals:[["Hessenportal","https://rp-kassel.hessen.de/sicherheit/zentrale-bussgeldstelle"]], hint:"Suchbegriff: „Anhörung Bußgeldverfahren“."},
+  {id:"MV", name:"Mecklenburg-Vorpommern", portals:[["Digitale Verwaltung MV","https://www.mv-serviceportal.de/leistung?leistungId=123252114&ortId=3516&ouId=106112972"]], hint:"Suche: „Anhörung“ – manche Landkreise nutzen zusätzlich eigene Portale."},
+  {id:"NI", name:"Niedersachsen", portals:[["Serviceportal Niedersachsen","https://www.navo.niedersachsen.de/navo2/portal/owi/782501/anmeldung"]], hint:"Viele Behörden bieten die „Online-Anhörung“ hier direkt als Dienstleistung an."},
+  {id:"NW", name:"Nordrhein-Westfalen", portals:[["Serviceportal NRW","https://meineverwaltung.nrw/"]], hint:"Große Städte betreiben teils eigene Portale – Briefkopf der Behörde prüfen."},
+  {id:"RP", name:"Rheinland-Pfalz", portals:[["rlp.de","https://www.polizei.rlp.de/bussgeldstelle"]], hint:"Suchbegriff: „Anhörung Bußgeldverfahren“."},
+  {id:"SL", name:"Saarland", portals:[["saarland.de","https://online-anhoerung-zbb.saarland.de/"]], hint:"Suche: „Anhörung Ordnungswidrigkeit“."},
+  {id:"SN", name:"Sachsen", portals:[["Amt24 Sachsen","https://www.lds.sachsen.de/bussgeldstelle/?ID=19554&art_param=1013"]], hint:"In Amt24 nach „Anhörung“ suchen."},
+  {id:"ST", name:"Sachsen-Anhalt", portals:[["Landesportal Sachsen-Anhalt","https://polizei.sachsen-anhalt.de/das-sind-wir/polizei-interaktiv/zbs-online"]], hint:"Suchbegriff: „Anhörung Bußgeldverfahren“."},
+  {id:"SH", name:"Schleswig-Holstein", portals:[["schleswig-holstein.de","https://serviceportal.schleswig-holstein.de/Verwaltungsportal/FVP/FV/Polizei/Owi/49/?sid=49&id=01000900"]], hint:"Suche: „Anhörung Bußgeld“."},
+  {id:"TH", name:"Thüringen", portals:[["thueringen.de","https://polizei.thueringen.de/polizei/landespolizeidirektion/zentrale-bussgeldstelle"]], hint:"Suchbegriff: „Anhörung Bußgeldverfahren“."}
+];
+
+const CITIES = [
+  ["Berlin","https://fms.verwalt-berlin.de/boa/"],["Hamburg","https://oa.hamburg.de/"],
+  ["München","https://www.bayernportal.de/dokumente/onlineservice/84552747605"],["Köln","https://www.stadt-koeln.de/artikel/73793/index.html"],
+  ["Frankfurt a. M.","https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/bussgeldstelle"],["Stuttgart","https://www.stuttgart.de/organigramm/leistungen/online-anhoerung-bei-verstoessen-im-strassenverkehr"],
+  ["Düsseldorf","https://service.duesseldorf.de/suche/-/egov-bis-detail/dienstleistung/420/show"],["Dortmund","https://owi.dortmund.de/"],
+  ["Essen","https://anhoerung.essen.de/"],["Leipzig","https://anhoerung.leipzig.de/"],
+  ["Dresden","https://www.dresden.de/online-anhoerung"],["Nürnberg","https://www.nuernberg.de/internet/verkehrsueberwachung/verwarnung_anhoerung.html"]
+];
+
+/* ---------- Portal-Finder ---------- */
+const sel = document.getElementById("landSelect");
+const result = document.getElementById("finderResult");
+
+LAENDER.forEach(l => {
+  const o = document.createElement("option");
+  o.value = l.id; o.textContent = l.name;
+  sel.appendChild(o);
+});
+
+sel.addEventListener("change", () => {
+  const land = LAENDER.find(l => l.id === sel.value);
+  if (!land) {
+    result.innerHTML = '<p class="empty-result">→ Wähle oben ein Bundesland, um die passenden offiziellen Portale anzuzeigen.</p>';
+    return;
+  }
+  const links = land.portals.map((p,i) =>
+    `<li><a href="${p[1]}" target="_blank" rel="noopener">${p[0]}${i===0?'<span class="badge">Offiziell</span>':''}</a></li>`
+  ).join("");
+  result.innerHTML = `
+    <div class="result-card">
+      <div class="result-head">
+        <span class="sign-mini" aria-hidden="true">${land.id}</span>
+        <h3>${land.name}</h3>
+      </div>
+      <ul class="portal-list">${links}</ul>
+      <p class="result-hint">${land.hint}</p>
+    </div>`;
+});
+
+/* Alle Bundesländer als Liste */
+document.getElementById("allStates").innerHTML = LAENDER.map(l => `
+  <a class="state-row" href="${l.portals[0][1]}" target="_blank" rel="noopener">
+    <span class="state-sign" aria-hidden="true">${l.id}</span>
+    <div><strong>${l.name}</strong><span>${l.portals[0][0]}</span></div>
+    <span class="go" aria-hidden="true">↗</span>
+  </a>`).join("");
+
+/* Städte-Chips */
+document.getElementById("cityChips").innerHTML = CITIES.map(c =>
+  `<a class="chip" href="${c[1]}" target="_blank" rel="noopener">${c[0]}</a>`).join("");
+
+/* ---------- Checkliste ---------- */
+const checks = [...document.querySelectorAll("#clItems input")];
+const fill = document.getElementById("clFill");
+const msg = document.getElementById("clMsg");
+
+function updateCl(save = true) {
+  const n = checks.filter(c => c.checked).length;
+  fill.style.width = (n / checks.length * 100) + "%";
+  if (n === 0) { msg.classList.remove("done"); msg.textContent = "Noch nichts abgehakt – fang oben an."; }
+  else if (n < checks.length) { msg.classList.remove("done"); msg.textContent = `Noch ${checks.length - n} Punkt${checks.length - n > 1 ? "e" : ""} offen.`; }
+  else { msg.classList.add("done"); msg.textContent = "Alles bereit – du kannst die Online-Anhörung starten. ✓"; }
+  try { localStorage.setItem("blitzer-cl", JSON.stringify(checks.map(c => c.checked))); } catch(e){}
+}
+checks.forEach(c => c.addEventListener("change", () => updateCl()));
+try {
+  const saved = JSON.parse(localStorage.getItem("blitzer-cl"));
+  if (Array.isArray(saved) && saved.length === checks.length) checks.forEach((c,i) => c.checked = saved[i]);
+} catch(e){}
+document.getElementById("clReset").addEventListener("click", () => { checks.forEach(c => c.checked = false); updateCl(); });
+updateCl(false);
+
+/* ---------- Akkordeons ---------- */
+document.querySelectorAll(".acc-toggle").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const item = btn.parentElement;
+    const panel = item.querySelector(".acc-panel");
+    const open = item.classList.toggle("open");
+    btn.setAttribute("aria-expanded", open);
+    panel.style.maxHeight = open ? panel.scrollHeight + "px" : 0;
+  });
+});
+
+/* ---------- Scroll-Reveal ---------- */
+const revealEls = document.querySelectorAll(".reveal");
+revealEls.forEach((el, i) => el.style.transitionDelay = (i % 4) * 60 + "ms");
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+}, { threshold: .12 });
+revealEls.forEach(el => io.observe(el));
+
+/* ---------- Scrollspy Navigation ---------- */
+const navLinks = [...document.querySelectorAll(".jumpnav a")];
+const spy = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + e.target.id));
+    }
+  });
+}, { rootMargin: "-35% 0px -55% 0px" });
+document.querySelectorAll("main section").forEach(s => spy.observe(s));
+
+/* ---------- Jahr im Disclaimer ---------- */
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

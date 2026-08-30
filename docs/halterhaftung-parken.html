@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratgeber: Halterhaftung (§ 25a StVG) | Fix my Ticket</title>
+    <style>
+        /* Grundlegendes Reset und Typografie */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #333333;
+            background-color: #ffffff;
+            font-size: 17px;
+        }
+
+        /* Farben */
+        :root {
+            --dark-red: #8a1c1c;
+            --dark-red-hover: #631212;
+            --light-bg: #fdfdfd;
+            --border-color: #eaeaea;
+        }
+
+        /* Header */
+        header {
+            padding: 2.5rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            background-color: #ffffff;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--dark-red);
+            text-decoration: none;
+        }
+
+        /* Layout & Whitespace */
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+
+        /* Überschriften */
+        h1, h2, h3 {
+            color: var(--dark-red);
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            line-height: 1.3;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 3.5rem;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 2rem;
+            color: #333;
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        /* Links und Buttons */
+        a {
+            color: var(--dark-red);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+        a:hover {
+            color: var(--dark-red-hover);
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--dark-red);
+            color: #ffffff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: var(--dark-red-hover);
+            color: #ffffff;
+        }
+
+        /* Fallbeispiele */
+        .case-study {
+            background-color: var(--light-bg);
+            border-left: 4px solid var(--dark-red);
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+            border-radius: 0 4px 4px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+        }
+        .case-study strong {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--dark-red);
+        }
+
+        /* Interaktives Tool */
+        .interactive-tool {
+            border: 1px solid var(--border-color);
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            text-align: center;
+            margin: 4rem 0;
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+        }
+        .tool-question {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+        .tool-options {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn-outline {
+            background-color: transparent;
+            color: var(--dark-red);
+            border: 2px solid var(--dark-red);
+            padding: 0.8rem 2rem;
+        }
+        .btn-outline:hover {
+            background-color: var(--dark-red);
+            color: #ffffff;
+        }
+        .tool-result {
+            display: none;
+            animation: fadeIn 0.5s ease-in;
+        }
+        .tool-result.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Infobox */
+        .info-box {
+            background-color: #fdf8f8;
+            border: 1px solid #f2dcdc;
+            padding: 2rem;
+            border-radius: 4px;
+            margin: 3rem 0;
+        }
+        .info-box h3 {
+            color: var(--dark-red);
+            margin-top: 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #fdfdfd;
+            border-top: 1px solid var(--border-color);
+            padding: 4rem 2rem;
+            margin-top: 4rem;
+            text-align: center;
+        }
+        .footer-content {
+            max-width: 760px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .footer-links a {
+            color: #555555;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+        .footer-links a:hover {
+            color: var(--dark-red);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+        .footer-copy {
+            color: #999999;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <a href="/" class="logo">Fix my Ticket</a>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+        
+        <h1>Ratgeber: Knöllchen vom Ordnungsamt & Halterhaftung</h1>
+        
+        <p>Ein Anhörungsbogen vom Ordnungsamt liegt im Briefkasten. Der Vorwurf: Falschparken. Die geforderte Summe, beispielsweise für das Parken auf dem Gehweg oder im Halteverbot, liegt bei empfindlichen 55 Euro.</p>
+        
+        <p>Doch was passiert eigentlich, wenn Sie den Wagen an diesem Tag gar nicht selbst geparkt haben? In Deutschland gilt im fließenden und ruhenden Verkehr der Grundsatz: <strong>Es haftet der Fahrer, nicht das Auto.</strong> Genau hier greift bei Parkverstößen eine Sonderregelung – die sogenannte Halterhaftung.</p>
+
+        <h2>Wie funktioniert § 25a StVG?</h2>
+        <p>Der Paragraph 25a des Straßenverkehrsgesetzes (StVG) regelt die Kosten bei Parkverstößen, wenn der eigentliche Fahrer nicht ermittelt werden kann. Das Gesetz sagt zusammengefasst:</p>
+        
+        <p>Wenn das Ordnungsamt nicht herausfinden kann, wer das Auto falsch geparkt hat (oder der Aufwand dafür unverhältnismäßig hoch wäre), wird das <strong>Bußgeldverfahren eingestellt</strong>. Das bedeutet: Das eigentliche Knöllchen (z.B. 55 €) muss nicht bezahlt werden.</p>
+
+        <p><strong>Aber:</strong> Der Halter des Fahrzeugs muss stattdessen die sogenannten Verfahrens- und Auslagenkosten tragen. Diese belaufen sich auf <strong>23,50-28,50 Euro</strong> (20-25 € Gebühr + 3,50 € Auslagen) festgelegt. Je nach Höhe des ursprünglichen Bußgeldes kann dieser Umstand für den Halter ein enormer finanzieller Vorteil sein.</p>
+
+        <!-- INTERAKTIVES TOOL -->
+        <div class="interactive-tool" id="halterTool">
+            <div id="step1">
+                <div class="tool-question">Lohnt sich der Einwand? (Schritt 1 von 2)</div>
+                <p style="margin-bottom: 2rem; color: #666;">Von wem haben Sie das Knöllchen bzw. den Anhörungsbogen erhalten?</p>
+                <div class="tool-options">
+                    <button class="btn btn-outline" onclick="nextStep('step2')">Ordnungsamt / Polizei</button>
+                    <button class="btn btn-outline" onclick="showResult('result-private')">Private Firma (z.B. Supermarkt)</button>
+                </div>
+            </div>
+
+            <div id="step2" style="display: none;">
+                <div class="tool-question">Schritt 2 von 2</div>
+                <p style="margin-bottom: 2rem; color: #666;">Wie hoch ist das geforderte Verwarngeld bzw. Bußgeld auf dem Schreiben?</p>
+                <div class="tool-options">
+                    <button class="btn btn-outline" onclick="showResult('result-high')">Über 28 Euro (z.B. 40 € oder 55 €)</button>
+                    <button class="btn btn-outline" onclick="showResult('result-low')">Unter 25 Euro (z.B. 10 € oder 15 €)</button>
+                </div>
+            </div>
+
+            <!-- Ergebnisse -->
+            <div id="result-high" class="tool-result">
+                <h3 style="color: var(--dark-red); margin-top:0;">Es köönte sich lohnen!</h3>
+                <p>Wenn Sie nicht der Fahrer waren, greift § 25a StVG. Das Verfahren wird eingestellt. In den meisten Fällen zahlen Sie statt des hohen Bußgeldes lediglich die Verwaltungskosten in Höhe von 23,50-28,50 Euro.</p>
+                <a href="parkplatz-info.html" class="btn">Jetzt Antwortschreiben generieren</a>
+                <br><br>
+                <a href="#" style="font-size:14px;" onclick="resetTool(event)">Check neu starten</a>
+            </div>
+
+            <div id="result-low" class="tool-result">
+                <h3 style="margin-top:0;">Einspruch lohnt sich finanziell nicht</h3>
+                <p>Da das ursprüngliche Knöllchen günstiger ist als die gesetzlichen Verfahrenskosten (23,50-28,50 €), würden Sie durch die Anwendung der Halterhaftung am Ende <strong>mehr</strong> bezahlen. Es ist in diesem Fall ratsam, das Verwarngeld einfach zu überweisen.</p>
+                <a href="#" style="font-size:14px;" onclick="resetTool(event)">Check neu starten</a>
+            </div>
+
+            <div id="result-private" class="tool-result">
+                <h3 style="margin-top:0;">Achtung: Privater Parkplatz!</h3>
+                <p>§ 25a StVG gilt <strong>nur im öffentlichen Verkehrsraum</strong>. Bei privaten Knöllchen (z.B. durch Firmen wie "FairParken" am Supermarkt) gilt das Zivilrecht. Hier greift eine andere juristische Logik bezüglich der Beweislast.</p>
+                <a href="#" style="font-size:14px;" onclick="resetTool(event)">Check neu starten</a>
+            </div>
+        </div>
+
+        <h2>So sieht das in der Praxis aus (Fallbeispiele)</h2>
+
+        <div class="case-study">
+            <strong>Fall 1: Das teure Gehweg-Parken (55 Euro)</strong>
+            <p>Herr Müller bekommt Post vom Ordnungsamt. Sein Auto stand auf dem Gehweg, Kostenpunkt: 55 Euro. Allerdings hatte an diesem Tag seine Tochter den Wagen geliehen. Herr Müller teilt dem Amt mit, dass er nicht gefahren ist und macht von seinem Zeugnisverweigerungsrecht (bei nahen Angehörigen) Gebrauch.<br>
+            <em>Das Ergebnis:</em> Das Amt kann den Fahrer nicht ermitteln. Das 55-Euro-Verfahren wird eingestellt. Herr Müller erhält als Halter einen Bescheid über die Verfahrenskosten von 28,50 Euro. Er spart 26,50 Euro.</p>
+        </div>
+
+        <div class="case-study">
+            <strong>Fall 2: Die abgelaufene Parkuhr (25 Euro)</strong>
+            <p>Frau Schmidt hat das Parkticket 20 Minuten überzogen. Das Knöllchen kostet 25 Euro. Auch hier ist ihr Ehemann gefahren.<br>
+            <em>Das Ergebnis:</em> Würde Frau Schmidt sich auf die Halterhaftung berufen, würde das Verfahren zwar eingestellt, aber sie müsste die 28,50 Euro Auslagen bezahlen. Das wäre teurer als das eigentliche Knöllchen. Hier ist es sinnvoller, die 25 Euro direkt zu bezahlen.</p>
+        </div>
+
+        <h2>Wie Sie richtig auf den Anhörungsbogen reagieren</h2>
+        <p>Um von der Regelung des § 25a StVG Gebrauch zu machen, müssen Sie auf den Anhörungsbogen reagieren. Ignorieren Sie das Schreiben, geht das Ordnungsamt davon aus, dass Sie der Fahrer waren, und erlässt einen teuren Bußgeldbescheid.</p>
+
+        <p>Wichtig ist, dass Sie im Anhörungsbogen <strong>nicht</strong> lügen dürfen (Sie dürfen also nicht behaupten, eine ausgedachte Person sei gefahren). Sie dürfen jedoch schweigen, wenn Sie sich nicht erinnern, wer gefahren ist, oder von Ihrem Zeugnisverweigerungsrecht Gebrauch machen, wenn ein Familienmitglied am Steuer saß.</p>
+
+        <div class="info-box">
+            <h3>So reagieren Sie juristisch sicher</h3>
+            <p>Ein falsches Kreuz auf dem Anhörungsbogen kann schnell dazu führen, dass das Ordnungsamt Sie fälschlicherweise als Fahrer einstuft oder weitere, unangenehme Ermittlungen (z.B. Fahrtenbuchauflage) anstellt. Der richtige Ton ist hier entscheidend.</p>
+            <p>Mit unserem Generator erstellen Sie in wenigen Klicks ein rechtssicheres Antwortschreiben, das dem Ordnungsamt unmissverständlich signalisiert: Der Fahrer ist nicht zu ermitteln, stellen Sie das Verfahren gemäß § 25a StVG gegen Auslagengebühr ein.</p>
+            <a href="parkplatz-info.html" class="btn">Jetzt Antwortschreiben generieren</a>
+        </div>
+
+    </main>
+
+    <!-- JAVASCRIPT FÜR DEN HALTERHAFTUNG-CHECK -->
+    <script>
+        function nextStep(stepId) {
+            document.getElementById('step1').style.display = 'none';
+            document.getElementById('step2').style.display = 'none';
+            document.querySelectorAll('.tool-result').forEach(el => el.classList.remove('active'));
+            document.getElementById(stepId).style.display = 'block';
+        }
+
+        function showResult(resultId) {
+            document.getElementById('step1').style.display = 'none';
+            document.getElementById('step2').style.display = 'none';
+            document.getElementById(resultId).classList.add('active');
+        }
+
+        function resetTool(event) {
+            event.preventDefault();
+            document.querySelectorAll('.tool-result').forEach(el => el.classList.remove('active'));
+            document.getElementById('step1').style.display = 'block';
+            document.getElementById('step2').style.display = 'none';
+        }
+    </script>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="ueber-uns.html">Über uns</a>
+                <a href="index.html">Startseite</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 Fix my Ticket. Alle Rechte vorbehalten.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

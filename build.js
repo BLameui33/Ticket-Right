@@ -86,6 +86,7 @@ parkfirmen.forEach(p => {
         .replace(/\{\{STADT_KUERZEL\}\}/g, "Stadt")     
         .replace(/value="dem Supermarkt, Ihrer Stadt"/g, 'value="" placeholder="z.B. Lidl, Braunschweig"') 
         .replace(/\{\{DATEINAME\}\}/g, fName)
+        .replace(/\{\{PORTAL_URL\}\}/g, p.portal_url || '#')
         .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
         .replace(/\{\{STADT_INFOBOX\}\}/g, infoboxText); // Bleibt hier drin!
 
@@ -279,6 +280,7 @@ verkehrsbetriebe.forEach(v => {
         .replace(/\{\{VERKEHRSBETRIEB_EMAIL\}\}/g, v.email)
         .replace(/\{\{STADT_NAME\}\}/g, v.stadt)
         .replace(/\{\{DATEINAME\}\}/g, fName)
+        .replace(/\{\{PORTAL_URL\}\}/g, v.portal_url || '#')
         .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
         .replace(/\{\{STADT_INFOBOX\}\}/g, infoboxText);
 
@@ -301,6 +303,7 @@ laender.forEach(l => {
         .replace(/\{\{BEHOERDE_EMAIL\}\}/g, l.email)
         .replace(/\{\{DATEINAME\}\}/g, fName)
         .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
+        .replace(/\{\{PORTAL_URL\}\}/g, l.portal_url || '#')
         .replace(/\{\{LAND_INFOBOX\}\}/g, infoboxText);
 
     fs.writeFileSync(path.join(outputDir, fName), content, 'utf8');
@@ -345,6 +348,7 @@ mautbetreiber.forEach(m => {
         .replace(/\{\{BETREIBER_EMAIL\}\}/g, m.email)
         .replace(/\{\{DATEINAME\}\}/g, fName)
         .replace(/\{\{BELIEBTE_LINKS\}\}/g, crossLinks)
+        .replace(/\{\{PORTAL_URL\}\}/g, m.portal_url || '#')
         .replace(/\{\{MAUT_INFOBOX\}\}/g, infoboxText);
 
     fs.writeFileSync(path.join(outputDir, fName), content, 'utf8');

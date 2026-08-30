@@ -64,10 +64,10 @@
   <p>Haben Sie nach dem Einkauf bei <strong>dem Supermarkt</strong> in Ihrer Region eine böse Überraschung an der Windschutzscheibe oder per Post erhalten? Private Parkraumbewirtschafter wie <strong>APCOA PARKING Deutschland GmbH</strong> fordern oft 30 € bis 50 € Vertragsstrafe. Was viele nicht wissen: Wir bewegen uns hier im Zivilrecht, nicht im öffentlichen Straßenverkehrsrecht. Hier gelten strenge Regeln (BGB, AGB-Recht, DSGVO), die von Parkplatzbetreibern regelmäßig missachtet werden.</p>
 
   <ul style="margin-bottom: 25px; line-height: 1.6; font-size: 1.05em; background: #fdfdfd; padding: 20px 20px 20px 40px; border-radius: 8px; border: 1px solid #eaeaea;">
-    <li><strong>Fehlende Halterhaftung & Darlegungslast (BGH XII ZR 13/19):** Im Zivilrecht haftet nur der tatsächliche <em>Fahrer</em>, nicht pauschal der Halter. Unser Generator berücksichtigt die gerichtliche „sekundäre Darlegungslast“, sodass Sie dem Betreiber rechtssicher den Wind aus den Segeln nehmen.</li>
-    <li><strong>Unwirksame AGB (§ 305 BGB):** Vertragsstrafen von APCOA PARKING Deutschland GmbH bei dem Supermarkt sind unzulässig, wenn Schilder bei der Einfahrt im Dunkeln, durch Hecken verdeckt, zu klein gedruckt oder nicht im Sichtfeld platziert waren.</li>
-    <li><strong>Druckmittel DSGVO & Auskunftsrecht:** Die automatische Kennzeichenerfassung verpflichtet Betreiber zur transparenten Information nach Art. 13 DSGVO. Mit dem zeitgleichen Auskunftsverlangen nach Art. 15 DSGVO erzeugen Sie erheblichen Bearbeitungsaufwand beim Betreiber.</li>
-    <li><strong>Direkte Abwehr ohne Inkasso-Angst:** Sparen Sie sich teure Rechtsberatung. Unser Generator formuliert exakt die Einwände, bei denen Parkfirmen und Inkassobüros mangels Erfolgsaussicht meist einlenken.</li>
+    <li><strong>Fehlende Halterhaftung & Darlegungslast (BGH XII ZR 13/19):</strong> Im Zivilrecht haftet nur der tatsächliche <em>Fahrer</em>, nicht pauschal der Halter. Unser Generator berücksichtigt die gerichtliche „sekundäre Darlegungslast“, sodass Sie dem Betreiber rechtssicher den Wind aus den Segeln nehmen.</li>
+    <li><strong>Unwirksame AGB (§ 305 BGB):</strong> Vertragsstrafen von APCOA PARKING Deutschland GmbH bei dem Supermarkt sind unzulässig, wenn Schilder bei der Einfahrt im Dunkeln, durch Hecken verdeckt, zu klein gedruckt oder nicht im Sichtfeld platziert waren.</li>
+    <li><strong>Druckmittel DSGVO & Auskunftsrecht:</strong> Die automatische Kennzeichenerfassung verpflichtet Betreiber zur transparenten Information nach Art. 13 DSGVO. Mit dem zeitgleichen Auskunftsverlangen nach Art. 15 DSGVO erzeugen Sie erheblichen Bearbeitungsaufwand beim Betreiber.</li>
+    <li><strong>Direkte Abwehr ohne Inkasso-Angst:</strong> Sparen Sie sich teure Beratung. Unser Generator formuliert die Einwände, bei denen Parkfirmen und Inkassobüros mangels Erfolgsaussicht meist einlenken.</li>
   </ul>
 
   <div class="lokal-infobox">
@@ -148,7 +148,11 @@
         <option value="wenden">Ansatz 4: Kein Parkvorgang (Nur gewendet / durchgefahren / Stau)</option>
         <option value="technik">Ansatz 5: Fehlerhafte Zeiterfassung / Systemfehler (Double-Dip)</option>
         <option value="allgemein">Ansatz 6: Allgemeiner Bestreitungs-Widerspruch</option>
-        <option value="freitext">Ansatz 7: Individuelle Begründung (Freitext eingeben)</option>
+        <option value="vertragsstrafe_hoehe">Ansatz 7: Vertragsstrafe der Höhe nach unverhältnismäßig</option>
+        <option value="inkassokosten">Ansatz 8: Unzulässige Inkasso-/Bearbeitungsgebühren</option>
+        <option value="verjaehrung">Ansatz 9: Verjährung der Forderung</option>
+        <option value="kba_auskunft">Ansatz 10: Zweifel an rechtmäßiger Halterdatenabfrage (KBA)</option>
+        <option value="freitext">Ansatz 11: Individuelle Begründung (Freitext eingeben)</option>
       </select>
 
       <!-- Dynamisches Zusatzfeld für Freitext -->
@@ -156,14 +160,30 @@
         <label style="color:#494a4a; font-weight:bold; font-size: 0.9em;">Ihre eigene sachliche Begründung:</label>
         <textarea id="pFreitextInhalt" rows="5" style="width:100%; box-sizing: border-box; border:1px solid #ccc; border-radius:4px; padding:8px; font-family: inherit;" placeholder="Bitte schildern Sie hier detailliert, warum die Forderung unberechtigt ist..."></textarea>
       </div>
+
+      <div id="boxHalterkreis" style="display:none; margin-top:15px; padding: 10px;">
+  <label style="color:#494a4a; font-weight:bold; font-size: 0.9em;">Wer hatte im fraglichen Zeitraum Zugriff auf das Fahrzeug?</label>
+  <textarea id="pHalterkreis" rows="3" style="width:100%; box-sizing: border-box; border:1px solid #ccc; border-radius:4px; padding:8px; font-family: inherit;" placeholder="z. B. meine Ehefrau, mein volljähriger Sohn und ich selbst hatten im fraglichen Zeitraum gleichermaßen Zugriff auf das Fahrzeug."></textarea>
+  <p style="font-size:0.8em;color:#777;margin-top:5px;">Wichtig: Ein reines Bestreiten reicht laut BGH (XII ZR 13/19) nicht aus. Nennen Sie hier die Personengruppe mit Zugriff – auch wenn unklar bleibt, wer konkret gefahren ist.</p>
+</div>
     </fieldset>
 
-    <div style="background: #f8f9fa; border: 1px solid #f8f9fa; padding: 15px; border-radius: 6px; margin: 20px 0; display: flex; gap: 15px; align-items: center;">
-    <div style="font-size: 2em;">💡</div>
-    <div>
-        <strong style="color: #404141; display: block; margin-bottom: 5px;">Tipp: Probieren Sie verschiedene Ansätze aus!</strong>
-        <p style="margin: 0; font-size: 0.9em; color: #333;">Sie sind sich unsicher, welcher Hebel in Ihrer Situation am besten greift? Kein Problem! Nutzen Sie das Tool und generieren Sie einfach kostenlos mehrere PDFs mit unterschiedlichen Ansätzen (z. B. DSGVO und Technik-Fehler). Lesen Sie sich die fertigen Anschreiben in Ruhe durch und entscheiden Sie erst danach, welcher Text Ihren Fall am treffendsten widerspiegelt.</p>
-    </div>
+
+<div class="helper-links">
+    <span>
+      <strong>Weitere Hilfen:</strong> 
+      <a href="https://www.apcoa.de/kundenservice/kontakt" target="_blank" rel="noopener" class="portal-link">Formular des Anbieters</a>
+    </span>
+    <span>
+      <a href="https://schlichtungsstelle-parken.de/" target="_blank" rel="noopener">Schlichtungsstelle-Parken</a>
+    </span>
+    <span>
+      <a href="https://www.verbraucherzentrale.de/beschwerde">Verbraucherzentrale Beschwerde</a>
+    </span>
+  </div>
+  <div class="helper-note">
+    <strong>Tipp: Probieren Sie verschiedene Ansätze aus!</strong> Nutzen Sie das Tool und generieren Sie einfach kostenlos mehrere PDFs mit unterschiedlichen Ansätzen (z. B. DSGVO und Technik-Fehler). Lesen Sie sich die fertigen Anschreiben in Ruhe durch und entscheiden Sie erst danach, welcher Text Ihren Fall am treffendsten widerspiegelt.
+  </div>
 </div>
 
     <div class="submit-area" style="display: flex; gap: 15px; flex-wrap: wrap;">
@@ -198,12 +218,12 @@
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
     <h3>Weitere Parkfirmen:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <a href="knoellchen-widerspruch-peter-park.html">Peter Park System GmbH</a>
-<a href="knoellchen-widerspruch-prs-parkraum-service.html">PRS Parkraum Service GmbH</a>
-<a href="knoellchen-widerspruch-playfair-parking.html">Playfair Parking GmbH</a>
-<a href="knoellchen-widerspruch-q-park.html">Q-Park Operations Germany GmbH</a>
-<a href="knoellchen-widerspruch-safe-place.html">Safe Place Germany GmbH</a>
-<a href="knoellchen-widerspruch-parkdepot.html">ParkDepot GmbH</a>
+      <a href="knoellchen-widerspruch-playfair-parking.html">Playfair Parking GmbH</a>
+<a href="knoellchen-widerspruch-aktivpark.html">Aktivpark GmbH</a>
+<a href="knoellchen-widerspruch-bb-parkhaus.html">B+B Parkhaus GmbH & Co. KG</a>
+<a href="knoellchen-widerspruch-fair-parken.html">fair parken GmbH</a>
+<a href="knoellchen-widerspruch-ks-parkraumservice.html">K+S Parkraumservice GmbH</a>
+<a href="knoellchen-widerspruch-parkraeume-kg.html">Parkräume KG</a>
 
     </div>
   </div>
@@ -322,22 +342,24 @@ Mit Fix-My-Ticket in wenigen Schritten das passende Einspruchsschreiben für Bu�
 /* ── UI-Logik für Zusatzfelder ── */
 document.getElementById('pStrategie').addEventListener('change', function() {
   const boxFrei = document.getElementById('boxFreitext');
-  if (this.value === 'freitext') {
-    boxFrei.style.display = 'block';
-  } else {
-    boxFrei.style.display = 'none';
-  }
+  const boxHalter = document.getElementById('boxHalterkreis');
+  boxFrei.style.display = (this.value === 'freitext') ? 'block' : 'none';
+  boxHalter.style.display = (this.value === 'halter') ? 'block' : 'none';
 });
 
+document.getElementById('pStrategie').dispatchEvent(new Event('change'));
+
+
 /* ── Knallharte Text-Generierung basierend auf Strategie ── */
-function getWiderspruchText(strategie, kennzeichen, ort, datum, freitext) {
+function getWiderspruchText(strategie, kennzeichen, ort, datum, freitext, halterkreis) {
   let text = `FORM- UND FRISTGERECHTER WIDERSPRUCH\n\n`;
   text += `Hiermit weise ich Ihre unberechtigte Forderung sowie die geltend gemachte Vertragsstrafe für das Fahrzeug mit dem Kennzeichen ${kennzeichen} vom ${datum} am Standort ${ort} vollumfänglich zurück.\n\n`;
 
-  if (strategie === "halter") {
+ if (strategie === "halter") {
     text += `Begründung:\n`;
-    text += `Ich bestreite ausdrücklich, zum fraglichen Zeitpunkt der verantwortliche Fahrer des genannten Fahrzeugs gewesen zu sein. Im zivilrechtlichen Vertragsrecht existiert keine pauschale Halterhaftung (vgl. BGH, Urteil vom 18.12.2019 – XII ZR 13/19).\n`;
-    text += `Zur Erfüllung meiner sekundären Darlegungslast teile ich Ihnen mit, dass das Fahrzeug zum besagten Zeitpunkt mehreren berechtigten Personen (u. a. Familienangehörigen / einem definierten Fahrerkreis) zur Nutzung überlassen war und von diesen eigenständig genutzt werden konnte. Eine eigene vertragliche Bindung meiner Person ist somit nicht zustande gekommen. Die Ermittlung des tatsächlichen Fahrers obliegt vollumfänglich Ihrer Beweislast. Eine Verpflichtung meinerseits, den konkreten Fahrer namentlich zu benennen oder Nachforschungen anzustellen, besteht rechtlich nicht.`;
+    text += `Eine Halterhaftung für die geltend gemachte Vertragsstrafe besteht nach der Rechtsprechung des Bundesgerichtshofs nicht; vertraglich verpflichtet werden kann ausschließlich der tatsächliche Fahrzeugführer (BGH, Urteil vom 18.12.2019 – XII ZR 13/19).\n`;
+    text += `Im Rahmen der mich insoweit treffenden sekundären Darlegungslast teile ich mit: ${halterkreis}\n`;
+    text += `Wer von den genannten Personen das Fahrzeug zum konkreten Zeitpunkt geführt hat, lässt sich im Nachhinein nicht mehr mit Sicherheit feststellen. Ein Anscheinsbeweis dafür, dass die Halter- und die Fahrereigenschaft zusammenfallen, besteht nach ständiger Rechtsprechung nicht. Damit obliegt Ihnen als Anspruchsteller weiterhin der volle Nachweis, dass gerade ich das Fahrzeug geführt habe – ein Nachweis, den Sie nach Aktenlage nicht erbringen können.`;
   } else if (strategie === "dsgvo") {
     text += `Begründung:\n`;
     text += `Ich bestreite das Vorliegen eines wirksamen Vertragsschlusses. Zudem rüge ich die Verletzung der datenschutzrechtlichen Informationspflichten gemäß Art. 13 DSGVO bei der Einfahrt auf das Gelände. Die Beschilderung bezüglich der optoelektronischen Datenerfassung war vor Beginn des Erfassungsvorgangs nicht ordnungsgemäß und transparent wahrnehmbar.\n`;
@@ -351,6 +373,18 @@ function getWiderspruchText(strategie, kennzeichen, ort, datum, freitext) {
   } else if (strategie === "technik") {
     text += `Begründung:\n`;
     text += `Die von Ihnen behauptete Parkdauer sowie die Fehlerfreiheit Ihrer Erfassungssysteme werden ausdrücklich bestritten. Es liegt der begründete Verdacht eines Erfassungsfehlers vor (z. B. Nichterfassung einer Ausfahrt zwischen zwei separaten Kurzparkvorgängen am selben Tag / „Double-Dip“). Ich fordere Sie auf, mir lückenlose, manipulationssichere und geeichte Zeitstempel inklusive Bilddaten für Ein- UND Ausfahrt vorzulegen. Bis zum Erbringen dieses Nachweises ist die Forderung unbegründet.`;
+  } else if (strategie === "vertragsstrafe_hoehe") {
+  text += `Begründung:\n`;
+  text += `Unabhängig von der Frage eines wirksamen Vertragsschlusses wird die Höhe der Forderung als unangemessen bestritten. Der Bundesgerichtshof hat für ein erhöhtes Parkentgelt eine Größenordnung von rund 30 € als noch angemessen bezeichnet, sofern sie sich am typischen Schaden und Sicherungsinteresse des Betreibers orientiert (BGH, Urteil vom 18.12.2019 – XII ZR 13/19). Eine darüber hinausgehende Forderung hält einer Inhaltskontrolle nach §§ 307, 315 BGB nicht stand.`;
+} else if (strategie === "inkassokosten") {
+  text += `Begründung:\n`;
+  text += `Die geltend gemachten Inkasso-/Bearbeitungskosten werden dem Grunde und der Höhe nach bestritten. Nach § 4 RDGEG sind bei derart einfach gelagerten Sachverhalten regelmäßig nur die Kosten erstattungsfähig, die bei sofortiger anwaltlicher Beauftragung entstanden wären – diese liegen erheblich unter dem hier verlangten Betrag. Ich fordere eine entsprechend korrigierte Aufstellung.`;
+} else if (strategie === "verjaehrung") {
+  text += `Begründung:\n`;
+  text += `Die Forderung ist verjährt. Ansprüche aus dem Parkvertrag unterliegen der regelmäßigen Verjährungsfrist von drei Jahren (§ 195, § 199 Abs. 1 BGB), beginnend mit Schluss des Jahres der Anspruchsentstehung. Da der Vorfall vom ${datum} entsprechend lange zurückliegt, erhebe ich ausdrücklich die Einrede der Verjährung.`;
+} else if (strategie === "kba_auskunft") {
+  text += `Begründung:\n`;
+  text += `Ich bestreite, dass meine Halterdaten rechtmäßig beim Kraftfahrt-Bundesamt erhoben wurden. Eine Registerauskunft nach § 39 StVG setzt ein im Einzelfall darzulegendes berechtigtes Interesse voraus. Ich fordere Nachweis des Rechtsgrundes sowie Datum und Umfang Ihrer KBA-Anfrage. Bei nicht ordnungsgemäßer Datenerhebung ist die Forderung bereits deshalb nicht durchsetzbar.`;
   } else if (strategie === "freitext") {
     text += `Begründung:\n${freitext}`;
   } else {
@@ -374,6 +408,7 @@ document.getElementById('btnEmail').addEventListener('click', function() {
   const pDatum = pDatumRaw ? pDatumRaw.split('-').reverse().join('.') : '[Datum]';
   const pOrt = document.getElementById('pOrt').value;
   const strategie = document.getElementById('pStrategie').value;
+  const halterkreis = document.getElementById('pHalterkreis') ? document.getElementById('pHalterkreis').value : '';
   const freitext = document.getElementById('pFreitextInhalt') ? document.getElementById('pFreitextInhalt').value : '';
 
   if (!pAz || !sName) {
@@ -381,10 +416,15 @@ document.getElementById('btnEmail').addEventListener('click', function() {
     return;
   }
 
+  if (strategie === 'halter' && halterkreis.trim() === '') {
+    alert("Bitte geben Sie an, wer als möglicher Fahrer in Frage kommt (Fahrerkreis), da Sie den Ansatz für die Halterhaftung gewählt haben.");
+    return;
+  }
+
   const subject = encodeURIComponent(`Widerspruch zur Forderung / Aktenzeichen: ${pAz} (Kennzeichen: ${sKennzeichen})`);
   
   let bodyText = `Sehr geehrte Damen und Herren,\n\n`;
-  bodyText += getWiderspruchText(strategie, sKennzeichen, pOrt, pDatum, freitext);
+  bodyText += getWiderspruchText(strategie, sKennzeichen, pOrt, pDatum, freitext, halterkreis);
   bodyText += `\n\nMit freundlichen Grüßen,\n${sName}`;
 
   // Text zusätzlich in Zwischenablage kopieren (für Kontaktformulare der Firmen)
@@ -413,7 +453,6 @@ document.getElementById('parkForm').addEventListener('submit', function(e) {
   const pFirma       = document.getElementById('pFirma').value;
   const pFirmaStrasse= document.getElementById('pFirmaStrasse').value;
   const pFirmaPLZOrt = document.getElementById('pFirmaPLZOrt').value;
-  
   const pAz          = document.getElementById('pAktenzeichen').value;
   const sName        = document.getElementById('sName').value;
   const sStrasse     = document.getElementById('sStrasse').value;
@@ -423,7 +462,13 @@ document.getElementById('parkForm').addEventListener('submit', function(e) {
   const pDatum       = pDatumRaw.split('-').reverse().join('.');
   const pOrt         = document.getElementById('pOrt').value;
   const strategie    = document.getElementById('pStrategie').value;
+  const halterkreis = document.getElementById('pHalterkreis') ? document.getElementById('pHalterkreis').value : '';
   const freitext     = document.getElementById('pFreitextInhalt') ? document.getElementById('pFreitextInhalt').value : '';
+
+  if (strategie === 'halter' && halterkreis.trim() === '') {
+    alert("Bitte geben Sie an, wer als möglicher Fahrer in Frage kommt (Fahrerkreis), da Sie den Ansatz für die Halterhaftung gewählt haben.");
+    return;
+  }
 
   const todayStr = new Date().toLocaleDateString('de-DE', {day: '2-digit', month: '2-digit', year: 'numeric'});
 
@@ -465,7 +510,7 @@ document.getElementById('parkForm').addEventListener('submit', function(e) {
 
   // Haupttext aus der Logik holen
   let mainText = `Sehr geehrte Damen und Herren,\n\n`;
-  mainText += getWiderspruchText(strategie, sKennzeichen, pOrt, pDatum, freitext);
+  mainText += getWiderspruchText(strategie, sKennzeichen, pOrt, pDatum, freitext, halterkreis);
 
   const paraLines = doc.splitTextToSize(mainText, 160);
   // --- START: Automatischer Seitenumbruch ---

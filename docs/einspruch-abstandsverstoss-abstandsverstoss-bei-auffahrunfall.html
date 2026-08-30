@@ -14,6 +14,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="/logo-lotse-fav.png">
+  <script>
+   
+    window.DEFAULT_STRATEGIE = "auffahrunfall";
+  </script>
   
   <style>
     /* Zusätzliche Styles für die neuen Elemente */
@@ -202,18 +206,50 @@
       <legend>4. Abstands-Ansätze wählen (Ihre Verteidigung)</legend>
       <p style="font-size: 0.85em; color: #555; margin-top: 0;">Welcher Umstand hat zu dem verringerten Abstand geführt? Das System formuliert Ihren Einwand.</p>
       <select id="pStrategie" required style="font-weight: bold;">
-        <option value="einscherer">Ansatz 1: Einscherer-Effekt (Fahrzeug hat sich plötzlich vor mich gedrängt)</option>
-        <option value="bremsen">Ansatz 2: Vordermann hat plötzlich und unerwartet abgebremst</option>
-        <option value="kurzzeitig">Ansatz 3: Kurzzeitige Unterschreitung (Keine Messung über 150-300 Meter)</option>
-        <option value="foto">Ansatz 4: Video/Foto unleserlich (Fahrer nicht zweifelsfrei zu identifizieren)</option>
-        <option value="witterung">Ansatz 5: Witterungsverhältnisse (Starker Regen/Sonne verfälschen die Video-Auswertung)</option>
-        <option value="eichung">Ansatz 6: Zweifel an der Eichung und korrekten Aufstellung der Anlage</option>
-        <option value="freitext">Eigene Begründung (Freitext formulieren)</option>
-        <option value="allgemein">Allgemeiner Einspruch & Forderung des Messvideos (Akteneinsicht)</option>
+        <optgroup label="Verkehrssituation / fremdes Verschulden">
+          <option value="einscherer">Einscherer-Effekt (Fahrzeug hat sich plötzlich vor mich gedrängt)</option>
+          <option value="bremsen">Vordermann hat plötzlich und unerwartet abgebremst</option>
+          <option value="auffahrunfall">Auffahrunfall: Kein automatischer Rückschluss auf schuldhaften Abstandsverstoß</option>
+        </optgroup>
+        <optgroup label="Messtechnik & Messverfahren">
+          <option value="kurzzeitig">Kurzzeitige Unterschreitung (keine hinreichend lange Messstrecke)</option>
+          <option value="eichung">Zweifel an Eichung, Kalibrierung und Aufstellung der Anlage (z. B. VKS/VAMA)</option>
+          <option value="provida">Nachfahrmessung (ProViDa/Zivilfahrzeug): Toleranz & Abstandskonstanz bestritten</option>
+          <option value="witterung">Witterungsverhältnisse (Regen/Nebel/Sonne verfälschen die Video-Auswertung)</option>
+          <option value="foto">Video/Foto unleserlich (Fahrer nicht zweifelsfrei zu identifizieren)</option>
+        </optgroup>
+        <optgroup label="Besondere Rechtsfolgen">
+          <option value="probezeit">Probezeit: Einstufung als A-Verstoß bestreiten (Fahranfänger)</option>
+          <option value="haertefall">Absehen vom Fahrverbot beantragen (unzumutbare Härte)</option>
+        </optgroup>
+        <optgroup label="Sonstiges">
+          <option value="freitext">Eigene Begründung (Freitext formulieren)</option>
+          <option value="allgemein">Allgemeiner Einspruch & Forderung des Messvideos (Akteneinsicht)</option>
+        </optgroup>
       </select>
       
       <textarea id="pFreitext" class="dynamic-textarea" placeholder="Formulieren Sie hier Ihre eigene, detaillierte Begründung für den Einspruch..."></textarea>
     </fieldset>
+
+    <div class="helper-links">
+    <span>
+      <strong>Weitere Hilfen:</strong> 
+      <a href="blitzer-anhoerung.html" target="_blank" rel="noopener" class="portal-link">Tipps zur Online-Anhörung</a>
+    </span>
+    <span>
+      <a href="https://www.kba-online.de/registerauskunft/app/#/faer" target="_blank" rel="noopener">Punktestand online abfragen</a>
+    </span>
+    <span>
+      <a href="https://www.adac.de/verkehr/recht/bussgeld-punkte/bussgeldrechner/" target="_blank" rel="noopener">ADAC Bußgeldrechner</a>
+    </span>
+    <span>
+      <a href="https://www.bmv.de/SharedDocs/DE/Artikel/StV/Strassenverkehr/update-stvo-novelle.html" target="_blank" rel="noopener">Offizieller Bußgeldkatalog (BMDV)</a>
+    </span>
+  </div>
+  <div class="helper-note">
+    <strong>Tipp: Probieren Sie verschiedene Ansätze aus!</strong> Nutzen Sie das Tool und generieren Sie einfach kostenlos mehrere PDFs mit unterschiedlichen Ansätzen. Lesen Sie sich die fertigen Anschreiben in Ruhe durch und entscheiden Sie erst danach, welcher Text Ihren Fall am treffendsten widerspiegelt.
+  </div>
+</div>
 
     <div class="submit-area" style="display: flex; gap: 15px; flex-wrap: wrap;">
       <button type="submit" class="button-primary" style="flex: 1;">📄 PDF-Einspruch generieren</button>
@@ -234,11 +270,17 @@
     <h3>Plötzliches Abbremsen des Vordermanns</h3>
     <p>Ähnlich verhält es sich, wenn der Vordermann aus unerfindlichen Gründen (oder wegen eines Stauendes, das Sie noch nicht sehen konnten) scharf abbremst. Auch hier verringert sich der Abstand temporär unverschuldet. Die Videomessung muss beweisen, dass die Unterschreitung des Abstands nicht auf das Fehlverhalten eines Dritten zurückzuführen ist.</p>
 
-    <h3>Die 150-bis-300-Meter-Regel (Kurzzeitige Unterschreitung)</h3>
-    <p>Ein Abstandsverstoß setzt eine <strong>beharrliche Pflichtverletzung</strong> voraus. Die obergerichtliche Rechtsprechung (u.a. BGH) geht davon aus, dass ein zu geringer Abstand über eine Strecke von mindestens <strong>150 bis 300 Metern (oder ca. 3 Sekunden)</strong> durchgehend bestanden haben muss. Wurde der Abstand nur für einen Sekundenbruchteil unterschritten, etwa weil der Verkehr leicht stockte, reicht dies nicht für ein Fahrverbot aus. Im Einspruch sollte genau diese Messstrecke angezweifelt und das Video angefordert werden.</p>
+    <h3>Die Mindest-Messstrecke (Kurzzeitige Unterschreitung)</h3>
+    <p>Ein Abstandsverstoß setzt eine <strong>beharrliche Pflichtverletzung</strong> voraus. Mehrere Oberlandesgerichte gehen in ihrer Rechtsprechung davon aus, dass ein zu geringer Abstand über eine hinreichend lange, durchgehend dokumentierte Strecke bestanden haben muss, je nach Messverfahren werden hier häufig Richtwerte von <strong>rund 140 bis 300 Metern</strong> diskutiert. Wurde der Abstand nur für einen Sekundenbruchteil unterschritten, etwa weil der Verkehr leicht stockte, kann dies für die Ahndung nicht ausreichen. Im Einspruch sollte genau diese Messstrecke anhand des Videos überprüft und angezweifelt werden.</p>
+
+    <h3>Nachfahrmessung durch zivile Videowagen</h3>
+    <p>Wird der Abstand nicht per Brückenkamera, sondern durch ein nachfahrendes ziviles Polizeifahrzeug ermittelt, kommt es entscheidend darauf an, ob die Beamten den eigenen Abstand zum gemessenen Fahrzeug über die komplette Messphase konstant gehalten haben. Schon kleine Schwankungen in der Relativgeschwindigkeit verfälschen das Ergebnis. Deshalb sind bei solchen Nachfahrmessungen systemseitig Toleranzabzüge vorgesehen; werden diese nicht oder nicht korrekt angewendet, ist die Messung angreifbar.</p>
 
     <h3>Fehlende Identifikation des Fahrers und technische Mängel</h3>
-    <p>Auch bei Video-Messungen von Brücken (oft kombiniert mit einer "Ident-Kamera" auf dem Mittelstreifen) muss der Fahrer einwandfrei erkennbar sein. Ist das Bild durch starke Sonneneinstrahlung, die A-Säule, den Rückspiegel oder eine tief ins Gesicht gezogene Kappe stark verdeckt, kann die Behörde die Fahrerhaftung nicht durchsetzen. Ebenso bieten abgelaufene Eichfristen oder widrige Wetterverhältnisse exzellente Ansatzpunkte für eine Verfahrenseinstellung.</p>
+    <p>Auch bei Video-Messungen von Brücken (oft kombiniert mit einer "Ident-Kamera" auf dem Mittelstreifen) muss der Fahrer einwandfrei erkennbar sein. Ist das Bild durch starke Sonneneinstrahlung, die A-Säule, den Rückspiegel oder eine tief ins Gesicht gezogene Kappe stark verdeckt, kann die Behörde die Fahrerhaftung nicht durchsetzen. Ebenso bieten abgelaufene Eichfristen oder widrige Wetterverhältnisse Ansatzpunkte für eine Verfahrenseinstellung.</p>
+
+    <h3>Besonderheiten in der Probezeit und beim Fahrverbot</h3>
+    <p>Bei Fahranfängern kann ein Abstandsverstoß je nach Schwere zusätzlich als sogenannter A-Verstoß nach Anlage 12 der Fahrerlaubnis-Verordnung (FeV) eingestuft werden, mit Probezeitverlängerung und Pflicht zum Aufbauseminar. Wegen dieser einschneidenden Folgen lohnt sich hier eine besonders genaue Prüfung der Messung. Droht unabhängig davon ein Regelfahrverbot, kann in besonderen Härtefällen, etwa bei drohendem Arbeitsplatzverlust, nach § 4 Abs. 4 BKatV beantragt werden, ausnahmsweise von dem Fahrverbot abzusehen und stattdessen die Geldbuße zu erhöhen. Das ist keine automatische Vergünstigung, sondern eine im Einzelfall zu begründende Ausnahme.</p>
   </div>
 
   
@@ -246,12 +288,12 @@
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
 <h3>Weitere Szenarien & Ratgeber:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <a href="einspruch-abstandsverstoss-brueckenmessung-vks-vama-messfehler.html">Brückenmessung VKS VAMA: Einspruch Muster</a>
-<a href="einspruch-abstandsverstoss-abstandsverstoß-auf-der-landstrasse.html">Landstraße Abstand: Einspruch kostenlos</a>
-<a href="einspruch-abstandsverstoss-abstandsmessung-fahrer-nicht-erkennbar.html">Abstandsfoto unklar: Einspruch kostenlos</a>
-<a href="einspruch-abstandsverstoss-abstandsmessung-regen-nebel-wetter.html">Abstand bei Regen: Einspruch Muster kostenlos</a>
+      <a href="einspruch-abstandsverstoss-weniger-als-3-10-halber-tacho-fahrverbot.html">Unter 3/10 Abstand: Fahrverbot stoppen</a>
+<a href="einspruch-abstandsverstoss-abstandsverstoss-probezeit-a-verstoss.html">Probezeit Abstand: ASF und Fahrverbot stoppen</a>
+<a href="einspruch-abstandsverstoss-provida-polizei-abstandsmessung-videowagen.html">ProViDa Abstand: Fahrverbot und 1 Punkt abwehren</a>
 <a href="einspruch-abstandsverstoss-vordermann-bremst-abstand-unterschritten.html">Vordermann bremst: Abstandsvorwurf abwehren</a>
-<a href="einspruch-abstandsverstoss-abstandsverstoss-auf-autobahn.html">Autobahn Abstand: Einspruch Muster kostenlos</a>
+<a href="einspruch-abstandsverstoss-einscherer-effekt-abstandsmessung-einspruch.html">Einscherer beim Abstand: Einspruch Muster</a>
+<a href="einspruch-abstandsverstoss-abstandsverstoß-auf-der-landstrasse.html">Landstraße Abstand: Einspruch kostenlos</a>
 
     </div>
   </div>
@@ -369,6 +411,14 @@ Mit Fix-My-Ticket in wenigen Schritten das passende Einspruchsschreiben für Bu�
 </footer>
 
 <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const strategieSelect = document.getElementById('pStrategie');
+  const vorschlag = window.DEFAULT_STRATEGIE;
+  if (vorschlag && [...strategieSelect.options].some(o => o.value === vorschlag)) {
+    strategieSelect.value = vorschlag;
+  }
+});
+
 /* ── UI Logik für Freitext-Feld ── */
 document.getElementById('pStrategie').addEventListener('change', function() {
   const freitextFeld = document.getElementById('pFreitext');
@@ -397,7 +447,15 @@ function getAbstandText(strategie, schreibenTyp, az, kennzeichen, ort, datumTat,
   } else if (strategie === "bremsen") {
     text += `Der von Ihnen festgestellte verringerte Abstand ist keineswegs das Resultat meiner Fahrweise, sondern ausschließlich auf eine für mich unvorhersehbare, abrupte und verkehrsbedingte Verzögerung des vorausfahrenden Fahrzeugs innerhalb der Messstrecke zurückzuführen. Eine vorwerfbare Gefährdung im Sinne einer beharrlichen Pflichtverletzung ist nicht gegeben. Eine Sanktionierung verbietet sich in diesem Fall von selbst.`;
   } else if (strategie === "kurzzeitig") {
-    text += `Ich bestreite das Vorliegen einer rechtlich relevanten und fehlerfrei dokumentierten Messstrecke. Nach ständiger obergerichtlicher Rechtsprechung (vgl. u.a. Beschlüsse des BGH) setzt ein sanktionsfähiger Abstandsverstoß eine vorwerfbare Unterschreitung über eine Strecke von mindestens 150 bis 300 Metern (bzw. ca. 3 Sekunden) voraus. Die von Ihnen herangezogene Momentaufnahme ist juristisch nicht tragfähig und erbringt keinen Beweis für eine andauernde Pflichtverletzung.`;
+    text += `Ich bestreite das Vorliegen einer rechtlich relevanten und fehlerfrei dokumentierten Messstrecke. Nach der Rechtsprechung mehrerer Oberlandesgerichte setzt ein sanktionsfähiger Abstandsverstoß eine vorwerfbare Unterschreitung über eine hinreichend lange, durchgehend dokumentierte Strecke voraus – als Orientierung werden dort regelmäßig Werte im Bereich von rund 140 bis 300 Metern (bzw. mehrere Sekunden) herangezogen. Ich bestreite, dass diese Anforderungen im vorliegenden Fall erfüllt wurden, und beantrage die Vorlage des vollständigen Messvideos nebst Auswertung, um die tatsächliche Länge der Messstrecke zu überprüfen. Eine bloße Momentaufnahme ist juristisch nicht tragfähig und erbringt keinen Beweis für eine andauernde Pflichtverletzung.`;
+  } else if (strategie === "provida") {
+    text += `Die Messung erfolgte im Wege einer Nachfahrmessung (ProViDa bzw. vergleichbares System) durch ein ziviles Polizeifahrzeug. Eine solche Messung ist nur dann gerichtsverwertbar, wenn das nachfahrende Fahrzeug den eigenen Abstand zum betroffenen Fahrzeug über die gesamte maßgebliche Messstrecke nachweislich konstant gehalten hat und die erforderlichen, im jeweiligen Systemhandbuch vorgesehenen Toleranzabzüge korrekt vorgenommen wurden. Ich bestreite ausdrücklich, dass diese Voraussetzungen eingehalten wurden. Ich beantrage Einsicht in das vollständige, ungeschnittene Messvideo, das Messprotokoll, die Bedienungsanleitung des verwendeten Systems sowie die aktuellen Schulungs- und Zertifizierungsnachweise der eingesetzten Beamten. Ohne den lückenlosen Nachweis einer gleichbleibenden Relativgeschwindigkeit und ausreichender Sicherheitsabzüge ist die Messung nicht verwertbar.`;
+  } else if (strategie === "probezeit") {
+    text += `Ich weise ausdrücklich darauf hin, dass sich der Vorwurf auf eine Fahrt innerhalb meiner Probezeit bezieht. Eine Einstufung als schwerwiegende Zuwiderhandlung (sog. A-Verstoß) nach Anlage 12 der Fahrerlaubnis-Verordnung (FeV) hätte für mich einschneidende Folgen, insbesondere die Verlängerung der Probezeit und die Pflicht zur Teilnahme an einem kostenpflichtigen Aufbauseminar. Angesichts dieser weitreichenden Nebenfolgen sind an die Feststellung des vorgeworfenen Abstands sowie der zugrunde gelegten Geschwindigkeit besonders strenge Anforderungen zu stellen. Ich bestreite, dass diese Feststellungen im vorliegenden Fall zweifelsfrei und rechtsfehlerfrei getroffen wurden, und beantrage vollständige Akteneinsicht, um insbesondere die für die Einstufung entscheidende Grenze zwischen einfacher und schwerwiegender Zuwiderhandlung überprüfen zu können.`;
+  } else if (strategie === "haertefall") {
+    text += `Für den Fall, dass die Behörde bzw. das Gericht entgegen meiner vorstehenden Einwände von einem Regelfall im Sinne der Bußgeldkatalog-Verordnung ausgehen sollte, beantrage ich hilfsweise, gemäß § 4 Abs. 4 BKatV von der Verhängung eines Fahrverbots abzusehen und stattdessen die Geldbuße angemessen zu erhöhen. Ein Fahrverbot würde für mich eine unzumutbare Härte bedeuten. Ich behalte mir vor, dies durch geeignete Nachweise (z. B. Arbeitgeberbescheinigung, Nachweis der beruflichen Angewiesenheit auf die Fahrerlaubnis) zeitnah zu belegen, und bitte um Mitteilung, bis wann entsprechende Unterlagen nachgereicht werden können.`;
+  } else if (strategie === "auffahrunfall") {
+    text += `Der dem Vorwurf zugrunde liegende Verkehrsunfall belegt für sich genommen keinen bußgeldrechtlich relevanten Abstandsverstoß. Ein im Zivilrecht diskutierter Anscheinsbeweis zu Lasten des Auffahrenden ist auf das Ordnungswidrigkeitenverfahren nicht ohne Weiteres übertragbar; erforderlich ist vielmehr eine konkrete, messtechnisch fundierte Feststellung des tatsächlich eingehaltenen Abstands vor dem Unfallereignis. Eine solche liegt nach meiner Kenntnis nicht vor. Zudem kann der Unfall durch ein plötzliches Abbremsen des Vordermanns, einen Spurwechsel oder eine für mich nicht rechtzeitig erkennbare Verkehrslage mitverursacht worden sein. Ich beantrage Einsicht in die vollständige Ermittlungs- bzw. Unfallakte einschließlich etwaiger Zeugenaussagen, Lichtbilder und Unfallskizzen.`;
   } else if (strategie === "foto") {
     text += `Ein Nachweis meiner Fahrereigenschaft ist anhand des vorliegenden Bildmaterials kategorisch ausgeschlossen. Die Aufnahmen – insbesondere das Standbild der Identifikationskamera – sind von derart mangelhafter Qualität und durch äußere Einflüsse verdeckt, dass sie den rechtsstaatlichen Anforderungen an eine zweifelsfreie Fahreridentifikation nicht genügen. Da im fließenden Verkehr ausnahmslos die Fahrerhaftung gilt, rege ich die umgehende Einstellung des Verfahrens an. Bis zum Beweis des Gegenteils mache ich von meinem Schweigerecht zur Sache Gebrauch.`;
   } else if (strategie === "witterung") {

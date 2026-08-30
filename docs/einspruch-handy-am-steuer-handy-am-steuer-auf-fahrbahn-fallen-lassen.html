@@ -171,19 +171,48 @@
       <legend>4. Handy-Ansatz wählen (Ihre Verteidigung)</legend>
       <p style="font-size: 0.85em; color: #555; margin-top: 0;">Welcher Umstand traf auf die Situation zu? Unser System wählt die passende formal korrekte OLG-Argumentation für das PDF.</p>
       <select id="pStrategie" required style="font-weight: bold; margin-bottom: 10px;">
-        <option value="umlagerung">Ansatz 1: Umlagerungs-Ansatz (Handy nur ohne Nutzung aufgehoben / weggelegt)</option>
-        <option value="verwechslung">Ansatz 2: Verwechslung (Es war kein Handy, sondern Powerbank / Geldbörse / Gegenstand)</option>
-        <option value="startstop">Ansatz 3: Fehler (Fahrzeug stand, Motor war vollständig ausgeschaltet)</option>
-        <option value="foto">Ansatz 4: Foto unkenntlich (Fahrer auf dem Beweisbild nicht zweifelsfrei identifizierbar)</option>
-        <option value="notruf">Ansatz 5: Rechtfertigender Notstand (Ein dringender Notruf musste abgesetzt werden)</option>
-        <option value="seitenstreifen">Ansatz 6: Parkend / Seitenstreifen (Fahrzeug war abgestellt, Motor aus)</option>
-        <option value="allgemein">Allgemeiner Einspruch & Fristwahrung (Akteneinsicht anfordern)</option>
-        <option value="custom">Eigener Grund (Individuelle Freitext-Eingabe)</option>
-      </select>
+  <option value="allgemein_handy">Ansatz 1: Allgemeiner Einspruch & Fristwahrung (Akteneinsicht anfordern)</option>
+  <option value="umlagerung">Ansatz 2: Umlagerung (Handy nur ohne Nutzung aufgehoben / weggelegt)</option>
+  <option value="verwechslung">Ansatz 3: Verwechslung (kein Handy, sondern Powerbank / Geldbörse / Gegenstand)</option>
+  <option value="motor_aus">Ansatz 4: Motor aus (Fahrzeug stand, Motor vollständig manuell ausgeschaltet)</option>
+  <option value="seitenstreifen">Ansatz 5: Parkend / Seitenstreifen (Fahrzeug abgestellt, Motor aus)</option>
+  <option value="foto_handy">Ansatz 6: Foto unkenntlich (Fahrer auf Beweisbild nicht zweifelsfrei erkennbar)</option>
+  <option value="halterung_navi">Ansatz 7: Handy in Halterung (nur kurzer Blick auf Navi/Anzeige)</option>
+  <option value="oberschenkel">Ansatz 8: Keine Bedienhandlung nachweisbar (Handy lag nur, wurde nicht bedient)</option>
+  <option value="smartwatch">Ansatz 9: Smartwatch (nur abgelesen, nicht aufgenommen/gehalten)</option>
+  <option value="fahrrad_handy">Ansatz 10: Handy auf Fahrrad/E-Bike (Beobachtung ohne Foto/Video)</option>
+  <option value="fallen_lassen">Ansatz 11: Handy gefallen / Abwehrbewegung (keine Nutzung)</option>
+  <option value="notruf">Ansatz 12: Rechtfertigender Notstand (dringender Notruf 110/112)</option>
+  <option value="probezeit_handy">Ansatz 13: Probezeit – Aufbauseminar & Verlängerung stoppen</option>
+  <option value="fahrverbot">Ansatz 14: Fahrverbot – Verhältnismäßigkeit angreifen</option>
+  <option value="geschwindigkeit_handy">Ansatz 15: Handy + Geschwindigkeitsvorwurf kombiniert</option>
+  <option value="bahn_handy">Ansatz 16: Unklarer Kontext (Straßenbahn/Bahnübergang/Sonderbereich)</option>
+  <option value="custom">Eigener Grund (Individuelle Freitext-Eingabe)</option>
+</select>
       
       <!-- Neues Freitextfeld, per CSS ausgeblendet, per JS eingeblendet -->
       <textarea id="pCustomReason" placeholder="Bitte formulieren Sie hier Ihre eigene Begründung. Dieser Text wird exakt so in das rechtliche PDF übernommen..." style="display: none; width: 100%; min-height: 120px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit; margin-top: 10px;"></textarea>
     </fieldset>
+
+    <div class="helper-links">
+    <span>
+      <strong>Weitere Hilfen:</strong> 
+      <a href="blitzer-anhoerung.html" target="_blank" rel="noopener" class="portal-link">Tipps zur Online-Anhörung</a>
+    </span>
+    <span>
+      <a href="https://www.kba-online.de/registerauskunft/app/#/faer" target="_blank" rel="noopener">Punktestand online abfragen</a>
+    </span>
+    <span>
+      <a href="https://www.adac.de/verkehr/recht/bussgeld-punkte/bussgeldrechner/" target="_blank" rel="noopener">ADAC Bußgeldrechner</a>
+    </span>
+    <span>
+      <a href="https://www.bmv.de/SharedDocs/DE/Artikel/StV/Strassenverkehr/update-stvo-novelle.html" target="_blank" rel="noopener">Offizieller Bußgeldkatalog (BMDV)</a>
+    </span>
+  </div>
+  <div class="helper-note">
+    <strong>Tipp: Probieren Sie verschiedene Ansätze aus!</strong> Nutzen Sie das Tool und generieren Sie einfach kostenlos mehrere PDFs mit unterschiedlichen Ansätzen. Lesen Sie sich die fertigen Anschreiben in Ruhe durch und entscheiden Sie erst danach, welcher Text Ihren Fall am treffendsten widerspiegelt.
+  </div>
+</div>
 
     <div class="submit-area" style="display: flex; gap: 15px; flex-wrap: wrap;">
       <button type="submit" class="button-primary" style="flex: 1;">📄 PDF-Einspruch generieren</button>
@@ -231,12 +260,12 @@
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
     <h3>Weitere Ratgeber & Szenarien zum Thema Handy-verstoß:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <a href="einspruch-handy-am-steuer-handy-am-steuer-zu-schnell-unterwegs.html">Handy & 26 km/h: Fahrverbot stoppen</a>
-<a href="einspruch-handy-am-steuer-handyblitzer-monocam-einspruch-fahrer-nicht-erkennbar.html">Handy-Blitzer: Foto zu schlecht</a>
-<a href="einspruch-handy-am-steuer-handy-in-halterung-bedient-navi.html">Handy in Halterung: oft erlaubt</a>
+      <a href="einspruch-handy-am-steuer-handy-auf-dem-fahrrad-ebike.html">Handy auf Fahrrad: Bußgeld abwehren</a>
 <a href="einspruch-handy-am-steuer-handy-am-steuer-auf-der-bahn.html">Handy auf der Bahn: Vorwurf abwehren</a>
+<a href="einspruch-handy-am-steuer-handy-am-steuer-allgemein-einspruch.html">Handy am Steuer: 1 Punkt abwehren</a>
 <a href="einspruch-handy-am-steuer-handy-am-steuer-probezeit-a-verstoss.html">Probezeit: Handy-Verstoß abwehren</a>
 <a href="einspruch-handy-am-steuer-handy-am-steuer-start-stop-automatik-rote-ampel.html">Motor aus an Ampel: Handy erlaubt</a>
+<a href="einspruch-handy-am-steuer-smartwatch-apple-watch-am-steuer.html">Smartwatch am Steuer: Bußgeld kippen</a>
 
     </div>
   </div>
@@ -362,6 +391,13 @@ document.getElementById('pStrategie').addEventListener('change', function() {
     customArea.style.display = 'none';
     customArea.required = false;
   }
+
+  const defaultStrategie = "fallen_lassen";
+const strategieSelect = document.getElementById('pStrategie');
+if (defaultStrategie && strategieSelect.querySelector(`option[value="${defaultStrategie}"]`)) {
+  strategieSelect.value = defaultStrategie;
+  strategieSelect.dispatchEvent(new Event('change')); // zeigt ggf. das Freitextfeld korrekt an/aus
+}
 });
 
 /* ──  Textbausteine für Handy-Einspruch (Deutlich knackiger & professioneller) ── */
@@ -374,20 +410,57 @@ function getHandyText(strategie, schreibenTyp, az, kennzeichen, ort, datumTat, c
   text += `ein.\n\nZugleich beantrage ich die Gewährung vollumfänglicher Akteneinsicht gemäß § 49 OWiG. Insbesondere fordere ich die Übermittlung des Messprotokolls / der Anzeige sowie das unbeschnittene und hochauflösende Original-Beweisfoto in digitaler Ausfertigung (TIF/JPG).\n\n`;
   text += `Zur Begründung des Einspruchs führe ich aus:\n\n`;
 
-  if (strategie === "umlagerung") {
-    text += `Eine tatbestandliche Nutzung eines elektronischen Gerätes im Sinne des § 23 Abs. 1a StVO lag zu keinem Zeitpunkt vor. Das Gerät wurde lediglich kurzzeitig aufgenommen, um es im Fahrzeug umzulagern (Vermeidung des Herunterfallens bzw. ordnungsgemäße Ablage). Eine bestimmungsgemäße Bedienung, ein Ablesen des Displays oder eine anderweitige informationstechnische Nutzung erfolgte nachweislich nicht. Ich verweise auf die ständige obergerichtliche Rechtsprechung (u.a. OLG Stuttgart, Beschluss vom 03.01.2019, Az. 2 Rb 24 Ss 1269/18), wonach das bloße Halten ohne Nutzungsbezug nicht bußgeldbewehrt ist.`;
+  if (strategie === "allgemein_handy") {
+    text += `Der mir zur Last gelegte Verstoß gegen § 23 Abs. 1a StVO wird aus tatsächlichen und rechtlichen Gründen vollumfänglich bestritten. Die Bußgeldstelle hat weder die konkrete Bedienhandlung noch den Zustand des Fahrzeugs (stehend/fahrend, Motor an/aus) im Anhörungsbogen hinreichend dargelegt. Ohne Kenntnis der vollständigen Akte, insbesondere des Original-Beweisfotos und des Messprotokolls, ist eine sachgerechte Verteidigung nicht möglich. Eine detaillierte materielle Begründung bleibt daher nach erfolgter und geprüfter Akteneinsicht ausdrücklich vorbehalten.`;
+
+  } else if (strategie === "umlagerung") {
+    text += `Eine tatbestandliche Nutzung eines elektronischen Gerätes im Sinne des § 23 Abs. 1a StVO lag zu keinem Zeitpunkt vor. Das Gerät wurde lediglich kurzzeitig aufgenommen, um es im Fahrzeug umzulagern bzw. ordnungsgemäß abzulegen. Eine bestimmungsgemäße Bedienung, ein Ablesen des Displays oder eine anderweitige informationstechnische Nutzung erfolgte nachweislich nicht. Nach ständiger obergerichtlicher Rechtsprechung reicht das bloße Aufnehmen oder Halten ohne hinzutretendes Benutzungselement für eine Ahndung gerade nicht aus (OLG Stuttgart, Beschluss vom 03.01.2019, Az. 2 Rb 24 Ss 1269/18; ebenso OLG Celle, Beschluss vom 07.02.2019, Az. 3 Ss (OWi) 8/19, und OLG Brandenburg, Beschluss vom 18.02.2019, Az. (2 Z) 53 Ss-OWi 50/19). Diese gefestigte Linie mehrerer Oberlandesgerichte ist auf den vorliegenden Sachverhalt unmittelbar übertragbar.`;
+
   } else if (strategie === "verwechslung") {
-    text += `Der Vorwurf wird als sachlich unzutreffend vollumfänglich zurückgewiesen. Bei dem auf dem Beweisfoto vermeintlich erkannten Gegenstand handelte es sich nicht um ein Mobiltelefon oder ein anderes elektronisches Gerät nach § 23 Abs. 1a StVO, sondern um einen nicht-elektronischen Alltagsgegenstand. Aufgrund der oftmals defizitären Bildqualität liegt hier eine evidente Fehlinterpretation der Auswertungsbeamten vor. Es gilt uneingeschränkt der Grundsatz 'in dubio pro reo'. Den Nachweis der elektronischen Beschaffenheit des Gegenstandes hat vollumfänglich die Verwaltungsbehörde zu erbringen, was hier objektiv nicht gelingen wird.`;
-  } else if (strategie === "startstop") {
-    text += `Die Ahndung ist rechtswidrig. Zum vorgeworfenen Tatzeitpunkt stand das Fahrzeug verkehrsbedingt vollständig still, und der Motor war vollumfänglich abgeschaltet. Gemäß der gesetzlichen Ausnahmeregelung entfällt das Nutzungsverbot in exakt diesem Zustand. Die rechtlichen Voraussetzungen für eine Sanktionierung sind somit nicht gegeben.`;
-  } else if (strategie === "foto") {
-    text += `Ein Tatnachweis lässt sich anhand der vorliegenden Aktenlage nicht rechtskonform führen. Das Beweisfoto ist zur Identifizierung des Fahrzeugführers ungeeignet. Lichtreflexionen, Verdeckungen durch Karosserieteile oder eine mangelhafte Auflösung lassen keine zweifelsfreien anthropologischen Identifizierungsmerkmale erkennen. Da eine Halterhaftung im fließenden Verkehr in der Bundesrepublik rechtlich ausgeschlossen ist, rege ich die sofortige Einstellung des Verfahrens nach § 46 OWiG i.V.m. § 170 Abs. 2 StPO an.`;
-  } else if (strategie === "notruf") {
-    text += `Das Handeln war im vorliegenden Fall gemäß § 16 OWiG (Rechtfertigender Notstand) rechtlich geboten. Es bestand eine gegenwärtige, nicht anders abwendbare Gefahr für Leben, Leib oder Eigentum, die das umgehende Absetzen eines dringenden Notrufs zwingend erforderlich machte. Unter Berücksichtigung der strengen Güterabwägung tritt das formelle Nutzungsverbot des § 23 StVO in dieser spezifischen Notsituation zurück.`;
+    text += `Der Vorwurf wird als sachlich unzutreffend vollumfänglich zurückgewiesen. Bei dem auf dem Beweisfoto vermeintlich erkannten Gegenstand handelte es sich nicht um ein Mobiltelefon oder ein anderes elektronisches Gerät im Sinne des § 23 Abs. 1a StVO, sondern um einen nicht-elektronischen bzw. nicht tatbestandsmäßigen Alltagsgegenstand. Die obergerichtliche Rechtsprechung stellt insoweit klar, dass etwa Powerbanks oder Ladekabel mangels eigener Kommunikations-, Informations- oder Organisationsfunktion bereits denklogisch keine elektronischen Geräte im Sinne der Vorschrift darstellen. Aufgrund der oftmals defizitären Bildqualität von Übersichts- oder Distanzaufnahmen liegt hier eine naheliegende Fehlinterpretation der Auswertungsbeamten vor. Es gilt uneingeschränkt der Grundsatz „in dubio pro reo". Den vollen Nachweis der elektronischen Beschaffenheit und Zweckbestimmung des Gegenstandes hat die Verwaltungsbehörde zu erbringen, was hier nach Aktenlage nicht gelingen dürfte.`;
+
+  } else if (strategie === "motor_aus") {
+    text += `Die Ahndung ist rechtswidrig. Zum vorgeworfenen Tatzeitpunkt stand das Fahrzeug verkehrsbedingt vollständig still, und der Motor war manuell vollständig abgeschaltet. Gemäß § 23 Abs. 1a Satz 2 StVO entfällt das Nutzungsverbot in exakt diesem Zustand. Ich weise vorsorglich darauf hin, dass es sich hierbei nachweislich nicht um eine automatische Start-Stopp-Abschaltung handelte, die nach dem ausdrücklichen Wortlaut der Vorschrift gerade nicht als „Motor aus" gilt, sondern um ein bewusstes, manuelles Abstellen des Motors. Die Bußgeldstelle wird gebeten, konkret darzulegen, auf welcher tatsächlichen Grundlage der genaue Motor- und Zündungsstatus aus der Beobachtungsdistanz zweifelsfrei festgestellt worden sein soll.`;
+
   } else if (strategie === "seitenstreifen") {
-    text += `Zum vermeintlichen Tatzeitpunkt war das Fahrzeug ordnungsgemäß abgestellt (Parkposition / Seitenstreifen) und der Motor befand sich nachweislich im ausgeschalteten Zustand. Wie sich aus dem Gesetzeswortlaut des § 23 Abs. 1a Satz 2 StVO zweifelsfrei ergibt, greift das Verbot in dieser Situation nicht. Eine Ordnungswidrigkeit liegt dementsprechend tatbestandlich nicht vor.`;
+    text += `Zum vermeintlichen Tatzeitpunkt war das Fahrzeug ordnungsgemäß abgestellt (Parkposition / Seitenstreifen) und der Motor befand sich nachweislich im manuell ausgeschalteten Zustand. Wie sich aus dem Gesetzeswortlaut des § 23 Abs. 1a Satz 2 StVO ergibt, greift das Nutzungsverbot in dieser Situation nicht. Eine Ordnungswidrigkeit liegt dementsprechend bereits tatbestandlich nicht vor.`;
+
+  } else if (strategie === "foto_handy") {
+    text += `Ein Tatnachweis lässt sich anhand der vorliegenden Aktenlage nicht rechtskonform führen. Das Beweisfoto ist zur Identifizierung des Fahrzeugführers ungeeignet. Lichtreflexionen, Verdeckungen durch Karosserieteile, Schattenwurf oder eine mangelhafte Auflösung lassen keine zweifelsfreien Identifizierungsmerkmale erkennen. Da eine Halterhaftung im fließenden Verkehr in der Bundesrepublik rechtlich ausgeschlossen ist und ausschließlich Fahrerhaftung gilt, rege ich die Einstellung des Verfahrens nach § 46 Abs. 1 OWiG i.V.m. § 170 Abs. 2 StPO an, sofern eine rechtssichere Identifizierung nicht binnen angemessener Frist nachgeholt werden kann.`;
+
+  } else if (strategie === "halterung_navi") {
+    text += `Eine verbotene Nutzung im Sinne des § 23 Abs. 1a StVO liegt nicht vor. Das Gerät befand sich durchgehend in einer fest installierten Halterung und wurde zu keinem Zeitpunkt aufgenommen oder gehalten. Nach dem ausdrücklichen Wortlaut des § 23 Abs. 1a Satz 1 Nr. 2 StVO ist die Bedienung eines derart befestigten Gerätes zulässig, sofern hierfür lediglich eine kurze, den Straßen-, Verkehrs-, Sicht- und Wetterverhältnissen angepasste Blickzuwendung erforderlich ist. Der Anhörungsbogen bzw. Bescheid lässt jede Feststellung zur Dauer der behaupteten Blickzuwendung sowie zur konkreten Verkehrssituation vermissen. Ohne diese Feststellungen kann der Ausnahmetatbestand nicht widerlegt werden.`;
+
+  } else if (strategie === "oberschenkel") {
+    text += `Der Vorwurf wird bestritten. Maßgeblich für eine Ahndung nach § 23 Abs. 1a StVO ist nicht die bloße Position eines Gegenstandes im Fahrzeuginnenraum, sondern das Hinzutreten einer tatsächlichen Bedienhandlung – etwa Tippen, Wischen oder ein sonstiger gezielter Interaktionsvorgang mit dem Gerät. Das Gerät lag im vorliegenden Fall lediglich ab, ohne dass eine solche Bedienhandlung stattfand oder von der Bußgeldstelle konkret beschrieben wurde. Eine reine Blickzuwendung nach unten oder das Bemerken des Gerätes reicht nach der Systematik der Vorschrift für sich genommen nicht aus. Ich fordere die Bußgeldstelle auf, im Rahmen der Akteneinsicht konkret darzulegen, welche über das bloße Ablegen hinausgehende Bedienhandlung beobachtet worden sein soll.`;
+
+  } else if (strategie === "smartwatch") {
+    text += `Ein tatbestandsmäßiger Verstoß gegen § 23 Abs. 1a StVO liegt nicht vor. Das Gesetz verlangt ausdrücklich, dass das Gerät zur Nutzung „aufgenommen oder gehalten" wird. Eine am Handgelenk getragene Smartwatch wird gerade nicht aufgenommen oder in die Hand genommen; sie verbleibt während der gesamten Fahrt in unveränderter Position am Körper. Ein kurzer Blick auf Uhrzeit oder Displayanzeige stellt keine dem Aufnehmen oder Halten vergleichbare Handlung dar. Ich weise darauf hin, dass diese Auslegung dem Wortlaut der Vorschrift entspricht; eine ausdehnende Anwendung des Verbots auf am Körper getragene Geräte ohne Aufnehmen oder Halten ist mit dem Bestimmtheitsgrundsatz nicht ohne Weiteres vereinbar und bedürfte einer eingehenden Begründung, die der Bescheid vermissen lässt.`;
+
+  } else if (strategie === "fahrrad_handy") {
+    text += `Der Vorwurf wird bestritten. Zwar gilt das Verbot des § 23 Abs. 1a StVO nach der geltenden Fassung auch für Fahrradfahrer, jedoch beruht die Feststellung erkennbar allein auf einer kurzen Sichtbeobachtung ohne Foto- oder Videodokumentation. Gerade bei derartigen Kontrollen ist die exakte Beschreibung der angeblichen Bedienhandlung unverzichtbar: Wurde tatsächlich getippt, gewischt oder gesprochen, oder lediglich ein Gegenstand kurz umgesetzt oder gesichert? Der Anhörungsbogen lässt eine solche Konkretisierung vermissen. Ohne nachvollziehbare Beschreibung der konkreten Handlung ist der Sachverhalt nicht mit der erforderlichen Sicherheit festgestellt.`;
+
+  } else if (strategie === "fallen_lassen") {
+    text += `Eine tatbestandsmäßige Nutzung im Sinne des § 23 Abs. 1a StVO wird bestritten. Das Gerät ist während der Fahrt verrutscht bzw. heruntergefallen; die beobachtete Handbewegung diente ausschließlich dem reflexartigen Sichern bzw. Auffangen des Gegenstandes, nicht dessen Bedienung. Nach der oben genannten gefestigten obergerichtlichen Rechtsprechung zur Abgrenzung von bloßem Halten/Umlagern und tatbestandsmäßiger Benutzung (u.a. OLG Stuttgart, Az. 2 Rb 24 Ss 1269/18; OLG Celle, Az. 3 Ss (OWi) 8/19) fehlt es an dem für eine Ahndung zwingend erforderlichen Benutzungselement, wenn keine gerätetechnische Bedienfunktion in Anspruch genommen wurde.`;
+
+  } else if (strategie === "notruf") {
+    text += `Das Handeln war im vorliegenden Fall gemäß § 16 OWiG (Rechtfertigender Notstand) gerechtfertigt. Es bestand eine gegenwärtige, nicht anders abwendbare Gefahr für Leben, Leib oder Eigentum, die das umgehende Absetzen eines dringenden Notrufs zwingend erforderlich machte. Unter Berücksichtigung der gebotenen Güterabwägung tritt das formelle Nutzungsverbot des § 23 Abs. 1a StVO in dieser konkreten Notsituation zurück. Zum Nachweis biete ich die Vorlage des Einzelverbindungsnachweises sowie ergänzende Angaben zum Ablauf des Notfalls an.`;
+
+  } else if (strategie === "probezeit_handy") {
+    text += `Der zugrundeliegende Vorwurf nach § 23 Abs. 1a StVO wird vollumfänglich bestritten (Begründung im Einzelnen bleibt nach Akteneinsicht vorbehalten). Ergänzend weise ich darauf hin, dass Maßnahmen nach § 2a StVG, insbesondere die Anordnung eines Aufbauseminars sowie eine Verlängerung der Probezeit, tatbestandlich einen rechtskräftig festgestellten A-Verstoß voraussetzen. Solange über den vorliegenden Einspruch nicht rechtskräftig entschieden ist, fehlt es an dieser Voraussetzung. Ich bitte, die Fahrerlaubnisbehörde erst nach rechtskräftigem Abschluss dieses Verfahrens zu unterrichten, um eine verfrühte und gegebenenfalls gegenstandslose Anordnung von Folgemaßnahmen zu vermeiden.`;
+
+  } else if (strategie === "fahrverbot") {
+    text += `Neben dem Grundvorwurf nach § 23 Abs. 1a StVO, der vollumfänglich bestritten wird, wende ich mich ausdrücklich auch gegen die verhängte Nebenfolge des Fahrverbots. Ich bitte um Prüfung und Mitteilung, auf welcher konkreten tatsächlichen Grundlage (Gefährdung, Sachbeschädigung oder einschlägige, bereits rechtskräftige Voreintragung) die Anordnung des Fahrverbots gestützt wird. Sollte sich hieraus keine tragfähige Grundlage ergeben, ist die Nebenfolge aufzuheben. Für den Fall, dass der Grundvorwurf bestehen bleiben sollte, wird um Prüfung gebeten, ob angesichts der von mir im Rahmen der Anhörung noch näher darzulegenden persönlichen und beruflichen Umstände ausnahmsweise von der in der Rechtsprechung anerkannten Möglichkeit Gebrauch gemacht werden kann, das Fahrverbot gegen eine Erhöhung der Geldbuße auszutauschen.`;
+
+  } else if (strategie === "geschwindigkeit_handy") {
+    text += `Sowohl der Vorwurf einer Geschwindigkeitsüberschreitung als auch der gesondert zu prüfende Vorwurf eines Verstoßes gegen § 23 Abs. 1a StVO werden vollumfänglich bestritten. Zum Geschwindigkeitsvorwurf beantrage ich Akteneinsicht in den vollständigen Messvorgang, insbesondere Eichschein, Lebensakte des Messgeräts und Schulungsnachweis des Messbeamten, sowie die Berücksichtigung des gerätespezifischen Toleranzabzugs. Zum Handyvorwurf verweise ich auf die fehlende Feststellung eines eigenständigen Benutzungselements im Sinne der gefestigten obergerichtlichen Rechtsprechung (vgl. OLG Stuttgart, Az. 2 Rb 24 Ss 1269/18). Beide Vorwürfe sind eigenständig nachzuweisen; Mängel bei einem der beiden Tatvorwürfe berühren die Gesamtbewertung, insbesondere eine etwaige Fahrverbotsfolge nach der sogenannten 2×26-Regelung, unmittelbar.`;
+
+  } else if (strategie === "bahn_handy") {
+    text += `Der Vorwurf wird bestritten, hilfsweise wird um Konkretisierung gebeten. Dem Bescheid lässt sich nicht mit der erforderlichen Bestimmtheit entnehmen, in welchem konkreten rechtlichen und tatsächlichen Kontext (öffentlicher Straßenraum, Bahnübergang, Betriebsgelände oder Sonderbereich) sich der vorgeworfene Sachverhalt zugetragen haben soll und welches Fahrzeug im Einzelnen betroffen war. Da die Anwendbarkeit des § 23 Abs. 1a StVO sowie eine etwaige Bedienhandlung hiervon unmittelbar abhängen, ist der Sachverhalt derzeit nicht überprüfbar. Ich bitte um Übersendung einer vollständigen und konkretisierten Sachverhaltsdarstellung sowie um Akteneinsicht in die zugrundeliegenden Feststellungen.`;
+
   } else if (strategie === "custom") {
     text += `Der Tatvorwurf wird vollumfänglich bestritten. Hierzu trage ich im Detail Folgendes vor:\n\n${customText}`;
+
   } else {
     text += `Der mir zur Last gelegte Verstoß gegen § 23 StVO wird aus tatsächlichen und rechtlichen Gründen vollumfänglich bestritten. Die Feststellungen der Messbeamten bzw. die Qualität und Auswertung des vorliegenden Bildmaterials weisen augenscheinliche Defizite auf. Eine detaillierte materielle Begründung bleibt nach erfolgter und geprüfter Akteneinsicht vorbehalten.`;
   }

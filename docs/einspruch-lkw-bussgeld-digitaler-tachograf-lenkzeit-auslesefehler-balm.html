@@ -185,13 +185,33 @@
     <fieldset>
       <legend>4. Verteidigungs-Ansätze (Ihre Taktik)</legend>
       <p style="font-size: 0.85em; color: #555; margin-top: 0;">Wählen Sie Ihren rettenden Anker. Das System formuliert den Einwand anspruchsvoll.</p>
-      <select id="pStrategie" required style="font-weight: bold;">
-        <option value="notstand">Ansatz 1: Parkplatznot / Höhere Gewalt (§ 12 VO) – Lenkzeit war unumgänglich</option>
-        <option value="waage">Ansatz 2: Mobile Waage fehlerhaft! (Boden uneben / Messgenauigkeit anzweifeln)</option>
-        <option value="abstand">Ansatz 3: Blitzer/Abstand (Fehlzuordnung LKW-Klasse / unklare Beschilderung)</option>
-        <option value="freitext">Ansatz 4: Individuelle Begründung (Freitext eingeben)</option>
-        <option value="allgemein">Ansatz 5: Allgemeiner Einspruch & Anforderung der Rohmessdaten</option>
-      </select>
+     <select id="pStrategie" required style="font-weight: bold;">
+  <optgroup label="Lenk- & Ruhezeiten / Tachograf">
+    <option value="notstand_parkplatz">Parkplatznot / Höhere Gewalt (§ 12 VO) – Lenkzeit war unumgänglich</option>
+    <option value="tachograf">Tachograf-Auslesefehler (BALM-Auswertung fehlerhaft)</option>
+  </optgroup>
+  <optgroup label="Gewicht & Ladung">
+    <option value="mobile_waage">Mobile Waage fehlerhaft (Boden uneben / Messgenauigkeit)</option>
+    <option value="ueberladung_anhaenger">Überladung mit Anhänger (Achslast falsch gewogen)</option>
+    <option value="ladungssicherung">Mangelhafte Ladungssicherung (§ 22 StVO)</option>
+  </optgroup>
+  <optgroup label="Geschwindigkeit & Abstand">
+    <option value="lkw_blitzer">LKW-Geschwindigkeitsverstoß / drohendes Fahrverbot</option>
+    <option value="berufskraftfahrer_geschwindigkeit">Geschwindigkeit – Härtefall Berufskraftfahrer (Existenzgefährdung)</option>
+    <option value="lkw_abstand">Abstandsverstoß / Blitzer (Fehlzuordnung LKW-Klasse)</option>
+    <option value="elefantenrennen">Elefantenrennen (unzulässig langer Überholvorgang)</option>
+  </optgroup>
+  <optgroup label="Sonstige Vorschriften">
+    <option value="sonntagsfahrverbot">Sonntags-/Feiertagsfahrverbot (§ 30 StVO) – Ausnahme einschlägig</option>
+    <option value="mautverstoss">Mautverstoß / OBU- oder GPS-Fehler</option>
+    <option value="probezeit_fahrverbot">Fahrverbot/Maßnahme in der Probezeit</option>
+    <option value="punkteabzug">Punkteeintrag Flensburg anfechten</option>
+  </optgroup>
+  <optgroup label="Individuell">
+    <option value="freitext">Individuelle Begründung (Freitext eingeben)</option>
+    <option value="allgemein_lkw">Allgemeiner Einspruch & Anforderung der Rohmessdaten</option>
+  </optgroup>
+</select>
       
       <div id="boxNotstand" style="display:block; margin-top:15px; padding: 10px;">
         <label style="color:#c62828; font-weight:bold; font-size: 0.9em;">Haben Sie den Grund der Weiterfahrt handschriftlich auf dem Tagesausdruck dokumentiert?</label>
@@ -206,6 +226,29 @@
         <textarea id="pFreitextInhalt" rows="5" style="width:100%; border:1px solid #ccc; border-radius:4px; padding:8px; font-family: inherit;" placeholder="Bitte schildern Sie hier detailliert Ihren Sachverhalt..."></textarea>
       </div>
     </fieldset>
+
+    <div class="helper-links">
+    <span>
+      <strong>Weitere Hilfen:</strong> 
+      <a href="blitzer-anhoerung.html" target="_blank" rel="noopener" class="portal-link">Tipps zur Online-Anhörung</a>
+    </span>
+    <span>
+      <a href="https://www.kba-online.de/registerauskunft/app/#/faer" target="_blank" rel="noopener">Punktestand online abfragen</a>
+    </span>
+    <span>
+      <a href="https://www.adac.de/verkehr/recht/bussgeld-punkte/bussgeldrechner/" target="_blank" rel="noopener">ADAC Bußgeldrechner</a>
+    </span>
+    <span>
+<a href="https://www.balm.bund.de/" target="_blank" rel="noopener">Bundesamt für Logistik & Mobilität (BALM)</a>
+    </span>
+    <span>
+      <a href="https://www.bmv.de/SharedDocs/DE/Artikel/StV/Strassenverkehr/update-stvo-novelle.html" target="_blank" rel="noopener">Offizieller Bußgeldkatalog (BMDV)</a>
+    </span>
+  </div>
+  <div class="helper-note">
+    <strong>Tipp: Probieren Sie verschiedene Ansätze aus!</strong> Nutzen Sie das Tool und generieren Sie einfach kostenlos mehrere PDFs mit unterschiedlichen Ansätzen. Lesen Sie sich die fertigen Anschreiben in Ruhe durch und entscheiden Sie erst danach, welcher Text Ihren Fall am treffendsten widerspiegelt.
+  </div>
+</div>
 
     <div class="submit-area" style="display: flex; gap: 15px; flex-wrap: wrap;">
       <button type="submit" class="button-primary" style="flex: 1;">PDF-Einspruch generieren (Post)</button>
@@ -235,12 +278,12 @@
 <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
   <h3>Weitere LKW-Szenarien & Transportrecht-Ratgeber:</h3>
   <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-    <a href="einspruch-lkw-bussgeld-lkw-ladungssicherung-mangelhaft-einspruch.html">Ladungssicherung LKW? 1 Punkt abwehren</a>
-<a href="einspruch-lkw-bussgeld-lkw-fahrverbot-probezeit-anfechten.html">Probezeit Fahrverbot? kostenlos Muster</a>
+    <a href="einspruch-lkw-bussgeld-lkw-bussgeld-allgemein-einspruch.html">LKW-Bußgeld: kostenlos Muster Einspruch</a>
+<a href="einspruch-lkw-bussgeld-lkw-abstandsmessung-50-meter-regel-autobahn-einspruch.html">50 Meter Abstand LKW? 1 Punkt abwehren</a>
+<a href="einspruch-lkw-bussgeld-lenkzeit-ueberschreitung-parkplatznot-par-12-vo-einspruch.html">Lenkzeit überschritten? Einspruch Muster</a>
+<a href="einspruch-lkw-bussgeld-lkw-punkteabzug-anfechten.html">1 Punkt LKW? kostenlos Muster Einspruch</a>
 <a href="einspruch-lkw-bussgeld-lkw-geschwindigkeitsueberschreitung-berufskraftfahrer.html">Berufskraftfahrer 26 km/h Fahrverbot stoppen</a>
-<a href="einspruch-lkw-bussgeld-elefantenrennen-lkw-ueberholen-autobahn.html">Elefantenrennen? 1 Punkt Einspruch Muster</a>
-<a href="einspruch-lkw-bussgeld-lkw-ueberladung-mobile-waage-messfehler-anfechten.html">LKW überladen? Messfehler kostenlos nutzen</a>
-<a href="einspruch-lkw-bussgeld-lkw-geschwindigkeitsueberschreitung-blitzer.html">LKW-Blitzer 26 km/h Fahrverbot stoppen</a>
+<a href="einspruch-lkw-bussgeld-lkw-fahrverbot-probezeit-anfechten.html">Probezeit Fahrverbot? kostenlos Muster</a>
 
   </div>
 </div>
@@ -364,8 +407,8 @@ Mit Fix-My-Ticket in wenigen Schritten das passende Einspruchsschreiben für Bu�
 document.getElementById('pStrategie').addEventListener('change', function() {
   const boxNotstand = document.getElementById('boxNotstand');
   const boxFreitext = document.getElementById('boxFreitext');
-  
-  if (this.value === 'notstand') {
+
+  if (this.value === 'notstand_parkplatz') {
     boxNotstand.style.display = 'block';
     boxFreitext.style.display = 'none';
   } else if (this.value === 'freitext') {
@@ -382,6 +425,18 @@ document.getElementById('pVorwurf').addEventListener('change', function() {
   box.style.display = this.value === 'Sonstiges' ? 'block' : 'none';
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  var vorgabe = "tachograf"; 
+  var select = document.getElementById('pStrategie');
+  if (select && vorgabe && vorgabe.indexOf('{{') === -1) {
+    var exists = Array.from(select.options).some(o => o.value === vorgabe);
+    if (exists) {
+      select.value = vorgabe;
+      if (typeof toggleFreitext === 'function') toggleFreitext();
+    }
+  }
+});
+
 /* ──  Textbausteine für LKW-Einspruch (Knackig & Anspruchsvoll) ── */
 function getLkwText(strategie, schreibenTyp, az, kennzeichen, ort, datumTat, vorwurf, tachoDoku, freitext, sonstigerVerstoss) {
   let text = `FORM- UND FRISTGERECHTER EINSPRUCH\n`;
@@ -396,22 +451,57 @@ text += `gegen den oben bezeichneten Bescheid wegen des Vorwurfs (${vorwurfText}
   text += `ein. Zugleich beantrage ich die vollumfängliche Einsichtnahme in die behördliche Ermittlungsakte gemäß § 49 OWiG, da die derzeitige Beweislage offenkundig unzureichend ist.\n\n`;
   text += `Zur Begründung meines Einspruchs mache ich Folgendes geltend:\n\n`;
 
-  if (strategie === "notstand") {
-    text += `Ich berufe mich hiermit ausdrücklich auf den rechtfertigenden Notstand im Sinne des Art. 12 der Verordnung (EG) Nr. 561/2006. Die mir zur Last gelegte Überschreitung der Lenkzeiten bzw. Verkürzung der Ruhezeiten war aus zwingenden Gründen der Verkehrssicherheit und zum Schutz von Fahrzeug und Ladung absolut unumgänglich. Zum fraglichen Zeitpunkt herrschte auf der Strecke eine dokumentierte, massive Parkplatznot (sämtliche angefahrenen Rastanlagen waren nachweislich restlos belegt) bzw. zwang mich höhere Gewalt (unvorhersehbarer Stau / extreme Witterung) zur Weiterfahrt. Ein verkehrswidriges und lebensgefährliches Abstellen des schweren Nutzfahrzeugs auf dem Seitenstreifen der Autobahn schied aus sachlogischen Gründen aus.\n\n`;
-    if(tachoDoku === "ja") {
-       text += `Der gesetzlich normierte, handschriftliche Vermerk auf dem Ausdruck des digitalen Kontrollgeräts wurde von mir pflichtgemäß und unverzüglich nach Erreichen des erstmöglichen, sicheren Halteplatzes vorgenommen. Die entsprechende Kopie ist diesem Einspruch als zwingendes Beweismittel beigefügt. Ein vorwerfbares Fehlverhalten liegt somit zweifelsfrei nicht vor. Ich fordere die umgehende Einstellung des Verfahrens.`;
-    } else {
-       text += `Der erforderliche handschriftliche Vermerk auf dem Kontrollgerät wird hiermit nachgereicht bzw. glaubhaft gemacht. Die Abweichung war das mildeste Mittel, um eine konkrete Gefährdung des Fließverkehrs abzuwenden. Eine Ahndung ist rechtsfehlerhaft, weshalb ich die Einstellung des Verfahrens nachdrücklich anrege.`;
-    }
-  } else if (strategie === "waage") {
-    text += `Das von Ihnen zugrunde gelegte Messergebnis zur Feststellung der behaupteten Überladung bestreite ich hiermit vollumfänglich und mit Nachdruck. Die Wägung erfolgte offenkundig mittels einer mobilen Radlastwaage bzw. Wiegematte. Derartige mobile Systeme sind hochgradig fehleranfällig und setzen zwingend einen planparallelen, nivellierten und maximal tragfähigen Untergrund voraus, um gravierende Fehlmessungen durch Achslastverschiebungen zu verhindern. Ich rüge ausdrücklich, dass die Beschaffenheit des Bodens am Kontrollort diese strikten physikalischen und PTB-Anforderungen erfüllte. Ferner rüge ich den fehlenden Nachweis, dass der gesetzlich vorgeschriebene, deutlich erhöhte Toleranzabzug für dynamische/mobile Wägungen rechtsfehlerfrei zu meinen Gunsten in Abzug gebracht wurde.`;
-  } else if (strategie === "abstand") {
-    text += `Den Vorwurf weise ich vollumfänglich zurück. Die örtliche Beschilderung war unzureichend, verdeckt oder widersprüchlich, weshalb ein Beweisverwertungsverbot im Raum steht. Zudem kommt es bei den verwendeten automatisierten Messverfahren häufig zu eklatanten Fehlzuordnungen der Fahrzeugklassen (LKW vs. PKW). Ich rüge die ordnungsgemäße Justierung der Messanlage am Tattag und beantrage die Offenlegung der gesamten Lebensakte des Messgeräts sowie das vollständige Messprotokoll zur Prüfung durch meinen Rechtsbeistand.`;
-  } else if (strategie === "freitext") {
-    text += freitext;
+  if (strategie === "notstand_parkplatz") {
+  text += `Ich berufe mich hiermit ausdrücklich auf den rechtfertigenden Notstand im Sinne des Art. 12 der Verordnung (EG) Nr. 561/2006. Die mir zur Last gelegte Überschreitung der Lenkzeiten bzw. Verkürzung der Ruhezeiten war aus zwingenden Gründen der Verkehrssicherheit und zum Schutz von Fahrzeug und Ladung absolut unumgänglich. Zum fraglichen Zeitpunkt herrschte auf der Strecke eine dokumentierte, massive Parkplatznot (sämtliche angefahrenen Rastanlagen waren nachweislich restlos belegt) bzw. zwang mich höhere Gewalt zur Weiterfahrt. Ein verkehrswidriges und lebensgefährliches Abstellen des schweren Nutzfahrzeugs auf dem Seitenstreifen der Autobahn schied aus sachlogischen Gründen aus.\n\n`;
+  if (tachoDoku === "ja") {
+    text += `Der gesetzlich normierte, handschriftliche Vermerk auf dem Ausdruck des digitalen Kontrollgeräts wurde von mir pflichtgemäß und unverzüglich nach Erreichen des erstmöglichen, sicheren Halteplatzes vorgenommen. Die entsprechende Kopie ist diesem Einspruch als zwingendes Beweismittel beigefügt. Ein vorwerfbares Fehlverhalten liegt somit zweifelsfrei nicht vor. Ich fordere die umgehende Einstellung des Verfahrens.`;
   } else {
-    text += `Den erhobenen Vorwurf weise ich in Gänze zurück. Die Beweisführung der Behörde ist offenkundig lückenhaft und materiell-rechtlich angreifbar. Die Auswertung der elektronischen Fahrtenschreiberdaten bzw. die angewandte Messmethodik weist erhebliche Interpretations- und Systemfehler auf. Zur Wahrung meiner Rechte fordere ich Sie hiermit auf, mir sämtliche Rohmessdaten, das Eichprotokoll, etwaige Aufbauskizzen sowie die Schulungsnachweise der Messbeamten zur gutachterlichen Überprüfung zur Verfügung zu stellen.`;
+    text += `Der erforderliche handschriftliche Vermerk auf dem Kontrollgerät wird hiermit nachgereicht bzw. glaubhaft gemacht. Die Abweichung war das mildeste Mittel, um eine konkrete Gefährdung des Fließverkehrs abzuwenden. Eine Ahndung ist rechtsfehlerhaft, weshalb ich die Einstellung des Verfahrens nachdrücklich anrege.`;
   }
+
+} else if (strategie === "mobile_waage") {
+  text += `Das von Ihnen zugrunde gelegte Messergebnis zur Feststellung der behaupteten Überladung bestreite ich hiermit vollumfänglich und mit Nachdruck. Die Wägung erfolgte offenkundig mittels einer mobilen Radlastwaage bzw. Wiegematte. Derartige mobile Systeme sind hochgradig fehleranfällig und setzen zwingend einen planparallelen, nivellierten und maximal tragfähigen Untergrund voraus, um gravierende Fehlmessungen durch Achslastverschiebungen zu verhindern. Ich rüge ausdrücklich, dass die Beschaffenheit des Bodens am Kontrollort diese strikten physikalischen und PTB-Anforderungen erfüllte. Ferner rüge ich den fehlenden Nachweis, dass der gesetzlich vorgeschriebene, deutlich erhöhte Toleranzabzug für dynamische/mobile Wägungen rechtsfehlerfrei zu meinen Gunsten in Abzug gebracht wurde.`;
+
+} else if (strategie === "lkw_abstand") {
+  text += `Den Vorwurf weise ich vollumfänglich zurück. Die örtliche Beschilderung war unzureichend, verdeckt oder widersprüchlich, weshalb ein Beweisverwertungsverbot im Raum steht. Zudem kommt es bei den verwendeten automatisierten Messverfahren häufig zu eklatanten Fehlzuordnungen der Fahrzeugklassen (LKW vs. PKW). Ich rüge die ordnungsgemäße Justierung der Messanlage am Tattag und beantrage die Offenlegung der gesamten Lebensakte des Messgeräts sowie das vollständige Messprotokoll zur Prüfung durch meinen Rechtsbeistand.`;
+
+} else if (strategie === "tachograf") {
+  text += `Den Vorwurf, wonach aus der Auswertung der digitalen Fahrerkarte bzw. des Massenspeichers ein Verstoß gegen die Lenk- und Ruhezeiten hervorgehe, weise ich ausdrücklich zurück. Der Bescheid stützt sich erkennbar lediglich auf den automatisiert erzeugten Auswertungsausdruck der Behörde, nicht jedoch auf eine Prüfung der digitalen Rohdaten. Erfahrungsgemäß kommt es bei der automatisierten Zuordnung von Tätigkeiten (Lenkzeit, Bereitschaftszeit, „Out of Scope", sonstige Arbeitszeit) regelmäßig zu Fehlinterpretationen, etwa durch manuelle Nachträge, UTC-Zeitabweichungen, Kartenwechsel oder unvollständige Downloads. Ich beantrage die Vorlage der vollständigen Rohdaten der Fahrerkarte und des Massenspeichers im Originalformat (.DDD) sowie des vollständigen Ausleseprotokolls einschließlich der zugrunde gelegten Berechnungsmethodik. Ohne Offenlegung dieser Datengrundlage ist der Vorwurf nicht nachprüfbar.`;
+
+} else if (strategie === "elefantenrennen") {
+  text += `Den Vorwurf eines unzulässig lange andauernden Überholvorgangs (sog. „Elefantenrennen") weise ich zurück. Für eine Ahndung ist neben einem wesentlich höheren Geschwindigkeitsüberschuss des überholenden Fahrzeugs eine unangemessen lange Überholdauer erforderlich; in der Praxis wird hierfür regelmäßig ein Erfahrungswert von rund 45 Sekunden herangezogen. Die Einschätzung der Kontrollbeamten bzw. Zeugen beruht ersichtlich auf einer bloßen Schätzung der Geschwindigkeitsdifferenz und Überholdauer, ohne dass eine geeichte Messung oder eine belastbare Zeit-Weg-Dokumentation (z. B. Videomessung) vorliegt. Auch Verkehrsdichte, Streckengefälle, ein eingebauter Tempomat/Geschwindigkeitsbegrenzer sowie das Verhalten des überholten Fahrzeugs wurden nicht berücksichtigt. Ich beantrage die Vorlage der vollständigen Videosequenz sowie der konkreten Berechnungsgrundlage für die angenommene Überholdauer und den Geschwindigkeitsüberschuss.`;
+
+} else if (strategie === "lkw_blitzer") {
+  text += `Die vorgeworfene Geschwindigkeitsüberschreitung bestreite ich der Höhe nach. Ich rüge, dass bei der Auswertung der Messung nicht der für die konkrete Messmethode vorgesehene Toleranzabzug (im Regelfall 3 km/h unterhalb von 100 km/h, darüber 3 % des Messwerts) zu meinen Gunsten berücksichtigt wurde. Ferner rüge ich die korrekte Fahrzeugklassifizierung: Gerade bei LKW, LKW-Anhänger-Kombinationen oder Sonderfahrzeugen kommt es bei automatisierten Messanlagen erfahrungsgemäß zu Fehlzuordnungen zwischen PKW- und LKW-Geschwindigkeitsprofil. Ich beantrage die Vorlage des vollständigen Messprotokolls, des gültigen Eichscheins, des Schulungsnachweises der Messbeamten sowie des unbearbeiteten Rohmessfotos zur Überprüfung von Fahrzeugklasse und Fotolinie.`;
+
+} else if (strategie === "sonntagsfahrverbot") {
+  text += `Den Vorwurf eines Verstoßes gegen das Sonn- und Feiertagsfahrverbot nach § 30 Abs. 3 StVO weise ich zurück. Die durchgeführte Fahrt unterfiel einer der gesetzlich vorgesehenen Ausnahmen, einer privilegierten Transportform oder einer entsprechenden Ausnahmegenehmigung. Ich rüge, dass Ladung, Fahrtzweck und die einschlägigen Frachtpapiere im Rahmen der Kontrolle nicht vollständig erfasst bzw. gewürdigt wurden. Zum Beleg reiche ich die entsprechenden Unterlagen nach und beantrage, diese bei der Entscheidung zu berücksichtigen.`;
+
+} else if (strategie === "mautverstoss") {
+  text += `Den Vorwurf eines Mautverstoßes nach dem Bundesfernstraßenmautgesetz (BFStrMG) weise ich zurück, soweit mir ein vorsätzliches oder auch nur fahrlässiges Verhalten unterstellt wird. Bei der eingesetzten On-Board-Unit (OBU) bzw. der satellitengestützten Streckenerfassung kommt es erfahrungsgemäß zu technischen Störungen (GPS-Signalabriss, fehlerhafte Achszahlerfassung, Erfassungsfehler an Kontrollbrücken), die für den Fahrer im laufenden Betrieb nicht ohne Weiteres erkennbar sind. Ich beantrage die Vorlage der vollständigen Telematik- und OBU-Statusdaten für den fraglichen Streckenabschnitt sowie eines etwaigen Werkstatt- bzw. Fehlerberichts. Ohne Nachweis eines mir zurechenbaren, schuldhaften Verstoßes ist der Bescheid nicht haltbar; hilfsweise ist zumindest von bloßer Fahrlässigkeit statt Vorsatz auszugehen.`;
+
+} else if (strategie === "ladungssicherung") {
+  text += `Den Vorwurf einer mangelhaften Ladungssicherung nach § 22 StVO weise ich zurück. Die pauschale Einschätzung der Kontrollbeamten ersetzt keine belastbare technische Bewertung. Maßgeblich für eine ordnungsgemäße Sicherung sind Reibbeiwert zwischen Ladung und Ladefläche, Zurrwinkel und Vorspannkraft der Zurrmittel, Formschluss der Ladung sowie das konkrete Ladebild. Ich rüge, dass in der Akte weder eine nachvollziehbare Berechnung nach den einschlägigen technischen Regelwerken (z. B. VDI 2700) noch ein Sachverständigengutachten vorliegt. Ich beantrage die Vorlage der am Kontrollort gefertigten Lichtbilder in voller Auflösung sowie eine Konkretisierung, welche Sicherungsmittel als unzureichend beanstandet wurden.`;
+
+} else if (strategie === "probezeit_fahrverbot") {
+  text += `Den zugrunde liegenden Verkehrsverstoß bestreite ich bereits dem Grunde nach. Da die probezeitrechtlichen Folgen (Einstufung als A- oder B-Verstoß, Verlängerung der Probezeit auf vier Jahre, Anordnung eines Aufbauseminars nach § 2a StVG) untrennbar an die Bestandskraft des zugrunde liegenden Bußgeld- bzw. Owi-Verfahrens anknüpfen, ist eine Anordnung dieser Maßnahmen jedenfalls verfrüht, solange der Grundverstoß nicht rechtskräftig feststeht. Ich beantrage, das Verfahren zu den probezeitrechtlichen Folgemaßnahmen bis zur rechtskräftigen Klärung des Grundverstoßes auszusetzen bzw. von einer Anordnung zunächst abzusehen.`;
+
+} else if (strategie === "punkteabzug") {
+  text += `Die angekündigte bzw. vorgenommene Eintragung von Punkten im Fahreignungsregister weise ich zurück, soweit diese auf dem hier angefochtenen Bußgeldbescheid beruht. Nach dem Fahreignungs-Bewertungssystem (§ 4 StVG) ist die Punktevergabe keine eigenständige Sanktion, sondern setzt einen rechtskräftigen, tragfähig festgestellten Verkehrsverstoß voraus. Da ich den zugrunde liegenden Vorwurf aus den bereits genannten Gründen angreife, ist die Rechtskraft des Bescheids und damit die Grundlage für eine Punkteeintragung derzeit nicht gegeben. Ich beantrage, von einer Übermittlung an das Kraftfahrt-Bundesamt bis zum rechtskräftigen Abschluss dieses Verfahrens abzusehen.`;
+
+} else if (strategie === "berufskraftfahrer_geschwindigkeit") {
+  text += `Die vorgeworfene Geschwindigkeitsüberschreitung bestreite ich sowohl dem Grunde als auch der Höhe nach. Ich rüge den ordnungsgemäßen Toleranzabzug (3 km/h unterhalb, 3 % oberhalb von 100 km/h) sowie die gültige Eichung und Kalibrierung des Messgeräts und beantrage die Vorlage von Messprotokoll, Eichschein und Schulungsnachweis der Messbeamten. Für den Fall, dass die Behörde an einem Fahrverbot festhalten sollte, mache ich hilfsweise geltend, dass mich der Verlust der Fahrerlaubnis als hauptberuflichen Kraftfahrer in meiner wirtschaftlichen Existenz konkret und unmittelbar gefährdet, da mein Arbeitsplatz zwingend eine gültige Fahrerlaubnis voraussetzt und keine gleichwertige Einsatzmöglichkeit ohne Fahrtätigkeit besteht. Zum Nachweis reiche ich eine Arbeitgeberbescheinigung nach und beantrage, von der Verhängung des Fahrverbots abzusehen bzw. dieses in eine angemessen erhöhte Geldbuße umzuwandeln.`;
+
+} else if (strategie === "ueberladung_anhaenger") {
+  text += `Den Vorwurf der Überladung bestreite ich, soweit dieser auf der Verwiegung der Fahrzeugkombination aus Zugfahrzeug und Anhänger beruht. Bei mehrgliedrigen Fahrzeugkombinationen ist die getrennte Erfassung von Gesamtgewicht und Einzelachslasten (einschließlich Stützlast) zwingend erforderlich; werden Zugfahrzeug und Anhänger nicht nacheinander korrekt und auf ebenem, tragfähigem Untergrund verwogen, kommt es zu Lastverschiebungen und damit zu verfälschten Messergebnissen. Ich rüge, dass weder die Reihenfolge der Verwiegung noch eine etwaige Umlagerung der Ladung während des Wiegevorgangs dokumentiert wurde. Ich beantrage die Vorlage des vollständigen Wiegeprotokolls je Achse/Fahrzeugteil, des Eichscheins der verwendeten Waage sowie der Ladepapiere zur Überprüfung der angegebenen Lastverteilung.`;
+
+} else if (strategie === "freitext") {
+  text += freitext;
+
+} else {
+  // allgemein_lkw
+  text += `Den erhobenen Vorwurf weise ich in Gänze zurück. Die Beweisführung der Behörde ist offenkundig lückenhaft und materiell-rechtlich angreifbar. Die Auswertung der elektronischen Fahrtenschreiberdaten bzw. die angewandte Messmethodik weist erhebliche Interpretations- und Systemfehler auf. Zur Wahrung meiner Rechte fordere ich Sie hiermit auf, mir sämtliche Rohmessdaten, das Eichprotokoll, etwaige Aufbauskizzen sowie die Schulungsnachweise der Messbeamten zur gutachterlichen Überprüfung zur Verfügung zu stellen.`;
+}
 
   text += `\n\nIch erwarte den Eingang Ihrer schriftlichen Eingangsbestätigung sowie der Entscheidung über die Akteneinsicht.`;
   return text;

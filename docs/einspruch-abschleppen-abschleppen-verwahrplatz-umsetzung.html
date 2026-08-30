@@ -143,19 +143,60 @@
       <legend>4. Ihre Verteidigungsstrategie</legend>
       <p>Welcher Hebel trifft auf Ihren Fall zu?</p>
       <select id="pStrategie" required style="font-weight: bold;">
-        <option value="3tage">Ansatz 1: Mobile Schilder (3-Tage-Frist wurde nicht eingehalten - BVerwG)</option>
-        <option value="unverhaeltnis">Ansatz 2: Unverhältnismäßigkeit (Keine Behinderung, Knöllchen hätte gereicht)</option>
-        <option value="leerfahrt">Ansatz 3: Leerfahrt / Abbruch (Ich war vor Abfahrt des Abschleppers am Auto)</option>
-        <option value="wucher">Ansatz 4: Privates Abschleppen (Kosten sind völlig überzogen / Wucher - BGH)</option>
-        <option value="schilder">Ansatz 5: Beschilderung mangelhaft (Verdeckt, zugewachsen, widersprüchlich)</option>
-        <option value="freitext">Ansatz 6: Individuelle Begründung (Freitext eingeben)</option>
-      </select>
+  
+  <optgroup label="1. Behördliches Abschleppen (Ordnungsamt / Polizei)">
+    <option value="3tage">Mobiles Halteverbot (72-Stunden-Vorlaufzeit nicht eingehalten)</option>
+    <option value="parkticket_unverhaeltnis">Einfacher Parkverstoß / Parkschein abgelaufen (Abschleppen unverhältnismäßig)</option>
+    <option value="sichtbarkeit_schild">Beschilderung verdeckt, verdreht oder unleserlich (Sichtbarkeitsgrundsatz)</option>
+    <option value="schadensminderung">Nahbereichsumsetzung verpasst (Verwahrplatz war unhaltbar teuer/unnötig)</option>
+    <option value="gefaehrdung">Angebliche Gefährdung (Keine konkrete Behinderung nachweisbar)</option>
+    <option value="unterlassung">Unbestimmter Bescheid (Rechtsgrundlage / Vorwurf unklar begründet)</option>
+    
+    <!-- Differenzierte Sonderfälle Öffentlicher Raum -->
+    <option value="ladesaeule_keine_behinderung">E-Ladesäule: Fahrzeug lud / Keine konkrete Behinderung anderer Nutzer</option>
+    <option value="ladesaeule_beschilderung">E-Ladesäule: Beschilderung oder Zusatzzeichen unklar / fehlerhaft</option>
+    <option value="behindertenparkplatz_ausweis">Behindertenparkplatz: Ausweis/Genehmigung lag gut sichtbar aus</option>
+    <option value="behindertenparkplatz_beschilderung">Behindertenparkplatz: Bodenmarkierung/Schild nicht ordnungsgemäß erkennbar</option>
+  </optgroup>
+
+  <optgroup label="2. Privates Abschleppen (Supermarkt / Privatgrundstück)">
+    <option value="wucher">Supermarkt-Parkplatz: Überzogene Zusatzgebühren / Inkassokosten (BGH-Wucher)</option>
+    <option value="privatgrund">Privatgrundstück: Forderung übersteigt ortsübliche Abschleppkosten</option>
+    <option value="halter_nicht_fahrer">Privatgrundstück: Halter war nicht der Fahrer (Keine Halterhaftung)</option>
+    <option value="herausgabe_verweigert">Herausgabe verweigert / Nötigung zur Barzahlung (Zahlung unter Vorbehalt)</option>
+  </optgroup>
+
+  <optgroup label="3. Carsharing, Mietwagen & Abbruch">
+    <option value="leerfahrt">Abgebrochener Vorgang / Leerfahrt (Ankunft vor dem Abtransport)</option>
+    <option value="carsharing_gebuehren">Carsharing / Mietwagen: Unzulässige AGB-Bearbeitungsgebühr des Anbieters</option>
+  </optgroup>
+
+  <optgroup label="4. Individualfall">
+    <option value="freitext">Eigener Freitext / Individuelle Begründung</option>
+  </optgroup>
+
+</select>
 
       <div id="boxFreitext" style="display:none; margin-top:15px; padding: 10px;">
         <label>Ihre eigene Begründung:</label>
         <textarea id="pFreitextInhalt" rows="5" style="width:100%; box-sizing: border-box; border:1px solid #ccc; border-radius:4px; padding:8px; font-family: inherit;" placeholder="Schildern Sie hier, warum das Abschleppen unberechtigt war..."></textarea>
       </div>
     </fieldset>
+
+    <div class="helper-links">
+    <span>
+      <strong>Weitere Hilfen:</strong> 
+      <a href="verwahrstelle.html" target="_blank" rel="noopener" class="portal-link">Tipps Abholung & Verwahrstelle</a>
+    </span>
+    <span>
+      <a href="abschlepp-kosten.html" target="_blank" rel="noopener">Tipps zu Abschlepp-Kosten</a>
+    </span>
+
+  </div>
+  <div class="helper-note">
+    <strong>Tipp: Probieren Sie verschiedene Ansätze aus!</strong> Nutzen Sie das Tool und generieren Sie einfach kostenlos mehrere PDFs mit unterschiedlichen Ansätzen. Lesen Sie sich die fertigen Anschreiben in Ruhe durch und entscheiden Sie erst danach, welcher Text Ihren Fall am treffendsten widerspiegelt.
+  </div>
+</div>
 
     <div class="submit-area" style="display: flex; gap: 15px; flex-wrap: wrap;">
       <button type="submit" class="button-primary" style="flex: 1; background: #b72d2d;">📄 PDF generieren (Post)</button>
@@ -232,12 +273,12 @@
   <div class="crosslink-box" style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 40px 0;">
    <h3>Weitere Szenarien & Ratgeber:</h3>
     <div class="seo-link-cloud" style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <a href="einspruch-abschleppen-e-auto-ladesaeule-abgeschleppt.html">Ladesäule: Abschleppkosten abwehren</a>
-<a href="einspruch-abschleppen-behindertenparkplatz-abgeschleppt-einspruch.html">Behindertenparkplatz: Kosten anfechten</a>
-<a href="einspruch-abschleppen-halteverbot-schild-verdeckt-abgeschleppt.html">Verdecktes Halteverbotsschild abwehren</a>
-<a href="einspruch-abschleppen-parkticket-abgelaufen-abgeschleppt-unverhaeltnismaessig.html">Parkticket abgelaufen? Kosten abwehren</a>
-<a href="einspruch-abschleppen-abschleppen-parkverbot-auf-privatgrund.html">Privatgrund-Abschleppen: Kosten senken</a>
+      <a href="einspruch-abschleppen-abschleppen-leerfahrt-abbruch-kosten.html">Abschlepper da? Leerfahrt-Kosten kürzen</a>
 <a href="einspruch-abschleppen-abschleppen-wegen-unterlassung.html">Unterlassung als Grund? Bescheid kippen</a>
+<a href="einspruch-abschleppen-halteverbot-schild-verdeckt-abgeschleppt.html">Verdecktes Halteverbotsschild abwehren</a>
+<a href="einspruch-abschleppen-abschleppen-allgemein-einspruch.html">Abschleppkosten anfechten: Muster gratis</a>
+<a href="einspruch-abschleppen-privatparkplatz-supermarkt-abschleppen-wucher.html">Supermarkt-Abschleppen: Wucher abwehren</a>
+<a href="einspruch-abschleppen-behindertenparkplatz-abgeschleppt-einspruch.html">Behindertenparkplatz: Kosten anfechten</a>
 
     </div>
   </div>
@@ -342,26 +383,110 @@ document.getElementById('pStrategie').addEventListener('change', function() {
 
 /* ── Knallharte Text-Generierung basierend auf Polizei- & Zivilrecht ── */
 function getWiderspruchText(strategie, kennzeichen, datum, ort, freitext) {
-  let text = `FORM- UND FRISTGERECHTER WIDERSPRUCH GEGEN KOSTENBESCHEID / RECHNUNG\n\n`;
-  text += `Hiermit lege ich fristgerecht Widerspruch gegen Ihren Kostenbescheid bzw. Ihre Zahlungsaufforderung bezüglich des Abschleppvorgangs für das Fahrzeug mit dem Kennzeichen ${kennzeichen} vom ${datum} am Standort ${ort} ein.\n\n`;
-  text += `Die Zahlung der geforderten Summe erfolgte, sofern das Fahrzeug bereits ausgelöst wurde, ausdrücklich nur "unter Vorbehalt der rechtlichen Überprüfung". Ich weise die Kostenforderung aus folgenden Gründen vollumfänglich zurück:\n\n`;
+  let text = `FORM- UND FRISTGERECHTER WIDERSPRUCH / RECHTSEINWAND\n\n`;
+  text += `Sehr geehrte Damen und Herren,\n\n`;
+  text += `hiermit lege ich fristgerecht Widerspruch bzw. Einwand gegen den Kostenbescheid / die Zahlungsaufforderung bezüglich des Abschleppvorgangs für das Fahrzeug mit dem Kennzeichen ${kennzeichen} vom ${datum} am Standort ${ort} ein.\n\n`;
+  text += `Soweit eine Zahlung bereits erfolgt ist, geschah dies ausdrücklich ohne Anerkenntnis einer Rechtspflicht und ausschließlich unter Vorbehalt der rechtlichen Überprüfung zur Abwendung der Einbehaltung des Fahrzeugs.\n\n`;
 
-  if (strategie === "3tage") {
-    text += `Begründung:\nDas Fahrzeug wurde aus einem Bereich entfernt, in dem nachträglich mobile Halteverbotsschilder (z.B. Baustelle/Umzug) aufgestellt wurden. Zum Zeitpunkt des Abstellens war das Parken legal. Gemäß der ständigen Rechtsprechung des Bundesverwaltungsgerichts (vgl. u.a. BVerwG 3 C 22.16) ist eine Vorlaufzeit (Aufstellfrist) von mindestens drei vollen Tagen (72 Stunden) zwingend erforderlich, bevor eine kostenpflichtige Abschleppmaßnahme verhältnismäßig ist. Diese Frist wurde nicht eingehalten. Ein Kostenerstattungsanspruch scheidet somit aus.`;
-  } else if (strategie === "unverhaeltnis") {
-    text += `Begründung:\nDie Maßnahme des Abschleppens verletzte massiv den polizei- und ordnungsrechtlichen Grundsatz der Verhältnismäßigkeit. Das Fahrzeug begründete zu keinem Zeitpunkt eine konkrete Gefahrenlage (z.B. Blockade von Feuerwehrzufahrten, Behinderung des Fließverkehrs oder des ÖPNV). Ein einfaches Verwarngeld (Knöllchen) als milderes Mittel wäre zur Beseitigung der (formellen) Störung völlig ausreichend gewesen. Der Kostenbescheid ist folglich rechtswidrig.`;
-  } else if (strategie === "leerfahrt") {
-    text += `Begründung:\nEs handelt sich im vorliegenden Fall um einen abgebrochenen Abschleppvorgang. Ich war als Halter/Fahrer am Fahrzeug eingetroffen, bevor das Fahrzeug von der Örtlichkeit entfernt wurde. Gemäß den rechtlichen Vorgaben zur Schadensminderungspflicht bzw. Verhältnismäßigkeit dürfen mir in diesem Fall nicht die vollen Abschleppkosten, sondern höchstens die stark reduzierten Gebühren für eine Leerfahrt in Rechnung gestellt werden. Ich fordere eine korrigierte, nachvollziehbare Abrechnung.`;
-  } else if (strategie === "wucher") {
-    text += `Begründung:\nDie von Ihnen geforderten Kosten für das zivilrechtliche Abschleppen (bspw. von einem Kundenparkplatz) sind massiv überhöht und verstoßen gegen das Bereicherungsverbot. Gemäß der Rechtsprechung des Bundesgerichtshofs (BGH, Urt. v. 04.07.2014, Az. V ZR 229/13) dürfen im Rahmen der berechtigten Geschäftsführung ohne Auftrag nur die rein "ortsüblichen" Abschleppkosten verlangt werden. Die Umlegung pauschaler Inkasso-, Überwachungs- oder Vorhaltekosten auf den Falschparker ist unzulässig.`;
-  } else if (strategie === "schilder") {
-    text += `Begründung:\nDie Beschilderung am Vorfallsort war derart mangelhaft (verdeckt, zugewachsen oder widersprüchlich positioniert), dass sie von einem durchschnittlichen Kraftfahrer unter Einhaltung der Sorgfaltspflicht nicht wahrgenommen werden konnte. Da der Verwaltungsakt (Verkehrszeichen) mangels Sichtbarkeit nicht wirksam bekannt gegeben wurde, lag kein straßenverkehrsrechtlicher Verstoß vor, der eine kostenpflichtige Ersatzvornahme rechtfertigt.`;
-  } else if (strategie === "freitext") {
-    text += `Begründung:\n${freitext}`;
+  switch (strategie) {
+    
+    // --- BEHÖRDLICHES ABSCHLEPPEN ---
+    case "3tage":
+      text += `Begründung (Mobiles Halteverbot / 72-Stunden-Frist):\n`;
+      text += `Das Fahrzeug wurde aus einem Bereich abgeschleppt, in dem nachträglich ein mobiles Halteverbot aufgestellt wurde. Nach der gefestigten Rechtsprechung des Bundesverwaltungsgerichts (u. a. BVerwG, Urteil vom 24.05.2018 – 3 C 25.16) ist eine kostenpflichtige Abschleppmaßnahme nur dann verhältnismäßig, wenn das Verkehrszeichen mindestens drei volle Tage (72 Stunden) vor dem Abschleppvorgang aufgestellt war. Diese Vorlaufzeit wurde vorliegend nicht eingehalten. Mangels schuldhafter Pflichtverletzung entfällt die Kostentragungspflicht.`;
+      break;
+
+    case "parkticket_unverhaeltnis":
+      text += `Begründung (Unverhältnismäßigkeit bei einfachem Parkverstoß):\n`;
+      text += `Dem Abschleppvorgang liegt lediglich ein einfacher Parkverstoß (z. B. Überschreitung der Höchstparkdauer oder fehlerhaftes Parkticket) zugrunde. Das Fahrzeug stand weder in einer Rettungsgasse noch verstellte es eine Einstellplatz-Zufahrt oder behinderte den fließenden Verkehr. Die Anordnung des sofortigen Abschleppens verstößt gegen das verfassungsrechtliche Übermaßverbot. Ein Verwarn- oder Bußgeld wäre als milderes Mittel absolut ausreichend gewesen.`;
+      break;
+
+    case "sichtbarkeit_schild":
+      text += `Begründung (Verstoß gegen den Sichtbarkeitsgrundsatz):\n`;
+      text += `Die dem Abschleppvorgang zugrunde liegende Beschilderung war am Tattag nicht ordnungsgemäß wahrnehmbar (z. B. durch Verdeckung, Verdrehung, Zuwachsen oder mangelnde Beleuchtung). Gemäß dem straßenverkehrsrechtlichen Sichtbarkeitsgrundsatz entfalten Verkehrszeichen ihre Rechtswirkung nur gegenüber Verkehrsteilnehmern, die sie mit der nach § 1 StVO erforderlichen Sorgfalt bei zügigem Hinsehen erkennen können. Da die Regelung nicht erkennbar war, fehlt der Maßnahme die Rechtsgrundlage.`;
+      break;
+
+    case "schadensminderung":
+      text += `Begründung (Verstoß gegen die Schadensminderungspflicht / Nahbereichsumsetzung):\n`;
+      text += `Die Verbringung des Fahrzeugs auf einen weit entfernten Verwahrplatz war rechtswidrig. Im unmittelbaren Nahbereich der Örtlichkeit standen freie und zugängliche Parkmöglichkeiten zur Verfügung. Die Behörde ist im Rahmen des Verhältnismäßigkeitsprinzips verpflichtet, die für den Bürger kostenminimalste Maßnahme zu wählen (Nahbereichsumsetzung). Die Geltendmachung überhöhter Transport- und Verwahrstellengebühren wird daher zurückgewiesen.`;
+      break;
+
+    case "gefaehrdung":
+      text += `Begründung (Mangelnde konkrete Behinderung / Ermessensfehler):\n`;
+      text += `In der Begründung der Maßnahme wird eine pauschale oder abstrakte Behinderung behauptet. Eine bloß theoretische Beeinträchtigung reicht zur Rechtfertigung einer kostenpflichtigen Abschleppmaßnahme jedoch nicht aus. Eine konkrete Gefährdung oder Behinderung anderer Verkehrsteilnehmer lag zu keinem Zeitpunkt vor. Die Anordnung leidet daher an einem erheblichen Ermessensfehler.`;
+      break;
+
+    case "unterlassung":
+      text += `Begründung (Mangelnde Bestimmtheit / Fehlende Sachverhaltsdarstellung):\n`;
+      text += `Der Bescheid lässt eine hinreichend konkrete Sachverhaltsschilderung sowie die Angabe der genauen Rechtsgrundlage vermissen (§ 37 Abs. 1 VwVfG). Aus der pauschalen Formulierung geht nicht hervor, welches konkrete Verhalten dem Verantwortlichen zur Last gelegt wird. Auf dieser Grundlage ist eine Überprüfung der Rechtmäßigkeit unmöglich, weshalb der Bescheid formell rechtswidrig ist.`;
+      break;
+
+    // --- E-LADESÄULE (DIFFERENZIERT) ---
+    case "ladesaeule_keine_behinderung":
+      text += `Begründung (E-Ladesäule – Keine Behinderung / Ordnungsgemäße Nutzung):\n`;
+      text += `Das Fahrzeug war ordnungsgemäß an der Ladeeinrichtung angeschlossen bzw. befand sich im zulässigen Nutzungskontext. Es lag keine zweckentfremdete Blockade der Ladeinfrastruktur vor. Selbst bei einer geringfügigen Überschreitung der Höchstparkdauer war das sofortige Abschleppen unverhältnismäßig, da ausreichend freie Alternativladesäulen im Umfeld verfügbar waren und keine konkrete Blockade anderer Verkehrsteilnehmer vorlag.`;
+      break;
+
+    case "ladesaeule_beschilderung":
+      text += `Begründung (E-Ladesäule – Unklare / Fehlerhafte Beschilderung):\n`;
+      text += `Die Kennzeichnung des Sonderparkplatzes für Elektrofahrzeuge entsprach nicht den gesetzlichen Vorgaben des Elektrobevorrechtigungsgesetzes (EmoG) in Verbindung mit der StVO. Die Kombination aus Haupt- und Zusatzzeichen war unübersichtlich und widersprüchlich gestaltet. Eine ordnungsgemäße Beschränkung der Parkberechtigung war für den Fahrer bei der Parkplatzsuche nicht zweifelsfrei erkennbar.`;
+      break;
+
+    // --- BEHINDERTENPARKPLATZ (DIFFERENZIERT) ---
+    case "behindertenparkplatz_ausweis":
+      text += `Begründung (Behindertenparkplatz – Berechtigung lag vor):\n`;
+      text += `Die Abschleppmaßnahme war rechtswidrig, da für das Fahrzeug eine gültige Parksondergenehmigung / ein blauer Schwerbehindertenparkausweis vorlag. Dieser lag gut sichtbar im Fahrzeugbereich aus. Dass der Ausweis von den ausführenden Kräften vor Ort übersehen wurde, geht nicht zu Lasten des Fahrzeughalters. Eine Pflicht zur Erstattung von Abschleppkosten besteht nicht.`;
+      break;
+
+    case "behindertenparkplatz_beschilderung":
+      text += `Begründung (Behindertenparkplatz – Mangelhafte Kennzeichnung):\n`;
+      text += `Die Ausweisung des Stellplatzes als Behindertenparkplatz war nicht ordnungsgemäß. Weder die vertikale Beschilderung noch die Bodenmarkierung entsprachen den Anforderungen an eine eindeutige Verkehrsbeschilderung (z. B. durch Ausbleichen, Verdeckung oder widersprüchliche Zusatzzeichen). Der Anschein einer allgemeinen Parkfläche war gegeben.`;
+      break;
+
+    // --- PRIVATGRUNDSTÜCK / SUPERMARKT ---
+    case "wucher":
+      text += `Begründung (Privates Abschleppen – Unzulässige Zusatz- und Inkassogebühren):\n`;
+      text += `Die geltend gemachten Kosten für den Abschleppvorgang vom Privatgrundstück sind überhöht und rechtlich unzulässig. Nach der ständigen Rechtsprechung des Bundesgerichtshofs (u. a. BGH, Urteil vom 04.07.2014 – V ZR 229/13) dürfen dem Falschparker im Wege der Geschäftsführung ohne Auftrag (GoA) ausschließlich die reinen, ortsüblichen Abschleppkosten auferlegt werden. Die Umlegung pauschaler Inkassogebühren, Halterermittlungspauschalen, Überwachungskosten oder Strafgebühren ist rechtswidrig.`;
+      break;
+
+    case "privatgrund":
+      text += `Begründung (Privatgrundstück – Überschreitung der Ortsüblichkeit):\n`;
+      text += `Die von Ihnen geforderte Summe übersteigt die am betreffenden Standort ortsüblichen Kosten für vergleichbare Abschleppmaßnahmen deutlich. Als Erstattung im Rahmen des Schadensersatzes oder der GoA kann nur der Betrag verlangt werden, der für die reine Fahrzeugbeseitigung angemessen und erforderlich war. Der darüber hinausgehende Forderungsbetrag wird ausdrücklich bestritten.`;
+      break;
+
+    case "halter_nicht_fahrer":
+      text += `Begründung (Keine Halterhaftung im Privatrecht / Grenzen der Darlegungslast):\n`;
+      text += `Die Inanspruchnahme meiner Person als Fahrzeughalter ist rechtsgrundlos. Im Zivilrecht existiert keine generelle Halterhaftung für Parkverstöße auf Privatgrundstücken. Ansprüche richten sich ausschließlich gegen den tatsächlichen Handlungsstörer (den Fahrer). Ich habe das Fahrzeug zum besagten Zeitpunkt nachweislich nicht an der Örtlichkeit abgestellt.\n\n`;
+      text += `Mir ist die Rechtsprechung des BGH (u. a. Az. XII ZR 13/19) zur sogenannten sekundären Darlegungslast des Halters durchaus bekannt. Ich weise Sie jedoch nachdrücklich darauf hin, dass diese mich weder zur lückenlosen Überwachung meines Fahrzeugs noch zur Führung eines Fahrtenbuchs verpflichtet. Das Fahrzeug wird regelmäßig von mehreren berechtigten Personen aus meinem nahen Umfeld genutzt.\n\n`;
+      text += `Ich habe im Rahmen des mir rechtlich Zumutbaren entsprechende Nachforschungen im Kreis der Nutzungsberechtigten angestellt. Da sich der konkrete Fahrer für den fraglichen Tag im Nachhinein jedoch nicht mehr zweifelsfrei ermitteln lässt, bin ich meiner Mitwirkungspflicht vollumfänglich nachgekommen. Das Prozess- und Beweisrisiko für die Fahrereigenschaft verbleibt damit wieder vollumfänglich bei Ihnen. Einer etwaigen Klage sehe ich überaus gelassen entgegen.`;
+      break;
+
+    case "herausgabe_verweigert":
+      text += `Begründung (Rechtswidrige Einbehaltung des Fahrzeugs / Barzahlungsdruck):\n`;
+      text += `Die Verweigerung der Herausgabe des Fahrzeugs bis zur vollständigen Bezahlung vor Ort war rechtswidrig. Ein etwaiges Zurückbehaltungsrecht darf nicht als unverhältnismäßiges Druckmittel eingesetzt werden, um strittige oder überhöhte Nebenforderungen durchzusetzen. Die Erpressung einer Barzahlung vor Ort entbehrt der rechtlichen Grundlage. Die unter Druck geleistete Zahlung wird hiermit vollumfänglich zurückgefordert.`;
+      break;
+
+    // --- CARSHARING & ABBRUCH ---
+    case "leerfahrt":
+      text += `Begründung (Abgebrochener Abschleppvorgang / Leerfahrt):\n`;
+      text += `Der Abschleppvorgang wurde abgebrochen, da ich noch vor dem Abtransport des Fahrzeugs an der Örtlichkeit eintraf und fahrbereit war. In diesem Fall verlangt die Schadensminderungspflicht, die Maßnahme sofort abzubrechen. Es dürfen lediglich die tatsächlich angefallenen und nachgewiesenen Vorbereitungskosten (Leerfahrt) abgerechnet werden. Die Einforderung der vollen Umsetzungspauschale ist unzulässig.`;
+      break;
+
+    case "carsharing_gebuehren":
+      text += `Begründung (Unzulässige AGB-Bearbeitungsgebühr bei Mietwagen/Carsharing):\n`;
+      text += `Die von Ihnen in Rechnung gestellte Bearbeitungspauschale für die Weiterleitung meiner Daten bzw. die Bearbeitung des Abschleppfalls wird zurückgewiesen. Pauschalierte Schadensersatz- oder Bearbeitungsklauseln in Allgemeinen Geschäftsbedingungen sind gemäß § 307 BGB unwirksam, wenn sie dem Kunden nicht den Nachweis ermöglichen, dass ein Schaden überhaupt nicht oder in wesentlich geringerer Höhe entstanden ist, oder wenn sie den gewöhnlichen Aufwand übersteigen.`;
+      break;
+
+    case "freitext":
+      text += `Begründung:\n${freitext}`;
+      break;
+
+    default:
+      text += `Begründung:\nDie geltend gemachte Forderung bzw. der Bescheid ist rechtswidrig. Die gesetzlichen und rechtsprechungsgemäßen Voraussetzungen für eine kostenpflichtige Inanspruchnahme liegen nicht vor.`;
   }
 
-  text += `\n\nIch fordere Sie auf, den Gebührenbescheid aufzuheben bzw. die Forderung zu stornieren. Eine ggf. unter Vorbehalt geleistete Zahlung forderte ich hiermit unter Fristsetzung von 14 Tagen zur Rückerstattung ein. Sollte keine Klärung erfolgen, behalte ich mir den Rechtsweg (Feststellungs- bzw. Rückforderungsklage) vor.`;
-  
+  text += `\n\nIch fordere Sie daher auf, den Bescheid aufzuheben bzw. die Forderung stornieren zu lassen. Falls bereits Beträge eingezogen oder unter Vorbehalt gezahlt wurden, fordere ich Sie auf, diese innerhalb von 14 Tagen auf das bekannte Konto zu erstatten.\n\nSollte diese Frist fruchtlos verstreichen, werde ich den Vorgang ohne weitere Ankündigung juristisch prüfen lassen.`;
+
   return text;
 }
 
