@@ -1,1598 +1,866 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ticketright.de/abschleppen-bussgeld-info.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/ausland-bussgeld-info.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://ticketright.de/bahn-bussgeld-info.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/blitzer-bussgeld-info.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://ticketright.de/datenschutz.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-agilis-bayern.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-allgemein.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-avg-karlsruhe-umland.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-bodo-bielefeld.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-bogestra-bochum-gelsenkirchen.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-brb-bayerische-regiobahn.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-bsag-bremen.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-bvg-berlin.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-db-regio.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-dsw21-dortmund.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-dvb-dresden.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-dvg-duisburg.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-evag-erfurt.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-goevb-goettingen.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-gvh-hannover-region.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-havag-halle.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-havag-saale-region.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-heag-darmstadt.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-herne-bogestra.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-hochbahn-hamburg.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-ksw-kaiserslautern.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-kvb-koeln.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-kvg-kassel.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-kvg-kiel-stadtwerke.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-kvg-kiel.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-lvb-leipzig.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-metronom.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-mobiel-bielefeld.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-mvb-magdeburg.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-mvg-mainz.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-mvg-moenchengladbach.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-mvg-muenchen.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-nvv-nordhessen.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-regiobus-hannover.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-rheinbahn-duesseldorf.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-rnv-mannheim-heidelberg.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-rsag-rostock.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-ruhrbahn-essen-muelheim.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-ssb-stuttgart.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-stadtbus-muenster.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-stoag-oberhausen.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-svl-luebeck.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-swa-augsburg.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-swb-bonn.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-swk-krefeld.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-swt-trier.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-uestra-hannover.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-vag-freiburg.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-vag-nuernberg.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-vamos-osnabrueck.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-vbk-karlsruhe.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-vgf-frankfurt.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-vhh-hamburg-umland.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-vias-hessen.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-wsw-wuppertal.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-60-euro-wvv-wuerzburg.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abschleppen-3-tage-frist-halteverbot-abschleppen.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abschleppen-abschleppen-allgemein-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abschleppen-abschleppen-leerfahrt-abbruch-kosten.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abschleppen-abschleppen-parkverbot-auf-privatgrund.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abschleppen-abschleppen-verwahrplatz-umsetzung.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abschleppen-abschleppen-wegen-gefaehrdung.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abschleppen-abschleppen-wegen-parkverstoß.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abschleppen-abschleppen-wegen-unterlassung.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abschleppen-behindertenparkplatz-abgeschleppt-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abschleppen-carsharing-abgeschleppt-bearbeitungsgebuehr.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abschleppen-e-auto-ladesaeule-abgeschleppt.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abschleppen-halteverbot-schild-verdeckt-abgeschleppt.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abschleppen-parkticket-abgelaufen-abgeschleppt-unverhaeltnismaessig.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abschleppen-privatparkplatz-supermarkt-abschleppen-wucher.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abstandsverstoss-abstandsmessung-fahrer-nicht-erkennbar.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abstandsverstoss-abstandsmessung-regen-nebel-wetter.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abstandsverstoss-abstandsverstoss-allgemein-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abstandsverstoss-abstandsverstoss-auf-autobahn.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abstandsverstoss-abstandsverstoss-bei-auffahrunfall.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abstandsverstoss-abstandsverstoss-probezeit-a-verstoss.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abstandsverstoss-abstandsverstoß-auf-der-landstrasse.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abstandsverstoss-brueckenmessung-vks-vama-messfehler.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abstandsverstoss-einscherer-effekt-abstandsmessung-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abstandsverstoss-provida-polizei-abstandsmessung-videowagen.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abstandsverstoss-vordermann-bremst-abstand-unterschritten.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-abstandsverstoss-weniger-als-3-10-halber-tacho-fahrverbot.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-belgien.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-daenemark.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-frankreich.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-griechenland.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-italien.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-kroatien.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-luxemburg.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-niederlande.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-norwegen.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-oesterreich.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-polen.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-portugal.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-schweden.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-schweiz.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-slowakei.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-slowenien.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-spanien.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-tschechien.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-tuerkei.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ausland-ungarn.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-ausserorts-26-kmh-fahrverbot-wiederholungstaeter.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-ausserorts-41-kmh-fahrverbot-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-blitzer-auf-probezeit.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-blitzer-baustelle-autobahn-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-blitzer-fahrverbot-auf-bewaehrung.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-blitzer-geschwindigkeitsueberschreitung-allgemein.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-blitzer-geschwindigkeitsueberschreitung-ausnahme.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-blitzer-geschwindigkeitsueberschreitung-sonderfall.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-blitzer-messfehler-eichung-anfechten.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-blitzer-punkte-wegen-wiederholung.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-blitzer-verjaehrung-6-monate-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-blitzerfoto-unleserlich-fahrer-nicht-erkennbar.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-geblitzt-im-ausland-vollstreckung.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-geblitzt-mit-10-kmh-zu-schnell.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-geblitzt-mit-15-kmh-zu-schnell.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-geblitzt-mit-20-kmh-zu-schnell.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-geblitzt-mit-25-kmh-zu-schnell.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-geblitzt-mit-50-kmh-zu-schnell.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-geblitzt-probezeit-a-verstoss-aufbauseminar.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-innerorts-21-kmh-ueberschreitung-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-innerorts-31-kmh-fahrverbot-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-laser-blitzer-polizei-messfehler.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-tempo-30-zone-geblitzt-uhrzeit-feiertag.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-blitzer-zeugenfragebogen-blitzer-fahrer-nicht-angeben.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-handy-am-steuer-handy-am-steuer-allgemein-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-handy-am-steuer-handy-am-steuer-auf-der-bahn.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-handy-am-steuer-handy-am-steuer-auf-fahrbahn-fallen-lassen.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-handy-am-steuer-handy-am-steuer-fahrverbot-aufhebt.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-handy-am-steuer-handy-am-steuer-notruf-112.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-handy-am-steuer-handy-am-steuer-probezeit-a-verstoss.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-handy-am-steuer-handy-am-steuer-start-stop-automatik-rote-ampel.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-handy-am-steuer-handy-am-steuer-umlagerung-aufheben-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-handy-am-steuer-handy-am-steuer-verwechslung-powerbank-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-handy-am-steuer-handy-am-steuer-zu-schnell-unterwegs.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-handy-am-steuer-handy-auf-dem-fahrrad-ebike.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-handy-am-steuer-handy-auf-oberschenkel-freisprechen.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-handy-am-steuer-handy-in-halterung-bedient-navi.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-handy-am-steuer-handyblitzer-monocam-einspruch-fahrer-nicht-erkennbar.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-handy-am-steuer-smartwatch-apple-watch-am-steuer.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-lkw-bussgeld-digitaler-tachograf-lenkzeit-auslesefehler-balm.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-lkw-bussgeld-elefantenrennen-lkw-ueberholen-autobahn.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-lkw-bussgeld-lenkzeit-ueberschreitung-parkplatznot-par-12-vo-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-lkw-bussgeld-lkw-abstandsmessung-50-meter-regel-autobahn-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-lkw-bussgeld-lkw-bussgeld-allgemein-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-lkw-bussgeld-lkw-fahrverbot-probezeit-anfechten.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-lkw-bussgeld-lkw-geschwindigkeitsueberschreitung-berufskraftfahrer.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-lkw-bussgeld-lkw-geschwindigkeitsueberschreitung-blitzer.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-lkw-bussgeld-lkw-ladungssicherung-mangelhaft-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-lkw-bussgeld-lkw-punkteabzug-anfechten.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-lkw-bussgeld-lkw-ueberladung-anhaenger-anfechten.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-lkw-bussgeld-lkw-ueberladung-mobile-waage-messfehler-anfechten.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-lkw-bussgeld-mautverstoss-toll-collect-balm-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-lkw-bussgeld-sonntagsfahrverbot-lkw-feiertagsfahrverbot.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-mautstrafe-antai-frankreich.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-mautstrafe-asfinag-oesterreich.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-mautstrafe-autostrade-italien.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-mautstrafe-balm-deutschland.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-mautstrafe-bazg-schweiz.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-mautstrafe-etoll-polen.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-mautstrafe-toll-collect.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-mautstrafe-viapass-belgien.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-ordnungsamt-15-euro-strafzettel-parken-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-ordnungsamt-25-euro-strafzettel-innenstadt-parken.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-ordnungsamt-55-euro-strafzettel-falschparken-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-ordnungsamt-anwohnerparken-ohne-ausweis-strafzettel.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-ordnungsamt-defekter-parkautomat-parkscheibe-einspruch-ordnungsamt.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-ordnungsamt-entgegen-fahrtrichtung-parken-strafzettel.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-ordnungsamt-halteverbotsschild-verdeckt-zugewachsen-einspruch-ordnungsamt.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-ordnungsamt-knollchen-strafzettel-allgemein-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-ordnungsamt-parken-einmuendung-kreuzung-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-ordnungsamt-parken-im-bereich-einer-feuerwehrzufahrt-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-ordnungsamt-parken-von-in-der-naehe-schulbushaltestellen-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-ordnungsamt-parkscheibe-vergessen-strafzettel-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-ordnungsamt-parkverbot-auf-privatgrund-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-ordnungsamt-strafzettel-verjaehrung-6-monate-einspruch-ordnungsamt.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/einspruch-ordnungsamt-strafzettel-zahlendreher-formfehler-kennzeichen-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-rote-ampel-ampel-dauerrot-defekt-geblitzt.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-rote-ampel-ampelblitzer-fahrer-nicht-erkennbar.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-rote-ampel-einfacher-rotlichtverstoss-unter-1-sekunde.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-rote-ampel-gelbphase-zu-kurz-ampelschaltung-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-rote-ampel-gruener-pfeil-blechschild-nicht-gehalten.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-rote-ampel-haltelinienverstoss-statt-rotlichtverstoss.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-rote-ampel-mitzieheffekt-augenblicksversagen-ampelblitzer.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-rote-ampel-qualifizierter-rotlichtverstoss-ueber-1-sekunde-fahrverbot.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-rote-ampel-rotlichtverstoss-ampelblitzer-allgemein-einspruch.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-rote-ampel-rotlichtverstoss-probezeit-a-verstoss.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/einspruch-rote-ampel-rotlichtverstoss-wegen-rettungsgasse-blaulicht.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/google7ddc54596b77299c.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ticketright.de/halterhaftung-parken.html</loc>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/impressum.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/index.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-aktivpark.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-apcoa.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-avantpark.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-bb-parkhaus.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-betterpark.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-contipark.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-epm-deutschland.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-fair-parken.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-ks-parkraumservice.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-loyal-parking.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-mobility-hub-parkservice.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-park-und-control.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-parkdepot.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-parkraeume-kg.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-peter-park.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-playfair-parking.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-prm-parkraum-management.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-prs-parkraum-service.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-q-park.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-safe-place.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/knoellchen-widerspruch-wemolo.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/lkw-bussgeld-info.html</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://ticketright.de/lkw-maut-bussgeld.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-info.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-action.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-aldi-nord.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-aldi-sued.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-bauhaus.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-burger-king.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-clever-fit.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-decathlon.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-deichmann.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-dm.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-edeka.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-ernstings-family.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-famila.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-fitness-first.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-fitx.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-fressnapf.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-futterhaus.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-globus.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-hagebau.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-hit.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-hornbach.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-ikea.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-kaufland.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-kfc.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-kik.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-lidl.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-marktkauf.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-mcdonalds.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-mcfit.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-mediamarkt.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-mueller.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-netto.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-norma.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-obi.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-penny.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-poco.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-rewe.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-roller.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-rossmann.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-saturn.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-takko.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-tegut.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-thomas-philipps.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-toom.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/parkplatz-strafe-v-markt.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://ticketright.de/ticket-nachreichen.html</loc>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://ticketright.de/ueber-uns.html</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
